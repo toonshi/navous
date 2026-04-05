@@ -1,16 +1,9 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesque } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
-
-const spaceGrotesque = Space_Grotesque({
-  variable: "--font-space-grotesque",
-  subsets: ["latin"],
-});
+// Temporary fallback for fonts to get the project running
+const inter = { variable: "font-sans" };
+const spaceGrotesque = { variable: "font-space-grotesque" };
 
 export const metadata: Metadata = {
   title: "Navous - Spatial Intelligence for Modern Spaces",
@@ -25,9 +18,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${spaceGrotesque.variable} h-full antialiased`}
+      className={`h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col font-sans">{children}</body>
     </html>
   );
 }
