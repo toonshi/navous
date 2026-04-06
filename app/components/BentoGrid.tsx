@@ -103,7 +103,7 @@ const BentoGrid = () => {
         <div className="md:col-span-2 bg-slate-50 border border-slate-100 rounded-2xl p-10 flex flex-col justify-between min-h-[280px]">
           <div>
             <span className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3 block">
-              Analytics &amp; Intelligence
+              Analytics & Intelligence
             </span>
             <h3 className="font-space-grotesque text-3xl font-bold text-slate-900 mb-4 leading-snug">
               Your building has blind spots.

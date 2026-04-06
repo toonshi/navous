@@ -50,7 +50,7 @@ export default function Hero() {
         <p className="text-slate-400 text-xl max-w-2xl leading-relaxed mb-12">
           Navous delivers real-time indoor navigation for hospitals, malls, and
           campuses — so every visitor arrives with confidence, and every
-          operator knows exactly what&#39;s happening on every floor.
+          operator knows exactly what's happening on every floor.
         </p>
 
         {/* CTAs */}
