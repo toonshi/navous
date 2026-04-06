@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 
 const sectors = [
   {
@@ -35,10 +36,10 @@ export default function UseCases() {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-black mb-4">
-            Built for where it matters.
+            Built for high-pressure facilities.
           </h2>
           <p className="text-[#475569] text-lg leading-relaxed">
-            Real outcomes. Real sectors.
+            Real outcomes across healthcare, retail, and transport environments.
           </p>
         </div>
 
@@ -57,6 +58,19 @@ export default function UseCases() {
               {s.name}
             </button>
           ))}
+        </div>
+
+        <div className="bg-slate-50 rounded-3xl border border-slate-100 p-8 md:p-10 mb-12 flex flex-col md:flex-row md:items-center gap-8">
+          <Image
+            src="/illustrations/navigation.svg"
+            alt="Indoor navigation"
+            width={160}
+            height={160}
+            className="w-20 h-20 shrink-0"
+          />
+          <p className="text-slate-600 text-base leading-relaxed">
+            Navous adapts to the logic of each space: appointment-heavy facilities, large shopping corridors, and multi-terminal transport hubs. Each deployment starts with your own floor plan data, not a generic map template.
+          </p>
         </div>
 
         {/* Outcomes */}

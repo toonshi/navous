@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -18,7 +19,7 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-8 flex justify-between items-center h-16">
-        <img src="/Left logo.svg" alt="Navous Logo" className="h-9 w-auto" />
+        <Image src="/Left logo.svg" alt="Navous Logo" width={120} height={36} className="h-9 w-auto" />
         <div className="hidden md:flex gap-8">
           <a href="#" className="text-[14px] font-medium text-slate-500 tracking-wide hover:text-slate-900 transition">
             Home

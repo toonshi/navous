@@ -61,7 +61,7 @@ export default function Testimonials() {
                 </p>
               </div>
               <div className="flex items-center gap-3 pt-4 border-t border-slate-100">
-                <div className="w-9 h-9 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-sm flex-shrink-0">
+                <div className="w-9 h-9 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-sm shrink-0">
                   {t.name.charAt(0)}
                 </div>
                 <div>

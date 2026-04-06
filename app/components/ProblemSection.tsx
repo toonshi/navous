@@ -36,9 +36,9 @@ export default function ProblemSection() {
             The Problem
           </span>
           <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 mt-3 mb-5 leading-tight">
-            Getting lost isn't just frustrating.
+            Getting lost isn&apos;t just frustrating.
             <br />
-            <span className="text-primary">It's costing you.</span>
+            <span className="text-primary">It&apos;s costing you.</span>
           </h2>
           <p className="text-slate-500 text-lg leading-relaxed">
             Bad indoor navigation is invisible until you measure it. When you
@@ -71,15 +71,15 @@ export default function ProblemSection() {
           />
           <div className="flex-1 relative">
             <p className="font-space-grotesque text-2xl md:text-3xl font-bold text-white leading-snug mb-4">
-              "Navigation is not a nice-to-have. It is the difference between a
-              visitor who completes their journey and one who doesn't."
+              &ldquo;Navigation is not a nice-to-have. It is the difference between a
+              visitor who completes their journey and one who doesn&apos;t.&rdquo;
             </p>
             <p className="text-slate-400 text-sm">
               The hidden cost that facility managers stop ignoring once they
               see the data.
             </p>
           </div>
-          <div className="flex-shrink-0 relative">
+          <div className="shrink-0 relative">
             <button className="bg-primary text-white px-8 py-4 rounded-full font-bold text-lg hover:brightness-110 transition cursor-pointer whitespace-nowrap">
               See Your Numbers
             </button>

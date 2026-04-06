@@ -11,7 +11,7 @@ export default function FinalCTA() {
         aria-hidden="true"
       >
         <div
-          className="w-[560px] h-[560px] rounded-full opacity-[0.12] blur-3xl"
+          className="w-140 h-140 rounded-full opacity-[0.12] blur-3xl"
           style={{ background: "#13B7DA" }}
         />
       </div>
@@ -27,11 +27,11 @@ export default function FinalCTA() {
         </h2>
         <p className="text-slate-400 text-lg mb-4 leading-relaxed max-w-xl mx-auto">
           Missed appointments. Frustrated shoppers. Nurses giving directions
-          instead of care. Staff hours wasted. These aren't abstract problems —
-          they're happening in your building right now.
+          instead of care. Staff hours wasted. These aren&apos;t abstract problems —
+          they&apos;re happening in your building right now.
         </p>
         <p className="text-slate-500 text-base mb-12">
-          Book a 30-minute demo. We'll show you exactly what it looks like in
+          Book a 30-minute demo. We&apos;ll show you exactly what it looks like in
           your space — not a generic walkthrough.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">

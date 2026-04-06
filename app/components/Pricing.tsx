@@ -124,10 +124,10 @@ export default function Pricing() {
               </p>
 
               {/* Features */}
-              <ul className="flex flex-col gap-2.5 flex-grow">
+              <ul className="flex flex-col gap-2.5 grow">
                 {tier.features.map((feat) => (
                   <li key={feat} className="flex items-start gap-2.5 text-sm">
-                    <span className="text-primary mt-0.5 flex-shrink-0">✓</span>
+                    <span className="text-primary mt-0.5 shrink-0">✓</span>
                     <span className={tier.highlight ? "text-slate-300" : "text-slate-600"}>
                       {feat}
                     </span>

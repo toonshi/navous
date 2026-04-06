@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 const steps = [
   {
@@ -39,9 +40,7 @@ export default function HowItWorks() {
             Live in 3 weeks. Not 3 months.
           </h2>
           <p className="text-slate-500 text-lg max-w-xl mx-auto leading-relaxed">
-            No expensive hardware. No infrastructure overhaul. No IT project.
-            Navous deploys in three clean steps — and your team barely needs to
-            be involved.
+            No expensive hardware and no infrastructure overhaul. Navous deploys in three clean steps, with minimal lift from your internal team.
           </p>
         </div>
 
@@ -67,6 +66,21 @@ export default function HowItWorks() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-10 bg-white border border-slate-100 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row md:items-center gap-6">
+          <Image
+            src="/illustrations/accessibility.svg"
+            alt="Accessibility assurance"
+            width={112}
+            height={112}
+            className="w-14 h-14"
+          />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
+            <p className="text-sm text-slate-600"><span className="font-semibold text-slate-900">Data ownership:</span> your floor plans and operational data remain yours.</p>
+            <p className="text-sm text-slate-600"><span className="font-semibold text-slate-900">Accessibility:</span> route logic includes wheelchair-friendly and lift-priority paths.</p>
+            <p className="text-sm text-slate-600"><span className="font-semibold text-slate-900">Visitor privacy:</span> no mandatory app install or account creation for wayfinding.</p>
+          </div>
         </div>
       </div>
     </section>

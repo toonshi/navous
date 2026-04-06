@@ -54,13 +54,13 @@ export default function StakeholderValue() {
         {/* Header */}
         <div className="text-center mb-14">
           <span className="text-primary text-sm font-semibold uppercase tracking-widest">
-            Who it's for
+            Who it&apos;s for
           </span>
           <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 mt-3 mb-4">
             Everyone in your building wins.
           </h2>
           <p className="text-slate-500 text-lg max-w-xl mx-auto leading-relaxed">
-            Navous doesn't just solve navigation for visitors. It makes the
+            Navous doesn&apos;t just solve navigation for visitors. It makes the
             whole ecosystem smarter — operators, tenants, and staff included.
           </p>
         </div>
@@ -86,7 +86,7 @@ export default function StakeholderValue() {
               <ul className="flex flex-col gap-3">
                 {col.features.map((feat) => (
                   <li key={feat} className="flex items-start gap-2.5 text-sm">
-                    <span className={`mt-0.5 flex-shrink-0 ${col.featureIcon}`}>✓</span>
+                    <span className={`mt-0.5 shrink-0 ${col.featureIcon}`}>✓</span>
                     <span className={col.bg.includes("bg-dark") ? "text-slate-300" : "text-slate-600"}>
                       {feat}
                     </span>
