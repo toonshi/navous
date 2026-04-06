@@ -2,148 +2,80 @@
 
 import React from "react";
 
-const useCases = ["Hospitals", "Shopping Malls", "University Campuses", "Airports"];
-
 const BentoGrid = () => {
   return (
-    <section id="features" className="max-w-7xl mx-auto py-24 px-8">
-      {/* Section header */}
-      <div className="text-center mb-14">
-        <span className="text-primary text-sm font-semibold uppercase tracking-widest">
-          Platform
-        </span>
-        <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 mt-3 mb-4">
-          Built for the spaces that matter most.
-        </h2>
-        <p className="text-slate-500 text-lg max-w-xl mx-auto leading-relaxed">
-          From emergency departments to international airports — Navous works
-          where getting lost has real consequences.
-        </p>
-      </div>
-
-      {/* Bento grid — 3 columns */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-
-        {/* Card 1: Main hook (col-span-2) */}
-        <div className="md:col-span-2 bg-dark rounded-2xl p-10 flex flex-col justify-end min-h-[320px] relative overflow-hidden">
-          <div
-            className="absolute top-0 right-0 w-72 h-72 opacity-20 blur-2xl pointer-events-none"
-            style={{ background: "radial-gradient(circle, #13B7DA 0%, transparent 70%)" }}
-          />
-          <img
-            src="/Building.svg"
-            alt=""
-            aria-hidden="true"
-            className="absolute top-0 right-0 h-full w-auto opacity-20 object-cover"
-          />
-          <span className="relative text-primary text-xs font-semibold uppercase tracking-widest mb-3">
-            AI-Powered Wayfinding
-          </span>
-          <h3 className="relative font-space-grotesque text-3xl font-bold tracking-tighter text-white mb-3 leading-tight">
-            The right door. The right floor.<br />In under 60 seconds.
-          </h3>
-          <p className="relative text-slate-400 text-base max-w-md leading-relaxed">
-            Turn-by-turn indoor navigation with no app download, no sign-up,
-            and no dead ends. Visitors scan a QR code at the entrance and
-            they're guided exactly where they need to be.
+    <section id="features" className="bg-white py-32 px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-20">
+          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-black mb-4">
+            The machine behind the map.
+          </h2>
+          <p className="text-[#475569] text-lg max-w-xl mx-auto leading-relaxed">
+            Three capabilities. One seamless experience.
           </p>
         </div>
 
-        {/* Card 2: Accessibility */}
-        <div className="bg-primary/10 border border-primary/20 rounded-2xl p-8 flex flex-col justify-between min-h-[320px]">
-          <img
-            src="/Accesibility illustration.svg"
-            alt="Accessibility"
-            className="w-14 h-14"
-          />
-          <div>
-            <h3 className="font-space-grotesque text-2xl font-bold tracking-tighter text-slate-900 mb-3 leading-snug">
-              Nobody<br />left behind.
-            </h3>
-            <p className="text-slate-600 text-sm leading-relaxed">
-              Automatic routing via ramps, lifts, and accessible entrances — so
-              every visitor arrives independently, without having to ask for help.
-            </p>
-          </div>
-          <span className="self-start mt-5 bg-primary/20 text-primary text-xs font-bold px-3 py-1.5 rounded-full tracking-wide">
-            WCAG Compliant
-          </span>
-        </div>
-
-        {/* Card 3: Stat — 38% */}
-        <div className="bg-white border border-slate-100 rounded-2xl p-8 flex flex-col justify-center min-h-[200px] shadow-sm">
-          <p className="font-space-grotesque text-6xl font-bold text-primary leading-none mb-3">
-            38%
-          </p>
-          <p className="text-slate-500 text-sm leading-relaxed">
-            Reduction in staff-assisted navigation requests within the first month.
-          </p>
-        </div>
-
-        {/* Card 4: Stat — 3 min */}
-        <div className="bg-dark rounded-2xl p-8 flex flex-col justify-center min-h-[200px]">
-          <p className="font-space-grotesque text-6xl font-bold text-white leading-none mb-3">
-            3 min
-          </p>
-          <p className="text-slate-400 text-sm leading-relaxed">
-            Average time saved per visitor journey across all building types.
-          </p>
-        </div>
-
-        {/* Card 5: Stat — 99.3% */}
-        <div className="bg-primary rounded-2xl p-8 flex flex-col justify-center min-h-[200px]">
-          <p className="font-space-grotesque text-6xl font-bold text-white leading-none mb-3">
-            99.3%
-          </p>
-          <p className="text-white/70 text-sm leading-relaxed">
-            Routing accuracy across every floor plan we have ever mapped.
-          </p>
-        </div>
-
-        {/* Card 6: Analytics (col-span-2) */}
-        <div className="md:col-span-2 bg-slate-50 border border-slate-100 rounded-2xl p-10 flex flex-col justify-between min-h-[280px]">
-          <div>
-            <span className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3 block">
-              Analytics & Intelligence
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {/* Box A: Large — Searchable Infrastructure */}
+          <div className="md:col-span-2 bg-slate-50 rounded-3xl p-10 flex flex-col justify-end min-h-[360px] relative overflow-hidden shadow-sm">
+            <img
+              src="/Building.svg"
+              alt=""
+              aria-hidden="true"
+              className="absolute top-0 right-0 h-full w-auto opacity-[0.08] object-cover translate-x-8"
+            />
+            <span className="relative text-[#13B7DA] text-xs font-semibold uppercase tracking-widest mb-3">
+              Infrastructure
             </span>
-            <h3 className="font-space-grotesque text-3xl font-bold tracking-tighter text-slate-900 mb-4 leading-snug">
-              Your building has blind spots.
-              <br />
-              <span className="text-primary">We map them.</span>
+            <h3 className="relative font-space-grotesque text-3xl font-bold tracking-tighter text-black mb-3 leading-tight">
+              Searchable Infrastructure.
             </h3>
-            <p className="text-slate-500 max-w-md leading-relaxed">
-              Foot-traffic heatmaps, real-time flow analytics, and congestion
-              alerts — turning your space into a data source you can actually act
-              on, not just observe.
+            <p className="relative text-[#475569] text-base max-w-md leading-relaxed">
+              Every corridor, lift, and entrance becomes a searchable node. Visitors find any room in under 60 seconds; no app download required.
             </p>
           </div>
-          <button className="mt-8 self-start bg-slate-900 text-white px-6 py-3 rounded-full font-bold text-sm hover:bg-slate-700 transition cursor-pointer">
-            View Analytics Demo →
-          </button>
-        </div>
 
-        {/* Card 7: Use cases */}
-        <div className="bg-dark rounded-2xl p-8 flex flex-col justify-between min-h-[280px] relative overflow-hidden">
-          <div
-            className="absolute bottom-0 right-0 w-48 h-48 opacity-10 blur-2xl pointer-events-none"
-            style={{ background: "#13B7DA" }}
-          />
-          <span className="text-slate-500 text-xs font-bold uppercase tracking-widest">
-            Works in
-          </span>
-          <ul className="flex flex-col gap-3 my-4 relative">
-            {useCases.map((uc) => (
-              <li key={uc} className="flex items-center gap-3 text-white">
-                <span className="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0" />
-                <span className="font-space-grotesque font-semibold text-lg">{uc}</span>
-              </li>
-            ))}
-          </ul>
-          <button className="relative self-start border border-white/30 text-white px-5 py-2.5 rounded-full text-sm font-bold hover:border-white hover:bg-white/10 transition cursor-pointer">
-            Book a Demo
-          </button>
-        </div>
+          {/* Box B: Accessibility */}
+          <div className="bg-slate-50 rounded-3xl p-8 flex flex-col justify-between min-h-[360px] shadow-sm">
+            <img
+              src="/Accesibility illustration.svg"
+              alt="Accessibility"
+              className="w-14 h-14"
+            />
+            <div>
+              <span className="text-[#13B7DA] text-xs font-semibold uppercase tracking-widest mb-3 block">
+                Accessibility
+              </span>
+              <h3 className="font-space-grotesque text-2xl font-bold tracking-tighter text-black mb-3 leading-snug">
+                Routing for everyone.
+              </h3>
+              <p className="text-[#475569] text-sm leading-relaxed">
+                Digital paths that bypass stairs and prioritize lifts.
+              </p>
+            </div>
+          </div>
 
+          {/* Box C: Real-time Analytics */}
+          <div className="md:col-span-3 bg-slate-50 rounded-3xl p-10 flex flex-col md:flex-row md:items-center gap-8 shadow-sm">
+            <div className="flex-1">
+              <span className="text-[#13B7DA] text-xs font-semibold uppercase tracking-widest mb-3 block">
+                Real-time Analytics
+              </span>
+              <h3 className="font-space-grotesque text-3xl font-bold tracking-tighter text-black mb-3 leading-tight">
+                Zero blind spots.
+              </h3>
+              <p className="text-[#475569] text-base leading-relaxed max-w-lg">
+                See exactly where your visitors get stuck. Foot-traffic heatmaps and congestion alerts; turning your space into intelligence you can act on.
+              </p>
+            </div>
+            <button
+              className="self-start md:self-center bg-black text-white px-6 py-3 rounded-full font-bold text-sm hover:bg-slate-800 transition cursor-pointer whitespace-nowrap"
+              aria-label="View Analytics Demo"
+            >
+              View Analytics Demo &rarr;
+            </button>
+          </div>
+        </div>
       </div>
     </section>
   );

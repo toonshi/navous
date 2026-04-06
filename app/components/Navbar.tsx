@@ -1,23 +1,38 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 10);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <nav className="bg-primary pl-8 pr-0 flex justify-between items-center text-white h-20">
-      <div className="flex items-center">
-        <img src="/Left logo.svg" alt="Navous Logo" className="h-10 w-auto" />
-      </div>
-      <div className="hidden md:flex gap-10 font-space-grotesque font-medium">
-        <a href="#" className="text-[14px] tracking-wider hover:opacity-80 transition">Home</a>
-        <a href="#features" className="text-[14px] tracking-wider hover:opacity-80 transition">Features</a>
-        <a href="#how-it-works" className="text-[14px] tracking-wider hover:opacity-80 transition">How It Works</a>
-      </div>
-      <div className="flex items-center gap-6 h-full">
-        <button className="bg-slate-900 text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-slate-700 transition cursor-pointer">
+    <nav
+      className={`sticky top-0 z-50 transition-all duration-300 ${
+        scrolled ? "bg-white/95 backdrop-blur-sm shadow-sm" : "bg-transparent"
+      }`}
+    >
+      <div className="max-w-7xl mx-auto px-8 flex justify-between items-center h-16">
+        <img src="/Left logo.svg" alt="Navous Logo" className="h-9 w-auto" />
+        <div className="hidden md:flex gap-8">
+          <a href="#" className="text-[14px] font-medium text-slate-500 tracking-wide hover:text-slate-900 transition">
+            Home
+          </a>
+          <a href="#features" className="text-[14px] font-medium text-slate-500 tracking-wide hover:text-slate-900 transition">
+            Features
+          </a>
+          <a href="#use-cases" className="text-[14px] font-medium text-slate-500 tracking-wide hover:text-slate-900 transition">
+            Use Cases
+          </a>
+        </div>
+        <button className="bg-black text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-slate-800 transition cursor-pointer">
           Book a Demo
         </button>
-        <img src="/Building.svg" alt="" className="h-full w-auto opacity-90" aria-hidden="true" />
       </div>
     </nav>
   );
