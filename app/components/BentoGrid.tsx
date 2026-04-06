@@ -12,7 +12,7 @@ const BentoGrid = () => {
         <span className="text-primary text-sm font-semibold uppercase tracking-widest">
           Platform
         </span>
-        <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold text-slate-900 mt-3 mb-4">
+        <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 mt-3 mb-4">
           Built for the spaces that matter most.
         </h2>
         <p className="text-slate-500 text-lg max-w-xl mx-auto leading-relaxed">
@@ -39,7 +39,7 @@ const BentoGrid = () => {
           <span className="relative text-primary text-xs font-semibold uppercase tracking-widest mb-3">
             AI-Powered Wayfinding
           </span>
-          <h3 className="relative font-space-grotesque text-3xl font-bold text-white mb-3 leading-tight">
+          <h3 className="relative font-space-grotesque text-3xl font-bold tracking-tighter text-white mb-3 leading-tight">
             The right door. The right floor.<br />In under 60 seconds.
           </h3>
           <p className="relative text-slate-400 text-base max-w-md leading-relaxed">
@@ -57,7 +57,7 @@ const BentoGrid = () => {
             className="w-14 h-14"
           />
           <div>
-            <h3 className="font-space-grotesque text-2xl font-bold text-slate-900 mb-3 leading-snug">
+            <h3 className="font-space-grotesque text-2xl font-bold tracking-tighter text-slate-900 mb-3 leading-snug">
               Nobody<br />left behind.
             </h3>
             <p className="text-slate-600 text-sm leading-relaxed">
@@ -106,7 +106,7 @@ const BentoGrid = () => {
             <span className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3 block">
               Analytics & Intelligence
             </span>
-            <h3 className="font-space-grotesque text-3xl font-bold text-slate-900 mb-4 leading-snug">
+            <h3 className="font-space-grotesque text-3xl font-bold tracking-tighter text-slate-900 mb-4 leading-snug">
               Your building has blind spots.
               <br />
               <span className="text-primary">We map them.</span>
@@ -117,7 +117,7 @@ const BentoGrid = () => {
               on, not just observe.
             </p>
           </div>
-          <button className="mt-8 self-start bg-slate-900 text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-slate-700 transition cursor-pointer">
+          <button className="mt-8 self-start bg-slate-900 text-white px-6 py-3 rounded-full font-bold text-sm hover:bg-slate-700 transition cursor-pointer">
             View Analytics Demo →
           </button>
         </div>
@@ -139,7 +139,7 @@ const BentoGrid = () => {
               </li>
             ))}
           </ul>
-          <button className="relative self-start border border-white/30 text-white px-5 py-2.5 rounded-lg text-sm font-bold hover:border-white hover:bg-white/10 transition cursor-pointer">
+          <button className="relative self-start border border-white/30 text-white px-5 py-2.5 rounded-full text-sm font-bold hover:border-white hover:bg-white/10 transition cursor-pointer">
             Book a Demo
           </button>
         </div>

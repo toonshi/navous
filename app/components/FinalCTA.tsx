@@ -20,7 +20,7 @@ export default function FinalCTA() {
         <span className="inline-block border border-primary/40 text-primary text-sm font-semibold px-4 py-1.5 rounded-full mb-8 tracking-wide">
           Get Started
         </span>
-        <h2 className="font-space-grotesque text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+        <h2 className="font-space-grotesque text-5xl md:text-6xl font-bold tracking-tighter text-white mb-6 leading-tight">
           Every day without Navous
           <br />
           is a day of <span className="text-primary">avoidable loss.</span>
@@ -35,10 +35,10 @@ export default function FinalCTA() {
           your space — not a generic walkthrough.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
-          <button className="bg-primary text-white px-10 py-4 rounded-xl font-bold text-lg hover:brightness-110 transition cursor-pointer">
+          <button className="bg-primary text-white px-10 py-4 rounded-full font-bold text-lg hover:brightness-110 transition cursor-pointer">
             Book a Demo
           </button>
-          <button className="border border-slate-700 text-slate-300 px-10 py-4 rounded-xl font-bold text-lg hover:border-slate-500 hover:text-white transition cursor-pointer">
+          <button className="border border-slate-700 text-slate-300 px-10 py-4 rounded-full font-bold text-lg hover:border-slate-500 hover:text-white transition cursor-pointer">
             View Pricing
           </button>
         </div>

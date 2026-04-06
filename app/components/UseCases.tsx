@@ -62,7 +62,7 @@ export default function UseCases() {
           <span className="text-primary text-sm font-semibold uppercase tracking-widest">
             Use Cases
           </span>
-          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold text-slate-900 mt-3 mb-4">
+          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 mt-3 mb-4">
             Built for where getting lost
             <br />
             has real consequences.
@@ -95,7 +95,7 @@ export default function UseCases() {
                 <span className={`inline-flex text-xs font-bold px-3 py-1.5 rounded-full border mb-5 ${c.tagColor}`}>
                   {c.tag}
                 </span>
-                <h3 className="font-space-grotesque text-2xl md:text-3xl font-bold text-slate-900 mb-5 leading-snug">
+                <h3 className="font-space-grotesque text-2xl md:text-3xl font-bold tracking-tighter text-slate-900 mb-5 leading-snug">
                   {c.headline}
                 </h3>
                 <p className="text-slate-500 text-sm leading-relaxed mb-6">{c.story}</p>
@@ -122,7 +122,7 @@ export default function UseCases() {
                   <p className="text-slate-400 text-sm">{s.label}</p>
                 </div>
               ))}
-              <button className="relative self-start mt-4 border border-white/30 text-white px-6 py-3 rounded-xl text-sm font-bold hover:border-white hover:bg-white/10 transition cursor-pointer">
+              <button className="relative self-start mt-4 border border-white/30 text-white px-6 py-3 rounded-full text-sm font-bold hover:border-white hover:bg-white/10 transition cursor-pointer">
                 See this in action →
               </button>
             </div>
