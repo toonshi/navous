@@ -68,7 +68,10 @@ const BentoGrid = () => {
                 See exactly where your visitors get stuck. Foot-traffic heatmaps and congestion alerts; turning your space into intelligence you can act on.
               </p>
             </div>
-            <button className="self-start md:self-center bg-black text-white px-6 py-3 rounded-full font-bold text-sm hover:bg-slate-800 transition cursor-pointer whitespace-nowrap">
+            <button
+              className="self-start md:self-center bg-black text-white px-6 py-3 rounded-full font-bold text-sm hover:bg-slate-800 transition cursor-pointer whitespace-nowrap"
+              aria-label="View Analytics Demo"
+            >
               View Analytics Demo &rarr;
             </button>
           </div>

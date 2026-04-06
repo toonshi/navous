@@ -16,7 +16,10 @@ export default function Hero() {
           <button className="bg-black text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-slate-800 transition cursor-pointer">
             Book a Demo
           </button>
-          <button className="text-slate-500 px-8 py-4 rounded-full font-bold text-lg hover:text-slate-900 transition cursor-pointer">
+          <button
+            className="text-slate-500 px-8 py-4 rounded-full font-bold text-lg hover:text-slate-900 transition cursor-pointer"
+            aria-label="See how it works"
+          >
             See how it works &rarr;
           </button>
         </div>
