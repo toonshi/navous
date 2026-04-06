@@ -8,6 +8,7 @@ const Navbar = () => {
       <div className="flex items-center gap-4">
         <img src="/Left logo.svg" alt="Navous Logo" className="h-10" />
         <span className="font-space-grotesque text-2xl font-bold tracking-tight">Navous</span>
+        <img src="/Building.svg" alt="Building Logo" className="h-10" />
       </div>
       <div className="hidden md:flex gap-12 font-space-grotesque font-medium">
         <a href="#" className="hover:opacity-80 transition">Home</a>
