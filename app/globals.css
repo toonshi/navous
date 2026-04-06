@@ -2,56 +2,29 @@
 
 @theme {
   --color-primary: #13B7DA;
-  --color-dark: #0A0F1E;
-  --font-sans: "Inter", system-ui, sans-serif;
-  --font-space-grotesque: "Space Grotesk", system-ui, sans-serif;
+  --color-secondary: #0F172A;
+  --font-sans: var(--font-inter);
+  --font-space-grotesque: var(--font-space-grotesque);
 }
 
 :root {
-  --background: #0A0F1E;
-  --foreground: #f8fafc;
+  --background: #ffffff;
+  --foreground: #0f172a;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Crowd background animations */
-@keyframes walkRight {
-  0%   { transform: translateX(-80px); }
-  100% { transform: translateX(calc(100vw + 80px)); }
-}
-@keyframes walkLeft {
-  0%   { transform: translateX(calc(100vw + 80px)); }
-  100% { transform: translateX(-80px); }
-}
-@keyframes walkDiagDown {
-  0%   { transform: translate(-80px, -20px); }
-  100% { transform: translate(calc(100vw + 80px), 40px); }
-}
-@keyframes walkDiagUp {
-  0%   { transform: translate(calc(100vw + 80px), 30px); }
-  100% { transform: translate(-80px, -20px); }
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
 }
 
-.crowd-figure {
-  position: absolute;
-  will-change: transform;
-  pointer-events: none;
+.font-space-grotesque {
+  font-family: var(--font-space-grotesque), sans-serif;
 }
-.crowd-r1  { animation: walkRight    28s linear infinite; animation-delay: 0s;    top: 12%; }
-.crowd-r2  { animation: walkRight    34s linear infinite; animation-delay: -8s;   top: 28%; }
-.crowd-r3  { animation: walkRight    22s linear infinite; animation-delay: -14s;  top: 44%; }
-.crowd-r4  { animation: walkRight    38s linear infinite; animation-delay: -5s;   top: 60%; }
-.crowd-r5  { animation: walkRight    26s linear infinite; animation-delay: -20s;  top: 75%; }
-.crowd-r6  { animation: walkRight    42s linear infinite; animation-delay: -31s;  top: 88%; }
-.crowd-l1  { animation: walkLeft     30s linear infinite; animation-delay: -3s;   top: 18%; }
-.crowd-l2  { animation: walkLeft     24s linear infinite; animation-delay: -11s;  top: 38%; }
-.crowd-l3  { animation: walkLeft     36s linear infinite; animation-delay: -22s;  top: 55%; }
-.crowd-l4  { animation: walkLeft     20s linear infinite; animation-delay: -16s;  top: 70%; }
-.crowd-l5  { animation: walkLeft     32s linear infinite; animation-delay: -27s;  top: 84%; }
-.crowd-d1  { animation: walkDiagDown 40s linear infinite; animation-delay: -9s;   top:  5%; }
-.crowd-d2  { animation: walkDiagDown 33s linear infinite; animation-delay: -18s;  top: 50%; }
-.crowd-u1  { animation: walkDiagUp   35s linear infinite; animation-delay: -6s;   top: 30%; }
-.crowd-u2  { animation: walkDiagUp   27s linear infinite; animation-delay: -24s;  top: 65%; }

@@ -26,13 +26,13 @@ export default function UseCases() {
   const sector = sectors[active];
 
   return (
-    <section id="use-cases" className="bg-dark py-32 px-8">
+    <section id="use-cases" className="bg-white py-32 px-8">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-white mb-4">
+          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-secondary mb-4">
             Built for high-pressure facilities.
           </h2>
-          <p className="text-slate-400 text-lg leading-relaxed">
+          <p className="text-secondary/60 text-lg leading-relaxed">
             Wherever people need to move confidently through complex spaces.
           </p>
         </div>
@@ -46,7 +46,7 @@ export default function UseCases() {
               className={`px-6 py-2.5 rounded-full text-sm font-bold transition cursor-pointer ${
                 active === i
                   ? "bg-primary text-white"
-                  : "text-slate-400 hover:text-white border border-[#1E293B] hover:border-slate-500"
+                  : "text-secondary/60 hover:text-secondary border border-slate-200 hover:border-slate-300"
               }`}
             >
               {s.name}
@@ -54,15 +54,17 @@ export default function UseCases() {
           ))}
         </div>
 
-        <div className="bg-[#111827] border border-[#1E293B] rounded-3xl p-8 md:p-12 flex flex-col md:flex-row md:items-center gap-10">
-          <Image
-            src="/illustrations/navigation.svg"
-            alt="Indoor navigation"
-            width={280}
-            height={210}
-            className="w-full max-w-[280px] shrink-0 mx-auto md:mx-0"
-          />
-          <p className="text-slate-300 text-lg leading-relaxed">{sector.description}</p>
+        <div className="bg-slate-50 border border-slate-100 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row md:items-center gap-10">
+          <div className="flex justify-center items-center h-full shrink-0 mx-auto md:mx-0">
+            <Image
+              src="/illustrations/navigation.svg"
+              alt="Indoor navigation"
+              width={280}
+              height={210}
+              className="w-full max-w-[280px]"
+            />
+          </div>
+          <p className="text-secondary/80 text-lg leading-relaxed">{sector.description}</p>
         </div>
       </div>
     </section>

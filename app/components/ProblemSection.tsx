@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function ProblemSection() {
   return (
-    <section className="py-24 px-8 bg-dark">
+    <section className="py-24 px-8 bg-white">
       <div className="max-w-7xl mx-auto flex flex-col gap-28">
 
         {/* Row 1 — left text, right illustration */}
@@ -14,12 +14,12 @@ export default function ProblemSection() {
             <span className="text-primary text-sm font-semibold uppercase tracking-widest mb-4 block">
               The Problem
             </span>
-            <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-white leading-tight mb-6">
+            <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-secondary leading-tight mb-6">
               Getting lost isn&apos;t just frustrating.
               <br />
               <span className="text-primary">It&apos;s costing you.</span>
             </h2>
-            <p className="text-slate-400 text-lg leading-relaxed">
+            <p className="text-secondary/60 text-lg leading-relaxed">
               Bad indoor navigation is invisible until you measure it. When
               visitors can&apos;t find where they&apos;re going, they leave frustrated —
               and your staff spend their shift giving directions instead of
@@ -43,10 +43,10 @@ export default function ProblemSection() {
             <span className="text-primary text-sm font-semibold uppercase tracking-widest mb-4 block">
               Operational Intelligence
             </span>
-            <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-white leading-tight mb-6">
+            <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-secondary leading-tight mb-6">
               Your building is generating data you aren&apos;t seeing.
             </h2>
-            <p className="text-slate-400 text-lg leading-relaxed">
+            <p className="text-secondary/60 text-lg leading-relaxed">
               Navous provides the precision needed to improve staff efficiency
               and ensures that it&apos;s accessible to the people inside it. Every
               movement, every bottleneck, every missed turn — turned into
@@ -70,16 +70,16 @@ export default function ProblemSection() {
             <span className="text-primary text-sm font-semibold uppercase tracking-widest mb-4 block">
               Inclusive by Design
             </span>
-            <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-white leading-tight mb-6">
+            <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-secondary leading-tight mb-6">
               Accessible Navigation for everybody.
             </h2>
-            <p className="text-slate-400 text-lg leading-relaxed">
+            <p className="text-secondary/60 text-lg leading-relaxed">
               Including{" "}
-              <span className="font-semibold text-white">
+              <span className="font-semibold text-secondary">
                 People with Special Needs
               </span>{" "}
               &amp;{" "}
-              <span className="font-semibold text-white">
+              <span className="font-semibold text-secondary">
                 People with Foreign Languages
               </span>
               . Wheelchair-friendly routing, audio guidance, lift-priority
@@ -99,13 +99,13 @@ export default function ProblemSection() {
         </div>
 
         {/* Pull quote */}
-        <div className="bg-[#111827] border border-[#1E293B] rounded-2xl p-10 flex flex-col md:flex-row md:items-center gap-6">
+        <div className="bg-slate-50 border border-slate-100 rounded-2xl p-10 flex flex-col md:flex-row md:items-center gap-6">
           <div className="flex-1">
-            <p className="font-space-grotesque text-2xl md:text-3xl font-bold text-white leading-snug mb-4">
+            <p className="font-space-grotesque text-2xl md:text-3xl font-bold text-secondary leading-snug mb-4">
               &ldquo;Navigation is not a nice-to-have. It is the difference between a
               visitor who completes their journey and one who doesn&apos;t.&rdquo;
             </p>
-            <p className="text-slate-400 text-sm">
+            <p className="text-secondary/50 text-sm">
               The hidden cost that facility managers stop ignoring once they
               see the data.
             </p>

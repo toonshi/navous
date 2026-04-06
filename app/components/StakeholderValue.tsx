@@ -44,16 +44,16 @@ const columns = [
 
 export default function StakeholderValue() {
   return (
-    <section className="py-24 px-8 bg-dark">
+    <section className="py-24 px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
           <span className="text-primary text-sm font-semibold uppercase tracking-widest">
             Who it&apos;s for
           </span>
-          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-white mt-3 mb-4">
+          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-secondary mt-3 mb-4">
             Everyone in your building wins.
           </h2>
-          <p className="text-slate-400 text-lg max-w-xl mx-auto leading-relaxed">
+          <p className="text-secondary/60 text-lg max-w-xl mx-auto leading-relaxed">
             Navous doesn&apos;t just solve navigation for visitors. It makes the
             whole ecosystem smarter — operators, tenants, and staff included.
           </p>
@@ -63,7 +63,7 @@ export default function StakeholderValue() {
           {columns.map((col) => (
             <div
               key={col.audience}
-              className="bg-[#111827] border border-[#1E293B] rounded-2xl flex flex-col overflow-hidden"
+              className="bg-slate-50 border border-slate-100 rounded-2xl flex flex-col overflow-hidden"
             >
               {/* Illustration */}
               <Image
@@ -79,7 +79,7 @@ export default function StakeholderValue() {
                   <span className="inline-block text-xs font-bold px-3 py-1 rounded-full mb-3 bg-primary/10 text-primary">
                     {col.audience}
                   </span>
-                  <p className="font-space-grotesque text-xl font-bold leading-snug text-white">
+                  <p className="font-space-grotesque text-xl font-bold leading-snug text-secondary">
                     {col.tagline}
                   </p>
                 </div>
@@ -87,7 +87,7 @@ export default function StakeholderValue() {
                   {col.features.map((feat) => (
                     <li key={feat} className="flex items-start gap-2.5 text-sm">
                       <span className="mt-0.5 shrink-0 text-primary">✓</span>
-                      <span className="text-slate-400">{feat}</span>
+                      <span className="text-secondary/60">{feat}</span>
                     </li>
                   ))}
                 </ul>
