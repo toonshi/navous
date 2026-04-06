@@ -1,46 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="320" height="200" viewBox="0 0 320 200" fill="none">
   <!-- Background -->
-  <rect width="320" height="200" rx="16" fill="#F8FAFC"/>
+  <rect width="320" height="200" rx="16" fill="#0D1628"/>
 
   <!-- Store front -->
-  <rect x="72" y="56" width="112" height="86" rx="6" fill="white" stroke="#E2E8F0" stroke-width="1.5"/>
+  <rect x="72" y="56" width="112" height="86" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
   <!-- Awning -->
   <rect x="64" y="46" width="128" height="20" rx="4" fill="#0A0F1E"/>
   <text x="128" y="60" font-family="system-ui,sans-serif" font-size="9" fill="white" text-anchor="middle" font-weight="600">STORE 14</text>
   <!-- Door -->
-  <rect x="108" y="108" width="40" height="34" rx="4" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1"/>
-  <circle cx="143" cy="125" r="2.5" fill="#CBD5E1"/>
+  <rect x="108" y="108" width="40" height="34" rx="4" fill="#162032" stroke="#334155" stroke-width="1"/>
+  <circle cx="143" cy="125" r="2.5" fill="#334155"/>
   <!-- Window -->
-  <rect x="80" y="68" width="36" height="30" rx="3" fill="#EFF8FC"/>
-  <line x1="98" y1="68" x2="98" y2="98" stroke="#E2E8F0" stroke-width="1"/>
-  <line x1="80" y1="83" x2="116" y2="83" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="80" y="68" width="36" height="30" rx="3" fill="#162032"/>
+  <line x1="98" y1="68" x2="98" y2="98" stroke="#334155" stroke-width="1"/>
+  <line x1="80" y1="83" x2="116" y2="83" stroke="#334155" stroke-width="1"/>
   <!-- Window right -->
-  <rect x="140" y="68" width="36" height="30" rx="3" fill="#EFF8FC"/>
-  <line x1="158" y1="68" x2="158" y2="98" stroke="#E2E8F0" stroke-width="1"/>
-  <line x1="140" y1="83" x2="176" y2="83" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="140" y="68" width="36" height="30" rx="3" fill="#162032"/>
+  <line x1="158" y1="68" x2="158" y2="98" stroke="#334155" stroke-width="1"/>
+  <line x1="140" y1="83" x2="176" y2="83" stroke="#334155" stroke-width="1"/>
 
   <!-- Ground -->
-  <line x1="52" y1="142" x2="268" y2="142" stroke="#E2E8F0" stroke-width="1"/>
+  <line x1="52" y1="142" x2="268" y2="142" stroke="#334155" stroke-width="1"/>
 
   <!-- Location pin above store -->
   <path d="M128 14C121 14 115 20 115 27C115 36 126 46 127 47C127.5 47.5 128.5 47.5 129 47C130 46 141 36 141 27C141 20 135 14 128 14Z" fill="#13B7DA"/>
-  <circle cx="128" cy="27" r="5" fill="white"/>
+  <circle cx="128" cy="27" r="5" fill="#1E293B"/>
 
   <!-- Traffic / visitor flow indicators -->
-  <rect x="204" y="56" width="80" height="28" rx="10" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  <rect x="204" y="56" width="80" height="28" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1"/>
   <circle cx="220" cy="70" r="5" fill="#13B7DA" opacity="0.3"/>
   <circle cx="220" cy="70" r="3" fill="#13B7DA"/>
   <text x="230" y="66" font-family="system-ui,sans-serif" font-size="8" fill="#64748B">Visitors nearby</text>
-  <text x="230" y="78" font-family="system-ui,sans-serif" font-size="10" fill="#0A0F1E" font-weight="700">18</text>
+  <text x="230" y="78" font-family="system-ui,sans-serif" font-size="10" fill="white" font-weight="700">18</text>
 
   <rect x="204" y="92" width="80" height="28" rx="10" fill="#0A0F1E"/>
   <text x="244" y="106" font-family="system-ui,sans-serif" font-size="7.5" fill="#94A3B8" text-anchor="middle">In search results</text>
   <text x="244" y="116" font-family="system-ui,sans-serif" font-size="8" fill="#13B7DA" text-anchor="middle" font-weight="600">✓ Listed</text>
 
   <!-- People walking dots -->
-  <circle cx="60" cy="152" r="4" fill="#CBD5E1"/>
-  <circle cx="76" cy="152" r="4" fill="#CBD5E1"/>
+  <circle cx="60" cy="152" r="4" fill="#334155"/>
+  <circle cx="76" cy="152" r="4" fill="#334155"/>
   <circle cx="92" cy="152" r="4" fill="#13B7DA" opacity="0.6"/>
-  <path d="M100 152 L120 152" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="3,3"/>
+  <path d="M100 152 L120 152" stroke="#334155" stroke-width="1" stroke-dasharray="3,3"/>
   <path d="M116 148 L120 152 L116 156" stroke="#13B7DA" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

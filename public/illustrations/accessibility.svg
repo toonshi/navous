@@ -5,19 +5,19 @@
       <stop offset="1" stop-color="#EAF5FB"/>
     </linearGradient>
   </defs>
-  <rect x="8" y="8" width="304" height="224" rx="28" fill="#F8FAFC"/>
-  <rect x="34" y="36" width="252" height="170" rx="18" fill="#FFFFFF"/>
-  <rect x="54" y="60" width="84" height="14" rx="7" fill="#D8ECF4"/>
+  <rect x="8" y="8" width="304" height="224" rx="28" fill="#0D1628"/>
+  <rect x="34" y="36" width="252" height="170" rx="18" fill="#1E293B"/>
+  <rect x="54" y="60" width="84" height="14" rx="7" fill="#334155"/>
   <rect x="146" y="60" width="48" height="14" rx="7" fill="#13B7DA" fill-opacity="0.4"/>
-  <rect x="54" y="96" width="150" height="10" rx="5" fill="#E4EFF5"/>
-  <rect x="54" y="115" width="172" height="10" rx="5" fill="#E4EFF5"/>
-  <rect x="54" y="134" width="132" height="10" rx="5" fill="#E4EFF5"/>
+  <rect x="54" y="96" width="150" height="10" rx="5" fill="#334155"/>
+  <rect x="54" y="115" width="172" height="10" rx="5" fill="#334155"/>
+  <rect x="54" y="134" width="132" height="10" rx="5" fill="#334155"/>
   <circle cx="238" cy="124" r="28" fill="#13B7DA" fill-opacity="0.2"/>
   <circle cx="238" cy="108" r="7" fill="#0A0F1E"/>
   <path d="M238 118V147" stroke="#0A0F1E" stroke-width="6" stroke-linecap="round"/>
   <path d="M224 128H252" stroke="#0A0F1E" stroke-width="6" stroke-linecap="round"/>
   <path d="M238 147L218 169" stroke="#0A0F1E" stroke-width="6" stroke-linecap="round"/>
   <path d="M238 147L255 169" stroke="#0A0F1E" stroke-width="6" stroke-linecap="round"/>
-  <rect x="60" y="166" width="120" height="24" rx="12" fill="#0A0F1E" fill-opacity="0.08"/>
+  <rect x="60" y="166" width="120" height="24" rx="12" fill="#1E293B"/>
   <rect x="72" y="173" width="56" height="10" rx="5" fill="#13B7DA" fill-opacity="0.4"/>
 </svg>

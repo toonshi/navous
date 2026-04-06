@@ -15,10 +15,6 @@ const columns = [
       "Accessibility-first: wheelchair routes, audio guidance",
       "Available in multiple languages",
     ],
-    bg: "bg-white border border-slate-100",
-    tagBg: "bg-primary/10 text-primary",
-    featureIcon: "text-primary",
-    dark: false,
   },
   {
     audience: "For Facility Operators",
@@ -31,10 +27,6 @@ const columns = [
       "Emergency evacuation routing — instant reroute",
       "No hardware installation required",
     ],
-    bg: "bg-dark",
-    tagBg: "bg-primary/20 text-primary",
-    featureIcon: "text-primary",
-    dark: true,
   },
   {
     audience: "For Businesses & Tenants",
@@ -47,25 +39,21 @@ const columns = [
       "Track conversion from browse to transaction",
       "Appear in indoor search results",
     ],
-    bg: "bg-white border border-slate-100",
-    tagBg: "bg-primary/10 text-primary",
-    featureIcon: "text-primary",
-    dark: false,
   },
 ];
 
 export default function StakeholderValue() {
   return (
-    <section className="py-24 px-8 bg-white">
+    <section className="py-24 px-8 bg-dark">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
           <span className="text-primary text-sm font-semibold uppercase tracking-widest">
             Who it&apos;s for
           </span>
-          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 mt-3 mb-4">
+          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-white mt-3 mb-4">
             Everyone in your building wins.
           </h2>
-          <p className="text-slate-500 text-lg max-w-xl mx-auto leading-relaxed">
+          <p className="text-slate-400 text-lg max-w-xl mx-auto leading-relaxed">
             Navous doesn&apos;t just solve navigation for visitors. It makes the
             whole ecosystem smarter — operators, tenants, and staff included.
           </p>
@@ -75,7 +63,7 @@ export default function StakeholderValue() {
           {columns.map((col) => (
             <div
               key={col.audience}
-              className={`rounded-2xl flex flex-col overflow-hidden ${col.bg}`}
+              className="bg-[#111827] border border-[#1E293B] rounded-2xl flex flex-col overflow-hidden"
             >
               {/* Illustration */}
               <Image
@@ -88,20 +76,18 @@ export default function StakeholderValue() {
               {/* Content */}
               <div className="p-8 flex flex-col gap-5 flex-1">
                 <div>
-                  <span className={`inline-block text-xs font-bold px-3 py-1 rounded-full mb-3 ${col.tagBg}`}>
+                  <span className="inline-block text-xs font-bold px-3 py-1 rounded-full mb-3 bg-primary/10 text-primary">
                     {col.audience}
                   </span>
-                  <p className={`font-space-grotesque text-xl font-bold leading-snug ${col.dark ? "text-white" : "text-slate-900"}`}>
+                  <p className="font-space-grotesque text-xl font-bold leading-snug text-white">
                     {col.tagline}
                   </p>
                 </div>
                 <ul className="flex flex-col gap-3">
                   {col.features.map((feat) => (
                     <li key={feat} className="flex items-start gap-2.5 text-sm">
-                      <span className={`mt-0.5 shrink-0 ${col.featureIcon}`}>✓</span>
-                      <span className={col.dark ? "text-slate-300" : "text-slate-600"}>
-                        {feat}
-                      </span>
+                      <span className="mt-0.5 shrink-0 text-primary">✓</span>
+                      <span className="text-slate-400">{feat}</span>
                     </li>
                   ))}
                 </ul>

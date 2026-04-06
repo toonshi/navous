@@ -15,23 +15,23 @@ const Navbar = () => {
   return (
     <nav
       className={`sticky top-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/95 backdrop-blur-sm shadow-sm" : "bg-transparent"
+        scrolled ? "bg-[#0A0F1E]/95 backdrop-blur-sm border-b border-[#1E293B]" : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-8 flex justify-between items-center h-16">
         <Image src="/Left logo.svg" alt="Navous Logo" width={120} height={36} className="h-9 w-auto" />
         <div className="hidden md:flex gap-8">
-          <a href="#" className="text-[14px] font-medium text-slate-500 tracking-wide hover:text-slate-900 transition">
+          <a href="#" className="text-[14px] font-medium text-slate-400 tracking-wide hover:text-white transition">
             Home
           </a>
-          <a href="#features" className="text-[14px] font-medium text-slate-500 tracking-wide hover:text-slate-900 transition">
+          <a href="#features" className="text-[14px] font-medium text-slate-400 tracking-wide hover:text-white transition">
             Features
           </a>
-          <a href="#use-cases" className="text-[14px] font-medium text-slate-500 tracking-wide hover:text-slate-900 transition">
+          <a href="#use-cases" className="text-[14px] font-medium text-slate-400 tracking-wide hover:text-white transition">
             Use Cases
           </a>
         </div>
-        <button className="bg-black text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-slate-800 transition cursor-pointer">
+        <button className="bg-primary text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-[#0fa3c4] transition cursor-pointer">
           Book a Demo
         </button>
       </div>
