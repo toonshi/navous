@@ -4,19 +4,8 @@ import React from "react";
 
 export default function FinalCTA() {
   return (
-    <section className="bg-dark py-28 px-8 relative overflow-hidden">
-      {/* Central glow */}
-      <div
-        className="absolute inset-0 flex items-center justify-center pointer-events-none"
-        aria-hidden="true"
-      >
-        <div
-          className="w-140 h-140 rounded-full opacity-[0.12] blur-3xl"
-          style={{ background: "#13B7DA" }}
-        />
-      </div>
-
-      <div className="max-w-3xl mx-auto text-center relative z-10">
+    <section className="bg-dark py-28 px-8">
+      <div className="max-w-3xl mx-auto text-center">
         <span className="inline-block border border-primary/40 text-primary text-sm font-semibold px-4 py-1.5 rounded-full mb-8 tracking-wide">
           Get Started
         </span>
