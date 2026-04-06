@@ -40,11 +40,12 @@ const BentoGrid = () => {
             AI-Powered Wayfinding
           </span>
           <h3 className="relative font-space-grotesque text-3xl font-bold text-white mb-3 leading-tight">
-            The right door.<br />The right floor. Every time.
+            The right door. The right floor.<br />In under 60 seconds.
           </h3>
           <p className="relative text-slate-400 text-base max-w-md leading-relaxed">
-            Navous eliminates dead-ends and confused visitors with turn-by-turn
-            indoor routing — built for the real-world complexity of large buildings.
+            Turn-by-turn indoor navigation with no app download, no sign-up,
+            and no dead ends. Visitors scan a QR code at the entrance and
+            they're guided exactly where they need to be.
           </p>
         </div>
 

@@ -3,10 +3,10 @@
 import React from "react";
 
 const stats = [
-  { value: "38%", label: "Fewer staff-directed queries" },
-  { value: "3 min", label: "Saved per visitor journey" },
-  { value: "99.3%", label: "Routing accuracy" },
-  { value: "< 5 sec", label: "Time to first route" },
+  { value: "67%", label: "of visitors feel anxious navigating large buildings" },
+  { value: "22 min", label: "nurses spend daily giving directions — not care" },
+  { value: "47%", label: "drop in impulse purchases when shoppers get lost" },
+  { value: "< 60 sec", label: "for any visitor to find any location with Navous" },
 ];
 
 export default function Hero() {
@@ -48,9 +48,10 @@ export default function Hero() {
 
         {/* Sub-headline */}
         <p className="text-slate-400 text-xl max-w-2xl leading-relaxed mb-12">
-          Navous delivers real-time indoor navigation for hospitals, malls, and
-          campuses — so every visitor arrives with confidence, and every
-          operator knows exactly what's happening on every floor.
+          Every day, patients miss appointments, shoppers leave without buying,
+          and staff waste hours giving directions. Navous fixes that — with
+          real-time indoor navigation that works from the moment someone walks
+          through your door.
         </p>
 
         {/* CTAs */}

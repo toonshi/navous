@@ -4,24 +4,24 @@ import React from "react";
 
 const steps = [
   {
-    number: "01",
-    title: "Map your space",
+    number: "Week 1",
+    title: "Upload your floor plans",
     description:
-      "Upload your existing floor plans or let us survey your building. We digitise every room, corridor, lift, and access point — no hardware installation required.",
+      "Send us your existing floor plans — any format. Our team digitises every room, corridor, lift, stairwell, and access point with AI. No hardware. No site visit required.",
     accent: "bg-primary/10 text-primary",
   },
   {
-    number: "02",
-    title: "Configure & brand it",
+    number: "Week 2",
+    title: "Configure, test, and brand it",
     description:
-      "Set up points of interest, accessible routes, and routing logic through our no-code dashboard. Match your brand colours and language in minutes.",
+      "Set up points of interest, accessible routes, and routing rules through our no-code dashboard. Match your brand. Integrate with your booking or appointment system if needed. Test with your team.",
     accent: "bg-dark text-white",
   },
   {
-    number: "03",
-    title: "Visitors navigate",
+    number: "Week 3",
+    title: "Go live — visitors navigate",
     description:
-      "Visitors scan a QR code or tap a link — and they're guided turn-by-turn in real time. No app download. No sign-up. Just directions that work.",
+      "Place QR codes at entrances. Visitors scan, and they're guided turn-by-turn in real time. No app download. No sign-up. No friction. Just directions that work.",
     accent: "bg-primary text-white",
   },
 ];
@@ -36,11 +36,12 @@ export default function HowItWorks() {
             Process
           </span>
           <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold text-slate-900 mt-3 mb-4">
-            Live in days, not months.
+            Live in 3 weeks. Not 3 months.
           </h2>
           <p className="text-slate-500 text-lg max-w-xl mx-auto leading-relaxed">
-            No custom dev work. No procurement nightmare. Navous integrates with
-            what you already have and goes live fast.
+            No expensive hardware. No infrastructure overhaul. No IT project.
+            Navous deploys in three clean steps — and your team barely needs to
+            be involved.
           </p>
         </div>
 
