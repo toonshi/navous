@@ -6,7 +6,7 @@ const cases = [
   {
     tag: "🏥 Healthcare",
     tagColor: "bg-blue-50 text-blue-700 border-blue-100",
-    headline: "Your staff is spending 18 minutes a shift giving directions.",
+    headline: "Your staff is spending 18 minutes per shift giving directions.",
     story:
       "It's 2 AM. A family rushes into a hospital — mother admitted to cardiac, third floor, wing B. The signs are confusing. The corridors all look the same. Nurses are asked three times before the family finds the right room. That nurse's 18 minutes were not spent on patient care. They were spent being a human GPS.",
     solution:

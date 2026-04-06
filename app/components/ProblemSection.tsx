@@ -6,7 +6,7 @@ const painPoints = [
   {
     icon: "🏥",
     stat: "1 in 4",
-    label: "patients arrives late to their appointment because of wayfinding issues",
+    label: "patients arrive late to their appointment because of wayfinding issues",
     color: "border-primary/30 bg-primary/5",
     statColor: "text-primary",
   },
