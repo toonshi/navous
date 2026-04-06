@@ -40,12 +40,12 @@ const BentoGrid = () => {
 
           {/* Box B: Accessibility */}
           <div className="bg-slate-50 rounded-3xl p-8 flex flex-col justify-between min-h-90 shadow-sm">
-            <Image
+          <Image
               src="/illustrations/accessibility.svg"
               alt="Accessibility"
-              width={128}
-              height={128}
-              className="w-16 h-16"
+              width={240}
+              height={180}
+              className="w-full max-w-[240px] mx-auto"
             />
             <div>
               <span className="text-primary text-xs font-semibold uppercase tracking-widest mb-3 block">
@@ -76,9 +76,9 @@ const BentoGrid = () => {
             <Image
               src="/illustrations/analytics.svg"
               alt="Analytics overview"
-              width={160}
-              height={160}
-              className="w-20 h-20 opacity-80"
+              width={320}
+              height={240}
+              className="w-full max-w-xs opacity-90"
             />
             <button
               className="self-start md:self-center bg-black text-white px-6 py-3 rounded-full font-bold text-sm hover:bg-slate-800 transition cursor-pointer whitespace-nowrap"

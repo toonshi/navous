@@ -1,14 +1,11 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import TrustStats from "./components/TrustStats";
 import ProblemSection from "./components/ProblemSection";
 import BentoGrid from "./components/BentoGrid";
 import UseCases from "./components/UseCases";
 import HowItWorks from "./components/HowItWorks";
 import StakeholderValue from "./components/StakeholderValue";
-import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
-import Pricing from "./components/Pricing";
 import FinalCTA from "./components/FinalCTA";
 import Image from "next/image";
 
@@ -19,14 +16,11 @@ export default function Home() {
       <main className="grow">
         <Hero />
         <ProblemSection />
-        <TrustStats />
         <BentoGrid />
         <UseCases />
         <HowItWorks />
         <StakeholderValue />
-        <Testimonials />
         <FAQ />
-        <Pricing />
         <FinalCTA />
       </main>
       <footer className="bg-white py-16 px-8 border-t border-slate-100">
@@ -49,7 +43,6 @@ export default function Home() {
             <a href="#features" className="hover:text-black transition">Features</a>
             <a href="#use-cases" className="hover:text-black transition">Use Cases</a>
             <a href="#faq" className="hover:text-black transition">FAQ</a>
-            <a href="#pricing" className="hover:text-black transition">Pricing</a>
           </nav>
         </div>
       </footer>

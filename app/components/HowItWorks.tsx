@@ -72,9 +72,9 @@ export default function HowItWorks() {
           <Image
             src="/illustrations/accessibility.svg"
             alt="Accessibility assurance"
-            width={112}
-            height={112}
-            className="w-14 h-14"
+            width={180}
+            height={135}
+            className="w-28 shrink-0"
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
             <p className="text-sm text-slate-600"><span className="font-semibold text-slate-900">Data ownership:</span> your floor plans and operational data remain yours.</p>

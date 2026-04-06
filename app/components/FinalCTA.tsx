@@ -39,7 +39,7 @@ export default function FinalCTA() {
             Book a Demo
           </button>
           <button className="border border-slate-700 text-slate-300 px-10 py-4 rounded-full font-bold text-lg hover:border-slate-500 hover:text-white transition cursor-pointer">
-            View Pricing
+            See How It Works
           </button>
         </div>
         <p className="text-slate-600 text-sm mt-8">

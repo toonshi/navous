@@ -1,66 +1,101 @@
 "use client";
 
 import React from "react";
-
-const painPoints = [
-  {
-    icon: "🏥",
-    stat: "1 in 4",
-    label: "patients arrive late to their appointment because of wayfinding issues",
-    color: "border-primary/30 bg-primary/5",
-    statColor: "text-primary",
-  },
-  {
-    icon: "🛍️",
-    stat: "23 min",
-    label: "the average shopper wanders before giving up and walking out empty-handed",
-    color: "border-slate-200 bg-slate-50",
-    statColor: "text-slate-900",
-  },
-  {
-    icon: "👷",
-    stat: "18 min",
-    label: "lost per staff member per shift giving directions — time that belongs to their actual job",
-    color: "border-dark/20 bg-dark/5",
-    statColor: "text-dark",
-  },
-];
+import Image from "next/image";
 
 export default function ProblemSection() {
   return (
     <section className="py-24 px-8 bg-white">
-      <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="max-w-3xl mb-16">
-          <span className="text-primary text-sm font-semibold uppercase tracking-widest">
-            The Problem
-          </span>
-          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 mt-3 mb-5 leading-tight">
-            Getting lost isn&apos;t just frustrating.
-            <br />
-            <span className="text-primary">It&apos;s costing you.</span>
-          </h2>
-          <p className="text-slate-500 text-lg leading-relaxed">
-            Bad indoor navigation is invisible until you measure it. When you
-            do, the numbers are uncomfortable — and the fix is simpler than you
-            think.
-          </p>
+      <div className="max-w-7xl mx-auto flex flex-col gap-28">
+
+        {/* Row 1 — left text, right illustration */}
+        <div className="flex flex-col md:flex-row md:items-center gap-12 lg:gap-20">
+          <div className="flex-1 max-w-xl">
+            <span className="text-primary text-sm font-semibold uppercase tracking-widest mb-4 block">
+              The Problem
+            </span>
+            <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 leading-tight mb-6">
+              Getting lost isn&apos;t just frustrating.
+              <br />
+              <span className="text-primary">It&apos;s costing you.</span>
+            </h2>
+            <p className="text-slate-500 text-lg leading-relaxed">
+              Bad indoor navigation is invisible until you measure it. When
+              visitors can&apos;t find where they&apos;re going, they leave frustrated —
+              and your staff spend their shift giving directions instead of
+              doing their jobs.
+            </p>
+          </div>
+          <div className="flex-1 flex justify-center md:justify-end">
+            <Image
+              src="/illustrations/navigation.svg"
+              alt="Indoor navigation illustration"
+              width={480}
+              height={360}
+              className="w-full max-w-md"
+            />
+          </div>
         </div>
 
-        {/* Pain point cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-16">
-          {painPoints.map((p) => (
-            <div
-              key={p.stat}
-              className={`rounded-2xl border p-8 flex flex-col gap-4 ${p.color}`}
-            >
-              <span className="text-3xl">{p.icon}</span>
-              <p className={`font-space-grotesque text-5xl font-bold leading-none ${p.statColor}`}>
-                {p.stat}
-              </p>
-              <p className="text-slate-600 text-sm leading-relaxed">{p.label}</p>
-            </div>
-          ))}
+        {/* Row 2 — right text, left illustration (zigzag) */}
+        <div className="flex flex-col md:flex-row-reverse md:items-center gap-12 lg:gap-20">
+          <div className="flex-1 max-w-xl">
+            <span className="text-primary text-sm font-semibold uppercase tracking-widest mb-4 block">
+              Operational Intelligence
+            </span>
+            <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 leading-tight mb-6">
+              Your building is generating data you aren&apos;t seeing.
+            </h2>
+            <p className="text-slate-500 text-lg leading-relaxed">
+              Navous provides the precision needed to improve staff efficiency
+              and ensures that it&apos;s accessible to the people inside it. Every
+              movement, every bottleneck, every missed turn — turned into
+              actionable insight.
+            </p>
+          </div>
+          <div className="flex-1 flex justify-center md:justify-start">
+            <Image
+              src="/illustrations/data-intelligence.svg"
+              alt="Movement intelligence dashboard"
+              width={480}
+              height={360}
+              className="w-full max-w-md"
+            />
+          </div>
+        </div>
+
+        {/* Row 3 — left text, right illustration */}
+        <div className="flex flex-col md:flex-row md:items-center gap-12 lg:gap-20">
+          <div className="flex-1 max-w-xl">
+            <span className="text-primary text-sm font-semibold uppercase tracking-widest mb-4 block">
+              Inclusive by Design
+            </span>
+            <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 leading-tight mb-6">
+              Accessible Navigation for everybody.
+            </h2>
+            <p className="text-slate-500 text-lg leading-relaxed">
+              Including{" "}
+              <span className="font-semibold text-slate-900">
+                People with Special Needs
+              </span>{" "}
+              &amp;{" "}
+              <span className="font-semibold text-slate-900">
+                People with Foreign Languages
+              </span>
+              . Wheelchair-friendly routing, audio guidance, lift-priority
+              paths, and multilingual support so every guest moves with
+              confidence.
+            </p>
+          </div>
+          <div className="flex-1 flex justify-center md:justify-end">
+            <Image
+              src="/illustrations/accessibility-nav.svg"
+              alt="Accessibility and multilingual navigation"
+              width={480}
+              height={360}
+              className="w-full max-w-md"
+            />
+          </div>
         </div>
 
         {/* Pull quote */}
@@ -81,7 +116,7 @@ export default function ProblemSection() {
           </div>
           <div className="shrink-0 relative">
             <button className="bg-primary text-white px-8 py-4 rounded-full font-bold text-lg hover:brightness-110 transition cursor-pointer whitespace-nowrap">
-              See Your Numbers
+              Book a Demo
             </button>
           </div>
         </div>
