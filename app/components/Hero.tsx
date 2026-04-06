@@ -2,11 +2,15 @@
 
 import React from "react";
 import Image from "next/image";
+import CrowdBackground from "./CrowdBackground";
 
 export default function Hero() {
   return (
-    <section className="bg-dark pt-24 pb-16 px-8">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative bg-dark pt-24 pb-16 px-8 overflow-hidden">
+      {/* Subtle animated crowd in background */}
+      <CrowdBackground />
+
+      <div className="relative z-10 max-w-7xl mx-auto">
         {/* Eyebrow */}
         <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-6">
           Turn Every Visitor into a Navigated Guest
