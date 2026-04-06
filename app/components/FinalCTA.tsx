@@ -4,19 +4,8 @@ import React from "react";
 
 export default function FinalCTA() {
   return (
-    <section className="bg-dark py-28 px-8 relative overflow-hidden">
-      {/* Central glow */}
-      <div
-        className="absolute inset-0 flex items-center justify-center pointer-events-none"
-        aria-hidden="true"
-      >
-        <div
-          className="w-140 h-140 rounded-full opacity-[0.12] blur-3xl"
-          style={{ background: "#13B7DA" }}
-        />
-      </div>
-
-      <div className="max-w-3xl mx-auto text-center relative z-10">
+    <section className="bg-dark py-28 px-8">
+      <div className="max-w-3xl mx-auto text-center">
         <span className="inline-block border border-primary/40 text-primary text-sm font-semibold px-4 py-1.5 rounded-full mb-8 tracking-wide">
           Get Started
         </span>
@@ -35,11 +24,11 @@ export default function FinalCTA() {
           your space — not a generic walkthrough.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
-          <button className="bg-primary text-white px-10 py-4 rounded-full font-bold text-lg hover:brightness-110 transition cursor-pointer">
+          <button className="bg-primary text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-[#0fa3c4] transition cursor-pointer">
             Book a Demo
           </button>
           <button className="border border-slate-700 text-slate-300 px-10 py-4 rounded-full font-bold text-lg hover:border-slate-500 hover:text-white transition cursor-pointer">
-            View Pricing
+            See How It Works
           </button>
         </div>
         <p className="text-slate-600 text-sm mt-8">

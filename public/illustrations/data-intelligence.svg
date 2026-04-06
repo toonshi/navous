@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="360" viewBox="0 0 480 360" fill="none">
+  <!-- Background -->
+  <rect width="480" height="360" rx="20" fill="#0D1628"/>
+
+  <!-- Main dashboard panel -->
+  <g filter="url(#panel-shadow)">
+    <rect x="40" y="40" width="400" height="280" rx="16" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+  </g>
+
+  <!-- Panel header -->
+  <rect x="40" y="40" width="400" height="48" rx="16" fill="#0A0F1E"/>
+  <rect x="40" y="72" width="400" height="16" fill="#0A0F1E"/>
+  <text x="64" y="70" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="white">Movement Intelligence Dashboard</text>
+  <!-- Header dots -->
+  <circle cx="388" cy="64" r="4" fill="#13B7DA" opacity="0.7"/>
+  <circle cx="400" cy="64" r="4" fill="#13B7DA" opacity="0.4"/>
+  <circle cx="412" cy="64" r="4" fill="#64748B" opacity="0.5"/>
+
+  <!-- Zone heatmap grid -->
+  <text x="64" y="115" font-family="system-ui,sans-serif" font-size="8.5" font-weight="600" fill="#64748B" letter-spacing="1">ZONE ACTIVITY</text>
+  <!-- Grid cells representing heatmap -->
+  <rect x="64" y="122" width="36" height="28" rx="4" fill="#13B7DA" opacity="0.85"/>
+  <rect x="106" y="122" width="36" height="28" rx="4" fill="#13B7DA" opacity="0.55"/>
+  <rect x="148" y="122" width="36" height="28" rx="4" fill="#13B7DA" opacity="0.30"/>
+  <rect x="190" y="122" width="36" height="28" rx="4" fill="#13B7DA" opacity="0.70"/>
+  <rect x="232" y="122" width="36" height="28" rx="4" fill="#13B7DA" opacity="0.40"/>
+  <rect x="64" y="156" width="36" height="28" rx="4" fill="#13B7DA" opacity="0.40"/>
+  <rect x="106" y="156" width="36" height="28" rx="4" fill="#13B7DA" opacity="0.90"/>
+  <rect x="148" y="156" width="36" height="28" rx="4" fill="#13B7DA" opacity="0.60"/>
+  <rect x="190" y="156" width="36" height="28" rx="4" fill="#13B7DA" opacity="0.25"/>
+  <rect x="232" y="156" width="36" height="28" rx="4" fill="#13B7DA" opacity="0.50"/>
+  <rect x="64" y="190" width="36" height="28" rx="4" fill="#13B7DA" opacity="0.20"/>
+  <rect x="106" y="190" width="36" height="28" rx="4" fill="#13B7DA" opacity="0.35"/>
+  <rect x="148" y="190" width="36" height="28" rx="4" fill="#13B7DA" opacity="0.75"/>
+  <rect x="190" y="190" width="36" height="28" rx="4" fill="#13B7DA" opacity="0.55"/>
+  <rect x="232" y="190" width="36" height="28" rx="4" fill="#13B7DA" opacity="0.80"/>
+
+  <!-- Zone labels -->
+  <text x="82" y="140" font-family="system-ui,sans-serif" font-size="7" fill="white" text-anchor="middle" font-weight="600">A1</text>
+  <text x="124" y="140" font-family="system-ui,sans-serif" font-size="7" fill="#0A0F1E" text-anchor="middle" font-weight="600">A2</text>
+  <text x="166" y="140" font-family="system-ui,sans-serif" font-size="7" fill="#0A0F1E" text-anchor="middle" font-weight="600">A3</text>
+  <text x="208" y="140" font-family="system-ui,sans-serif" font-size="7" fill="white" text-anchor="middle" font-weight="600">B1</text>
+  <text x="250" y="140" font-family="system-ui,sans-serif" font-size="7" fill="#0A0F1E" text-anchor="middle" font-weight="600">B2</text>
+
+  <!-- Right panel: stat cards -->
+  <rect x="294" y="108" width="126" height="58" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+  <text x="310" y="127" font-family="system-ui,sans-serif" font-size="8" fill="#64748B">Active visitors</text>
+  <text x="310" y="148" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="white">247</text>
+  <text x="356" y="148" font-family="system-ui,sans-serif" font-size="9" fill="#13B7DA" font-weight="600">↑ live</text>
+
+  <rect x="294" y="174" width="126" height="58" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+  <text x="310" y="193" font-family="system-ui,sans-serif" font-size="8" fill="#64748B">Bottleneck alerts</text>
+  <text x="310" y="214" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="white">3</text>
+  <circle cx="354" cy="207" r="6" fill="#FEE2E2"/>
+  <text x="354" y="211" font-family="system-ui,sans-serif" font-size="9" fill="#EF4444" text-anchor="middle" font-weight="700">!</text>
+
+  <!-- Bottom bar chart -->
+  <text x="64" y="242" font-family="system-ui,sans-serif" font-size="8.5" font-weight="600" fill="#64748B" letter-spacing="1">HOURLY FLOW</text>
+  <!-- Bars -->
+  <rect x="64" y="260" width="14" height="30" rx="3" fill="#D0EEF7"/>
+  <rect x="84" y="250" width="14" height="40" rx="3" fill="#A8DFF0"/>
+  <rect x="104" y="240" width="14" height="50" rx="3" fill="#13B7DA" opacity="0.7"/>
+  <rect x="124" y="255" width="14" height="35" rx="3" fill="#13B7DA" opacity="0.9"/>
+  <rect x="144" y="245" width="14" height="45" rx="3" fill="#13B7DA"/>
+  <rect x="164" y="262" width="14" height="28" rx="3" fill="#A8DFF0"/>
+  <rect x="184" y="257" width="14" height="33" rx="3" fill="#D0EEF7"/>
+  <rect x="204" y="248" width="14" height="42" rx="3" fill="#13B7DA" opacity="0.6"/>
+
+  <!-- Time labels -->
+  <text x="71" y="300" font-family="system-ui,sans-serif" font-size="7" fill="#94A3B8" text-anchor="middle">8am</text>
+  <text x="111" y="300" font-family="system-ui,sans-serif" font-size="7" fill="#94A3B8" text-anchor="middle">10am</text>
+  <text x="151" y="300" font-family="system-ui,sans-serif" font-size="7" fill="#94A3B8" text-anchor="middle">12pm</text>
+  <text x="191" y="300" font-family="system-ui,sans-serif" font-size="7" fill="#94A3B8" text-anchor="middle">2pm</text>
+  <text x="218" y="300" font-family="system-ui,sans-serif" font-size="7" fill="#94A3B8" text-anchor="middle">4pm</text>
+
+  <!-- Trend line overlay on bars -->
+  <path d="M71 265 Q111 242 151 248 Q191 255 218 258" stroke="#0A0F1E" stroke-width="1.5" fill="none" stroke-dasharray="3,2" opacity="0.3"/>
+
+  <!-- Legend chip -->
+  <rect x="294" y="246" width="126" height="44" rx="10" fill="#0A0F1E"/>
+  <circle cx="312" cy="268" r="5" fill="#13B7DA"/>
+  <text x="322" y="264" font-family="system-ui,sans-serif" font-size="8" fill="white" font-weight="600">Peak: 12–1 pm</text>
+  <text x="322" y="278" font-family="system-ui,sans-serif" font-size="7.5" fill="#64748B">Lobby West congested</text>
+</svg>

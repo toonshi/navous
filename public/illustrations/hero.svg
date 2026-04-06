@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="480" viewBox="0 0 560 480" fill="none">
+  <!-- Background -->
+  <rect width="560" height="480" rx="24" fill="#0D1628"/>
+
+  <!-- Building floor plan — top view perspective -->
+  <!-- Floor base -->
+  <rect x="60" y="120" width="440" height="240" rx="12" fill="#1E293B" opacity="0.7"/>
+
+  <!-- Room dividers -->
+  <rect x="60" y="120" width="440" height="240" rx="12" fill="none" stroke="#334155" stroke-width="1.5"/>
+  <!-- Vertical corridor -->
+  <rect x="210" y="120" width="2" height="240" fill="#334155" opacity="0.8"/>
+  <rect x="350" y="120" width="2" height="240" fill="#334155" opacity="0.8"/>
+  <!-- Horizontal corridor -->
+  <rect x="60" y="230" width="440" height="2" fill="#334155" opacity="0.8"/>
+
+  <!-- Room labels (small) -->
+  <text x="130" y="185" font-family="system-ui,sans-serif" font-size="9" fill="#94A3B8" text-anchor="middle">RECEPTION</text>
+  <text x="280" y="185" font-family="system-ui,sans-serif" font-size="9" fill="#94A3B8" text-anchor="middle">CORRIDOR</text>
+  <text x="420" y="185" font-family="system-ui,sans-serif" font-size="9" fill="#94A3B8" text-anchor="middle">OFFICE A</text>
+  <text x="130" y="300" font-family="system-ui,sans-serif" font-size="9" fill="#94A3B8" text-anchor="middle">WAITING</text>
+  <text x="420" y="300" font-family="system-ui,sans-serif" font-size="9" fill="#94A3B8" text-anchor="middle">OFFICE B</text>
+
+  <!-- Route path -->
+  <path d="M 90 360 L 90 240 L 280 240 L 280 185" stroke="#13B7DA" stroke-width="2.5" stroke-dasharray="5,4" fill="none" stroke-linecap="round"/>
+
+  <!-- Entry dot -->
+  <circle cx="90" cy="360" r="7" fill="#13B7DA" opacity="0.3"/>
+  <circle cx="90" cy="360" r="4" fill="#13B7DA"/>
+
+  <!-- Destination pin -->
+  <circle cx="280" cy="175" r="14" fill="#13B7DA" opacity="0.15"/>
+  <circle cx="280" cy="175" r="8" fill="#13B7DA"/>
+  <line x1="280" y1="183" x2="280" y2="192" stroke="#13B7DA" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Waypoint markers -->
+  <circle cx="90" cy="240" r="4" fill="#1E293B" stroke="#13B7DA" stroke-width="2"/>
+  <circle cx="280" cy="240" r="4" fill="#1E293B" stroke="#13B7DA" stroke-width="2"/>
+
+  <!-- Floating UI card: Navigation prompt -->
+  <g filter="url(#card-shadow)">
+    <rect x="300" y="310" width="200" height="80" rx="14" fill="#1E293B"/>
+    <rect x="300" y="310" width="200" height="80" rx="14" fill="none" stroke="#334155" stroke-width="1"/>
+    <!-- Icon -->
+    <circle cx="322" cy="333" r="10" fill="#13B7DA" opacity="0.12"/>
+    <path d="M317 333 L322 327 L327 333" stroke="#13B7DA" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="322" y1="327" x2="322" y2="339" stroke="#13B7DA" stroke-width="1.8" stroke-linecap="round"/>
+    <text x="338" y="329" font-family="system-ui,sans-serif" font-size="10" font-weight="600" fill="white">Radiology — Floor 3</text>
+    <text x="338" y="343" font-family="system-ui,sans-serif" font-size="8.5" fill="#64748B">Turn left at the elevator</text>
+    <!-- Progress bar -->
+    <rect x="316" y="356" width="168" height="4" rx="2" fill="#334155"/>
+    <rect x="316" y="356" width="90" height="4" rx="2" fill="#13B7DA"/>
+    <text x="316" y="374" font-family="system-ui,sans-serif" font-size="8" fill="#94A3B8">~2 min walk · 140m</text>
+    <text x="466" y="374" font-family="system-ui,sans-serif" font-size="8" fill="#13B7DA" text-anchor="end">54%</text>
+  </g>
+
+  <!-- Floating search card -->
+  <g filter="url(#soft-shadow)">
+    <rect x="60" y="38" width="220" height="48" rx="12" fill="#1E293B"/>
+    <rect x="60" y="38" width="220" height="48" rx="12" fill="none" stroke="#334155" stroke-width="1"/>
+    <!-- Search icon circle -->
+    <circle cx="87" cy="62" r="10" fill="#162032"/>
+    <circle cx="85" cy="60" r="4" stroke="#13B7DA" stroke-width="1.5" fill="none"/>
+    <line x1="88" y1="63" x2="91" y2="66" stroke="#13B7DA" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="104" y="58" font-family="system-ui,sans-serif" font-size="10" font-weight="500" fill="white">Search your destination</text>
+    <text x="104" y="72" font-family="system-ui,sans-serif" font-size="8.5" fill="#94A3B8">Any room, office, service…</text>
+  </g>
+
+  <!-- Floating accessibility badge -->
+  <g filter="url(#soft-shadow)">
+    <rect x="390" y="38" width="126" height="48" rx="12" fill="#0A0F1E"/>
+    <circle cx="414" cy="62" r="10" fill="#13B7DA" opacity="0.2"/>
+    <!-- Wheelchair icon simplified -->
+    <circle cx="414" cy="55" r="3" fill="#13B7DA"/>
+    <path d="M412 59 L412 67 L418 67" stroke="#13B7DA" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="414" cy="70" r="3" fill="none" stroke="#13B7DA" stroke-width="1.5"/>
+    <text x="430" y="58" font-family="system-ui,sans-serif" font-size="9" font-weight="600" fill="white">Accessible</text>
+    <text x="430" y="71" font-family="system-ui,sans-serif" font-size="8" fill="#94A3B8">Route enabled</text>
+  </g>
+
+  <!-- Small people dots on route -->
+  <circle cx="130" cy="240" r="5" fill="#13B7DA" opacity="0.4"/>
+  <circle cx="130" cy="240" r="3" fill="#13B7DA" opacity="0.8"/>
+  <circle cx="200" cy="240" r="5" fill="#13B7DA" opacity="0.25"/>
+  <circle cx="200" cy="240" r="3" fill="#13B7DA" opacity="0.5"/>
+</svg>

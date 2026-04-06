@@ -6,24 +6,18 @@ import Image from "next/image";
 const sectors = [
   {
     name: "Healthcare",
-    outcomes: [
-      { value: "31%", label: "FEWER MISSED APPOINTMENTS" },
-      { value: "22 MIN", label: "SAVED PER NURSE, PER SHIFT" },
-    ],
+    description:
+      "Appointment-heavy facilities where every minute matters. Navous guides patients from entrance to their exact ward or room — reducing late arrivals and freeing nurses from giving directions.",
   },
   {
     name: "Retail",
-    outcomes: [
-      { value: "47%", label: "INCREASE IN IMPULSE PURCHASES" },
-      { value: "38 MIN", label: "LONGER AVERAGE DWELL TIME" },
-    ],
+    description:
+      "Large shopping centres where visitors abandon their visit when they can't find a store. Navous turns wanderers into purposeful shoppers with indoor search and turn-by-turn guidance.",
   },
   {
     name: "Airports",
-    outcomes: [
-      { value: "60 SEC", label: "TO FIND ANY GATE OR SERVICE" },
-      { value: "38%", label: "REDUCTION IN STAFF-ASSISTED NAVIGATION" },
-    ],
+    description:
+      "Multi-terminal transport hubs under constant time pressure. Navous helps travellers find gates, services, and connections in seconds — in their own language.",
   },
 ];
 
@@ -32,27 +26,27 @@ export default function UseCases() {
   const sector = sectors[active];
 
   return (
-    <section id="use-cases" className="bg-white py-32 px-8">
+    <section id="use-cases" className="bg-dark py-32 px-8">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-black mb-4">
+          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-white mb-4">
             Built for high-pressure facilities.
           </h2>
-          <p className="text-[#475569] text-lg leading-relaxed">
-            Real outcomes across healthcare, retail, and transport environments.
+          <p className="text-slate-400 text-lg leading-relaxed">
+            Wherever people need to move confidently through complex spaces.
           </p>
         </div>
 
         {/* Sector tabs */}
-        <div className="flex flex-wrap gap-3 justify-center mb-20">
+        <div className="flex flex-wrap gap-3 justify-center mb-16">
           {sectors.map((s, i) => (
             <button
               key={i}
               onClick={() => setActive(i)}
               className={`px-6 py-2.5 rounded-full text-sm font-bold transition cursor-pointer ${
                 active === i
-                  ? "bg-black text-white"
-                  : "text-[#475569] hover:text-black"
+                  ? "bg-primary text-white"
+                  : "text-slate-400 hover:text-white border border-[#1E293B] hover:border-slate-500"
               }`}
             >
               {s.name}
@@ -60,31 +54,15 @@ export default function UseCases() {
           ))}
         </div>
 
-        <div className="bg-slate-50 rounded-3xl border border-slate-100 p-8 md:p-10 mb-12 flex flex-col md:flex-row md:items-center gap-8">
+        <div className="bg-[#111827] border border-[#1E293B] rounded-3xl p-8 md:p-12 flex flex-col md:flex-row md:items-center gap-10">
           <Image
             src="/illustrations/navigation.svg"
             alt="Indoor navigation"
-            width={160}
-            height={160}
-            className="w-20 h-20 shrink-0"
+            width={280}
+            height={210}
+            className="w-full max-w-[280px] shrink-0 mx-auto md:mx-0"
           />
-          <p className="text-slate-600 text-base leading-relaxed">
-            Navous adapts to the logic of each space: appointment-heavy facilities, large shopping corridors, and multi-terminal transport hubs. Each deployment starts with your own floor plan data, not a generic map template.
-          </p>
-        </div>
-
-        {/* Outcomes */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-2xl mx-auto">
-          {sector.outcomes.map((o) => (
-            <div key={o.value} className="text-center">
-              <p className="font-space-grotesque text-[3rem] font-bold text-black leading-none mb-3">
-                {o.value}
-              </p>
-              <p className="text-[#475569] text-[12px] uppercase tracking-widest">
-                {o.label}
-              </p>
-            </div>
-          ))}
+          <p className="text-slate-300 text-lg leading-relaxed">{sector.description}</p>
         </div>
       </div>
     </section>
