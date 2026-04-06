@@ -4,7 +4,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="bg-primary px-8 flex justify-between items-center text-white h-24">
+    <nav className="bg-primary pl-8 pr-0 flex justify-between items-center text-white h-24">
       <div className="h-full flex items-center">
         <img src="/Left logo.svg" alt="Navous Logo" className="h-full w-auto" />
       </div>
