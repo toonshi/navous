@@ -5,7 +5,6 @@ import React from "react";
 const stats = [
   { value: "67%", label: "of visitors feel anxious navigating large buildings" },
   { value: "22 min", label: "nurses spend daily giving directions — not care" },
-  { value: "47%", label: "drop in impulse purchases when shoppers get lost" },
   { value: "< 60 sec", label: "for any visitor to find any location with Navous" },
 ];
 
@@ -40,7 +39,7 @@ export default function Hero() {
         </div>
 
         {/* Headline */}
-        <h1 className="font-space-grotesque text-5xl md:text-[4.5rem] font-bold text-white leading-[1.05] max-w-4xl mb-6">
+        <h1 className="font-space-grotesque text-5xl md:text-[4.5rem] font-bold tracking-tighter text-white leading-[1.05] max-w-4xl mb-6">
           Stop losing people
           <br />
           <span className="text-primary">inside your building.</span>
@@ -56,16 +55,16 @@ export default function Hero() {
 
         {/* CTAs */}
         <div className="flex flex-wrap gap-4 mb-20">
-          <button className="bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg transition hover:brightness-110 cursor-pointer">
+          <button className="bg-primary text-white px-8 py-4 rounded-full font-bold text-lg transition hover:brightness-110 cursor-pointer">
             Book a Demo
           </button>
-          <button className="border border-slate-600 text-slate-300 px-8 py-4 rounded-xl font-bold text-lg hover:border-slate-400 hover:text-white transition cursor-pointer">
+          <button className="border border-slate-600 text-slate-300 px-8 py-4 rounded-full font-bold text-lg hover:border-slate-400 hover:text-white transition cursor-pointer">
             See How It Works
           </button>
         </div>
 
         {/* Stats row */}
-        <div className="border-t border-slate-800 pt-10 grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-4">
+        <div className="border-t border-slate-800 pt-10 grid grid-cols-1 md:grid-cols-3 gap-y-8 gap-x-4">
           {stats.map((stat) => (
             <div key={stat.value}>
               <p className="font-space-grotesque text-4xl font-bold text-white">

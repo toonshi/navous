@@ -38,7 +38,7 @@ export default function Testimonials() {
           <span className="text-primary text-sm font-semibold uppercase tracking-widest">
             Social Proof
           </span>
-          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold text-slate-900 mt-3 mb-4">
+          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 mt-3 mb-4">
             What operators say
             <br />
             after going live.

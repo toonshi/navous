@@ -35,7 +35,7 @@ export default function ProblemSection() {
           <span className="text-primary text-sm font-semibold uppercase tracking-widest">
             The Problem
           </span>
-          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold text-slate-900 mt-3 mb-5 leading-tight">
+          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 mt-3 mb-5 leading-tight">
             Getting lost isn't just frustrating.
             <br />
             <span className="text-primary">It's costing you.</span>
@@ -80,7 +80,7 @@ export default function ProblemSection() {
             </p>
           </div>
           <div className="flex-shrink-0 relative">
-            <button className="bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg hover:brightness-110 transition cursor-pointer whitespace-nowrap">
+            <button className="bg-primary text-white px-8 py-4 rounded-full font-bold text-lg hover:brightness-110 transition cursor-pointer whitespace-nowrap">
               See Your Numbers
             </button>
           </div>

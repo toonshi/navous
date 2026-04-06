@@ -10,10 +10,8 @@ const columns = [
     features: [
       "Find any room, store, or office in under 60 seconds",
       "Turn-by-turn navigation — no app download required",
-      "Works offline once loaded",
       "Accessibility-first: wheelchair routes, audio guidance",
       "Available in multiple languages",
-      "Real-time updates if routes change or doors close",
     ],
     bg: "bg-white border border-slate-100",
     tagBg: "bg-primary/10 text-primary",
@@ -26,9 +24,7 @@ const columns = [
     features: [
       "Real-time foot-traffic heatmaps by zone",
       "Identify where visitors get stuck or lost",
-      "Staff efficiency analytics (time spent on directions)",
       "Emergency evacuation routing — instant reroute",
-      "Visitor satisfaction tracking",
       "No hardware installation required",
     ],
     bg: "bg-dark text-white",
@@ -43,9 +39,7 @@ const columns = [
       "Push location-triggered promotions to nearby visitors",
       "Understand exactly how traffic flows past your space",
       "Track conversion from browse to transaction",
-      "Measure marketing ROI precisely",
       "Appear in indoor search results",
-      "Get insights on peak traffic times by zone",
     ],
     bg: "bg-white border border-slate-100",
     tagBg: "bg-primary/10 text-primary",
@@ -62,7 +56,7 @@ export default function StakeholderValue() {
           <span className="text-primary text-sm font-semibold uppercase tracking-widest">
             Who it's for
           </span>
-          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold text-slate-900 mt-3 mb-4">
+          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 mt-3 mb-4">
             Everyone in your building wins.
           </h2>
           <p className="text-slate-500 text-lg max-w-xl mx-auto leading-relaxed">

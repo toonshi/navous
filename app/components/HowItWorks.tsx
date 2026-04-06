@@ -35,7 +35,7 @@ export default function HowItWorks() {
           <span className="text-primary text-sm font-semibold uppercase tracking-widest">
             Process
           </span>
-          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold text-slate-900 mt-3 mb-4">
+          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 mt-3 mb-4">
             Live in 3 weeks. Not 3 months.
           </h2>
           <p className="text-slate-500 text-lg max-w-xl mx-auto leading-relaxed">
@@ -58,7 +58,7 @@ export default function HowItWorks() {
                 {step.number}
               </span>
               <div>
-                <h3 className="font-space-grotesque text-xl font-bold text-slate-900 mb-3">
+                <h3 className="font-space-grotesque text-xl font-bold tracking-tighter text-slate-900 mb-3">
                   {step.title}
                 </h3>
                 <p className="text-slate-500 text-sm leading-relaxed">
