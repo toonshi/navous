@@ -83,7 +83,7 @@ const BentoGrid = () => {
               className="w-full max-w-xs opacity-90"
             />
             <button
-              className="self-start md:self-center bg-primary text-white px-6 py-3 rounded-full font-bold text-sm hover:bg-[#0fa3c4] transition cursor-pointer whitespace-nowrap"
+              className="self-start md:self-center bg-primary text-white px-6 py-3 rounded-md font-bold text-sm hover:bg-[#0fa3c4] transition cursor-pointer whitespace-nowrap"
               aria-label="View Analytics Demo"
             >
               View Analytics Demo &rarr;

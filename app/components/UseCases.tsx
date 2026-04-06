@@ -43,7 +43,7 @@ export default function UseCases() {
             <button
               key={i}
               onClick={() => setActive(i)}
-              className={`px-6 py-2.5 rounded-full text-sm font-bold transition cursor-pointer ${
+              className={`px-6 py-2.5 rounded-md text-sm font-bold transition cursor-pointer ${
                 active === i
                   ? "bg-primary text-white"
                   : "text-secondary/60 hover:text-secondary border border-slate-200 hover:border-slate-300"

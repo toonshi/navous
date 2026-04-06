@@ -212,7 +212,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen bg-white overflow-hidden flex flex-col items-center pt-24 text-center">
+    <section className="relative min-h-screen bg-white overflow-hidden flex flex-col items-start pt-20 px-12 text-left">
       {/* Background Canvas */}
       <canvas
         ref={canvasRef}
@@ -220,36 +220,36 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full pointer-events-none"
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-8 w-full flex flex-col items-center">
+      <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-start">
         {/* Eyebrow */}
         <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-6">
           Turn Every Visitor into a Navigated Guest
         </p>
 
-        <div className="max-w-4xl">
-          <h1 className="font-space-grotesque text-[3.2rem] md:text-[4.4rem] lg:text-[5.5rem] font-bold tracking-tighter text-black leading-[1.04] mb-8">
-            Stop losing people
-            <br />
-            in the hallways.
-          </h1>
-          <p className="text-gray-900 text-xl md:text-2xl leading-relaxed mb-6 font-medium max-w-3xl mx-auto">
-            Navous transforms your space into a searchable, intelligent environment. Make sure your visitors find exactly what they need, the moment they enter your doors.
-          </p>
-          <p className="text-gray-600 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
-            One spatial intelligence platform for all your facility needs.
-            From real-time wayfinding to deep movement analytics, drive
-            operational efficiency and lasting visitor satisfaction.
-          </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <button className="bg-primary text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-[#0fa3c4] transition cursor-pointer">
-              Book a Demo
-            </button>
-            <button
-              className="text-gray-600 px-10 py-4 rounded-full font-bold text-lg hover:text-black transition cursor-pointer"
-              aria-label="See how it works"
-            >
-              See how it works &rarr;
-            </button>
+        <h1 className="font-space-grotesque text-[3.2rem] md:text-[4.4rem] lg:text-[5.5rem] font-bold tracking-tighter text-black leading-[1.04] mb-8">
+          Stop losing people
+          <br />
+          in the hallways.
+        </h1>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 w-full">
+          <div>
+            <p className="text-gray-900 text-xl md:text-2xl leading-relaxed font-medium">
+              Navous transforms your space into a searchable, intelligent environment. Make sure your visitors find exactly what they need, the moment they enter your doors.
+            </p>
+          </div>
+          
+          <div className="flex flex-col items-start lg:items-start gap-8">
+            <p className="text-gray-600 text-lg leading-relaxed">
+              One spatial intelligence platform for all your facility needs.
+              From real-time wayfinding to deep movement analytics, drive
+              operational efficiency and lasting visitor satisfaction.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <button className="border-2 border-primary text-primary px-10 py-4 rounded-md font-bold text-lg hover:bg-primary hover:text-white transition cursor-pointer">
+                Book a Demo
+              </button>
+            </div>
           </div>
         </div>
       </div>

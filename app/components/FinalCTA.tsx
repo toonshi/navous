@@ -20,10 +20,10 @@ export default function FinalCTA() {
           they&apos;re happening in your building right now.
         </p>
         <div className="flex flex-wrap gap-4 justify-center mt-12">
-          <button className="bg-primary text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-[#0fa3c4] transition cursor-pointer">
+          <button className="bg-primary text-white px-10 py-4 rounded-md font-bold text-lg hover:bg-[#0fa3c4] transition cursor-pointer">
             Book a Demo
           </button>
-          <button className="border border-slate-200 text-secondary/60 px-10 py-4 rounded-full font-bold text-lg hover:border-slate-300 hover:text-secondary transition cursor-pointer">
+          <button className="border border-slate-200 text-secondary/60 px-10 py-4 rounded-md font-bold text-lg hover:border-slate-300 hover:text-secondary transition cursor-pointer">
             See How It Works
           </button>
         </div>

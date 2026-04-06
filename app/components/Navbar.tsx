@@ -14,7 +14,7 @@ const Navbar = () => {
         <a href="#how-it-works" className="text-[14px] tracking-wider hover:opacity-80 transition">How It Works</a>
       </div>
       <div className="flex items-center gap-6 h-full">
-        <button className="bg-slate-900 text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-slate-700 transition cursor-pointer">
+        <button className="bg-slate-900 text-white px-6 py-2.5 rounded-md font-bold text-sm hover:bg-slate-700 transition cursor-pointer">
           Book a Demo
         </button>
         <img src="/Building.svg" alt="" className="h-full w-auto" aria-hidden="true" />
