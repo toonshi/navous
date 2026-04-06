@@ -24,7 +24,7 @@ export default function FinalCTA() {
           your space — not a generic walkthrough.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
-          <button className="bg-primary text-white px-10 py-4 rounded-full font-bold text-lg hover:brightness-110 transition cursor-pointer">
+          <button className="bg-primary text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-[#0fa3c4] transition cursor-pointer">
             Book a Demo
           </button>
           <button className="border border-slate-700 text-slate-300 px-10 py-4 rounded-full font-bold text-lg hover:border-slate-500 hover:text-white transition cursor-pointer">

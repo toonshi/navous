@@ -1,12 +1,14 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 const columns = [
   {
-    icon: "👤",
     audience: "For Visitors",
     tagline: "Confidence from step one.",
+    illustration: "/illustrations/stakeholder-visitor.svg",
+    illustrationAlt: "Person navigating to destination",
     features: [
       "Find any room, store, or office in under 60 seconds",
       "Turn-by-turn navigation — no app download required",
@@ -16,25 +18,29 @@ const columns = [
     bg: "bg-white border border-slate-100",
     tagBg: "bg-primary/10 text-primary",
     featureIcon: "text-primary",
+    dark: false,
   },
   {
-    icon: "🏢",
     audience: "For Facility Operators",
     tagline: "Clarity across every floor.",
+    illustration: "/illustrations/stakeholder-operator.svg",
+    illustrationAlt: "Facility heatmap dashboard",
     features: [
       "Real-time foot-traffic heatmaps by zone",
       "Identify where visitors get stuck or lost",
       "Emergency evacuation routing — instant reroute",
       "No hardware installation required",
     ],
-    bg: "bg-dark text-white",
+    bg: "bg-dark",
     tagBg: "bg-primary/20 text-primary",
     featureIcon: "text-primary",
+    dark: true,
   },
   {
-    icon: "🏪",
     audience: "For Businesses & Tenants",
     tagline: "Turn footfall into revenue.",
+    illustration: "/illustrations/stakeholder-tenant.svg",
+    illustrationAlt: "Store visible in indoor search results",
     features: [
       "Push location-triggered promotions to nearby visitors",
       "Understand exactly how traffic flows past your space",
@@ -44,6 +50,7 @@ const columns = [
     bg: "bg-white border border-slate-100",
     tagBg: "bg-primary/10 text-primary",
     featureIcon: "text-primary",
+    dark: false,
   },
 ];
 
@@ -51,7 +58,6 @@ export default function StakeholderValue() {
   return (
     <section className="py-24 px-8 bg-white">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
         <div className="text-center mb-14">
           <span className="text-primary text-sm font-semibold uppercase tracking-widest">
             Who it&apos;s for
@@ -65,34 +71,41 @@ export default function StakeholderValue() {
           </p>
         </div>
 
-        {/* Columns */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {columns.map((col) => (
             <div
               key={col.audience}
-              className={`rounded-2xl p-8 flex flex-col gap-6 ${col.bg}`}
+              className={`rounded-2xl flex flex-col overflow-hidden ${col.bg}`}
             >
-              <div className="flex items-start gap-3">
-                <span className="text-3xl">{col.icon}</span>
+              {/* Illustration */}
+              <Image
+                src={col.illustration}
+                alt={col.illustrationAlt}
+                width={320}
+                height={200}
+                className="w-full"
+              />
+              {/* Content */}
+              <div className="p-8 flex flex-col gap-5 flex-1">
                 <div>
-                  <span className={`inline-block text-xs font-bold px-3 py-1 rounded-full mb-2 ${col.tagBg}`}>
+                  <span className={`inline-block text-xs font-bold px-3 py-1 rounded-full mb-3 ${col.tagBg}`}>
                     {col.audience}
                   </span>
-                  <p className={`font-space-grotesque text-lg font-bold leading-snug ${col.bg.includes("bg-dark") ? "text-white" : "text-slate-900"}`}>
+                  <p className={`font-space-grotesque text-xl font-bold leading-snug ${col.dark ? "text-white" : "text-slate-900"}`}>
                     {col.tagline}
                   </p>
                 </div>
+                <ul className="flex flex-col gap-3">
+                  {col.features.map((feat) => (
+                    <li key={feat} className="flex items-start gap-2.5 text-sm">
+                      <span className={`mt-0.5 shrink-0 ${col.featureIcon}`}>✓</span>
+                      <span className={col.dark ? "text-slate-300" : "text-slate-600"}>
+                        {feat}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <ul className="flex flex-col gap-3">
-                {col.features.map((feat) => (
-                  <li key={feat} className="flex items-start gap-2.5 text-sm">
-                    <span className={`mt-0.5 shrink-0 ${col.featureIcon}`}>✓</span>
-                    <span className={col.bg.includes("bg-dark") ? "text-slate-300" : "text-slate-600"}>
-                      {feat}
-                    </span>
-                  </li>
-                ))}
-              </ul>
             </div>
           ))}
         </div>

@@ -1,16 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="480" height="360" viewBox="0 0 480 360" fill="none">
-  <defs>
-    <linearGradient id="data-bg" x1="0" y1="0" x2="480" y2="360" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#EAF8FD"/>
-      <stop offset="1" stop-color="#F0F4FF"/>
-    </linearGradient>
-    <filter id="panel-shadow">
-      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#13B7DA" flood-opacity="0.1"/>
-    </filter>
-  </defs>
-
   <!-- Background -->
-  <rect width="480" height="360" rx="20" fill="url(#data-bg)"/>
+  <rect width="480" height="360" rx="20" fill="#F8FAFC"/>
 
   <!-- Main dashboard panel -->
   <g filter="url(#panel-shadow)">

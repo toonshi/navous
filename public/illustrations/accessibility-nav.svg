@@ -1,16 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="480" height="360" viewBox="0 0 480 360" fill="none">
-  <defs>
-    <linearGradient id="acc2-bg" x1="0" y1="0" x2="480" y2="360" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F4FBFD"/>
-      <stop offset="1" stop-color="#EDF5FF"/>
-    </linearGradient>
-    <filter id="acc-card-shadow">
-      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#13B7DA" flood-opacity="0.10"/>
-    </filter>
-  </defs>
-
   <!-- Background -->
-  <rect width="480" height="360" rx="20" fill="url(#acc2-bg)"/>
+  <rect width="480" height="360" rx="20" fill="#F8FAFC"/>
 
   <!-- Central floor plan snippet -->
   <rect x="140" y="80" width="200" height="200" rx="12" fill="white" stroke="#C8E8F5" stroke-width="1.5"/>

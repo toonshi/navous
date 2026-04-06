@@ -40,7 +40,7 @@ const BentoGrid = () => {
 
           {/* Box B: Accessibility */}
           <div className="bg-slate-50 rounded-3xl p-8 flex flex-col justify-between min-h-90 shadow-sm">
-          <Image
+            <Image
               src="/illustrations/accessibility.svg"
               alt="Accessibility"
               width={240}

@@ -99,12 +99,8 @@ export default function ProblemSection() {
         </div>
 
         {/* Pull quote */}
-        <div className="bg-dark rounded-2xl p-10 flex flex-col md:flex-row md:items-center gap-6 relative overflow-hidden">
-          <div
-            className="absolute right-0 top-0 w-64 h-64 opacity-10 blur-2xl pointer-events-none"
-            style={{ background: "#13B7DA" }}
-          />
-          <div className="flex-1 relative">
+        <div className="bg-dark rounded-2xl p-10 flex flex-col md:flex-row md:items-center gap-6">
+          <div className="flex-1">
             <p className="font-space-grotesque text-2xl md:text-3xl font-bold text-white leading-snug mb-4">
               &ldquo;Navigation is not a nice-to-have. It is the difference between a
               visitor who completes their journey and one who doesn&apos;t.&rdquo;
@@ -114,8 +110,8 @@ export default function ProblemSection() {
               see the data.
             </p>
           </div>
-          <div className="shrink-0 relative">
-            <button className="bg-primary text-white px-8 py-4 rounded-full font-bold text-lg hover:brightness-110 transition cursor-pointer whitespace-nowrap">
+          <div className="shrink-0">
+            <button className="bg-primary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#0fa3c4] transition cursor-pointer whitespace-nowrap">
               Book a Demo
             </button>
           </div>

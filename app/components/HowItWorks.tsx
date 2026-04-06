@@ -10,6 +10,7 @@ const steps = [
     description:
       "Send us your existing floor plans — any format. Our team digitises every room, corridor, lift, stairwell, and access point with AI. No hardware. No site visit required.",
     accent: "bg-primary/10 text-primary",
+    illustration: "/illustrations/step-upload.svg",
   },
   {
     number: "Week 2",
@@ -17,6 +18,7 @@ const steps = [
     description:
       "Set up points of interest, accessible routes, and routing rules through our no-code dashboard. Match your brand. Integrate with your booking or appointment system if needed. Test with your team.",
     accent: "bg-dark text-white",
+    illustration: "/illustrations/step-configure.svg",
   },
   {
     number: "Week 3",
@@ -24,6 +26,7 @@ const steps = [
     description:
       "Place QR codes at entrances. Visitors scan, and they're guided turn-by-turn in real time. No app download. No sign-up. No friction. Just directions that work.",
     accent: "bg-primary text-white",
+    illustration: "/illustrations/step-live.svg",
   },
 ];
 
@@ -31,7 +34,6 @@ export default function HowItWorks() {
   return (
     <section id="how-it-works" className="bg-slate-50 py-24 px-8">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
         <div className="text-center mb-16">
           <span className="text-primary text-sm font-semibold uppercase tracking-widest">
             Process
@@ -44,43 +46,40 @@ export default function HowItWorks() {
           </p>
         </div>
 
-        {/* Steps */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {steps.map((step) => (
             <div
               key={step.number}
-              className="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm flex flex-col gap-6"
+              className="bg-white rounded-2xl border border-slate-100 shadow-sm flex flex-col overflow-hidden"
             >
-              <span
-                className={`self-start px-3 py-1.5 rounded-lg text-sm font-bold ${step.accent}`}
-              >
-                {step.number}
-              </span>
-              <div>
-                <h3 className="font-space-grotesque text-xl font-bold tracking-tighter text-slate-900 mb-3">
-                  {step.title}
-                </h3>
-                <p className="text-slate-500 text-sm leading-relaxed">
-                  {step.description}
-                </p>
+              <Image
+                src={step.illustration}
+                alt={step.title}
+                width={320}
+                height={200}
+                className="w-full"
+              />
+              <div className="p-8 flex flex-col gap-4">
+                <span className={`self-start px-3 py-1.5 rounded-lg text-sm font-bold ${step.accent}`}>
+                  {step.number}
+                </span>
+                <div>
+                  <h3 className="font-space-grotesque text-xl font-bold tracking-tighter text-slate-900 mb-3">
+                    {step.title}
+                  </h3>
+                  <p className="text-slate-500 text-sm leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-10 bg-white border border-slate-100 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row md:items-center gap-6">
-          <Image
-            src="/illustrations/accessibility.svg"
-            alt="Accessibility assurance"
-            width={180}
-            height={135}
-            className="w-28 shrink-0"
-          />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
-            <p className="text-sm text-slate-600"><span className="font-semibold text-slate-900">Data ownership:</span> your floor plans and operational data remain yours.</p>
-            <p className="text-sm text-slate-600"><span className="font-semibold text-slate-900">Accessibility:</span> route logic includes wheelchair-friendly and lift-priority paths.</p>
-            <p className="text-sm text-slate-600"><span className="font-semibold text-slate-900">Visitor privacy:</span> no mandatory app install or account creation for wayfinding.</p>
-          </div>
+        <div className="mt-10 bg-white border border-slate-100 rounded-2xl p-6 md:p-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <p className="text-sm text-slate-600"><span className="font-semibold text-slate-900">Data ownership:</span> your floor plans and operational data remain yours.</p>
+          <p className="text-sm text-slate-600"><span className="font-semibold text-slate-900">Accessibility:</span> route logic includes wheelchair-friendly and lift-priority paths.</p>
+          <p className="text-sm text-slate-600"><span className="font-semibold text-slate-900">Visitor privacy:</span> no mandatory app install or account creation for wayfinding.</p>
         </div>
       </div>
     </section>
