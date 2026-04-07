@@ -212,7 +212,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-[calc(100vh-5rem)] overflow-hidden flex flex-col items-start pt-16 px-12 text-left"
+    <section className="relative h-[calc(100vh-4rem)] overflow-hidden flex flex-col items-start pt-16 px-12 text-left"
       style={{ background: "linear-gradient(135deg, #e0f7fc 0%, #f0feff 40%, #fff8f0 75%, #fef3e2 100%)" }}
     >
       {/* Vibrant background blobs */}
@@ -231,29 +231,29 @@ export default function Hero() {
       />
 
       <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-start">
-        <span className="inline-block bg-primary/10 text-primary text-sm font-semibold px-4 py-1.5 rounded-full mb-6 tracking-wide">
-          Indoor Navigation Platform
+        <span className="inline-block bg-primary/10 text-primary text-sm font-bold px-4 py-1.5 rounded-full mb-6 tracking-wide">
+          Enterprise Indoor Navigation
         </span>
 
-        <h1 className="font-space-grotesque text-[3.2rem] md:text-[4.4rem] lg:text-[5.5rem] font-bold tracking-tighter text-secondary leading-[1.04] mb-6">
-          Stop losing people
+        <h1 className="font-space-grotesque text-[3.2rem] md:text-[4.4rem] lg:text-[5.5rem] font-bold tracking-tighter text-slate-900 leading-[1.04] mb-6">
+          Your building,
           <br />
-          <span className="text-primary">in the hallways.</span>
+          <span className="text-primary">searchable.</span>
         </h1>
 
-        <p className="text-secondary/70 text-xl md:text-2xl leading-relaxed max-w-2xl mb-4">
-          Navous transforms your space into a searchable, intelligent environment — so visitors find exactly what they need, the moment they walk in.
+        <p className="text-slate-800 text-xl md:text-2xl font-medium leading-relaxed max-w-2xl mb-4">
+          Empower visitors with intuitive, real-time indoor navigation. No hardware, no app downloads — just seamless wayfinding that works.
         </p>
 
-        <p className="text-secondary/50 text-base md:text-lg leading-relaxed max-w-xl mb-10">
-          Real-time wayfinding · Movement analytics · Visitor satisfaction
+        <p className="text-slate-600 text-base md:text-lg font-medium leading-relaxed max-w-xl mb-10">
+          Turn-by-turn guidance · Spatial intelligence · Universal accessibility
         </p>
 
         <div className="flex flex-wrap gap-4">
-          <a href="/how-it-works" className="bg-primary text-white px-10 py-4 rounded-md font-bold text-lg hover:bg-[#0fa3c4] transition cursor-pointer no-underline">
+          <a href="/how-it-works" className="bg-primary text-white px-10 py-4 rounded-md font-bold text-lg hover:bg-[#0fa3c4] transition cursor-pointer no-underline shadow-lg shadow-primary/20">
             See How It Works
           </a>
-          <a href="/features" className="border-2 border-primary/40 text-primary px-10 py-4 rounded-md font-bold text-lg hover:border-primary hover:bg-primary/5 transition cursor-pointer no-underline">
+          <a href="/features" className="border-2 border-slate-200 text-slate-900 px-10 py-4 rounded-md font-bold text-lg hover:border-slate-900 hover:bg-slate-50 transition cursor-pointer no-underline">
             Explore Features
           </a>
         </div>

@@ -35,11 +35,11 @@ export default function HowItWorks() {
     <section id="how-it-works" className="py-24 px-8" style={{ background: "linear-gradient(180deg, #f0feff 0%, #f8fafc 100%)" }}>
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-secondary mt-3 mb-4">
-            Live in 3 weeks. Not 3 months.
+          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 mt-3 mb-4">
+            Floor plan to live navigation in 21 days.
           </h2>
-          <p className="text-secondary/60 text-lg max-w-xl mx-auto leading-relaxed">
-            No expensive hardware and no infrastructure overhaul. Navous deploys in three clean steps, with minimal lift from your internal team.
+          <p className="text-slate-700 text-lg max-w-xl mx-auto leading-relaxed font-medium">
+            No infrastructure overhaul or expensive hardware required. Navous deploys in three streamlined phases with minimal disruption.
           </p>
         </div>
 
@@ -47,7 +47,7 @@ export default function HowItWorks() {
           {steps.map((step) => (
             <div
               key={step.number}
-              className="bg-slate-50 border border-slate-100 rounded-2xl flex flex-col overflow-hidden"
+              className="bg-white border border-slate-100 rounded-2xl flex flex-col overflow-hidden shadow-sm hover:shadow-md transition-shadow"
             >
               <Image
                 src={step.illustration}
@@ -61,10 +61,10 @@ export default function HowItWorks() {
                   {step.number}
                 </span>
                 <div>
-                  <h3 className="font-space-grotesque text-xl font-bold tracking-tighter text-secondary mb-3">
+                  <h3 className="font-space-grotesque text-xl font-bold tracking-tighter text-slate-900 mb-3">
                     {step.title}
                   </h3>
-                  <p className="text-secondary/60 text-sm leading-relaxed">
+                  <p className="text-slate-600 text-sm leading-relaxed font-medium">
                     {step.description}
                   </p>
                 </div>
@@ -73,10 +73,10 @@ export default function HowItWorks() {
           ))}
         </div>
 
-        <div className="mt-10 bg-slate-50 border border-slate-100 rounded-2xl p-6 md:p-8 grid grid-cols-1 md:grid-cols-3 gap-4">
-          <p className="text-sm text-secondary/60"><span className="font-semibold text-secondary">Data ownership:</span> your floor plans and operational data remain yours.</p>
-          <p className="text-sm text-secondary/60"><span className="font-semibold text-secondary">Accessibility:</span> route logic includes wheelchair-friendly and lift-priority paths.</p>
-          <p className="text-sm text-secondary/60"><span className="font-semibold text-secondary">Visitor privacy:</span> no mandatory app install or account creation for wayfinding.</p>
+        <div className="mt-10 bg-white border border-slate-100 rounded-2xl p-6 md:p-8 grid grid-cols-1 md:grid-cols-3 gap-4 shadow-sm">
+          <p className="text-sm text-slate-600 font-medium"><span className="font-bold text-slate-900">Data Sovereignty:</span> Your spatial and operational data remains under your full control.</p>
+          <p className="text-sm text-slate-600 font-medium"><span className="font-bold text-slate-900">Accessibility First:</span> Logic includes step-free, lift-priority, and audio-assisted routing.</p>
+          <p className="text-sm text-slate-600 font-medium"><span className="font-bold text-slate-900">Frictionless Access:</span> No mandatory app installs or accounts required for visitor wayfinding.</p>
         </div>
       </div>
     </section>

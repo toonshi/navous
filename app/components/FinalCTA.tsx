@@ -9,26 +9,24 @@ export default function FinalCTA() {
         <span className="inline-block border border-primary/40 text-primary text-sm font-semibold px-4 py-1.5 rounded-full mb-8 tracking-wide">
           Get Started
         </span>
-        <h2 className="font-space-grotesque text-5xl md:text-6xl font-bold tracking-tighter text-secondary mb-6 leading-tight">
-          Every day without Navous
+        <h2 className="font-space-grotesque text-5xl md:text-6xl font-bold tracking-tighter text-slate-900 mb-6 leading-tight">
+          Your facility,
           <br />
-          is a day of <span className="text-primary">avoidable loss.</span>
+          <span className="text-primary">searchable in 21 days.</span>
         </h2>
-        <p className="text-secondary/60 text-lg mb-4 leading-relaxed max-w-xl mx-auto">
-          Missed appointments. Frustrated shoppers. Nurses giving directions
-          instead of care. Staff hours wasted. These aren&apos;t abstract problems —
-          they&apos;re happening in your building right now.
+        <p className="text-slate-700 text-lg mb-4 leading-relaxed max-w-xl mx-auto font-medium">
+          Join the leading organizations using Navous to transform their visitor experience and facility efficiency. No hardware, no app downloads, just results.
         </p>
         <div className="flex flex-wrap gap-4 justify-center mt-12">
-          <a href="/how-it-works" className="bg-primary text-white px-10 py-4 rounded-md font-bold text-lg hover:bg-[#0fa3c4] transition cursor-pointer no-underline">
+          <a href="/how-it-works" className="bg-primary text-white px-10 py-4 rounded-md font-bold text-lg hover:bg-[#0fa3c4] transition cursor-pointer no-underline shadow-lg shadow-primary/20">
             See How It Works
           </a>
-          <a href="/features" className="border border-slate-200 text-secondary/60 px-10 py-4 rounded-md font-bold text-lg hover:border-slate-300 hover:text-secondary transition cursor-pointer no-underline">
+          <a href="/features" className="border-2 border-slate-200 text-slate-900 px-10 py-4 rounded-md font-bold text-lg hover:border-slate-900 hover:bg-slate-50 transition cursor-pointer no-underline">
             Explore Features
           </a>
         </div>
-        <p className="text-secondary/40 text-sm mt-8">
-          Free setup · No hardware · Live in 3 weeks · Cancel anytime
+        <p className="text-slate-400 text-sm font-bold mt-8 tracking-wide">
+          FREE SETUP · NO HARDWARE · LIVE IN 3 WEEKS
         </p>
       </div>
     </section>

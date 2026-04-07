@@ -53,12 +53,11 @@ export default function StakeholderValue() {
     <section className="py-24 px-8" style={{ background: "linear-gradient(180deg, #f8fafc 0%, #f0feff 100%)" }}>
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
-          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-secondary mb-4">
+          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 mb-4">
             Everyone in your building wins.
           </h2>
-          <p className="text-secondary/60 text-lg max-w-xl mx-auto leading-relaxed">
-            Navous doesn&apos;t just solve navigation for visitors. It makes the
-            whole ecosystem smarter — operators, tenants, and staff included.
+          <p className="text-slate-700 text-lg max-w-xl mx-auto leading-relaxed font-medium">
+            Navous creates a smarter ecosystem by delivering value to visitors, facility operators, and business tenants alike.
           </p>
         </div>
 
@@ -66,7 +65,7 @@ export default function StakeholderValue() {
           {columns.map((col) => (
             <div
               key={col.audience}
-              className={`border rounded-2xl flex flex-col overflow-hidden ${col.cardBg}`}
+              className={`border rounded-2xl flex flex-col overflow-hidden shadow-sm hover:shadow-md transition-shadow ${col.cardBg === 'bg-secondary border-secondary/20' ? 'bg-slate-900 border-slate-800' : col.cardBg}`}
             >
               {/* Illustration */}
               <Image
@@ -82,7 +81,7 @@ export default function StakeholderValue() {
                   <span className={`inline-block text-xs font-bold px-3 py-1 rounded-full mb-3 ${col.tagBg}`}>
                     {col.audience}
                   </span>
-                  <p className={`font-space-grotesque text-xl font-bold leading-snug ${col.cardBg.includes('secondary') ? 'text-white' : 'text-secondary'}`}>
+                  <p className={`font-space-grotesque text-xl font-bold leading-snug ${col.cardBg === 'bg-secondary border-secondary/20' ? 'text-white' : 'text-slate-900'}`}>
                     {col.tagline}
                   </p>
                 </div>
@@ -90,7 +89,7 @@ export default function StakeholderValue() {
                   {col.features.map((feat) => (
                     <li key={feat} className="flex items-start gap-2.5 text-sm">
                       <span className="mt-0.5 shrink-0 text-primary">✓</span>
-                      <span className={col.cardBg.includes('secondary') ? 'text-white/60' : 'text-secondary/60'}>{feat}</span>
+                      <span className={col.cardBg === 'bg-secondary border-secondary/20' ? 'text-slate-300 font-medium' : 'text-slate-700 font-medium'}>{feat}</span>
                     </li>
                   ))}
                 </ul>

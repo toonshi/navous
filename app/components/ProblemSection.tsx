@@ -11,19 +11,16 @@ export default function ProblemSection() {
         {/* Row 1 — left text, right illustration */}
         <div className="flex flex-col md:flex-row md:items-center gap-12 lg:gap-20">
           <div className="flex-1 max-w-xl">
-            <span className="text-primary text-sm font-semibold uppercase tracking-widest mb-4 block">
-              The Problem
+            <span className="text-primary text-sm font-bold uppercase tracking-widest mb-4 block">
+              The Challenge
             </span>
-            <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-secondary leading-tight mb-6">
-              Getting lost isn&apos;t just frustrating.
+            <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 leading-tight mb-6">
+              The high cost of
               <br />
-              <span className="text-primary">It&apos;s costing you.</span>
+              <span className="text-primary">navigation friction.</span>
             </h2>
-            <p className="text-secondary/60 text-lg leading-relaxed">
-              Bad indoor navigation is invisible until you measure it. When
-              visitors can&apos;t find where they&apos;re going, they leave frustrated —
-              and your staff spend their shift giving directions instead of
-              doing their jobs.
+            <p className="text-slate-700 text-lg leading-relaxed font-medium">
+              Inefficient indoor wayfinding isn&apos;t just a frustration for visitors—it&apos;s an operational bottleneck. When guests can&apos;t find their destination, staff spend their shifts giving directions instead of performing core duties.
             </p>
           </div>
           <div className="flex-1 flex justify-center md:justify-end">
@@ -32,7 +29,7 @@ export default function ProblemSection() {
               alt="Indoor navigation illustration"
               width={480}
               height={360}
-              className="w-full max-w-md"
+              className="w-full max-w-md drop-shadow-2xl"
             />
           </div>
         </div>
@@ -40,14 +37,11 @@ export default function ProblemSection() {
         {/* Row 2 — right text, left illustration (zigzag) */}
         <div className="flex flex-col md:flex-row-reverse md:items-center gap-12 lg:gap-20">
           <div className="flex-1 max-w-xl">
-            <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-secondary leading-tight mb-6">
-              Your building is generating data you aren&apos;t seeing.
+            <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 leading-tight mb-6">
+              Data-driven spatial intelligence.
             </h2>
-            <p className="text-secondary/60 text-lg leading-relaxed">
-              Navous provides the precision needed to improve staff efficiency
-              and ensures that it&apos;s accessible to the people inside it. Every
-              movement, every bottleneck, every missed turn — turned into
-              actionable insight.
+            <p className="text-slate-700 text-lg leading-relaxed font-medium">
+              Navous captures movement patterns that are normally invisible. Identify bottlenecks, optimize layouts, and improve facility performance with real-time analytics. Every missed turn is a data point for improvement.
             </p>
           </div>
           <div className="flex-1 flex justify-center md:justify-start">
@@ -56,7 +50,7 @@ export default function ProblemSection() {
               alt="Movement intelligence dashboard"
               width={480}
               height={360}
-              className="w-full max-w-md"
+              className="w-full max-w-md drop-shadow-2xl"
             />
           </div>
         </div>
@@ -64,21 +58,11 @@ export default function ProblemSection() {
         {/* Row 3 — left text, right illustration */}
         <div className="flex flex-col md:flex-row md:items-center gap-12 lg:gap-20">
           <div className="flex-1 max-w-xl">
-            <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-secondary leading-tight mb-6">
-              Accessible Navigation for everybody.
+            <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 leading-tight mb-6">
+              Accessibility for every guest.
             </h2>
-            <p className="text-secondary/60 text-lg leading-relaxed">
-              Including{" "}
-              <span className="font-semibold text-secondary">
-                People with Special Needs
-              </span>{" "}
-              &amp;{" "}
-              <span className="font-semibold text-secondary">
-                People with Foreign Languages
-              </span>
-              . Wheelchair-friendly routing, audio guidance, lift-priority
-              paths, and multilingual support so every guest moves with
-              confidence.
+            <p className="text-slate-700 text-lg leading-relaxed font-medium">
+              We believe in navigation without barriers. Our platform includes wheelchair-optimized routing, multilingual support, and audio guidance to ensure that everyone moves through your space with confidence.
             </p>
           </div>
           <div className="flex-1 flex justify-center md:justify-end">
@@ -87,7 +71,7 @@ export default function ProblemSection() {
               alt="Accessibility and multilingual navigation"
               width={480}
               height={360}
-              className="w-full max-w-md"
+              className="w-full max-w-md drop-shadow-2xl"
             />
           </div>
         </div>
