@@ -5,6 +5,9 @@
   --color-secondary: #0F172A;
   --font-sans: 'Inter', sans-serif;
   --font-space-grotesque: 'Space Grotesk', sans-serif;
+  --font-dosis: 'Dosis', sans-serif;
+  --font-roboto-slab: 'Roboto Slab', serif;
+  --font-trykker: 'Trykker', serif;
 }
 
 :root {
@@ -15,7 +18,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans);
+  font-family: 'Trykker', serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -39,4 +42,16 @@ body {
 
 .font-space-grotesque {
   font-family: var(--font-space-grotesque), sans-serif;
+}
+
+.font-dosis {
+  font-family: var(--font-dosis), sans-serif;
+}
+
+.font-roboto-slab {
+  font-family: var(--font-roboto-slab), serif;
+}
+
+.font-trykker {
+  font-family: var(--font-trykker), serif;
 }
