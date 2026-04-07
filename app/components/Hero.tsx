@@ -213,15 +213,15 @@ export default function Hero() {
 
   return (
     <section className="relative h-[calc(100vh-4rem)] overflow-hidden flex flex-col items-center pt-6 px-12"
-      style={{ background: "radial-gradient(circle at 10% 10%, #CAFFBF 0%, #FDFFB6 30%, #FFD6A5 60%, #FFADAD 100%)" }}
+      style={{ background: "radial-gradient(circle at 0% 0%, #e0f7fc 0%, #f0feff 40%, #fff8f0 75%, #fef3e2 100%)" }}
     >
-      {/* Pastel background blobs */}
-      <div className="absolute top-[-80px] right-[-80px] w-[500px] h-[500px] rounded-full opacity-50 blur-[100px] pointer-events-none animate-pulse"
-        style={{ background: "radial-gradient(circle, #13B7DA 0%, transparent 70%)" }} />
-      <div className="absolute bottom-[-60px] left-[-60px] w-[400px] h-[400px] rounded-full opacity-40 blur-[80px] pointer-events-none"
-        style={{ background: "radial-gradient(circle, #FFADAD 0%, transparent 70%)" }} />
-      <div className="absolute top-1/2 right-1/4 w-[300px] h-[300px] rounded-full opacity-30 blur-[60px] pointer-events-none"
-        style={{ background: "radial-gradient(circle, #CAFFBF 0%, transparent 70%)" }} />
+      {/* Vibrant background blobs with more saturation */}
+      <div className="absolute top-[-80px] right-[-80px] w-[500px] h-[500px] rounded-full opacity-40 blur-[100px] pointer-events-none animate-pulse"
+        style={{ background: "radial-gradient(circle, #00E5FF 0%, transparent 70%)" }} />
+      <div className="absolute bottom-[-60px] left-[-60px] w-[400px] h-[400px] rounded-full opacity-30 blur-[80px] pointer-events-none"
+        style={{ background: "radial-gradient(circle, #FB7185 0%, transparent 70%)" }} />
+      <div className="absolute top-1/2 right-1/4 w-[300px] h-[300px] rounded-full opacity-20 blur-[60px] pointer-events-none"
+        style={{ background: "radial-gradient(circle, #FCD34D 0%, transparent 70%)" }} />
 
       {/* Background Canvas — walking people */}
       <canvas
@@ -230,20 +230,18 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full pointer-events-none opacity-80"
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col md:flex-row md:items-start md:gap-12">
-        <h1 className="font-space-grotesque text-5xl md:text-6xl font-bold tracking-tighter text-slate-900 leading-tight md:flex-1 text-left">
+      <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col">
+        <h1 className="font-space-grotesque text-5xl md:text-6xl font-bold tracking-tighter text-slate-900 leading-tight mb-8 text-left self-start">
           Stop <span className="text-black">losing</span> people<br />in the hallways.
         </h1>
 
-        <div className="flex flex-col md:flex-1">
-          <p className="text-slate-800 text-xl md:text-2xl font-semibold leading-relaxed mb-6">
-            Navous transforms your space into a searchable, intelligent environment. Make sure your visitors find exactly what they need, the moment they enter your doors.
-          </p>
+        <p className="text-slate-800 text-xl md:text-2xl font-semibold leading-relaxed max-w-2xl mb-6 text-right self-end">
+          Navous transforms your space into a searchable, intelligent environment. Make sure your visitors find exactly what they need, the moment they enter your doors.
+        </p>
 
-          <div className="flex flex-wrap gap-5">
-            <a href="/how-it-works" className="btn-primary"><span>See How It Works</span></a>
-            <a href="/features" className="btn-secondary"><span>Explore Features</span></a>
-          </div>
+        <div className="flex flex-wrap gap-5 self-end">
+          <a href="/how-it-works" className="btn-primary"><span>See How It Works</span></a>
+          <a href="/features" className="btn-secondary"><span>Explore Features</span></a>
         </div>
       </div>
     </section>
