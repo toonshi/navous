@@ -238,7 +238,7 @@ export default function Hero() {
         <h1 className="font-space-grotesque text-[3.2rem] md:text-[4.4rem] lg:text-[5.5rem] font-bold tracking-tighter text-secondary leading-[1.04] mb-6">
           Stop losing people
           <br />
-          <span style={{ color: "#13B7DA" }}>in the hallways.</span>
+          <span className="text-primary">in the hallways.</span>
         </h1>
 
         <p className="text-secondary/70 text-xl md:text-2xl leading-relaxed max-w-2xl mb-4">
