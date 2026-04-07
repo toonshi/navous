@@ -1,9 +1,11 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import ProblemSection from "./components/ProblemSection";
+import UseCaseGrid from "./components/UseCaseGrid";
 import BentoGrid from "./components/BentoGrid";
 import HowItWorks from "./components/HowItWorks";
 import StakeholderValue from "./components/StakeholderValue";
+import PeepsSection from "./components/PeepsSection";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
 
@@ -13,10 +15,12 @@ export default function Home() {
       <Navbar />
       <main className="flex-1">
         <Hero />
+        <UseCaseGrid />
         <ProblemSection />
         <BentoGrid />
         <HowItWorks />
         <StakeholderValue />
+        <PeepsSection />
         <FinalCTA />
       </main>
       <Footer />

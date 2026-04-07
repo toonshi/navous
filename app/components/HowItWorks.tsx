@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const steps = [
   {
-    number: "Week 1",
+    number: "01",
     title: "Sensor Setup & Map Prep",
     description:
       "Send us your existing floor plans. We convert them into a digital twin while you place our discreet, stick-on Bluetooth sensors. No wiring, no complex IT, just minutes per room.",
@@ -13,7 +13,7 @@ const steps = [
     illustration: "/illustrations/step-upload.svg",
   },
   {
-    number: "Week 2",
+    number: "02",
     title: "Precision Calibration",
     description:
       "We configure your routing logic and calibrate the sensors for sub-meter accuracy. Your team tests the experience on their own phones to ensure the directions are flawless.",
@@ -21,7 +21,7 @@ const steps = [
     illustration: "/illustrations/step-configure.svg",
   },
   {
-    number: "Week 3",
+    number: "03",
     title: "Launch & Track",
     description:
       "Place QR codes at entry points. Visitors scan once and get instant, turn-by-turn guidance through their mobile browser. No app downloads required. You see results from day one.",
@@ -32,51 +32,61 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-24 px-8" style={{ background: "linear-gradient(180deg, #f0feff 0%, #f8fafc 100%)" }}>
+    <section id="how-it-works" className="py-32 px-12 bg-black text-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 mt-3 mb-4">
-            Floor plan to live navigation in 21 days.
+        <div className="mb-20">
+          <span className="text-accent text-[12px] font-bold uppercase tracking-[0.3em] mb-6 block">
+            The 21-Day Rollout
+          </span>
+          <h2 className="font-sans text-[3.5rem] md:text-[5rem] font-medium tracking-[-0.03em] leading-[0.95] mb-8">
+            From blueprints to
+            <br />
+            live navigation.
           </h2>
-          <p className="text-slate-700 text-lg max-w-xl mx-auto leading-relaxed font-medium">
-            No infrastructure overhaul or expensive hardware required. Navous deploys in three streamlined phases with minimal disruption.
-          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {steps.map((step) => (
             <div
               key={step.number}
-              className="bg-white border border-slate-100 rounded-2xl flex flex-col overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+              className="bg-slate-900/40 border border-white/5 rounded-[2.5rem] p-10 flex flex-col justify-between group hover:bg-slate-900 transition-all duration-500"
             >
-              <Image
-                src={step.illustration}
-                alt={step.title}
-                width={320}
-                height={200}
-                className="w-full"
-              />
-              <div className="p-8 flex flex-col gap-4">
-                <span className={`self-start px-3 py-1.5 rounded-lg text-sm font-bold ${step.accent}`}>
-                  {step.number}
+              <div>
+                <span className={`inline-block px-4 py-1 rounded-full text-[11px] font-black tracking-widest mb-10 ${step.accent}`}>
+                  STEP {step.number}
                 </span>
-                <div>
-                  <h3 className="font-space-grotesque text-xl font-bold tracking-tighter text-slate-900 mb-3">
-                    {step.title}
-                  </h3>
-                  <p className="text-slate-600 text-sm leading-relaxed font-medium">
-                    {step.description}
-                  </p>
-                </div>
+                <h3 className="text-3xl font-medium tracking-tight mb-6 leading-tight">
+                  {step.title}
+                </h3>
+                <p className="text-white/50 text-[15px] leading-relaxed mb-12 group-hover:text-white/70 transition-colors">
+                  {step.description}
+                </p>
+              </div>
+              
+              <div className="relative h-48 w-full bg-black/20 rounded-3xl border border-white/5 flex items-center justify-center p-6 group-hover:border-white/10 transition-all">
+                <Image
+                  src={step.illustration}
+                  alt={step.title}
+                  width={200}
+                  height={150}
+                  className="w-full h-full object-contain opacity-60 group-hover:opacity-100 transition-all duration-700"
+                />
               </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-10 bg-white border border-slate-100 rounded-2xl p-6 md:p-8 grid grid-cols-1 md:grid-cols-3 gap-4 shadow-sm">
-          <p className="text-sm text-slate-600 font-medium"><span className="font-bold text-slate-900">Data Sovereignty:</span> Your spatial and operational data remains under your full control.</p>
-          <p className="text-sm text-slate-600 font-medium"><span className="font-bold text-slate-900">Accessibility First:</span> Logic includes step-free, lift-priority, and audio-assisted routing.</p>
-          <p className="text-sm text-slate-600 font-medium"><span className="font-bold text-slate-900">Frictionless Access:</span> No mandatory app installs or accounts required for visitor wayfinding.</p>
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+          {[
+            { label: "Data Sovereignty", text: "Your spatial and operational data remains under your full control." },
+            { label: "Inclusion First", text: "Logic includes step-free, lift-priority, and audio-assisted routing." },
+            { label: "Pure Browser", text: "No mandatory app installs or accounts required for visitor wayfinding." }
+          ].map((item) => (
+            <div key={item.label} className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-sm">
+              <p className="text-[13px] text-white/40 mb-2 font-black uppercase tracking-widest">{item.label}</p>
+              <p className="text-[14px] text-white/80 leading-relaxed">{item.text}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
