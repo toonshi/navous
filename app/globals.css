@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #00E5FF;
+  --color-primary: #13B7DA;
   --color-secondary: #0F172A;
+  --color-coral: #FFADAD;
+  --color-peach: #FFD6A5;
+  --color-lemon: #FDFFB6;
+  --color-mint: #CAFFBF;
   --font-sans: 'Inter', sans-serif;
   --font-space-grotesque: 'Space Grotesk', sans-serif;
   --font-dosis: 'Dosis', sans-serif;
@@ -11,7 +15,7 @@
 }
 
 :root {
-  --background: #F7FDFF;
+  --background: #FAFFFE;
   --foreground: #0F172A;
 }
 

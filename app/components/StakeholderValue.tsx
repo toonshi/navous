@@ -9,8 +9,9 @@ const columns = [
     tagline: "Confidence from step one.",
     illustration: "/illustrations/stakeholder-visitor.svg",
     illustrationAlt: "Person navigating to destination",
-    cardBg: "bg-sky-50 border-sky-100",
-    tagBg: "bg-primary/10 text-primary",
+    cardBg: "#CAFFBF",
+    tagColor: "text-emerald-700",
+    tagBg: "bg-emerald-100",
     isDark: false,
     features: [
       "Find any room, store, or office in under 60 seconds",
@@ -24,8 +25,9 @@ const columns = [
     tagline: "Clarity across every floor.",
     illustration: "/illustrations/stakeholder-operator.svg",
     illustrationAlt: "Facility heatmap dashboard",
-    cardBg: "bg-slate-900 border-slate-800",
-    tagBg: "bg-primary/20 text-primary",
+    cardBg: "#13B7DA",
+    tagColor: "text-white/90",
+    tagBg: "bg-white/20",
     isDark: true,
     features: [
       "Real-time foot-traffic heatmaps by zone",
@@ -39,8 +41,9 @@ const columns = [
     tagline: "Turn footfall into revenue.",
     illustration: "/illustrations/stakeholder-tenant.svg",
     illustrationAlt: "Store visible in indoor search results",
-    cardBg: "bg-amber-50 border-amber-100",
-    tagBg: "bg-amber-500/10 text-amber-600",
+    cardBg: "#FFD6A5",
+    tagColor: "text-orange-700",
+    tagBg: "bg-orange-100",
     isDark: false,
     features: [
       "Push location-triggered promotions to nearby visitors",
@@ -53,7 +56,7 @@ const columns = [
 
 export default function StakeholderValue() {
   return (
-    <section className="py-24 px-8" style={{ background: "linear-gradient(180deg, #f8fafc 0%, #f0feff 100%)" }}>
+    <section className="py-24 px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
           <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 mb-4">
@@ -68,7 +71,8 @@ export default function StakeholderValue() {
           {columns.map((col) => (
             <div
               key={col.audience}
-              className={`border rounded-2xl flex flex-col overflow-hidden shadow-sm hover:shadow-md transition-shadow ${col.cardBg}`}
+              className="rounded-2xl flex flex-col overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+              style={{ background: col.cardBg }}
             >
               {/* Illustration */}
               <Image
@@ -81,7 +85,7 @@ export default function StakeholderValue() {
               {/* Content */}
               <div className="p-8 flex flex-col gap-5 flex-1">
                 <div>
-                  <span className={`inline-block text-xs font-bold px-3 py-1 rounded-full mb-3 ${col.tagBg}`}>
+                  <span className={`inline-block text-xs font-bold px-3 py-1 rounded-full mb-3 ${col.tagBg} ${col.tagColor}`}>
                     {col.audience}
                   </span>
                   <p className={`font-space-grotesque text-xl font-bold leading-snug ${col.isDark ? 'text-white' : 'text-slate-900'}`}>
@@ -91,8 +95,8 @@ export default function StakeholderValue() {
                 <ul className="flex flex-col gap-3">
                   {col.features.map((feat) => (
                     <li key={feat} className="flex items-start gap-2.5 text-sm">
-                      <span className="mt-0.5 shrink-0 text-primary">✓</span>
-                      <span className={col.isDark ? 'text-slate-300 font-medium' : 'text-slate-700 font-medium'}>{feat}</span>
+                      <span className={`mt-0.5 shrink-0 font-bold ${col.isDark ? 'text-white' : 'text-slate-800'}`}>✓</span>
+                      <span className={col.isDark ? 'text-white/90 font-medium' : 'text-slate-700 font-medium'}>{feat}</span>
                     </li>
                   ))}
                 </ul>

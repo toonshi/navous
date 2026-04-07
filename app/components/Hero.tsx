@@ -213,15 +213,15 @@ export default function Hero() {
 
   return (
     <section className="relative h-[calc(100vh-4rem)] overflow-hidden flex flex-col items-center pt-6 px-12"
-      style={{ background: "radial-gradient(circle at 0% 0%, #e0f7fc 0%, #f0feff 40%, #fff8f0 75%, #fef3e2 100%)" }}
+      style={{ background: "radial-gradient(circle at 10% 10%, #CAFFBF 0%, #FDFFB6 30%, #FFD6A5 60%, #FFADAD 100%)" }}
     >
-      {/* Vibrant background blobs with more saturation */}
-      <div className="absolute top-[-80px] right-[-80px] w-[500px] h-[500px] rounded-full opacity-40 blur-[100px] pointer-events-none animate-pulse"
-        style={{ background: "radial-gradient(circle, #00E5FF 0%, transparent 70%)" }} />
-      <div className="absolute bottom-[-60px] left-[-60px] w-[400px] h-[400px] rounded-full opacity-30 blur-[80px] pointer-events-none"
-        style={{ background: "radial-gradient(circle, #FB7185 0%, transparent 70%)" }} />
-      <div className="absolute top-1/2 right-1/4 w-[300px] h-[300px] rounded-full opacity-20 blur-[60px] pointer-events-none"
-        style={{ background: "radial-gradient(circle, #FCD34D 0%, transparent 70%)" }} />
+      {/* Pastel background blobs */}
+      <div className="absolute top-[-80px] right-[-80px] w-[500px] h-[500px] rounded-full opacity-50 blur-[100px] pointer-events-none animate-pulse"
+        style={{ background: "radial-gradient(circle, #13B7DA 0%, transparent 70%)" }} />
+      <div className="absolute bottom-[-60px] left-[-60px] w-[400px] h-[400px] rounded-full opacity-40 blur-[80px] pointer-events-none"
+        style={{ background: "radial-gradient(circle, #FFADAD 0%, transparent 70%)" }} />
+      <div className="absolute top-1/2 right-1/4 w-[300px] h-[300px] rounded-full opacity-30 blur-[60px] pointer-events-none"
+        style={{ background: "radial-gradient(circle, #CAFFBF 0%, transparent 70%)" }} />
 
       {/* Background Canvas — walking people */}
       <canvas
