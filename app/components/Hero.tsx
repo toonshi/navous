@@ -222,36 +222,27 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-start">
         {/* Eyebrow */}
-        <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-6">
+        <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-4">
           Turn Every Visitor into a Navigated Guest
         </p>
 
-        <h1 className="font-space-grotesque text-[3.2rem] md:text-[4.4rem] lg:text-[5.5rem] font-bold tracking-tighter text-black leading-[1.04] mb-8">
+        <h1 className="font-space-grotesque text-[3.2rem] md:text-[4.4rem] lg:text-[5.5rem] font-bold tracking-tighter text-black leading-[1.04] mb-6">
           Stop losing people
           <br />
           in the hallways.
         </h1>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 w-full">
-          <div>
-            <p className="text-gray-900 text-xl md:text-2xl leading-relaxed font-medium">
-              Navous transforms your space into a searchable, intelligent environment. Make sure your visitors find exactly what they need, the moment they enter your doors.
-            </p>
-          </div>
-          
-          <div className="flex flex-col items-start lg:items-start gap-8">
-            <p className="text-gray-600 text-lg leading-relaxed">
-              One spatial intelligence platform for all your facility needs.
-              From real-time wayfinding to deep movement analytics, drive
-              operational efficiency and lasting visitor satisfaction.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <button className="border-2 border-primary text-primary px-10 py-4 rounded-md font-bold text-lg hover:bg-primary hover:text-white transition cursor-pointer">
-                Book a Demo
-              </button>
-            </div>
-          </div>
-        </div>
+        <p className="text-gray-700 text-xl md:text-2xl leading-relaxed max-w-2xl mb-4">
+          Navous transforms your space into a searchable, intelligent environment — so visitors find exactly what they need, the moment they walk in.
+        </p>
+
+        <p className="text-gray-500 text-base md:text-lg leading-relaxed max-w-xl mb-10">
+          One platform for real-time wayfinding, movement analytics, and lasting visitor satisfaction.
+        </p>
+
+        <button className="border-2 border-primary text-primary px-10 py-4 rounded-md font-bold text-lg hover:bg-primary hover:text-white transition cursor-pointer">
+          Book a Demo
+        </button>
       </div>
     </section>
   );
