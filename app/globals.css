@@ -2,14 +2,14 @@
 
 @theme {
   --color-primary: #13B7DA;
-  --color-secondary: #0F172A;
+  --color-secondary: #111111;
   --font-sans: 'Inter', sans-serif;
   --font-space-grotesque: 'Space Grotesk', sans-serif;
 }
 
 :root {
   --background: #ffffff;
-  --foreground: #0f172a;
+  --foreground: #111111;
 }
 
 body {

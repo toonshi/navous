@@ -38,7 +38,7 @@ export default function Testimonials() {
           <span className="text-primary text-sm font-semibold uppercase tracking-widest">
             Social Proof
           </span>
-          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 mt-3 mb-4">
+          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-secondary mt-3 mb-4">
             What operators say
             <br />
             after going live.
@@ -65,7 +65,7 @@ export default function Testimonials() {
                   {t.name.charAt(0)}
                 </div>
                 <div>
-                  <p className="font-bold text-sm text-slate-900">{t.name}</p>
+                  <p className="font-bold text-sm text-secondary">{t.name}</p>
                   <p className="text-xs text-slate-400">{t.title}</p>
                 </div>
               </div>
