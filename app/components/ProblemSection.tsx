@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function ProblemSection() {
   return (
-    <section className="py-24 px-8 bg-white">
+    <section className="py-24 px-8 bg-[#F7FDFF]">
       <div className="max-w-7xl mx-auto flex flex-col gap-28">
 
         {/* Row 1 — left text, right illustration */}

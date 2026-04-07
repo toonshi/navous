@@ -67,7 +67,7 @@ const tiers = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-24 px-8 bg-white">
+    <section id="pricing" className="py-24 px-8 bg-[#F7FDFF]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-14">
@@ -91,7 +91,7 @@ export default function Pricing() {
               className={`rounded-2xl p-8 flex flex-col gap-6 ${
                 tier.highlight
                   ? "bg-dark text-white border-2 border-primary relative"
-                  : "bg-white border border-slate-100 shadow-sm"
+                  : "bg-[#F7FDFF] border border-slate-100 shadow-sm"
               }`}
             >
               {tier.highlight && (
@@ -145,7 +145,7 @@ export default function Pricing() {
                 className={`w-full py-3.5 rounded-full font-bold text-sm transition cursor-pointer ${
                   tier.highlight
                     ? "bg-primary text-white hover:brightness-110"
-                    : "border border-slate-200 text-secondary hover:border-slate-400 bg-white"
+                    : "border border-slate-200 text-secondary hover:border-slate-400 bg-[#F7FDFF]"
                 }`}
               >
                 {tier.cta}
