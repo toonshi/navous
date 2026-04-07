@@ -40,9 +40,6 @@ export default function ProblemSection() {
         {/* Row 2 — right text, left illustration (zigzag) */}
         <div className="flex flex-col md:flex-row-reverse md:items-center gap-12 lg:gap-20">
           <div className="flex-1 max-w-xl">
-            <span className="text-primary text-sm font-semibold uppercase tracking-widest mb-4 block">
-              Operational Intelligence
-            </span>
             <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-secondary leading-tight mb-6">
               Your building is generating data you aren&apos;t seeing.
             </h2>
@@ -67,9 +64,6 @@ export default function ProblemSection() {
         {/* Row 3 — left text, right illustration */}
         <div className="flex flex-col md:flex-row md:items-center gap-12 lg:gap-20">
           <div className="flex-1 max-w-xl">
-            <span className="text-primary text-sm font-semibold uppercase tracking-widest mb-4 block">
-              Inclusive by Design
-            </span>
             <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-secondary leading-tight mb-6">
               Accessible Navigation for everybody.
             </h2>

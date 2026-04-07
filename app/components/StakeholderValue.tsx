@@ -47,10 +47,7 @@ export default function StakeholderValue() {
     <section className="py-24 px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
-          <span className="text-primary text-sm font-semibold uppercase tracking-widest">
-            Who it&apos;s for
-          </span>
-          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-secondary mt-3 mb-4">
+          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-secondary mb-4">
             Everyone in your building wins.
           </h2>
           <p className="text-secondary/60 text-lg max-w-xl mx-auto leading-relaxed">

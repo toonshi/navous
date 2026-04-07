@@ -27,11 +27,10 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <section id="faq" className="bg-white py-24 px-8">
+    <section id="faq" className="bg-slate-50 py-24 px-8">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <span className="text-primary text-sm font-semibold uppercase tracking-widest">FAQ</span>
-          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-secondary mt-3 mb-4">
+          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-secondary mb-4">
             Questions hospital operators ask before rollout.
           </h2>
           <p className="text-secondary/60 text-lg leading-relaxed">
