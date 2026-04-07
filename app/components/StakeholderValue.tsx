@@ -1,13 +1,12 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 
 const columns = [
   {
     audience: "For Visitors",
     tagline: "Confidence from step one.",
-    illustration: "https://images.unsplash.com/photo-1497250681558-4444521fa40d?q=80&w=1000&auto=format&fit=crop",
+    illustration: "/visitor-nav.jpg",
     illustrationAlt: "Person navigating to destination",
     cardBg: "bg-slate-900/40 border-white/5",
     tagBg: "bg-accent text-slate-900",
@@ -21,7 +20,7 @@ const columns = [
   {
     audience: "For Facility Operators",
     tagline: "Unprecedented visibility.",
-    illustration: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop",
+    illustration: "/operator-dashboard.jpg",
     illustrationAlt: "Facility heatmap dashboard",
     cardBg: "bg-slate-900/60 border-white/10",
     tagBg: "bg-[#13B7DA] text-white",
@@ -35,7 +34,7 @@ const columns = [
   {
     audience: "For Businesses & Tenants",
     tagline: "Turn footfall into ROI.",
-    illustration: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1000&auto=format&fit=crop",
+    illustration: "/tenant-data.jpg",
     illustrationAlt: "Store visible in indoor search results",
     cardBg: "bg-slate-900/40 border-white/5",
     tagBg: "bg-accent text-slate-900",

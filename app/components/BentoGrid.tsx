@@ -78,7 +78,7 @@ const BentoGrid = () => {
             </div>
             <div className="relative z-10 w-full md:w-64 h-48 bg-black/40 rounded-3xl border border-white/5 overflow-hidden group-hover:border-white/10 transition-all">
                <img
-                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1000&auto=format&fit=crop"
+                src="/infra-data.jpg"
                 alt="Infrastructure Data"
                 className="w-full h-full object-cover opacity-40 group-hover:opacity-80 transition-opacity duration-700"
               />

@@ -26,9 +26,14 @@ const useCases: UseCase[] = [
     title: "Healthcare",
     category: "Hospitals",
     description: "Eliminate late appointments.",
-    longDescription: "Transform the stressful 'first 15 minutes' into a guided journey.",
+    longDescription: "Navous transforms the stressful 'first 15 minutes' into a guided, dignified journey for every patient.",
     image: "/hospital.jpg",
-    benefits: ["Wheelchair routing", "Staff time saved"],
+    benefits: [
+      "Wheelchair-accessible routing", 
+      "Staff time saved by 15%", 
+      "Direct-to-ward navigation",
+      "Real-time closure rerouting"
+    ],
     stats: [{ label: "Anxiety", value: "40%" }, { label: "On-Time", value: "98%" }],
   },
   {
@@ -36,9 +41,14 @@ const useCases: UseCase[] = [
     title: "Retail",
     category: "Malls",
     description: "Guide shoppers and boost ROI.",
-    longDescription: "Turn your mall into a searchable ecosystem.",
+    longDescription: "Turn your mall into a searchable ecosystem. Capturing intent data to drive storefront traffic.",
     image: "/shopping.jpg",
-    benefits: ["Store search", "Traffic heatmaps"],
+    benefits: [
+      "Store-front search", 
+      "Traffic flow heatmaps", 
+      "Proximity sale alerts",
+      "Multi-floor directory"
+    ],
     stats: [{ label: "Conversion", value: "+22%" }, { label: "Accuracy", value: "0.5m" }],
   },
   {
@@ -46,9 +56,14 @@ const useCases: UseCase[] = [
     title: "Aviation",
     category: "Airports",
     description: "Ensure passengers never miss a flight.",
-    longDescription: "Complex terminals become intuitive and stress-free.",
+    longDescription: "Complex terminal environments become intuitive. Guiding passengers through every security gate.",
     image: "/airport.jpg",
-    benefits: ["Gate notifications", "Wait routing"],
+    benefits: [
+      "Gate-change alerts", 
+      "Wait-time routing", 
+      "Duty-free proximity",
+      "Stress-free transfers"
+    ],
     stats: [{ label: "Missed Flights", value: "-12%" }, { label: "Dwell ROI", value: "18%" }],
   },
   {
@@ -56,19 +71,29 @@ const useCases: UseCase[] = [
     title: "Corporate",
     category: "Offices",
     description: "Find rooms and desks easily.",
-    longDescription: "Maximize real estate efficiency with workplace sync.",
+    longDescription: "Maximize your real estate efficiency with deep workplace integrations and real-time syncing.",
     image: "/corporate.jpg",
-    benefits: ["Room booking", "Visitor flow"],
-    stats: [{ label: "Start Speed", value: "+5m" }, { label: "Space Util.", value: "92%" }],
+    benefits: [
+      "Meeting room booking sync", 
+      "Visitor check-in flow", 
+      "Hot-desk wayfinding",
+      "Staff directory routing"
+    ],
+    stats: [{ label: "Start Speed", value: "+5m" }, { label: "Utilization", value: "92%" }],
   },
   {
     id: 4,
     title: "Residential",
     category: "Apartments",
     description: "Secure last-mile delivery.",
-    longDescription: "Redefines home entry, from courier access to resident security.",
+    longDescription: "Redefines home entry, from secure courier access to private resident guest management.",
     image: "/apartments.jpg",
-    benefits: ["Courier routing", "Area fencing"],
+    benefits: [
+      "Last-mile courier routing", 
+      "Restricted area fencing", 
+      "Emergency broadcasting",
+      "Guest access control"
+    ],
     stats: [{ label: "Delivery", value: "100%" }, { label: "Security", value: "<30s" }],
   },
   {
@@ -76,9 +101,14 @@ const useCases: UseCase[] = [
     title: "Academic",
     category: "Universities",
     description: "Campus orientation and events.",
-    longDescription: "Orientation day becomes effortless with campus routing.",
+    longDescription: "Orientation day becomes effortless with high-precision campus routing for students and staff.",
     image: "/universities.jpg",
-    benefits: ["Schedule sync", "Event routing"],
+    benefits: [
+      "Orientation wayfinding", 
+      "Schedule-to-room sync", 
+      "Real-time event routing",
+      "Campus-wide alerts"
+    ],
     stats: [{ label: "Orientation", value: "-35%" }, { label: "Event Flow", value: "95%" }],
   },
   {
@@ -86,9 +116,14 @@ const useCases: UseCase[] = [
     title: "Civic",
     category: "Government",
     description: "Inclusive wayfinding.",
-    longDescription: "Public service belongs to everyone. Inclusive access for all.",
+    longDescription: "Public service belongs to everyone. Empowering citizens with diverse accessibility needs.",
     image: "/parliament.jpg",
-    benefits: ["PWD-optimized", "20+ Languages"],
+    benefits: [
+      "PWD-optimized routing", 
+      "24+ Language support", 
+      "Audio-guided journeys",
+      "GDPR data sovereignty"
+    ],
     stats: [{ label: "Equality", value: "100%" }, { label: "Languages", value: "24" }],
   },
 ];
@@ -101,7 +136,7 @@ const UseCaseGrid = () => {
   useLayoutEffect(() => {
     if (pretext && typeof pretext.prepare === 'function') {
       useCases.forEach(uc => {
-        pretext.prepare(uc.longDescription, "12px Inter, sans-serif");
+        pretext.prepare(uc.longDescription, "14px Inter, sans-serif");
       });
     }
   }, []);
@@ -112,13 +147,13 @@ const UseCaseGrid = () => {
     let colTracks = "1fr 1fr 1fr 1fr";
     let rowTracks = "1fr 1fr 1fr";
 
-    if (hoveredId === 0) { colTracks = "2.2fr 1fr 0.4fr 0.4fr"; rowTracks = "2fr 0.6fr 0.4fr"; }
-    else if (hoveredId === 1) { colTracks = "0.4fr 0.4fr 2fr 1.2fr"; rowTracks = "2fr 0.6fr 0.4fr"; }
-    else if (hoveredId === 2) { colTracks = "0.4fr 0.4fr 0.4fr 2.8fr"; rowTracks = "1fr 1fr 1fr"; }
-    else if (hoveredId === 3) { colTracks = "0.4fr 0.4fr 2.2fr 1fr"; rowTracks = "0.4fr 2fr 0.6fr"; }
-    else if (hoveredId === 4) { colTracks = "2.2fr 0.6fr 0.6fr 0.6fr"; rowTracks = "0.4fr 0.6fr 2fr"; }
-    else if (hoveredId === 5) { colTracks = "0.4fr 2fr 1.2fr 0.4fr"; rowTracks = "0.4fr 0.6fr 2fr"; }
-    else if (hoveredId === 6) { colTracks = "0.4fr 0.4fr 0.4fr 2.8fr"; rowTracks = "0.4fr 0.6fr 2fr"; }
+    if (hoveredId === 0) { colTracks = "2.5fr 1fr 0.4fr 0.4fr"; rowTracks = "2.2fr 0.6fr 0.4fr"; }
+    else if (hoveredId === 1) { colTracks = "0.4fr 0.4fr 2.2fr 1.2fr"; rowTracks = "2.2fr 0.6fr 0.4fr"; }
+    else if (hoveredId === 2) { colTracks = "0.4fr 0.4fr 0.4fr 3fr"; rowTracks = "1fr 1fr 1fr"; }
+    else if (hoveredId === 3) { colTracks = "0.4fr 0.4fr 2.5fr 1fr"; rowTracks = "0.4fr 2.2fr 0.6fr"; }
+    else if (hoveredId === 4) { colTracks = "2.5fr 0.6fr 0.6fr 0.6fr"; rowTracks = "0.4fr 0.6fr 2.2fr"; }
+    else if (hoveredId === 5) { colTracks = "0.4fr 2.5fr 1.2fr 0.4fr"; rowTracks = "0.4fr 0.6fr 2.2fr"; }
+    else if (hoveredId === 6) { colTracks = "0.4fr 0.4fr 0.4fr 3fr"; rowTracks = "0.4fr 0.6fr 2.2fr"; }
 
     gsap.to(gridRef.current, {
       gridTemplateColumns: colTracks,
@@ -133,10 +168,10 @@ const UseCaseGrid = () => {
     <section ref={containerRef} id="solutions" className="py-32 px-12 bg-black text-white overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
         
-        {/* Left Side: Shrunk 7-Item Bento Grid (45% Width) */}
+        {/* Left Side: Shrunk 7-Item Bento Grid (52% Width) */}
         <div 
           ref={gridRef}
-          className="hidden md:grid gap-3 w-full lg:w-[45%] h-[550px] will-change-[grid-template-columns,grid-template-rows]"
+          className="hidden md:grid gap-4 w-full lg:w-[52%] h-[650px] will-change-[grid-template-columns,grid-template-rows]"
           style={{ gridTemplateColumns: "1fr 1fr 1fr 1fr", gridTemplateRows: "1fr 1fr 1fr" }}
         >
           {useCases.map((useCase, idx) => {
@@ -155,7 +190,7 @@ const UseCaseGrid = () => {
                 key={useCase.id}
                 onMouseEnter={() => setHoveredId(useCase.id)}
                 onMouseLeave={() => setHoveredId(null)}
-                className={`relative rounded-[1.2rem] overflow-hidden group border border-white/5 bg-slate-900 transition-all duration-300 ${initialPos[idx]}`}
+                className={`relative rounded-[1.5rem] overflow-hidden group border border-white/5 bg-slate-900 transition-all duration-300 ${initialPos[idx]}`}
               >
                 <Image
                   src={useCase.image}
@@ -168,34 +203,34 @@ const UseCaseGrid = () => {
                 <div className={`absolute inset-0 transition-opacity duration-700 ${hoveredId === useCase.id ? "bg-black/40" : "bg-black/10"}`} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent z-10" />
 
-                <div className="absolute inset-0 z-20 p-5 flex flex-col justify-end pointer-events-none">
+                <div className="absolute inset-0 z-20 p-6 flex flex-col justify-end pointer-events-none">
                   <div className="transition-all duration-500">
-                    <span className="text-accent text-[7px] font-bold uppercase tracking-[0.25em] mb-1.5 block">
+                    <span className="text-accent text-[9px] font-bold uppercase tracking-[0.25em] mb-2 block">
                       {useCase.category}
                     </span>
-                    <h3 className={`font-sans font-medium tracking-tight mb-1 text-white transition-all duration-500 ${hoveredId === useCase.id ? "text-2xl" : "text-[12px] leading-tight"}`}>
+                    <h3 className={`font-sans font-medium tracking-tight mb-2 text-white transition-all duration-500 ${hoveredId === useCase.id ? "text-4xl" : "text-lg"}`}>
                       {useCase.title}
                     </h3>
                     
-                    <div className={`transition-all duration-500 ${hoveredId === useCase.id ? "opacity-100 mt-3" : "opacity-0 h-0"}`}>
-                      <p className="text-white/80 text-[11px] max-w-xs mb-4 leading-relaxed">
+                    <div className={`transition-all duration-500 ${hoveredId === useCase.id ? "opacity-100 mt-4" : "opacity-0 h-0"}`}>
+                      <p className="text-white/80 text-[14px] max-w-xl mb-6 leading-relaxed">
                         {useCase.longDescription}
                       </p>
 
-                      <ul className="flex flex-col gap-1.5 mb-4">
+                      <ul className="flex flex-col gap-2 mb-8">
                         {useCase.benefits.map((benefit) => (
-                          <li key={benefit} className="flex items-center gap-2 text-[9px] font-medium text-white/90">
+                          <li key={benefit} className="flex items-center gap-3 text-[12px] font-medium text-white/90">
                             <span className="text-accent font-black">✓</span>
                             {benefit}
                           </li>
                         ))}
                       </ul>
 
-                      <div className="grid grid-cols-2 gap-4">
+                      <div className="grid grid-cols-2 gap-8">
                         {useCase.stats.map(stat => (
                           <div key={stat.label}>
-                            <p className="text-xl font-black text-accent mb-0 tracking-tight">{stat.value}</p>
-                            <p className="text-[7px] font-black uppercase tracking-widest text-white/40">{stat.label}</p>
+                            <p className="text-3xl font-black text-accent mb-0.5 tracking-tight">{stat.value}</p>
+                            <p className="text-[9px] font-black uppercase tracking-widest text-white/40">{stat.label}</p>
                           </div>
                         ))}
                       </div>
@@ -207,8 +242,8 @@ const UseCaseGrid = () => {
           })}
         </div>
 
-        {/* Right Side: High-Impact Copy (55% Width) */}
-        <div className="flex-1 text-left lg:pl-16">
+        {/* Right Side: High-Impact Copy */}
+        <div className="flex-1 text-left lg:pl-12">
           <span className="text-accent text-[12px] font-bold uppercase tracking-[0.3em] mb-8 block">
             Industry Reach
           </span>

@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 
 const steps = [
   {
@@ -10,7 +9,7 @@ const steps = [
     description:
       "Send us your existing floor plans. We convert them into a digital twin while you place our discreet, stick-on Bluetooth sensors. No wiring, no complex IT, just minutes per room.",
     accent: "bg-accent text-slate-900",
-    illustration: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1000&auto=format&fit=crop",
+    illustration: "/map-prep.jpg",
   },
   {
     number: "02",
@@ -18,7 +17,7 @@ const steps = [
     description:
       "We configure your routing logic and calibrate the sensors for sub-meter accuracy. Your team tests the experience on their own phones to ensure the directions are flawless.",
     accent: "bg-accent text-slate-900",
-    illustration: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1000&auto=format&fit=crop",
+    illustration: "/calibration.jpg",
   },
   {
     number: "03",
@@ -26,7 +25,7 @@ const steps = [
     description:
       "Place QR codes at entry points. Visitors scan once and get instant, turn-by-turn guidance through their mobile browser. No app downloads required. You see results from day one.",
     accent: "bg-[#13B7DA] text-white",
-    illustration: "https://images.unsplash.com/photo-1554469384-e58fac16e23a?q=80&w=1000&auto=format&fit=crop",
+    illustration: "/launch.jpg",
   },
 ];
 

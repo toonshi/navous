@@ -33,7 +33,7 @@ export default function ProblemSection() {
               </div>
               <div className="relative h-64 w-full bg-black/40 rounded-2xl border border-white/5 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1541888086425-d81bb19240f5?q=80&w=1000&auto=format&fit=crop"
+                  src="/hallway-busy.jpg"
                   alt="Busy Hallway"
                   className="w-full h-full object-cover opacity-40 group-hover:opacity-80 transition-opacity duration-700 grayscale"
                 />
@@ -55,7 +55,7 @@ export default function ProblemSection() {
               </div>
               <div className="relative h-64 w-full bg-black/40 rounded-2xl border border-white/5 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop"
+                  src="/abstract-data.jpg"
                   alt="Abstract Data"
                   className="w-full h-full object-cover opacity-40 group-hover:opacity-80 transition-opacity duration-700 grayscale"
                 />
