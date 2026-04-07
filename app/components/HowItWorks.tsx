@@ -32,12 +32,9 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="bg-white py-24 px-8">
+    <section id="how-it-works" className="bg-slate-50 py-24 px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <span className="text-primary text-sm font-semibold uppercase tracking-widest">
-            Process
-          </span>
           <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-secondary mt-3 mb-4">
             Live in 3 weeks. Not 3 months.
           </h2>

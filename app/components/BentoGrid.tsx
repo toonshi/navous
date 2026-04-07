@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const BentoGrid = () => {
   return (
-    <section id="features" className="bg-white py-32 px-8">
+    <section id="features" className="bg-slate-50 py-32 px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-secondary mb-4">

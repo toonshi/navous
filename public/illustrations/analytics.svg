@@ -1,14 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="320" height="240" viewBox="0 0 320 240" fill="none">
-  <rect x="8" y="8" width="304" height="224" rx="28" fill="#0D1628"/>
-  <rect x="30" y="34" width="260" height="172" rx="16" fill="#1E293B"/>
-  <rect x="48" y="56" width="82" height="12" rx="6" fill="#334155"/>
-  <rect x="138" y="56" width="36" height="12" rx="6" fill="#13B7DA" fill-opacity="0.4"/>
-  <path d="M50 178H272" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
-  <rect x="66" y="132" width="28" height="46" rx="8" fill="#13B7DA"/>
-  <rect x="108" y="116" width="28" height="62" rx="8" fill="#13B7DA" fill-opacity="0.8"/>
-  <rect x="150" y="96" width="28" height="82" rx="8" fill="#0B6B84"/>
-  <rect x="192" y="108" width="28" height="70" rx="8" fill="#13B7DA" fill-opacity="0.68"/>
-  <rect x="234" y="86" width="28" height="92" rx="8" fill="#0A0F1E"/>
-  <path d="M66 108C87 103 112 90 129 91C151 92 163 104 187 100C214 96 235 69 262 62" stroke="#13B7DA" stroke-width="4" stroke-linecap="round"/>
-  <circle cx="262" cy="62" r="6" fill="#13B7DA"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" fill="none">
+  <circle cx="160" cy="110" r="95" fill="#D6F0F8"/>
+  <!-- Main card -->
+  <rect x="36" y="44" width="248" height="166" rx="16" fill="white"/>
+  <!-- Floor grid -->
+  <rect x="52" y="60" width="80" height="60" rx="4" fill="#F8FBFD"/>
+  <rect x="140" y="60" width="60" height="60" rx="4" fill="#F8FBFD"/>
+  <rect x="208" y="60" width="60" height="60" rx="4" fill="#F8FBFD"/>
+  <rect x="52" y="128" width="60" height="66" rx="4" fill="#F8FBFD"/>
+  <rect x="120" y="128" width="88" height="66" rx="4" fill="#F8FBFD"/>
+  <rect x="216" y="128" width="52" height="66" rx="4" fill="#F8FBFD"/>
+  <!-- Heat zones -->
+  <ellipse cx="92" cy="88" rx="38" ry="28" fill="#13B7DA" opacity="0.2"/>
+  <ellipse cx="92" cy="88" rx="20" ry="15" fill="#13B7DA" opacity="0.35"/>
+  <ellipse cx="164" cy="164" rx="44" ry="32" fill="#FCD34D" opacity="0.25"/>
+  <ellipse cx="164" cy="164" rx="24" ry="18" fill="#FCD34D" opacity="0.4"/>
+  <ellipse cx="236" cy="75" rx="28" ry="22" fill="#FB7185" opacity="0.2"/>
+  <ellipse cx="236" cy="75" rx="14" ry="11" fill="#FB7185" opacity="0.38"/>
+  <!-- Movement dots -->
+  <circle cx="76" cy="84" r="4" fill="#13B7DA"/>
+  <circle cx="96" cy="90" r="3" fill="#13B7DA" opacity="0.7"/>
+  <circle cx="108" cy="80" r="3" fill="#13B7DA" opacity="0.5"/>
+  <circle cx="152" cy="166" r="4" fill="#FCD34D"/>
+  <circle cx="174" cy="158" r="3" fill="#FCD34D" opacity="0.8"/>
+  <circle cx="163" cy="178" r="3" fill="#FCD34D" opacity="0.6"/>
+  <circle cx="232" cy="72" r="4" fill="#FB7185"/>
+  <circle cx="244" cy="80" r="3" fill="#FB7185" opacity="0.7"/>
 </svg>

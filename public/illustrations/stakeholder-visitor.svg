@@ -1,37 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="320" height="200" viewBox="0 0 320 200" fill="none">
-  <!-- Background -->
-  <rect width="320" height="200" rx="16" fill="#0D1628"/>
-
-  <!-- Person silhouette (standing) -->
-  <circle cx="100" cy="68" r="16" fill="#334155"/>
-  <circle cx="100" cy="60" r="10" fill="#334155"/>
-  <path d="M80 112 Q80 88 100 88 Q120 88 120 112" fill="#334155"/>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" fill="none">
+  <circle cx="160" cy="100" r="85" fill="#D6F0F8"/>
+  <!-- Person -->
+  <circle cx="108" cy="88" r="32" fill="#FCD34D"/>
+  <circle cx="108" cy="78" r="16" fill="#FB7185"/>
+  <path d="M91 122 Q91 107 108 107 Q125 107 125 122" fill="#FB7185"/>
   <!-- Phone in hand -->
-  <rect x="118" y="90" width="22" height="34" rx="4" fill="#1E293B" stroke="#334155" stroke-width="1.5"/>
-  <rect x="121" y="94" width="16" height="22" rx="2" fill="#162032"/>
-  <!-- Mini map on phone -->
-  <line x1="121" y1="102" x2="137" y2="102" stroke="#334155" stroke-width="0.8"/>
-  <path d="M123 112 L123 104 L130 104" stroke="#13B7DA" stroke-width="1.5" stroke-dasharray="2,1.5" fill="none" stroke-linecap="round"/>
-  <circle cx="123" cy="112" r="2" fill="#13B7DA"/>
-  <circle cx="130" cy="104" r="2.5" fill="#0A0F1E"/>
-
-  <!-- Navigation arrows floating -->
-  <rect x="152" y="72" width="36" height="20" rx="10" fill="#13B7DA"/>
-  <text x="170" y="86" font-family="system-ui,sans-serif" font-size="10" fill="white" text-anchor="middle">→</text>
-
-  <rect x="154" y="100" width="36" height="20" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1"/>
-  <text x="172" y="114" font-family="system-ui,sans-serif" font-size="9" fill="#64748B" text-anchor="middle">60s</text>
-
+  <rect x="122" y="88" width="22" height="34" rx="5" fill="white"/>
+  <rect x="125" y="92" width="16" height="22" rx="3" fill="#E2F4F8"/>
+  <path d="M127 106 L131 102 L135 104 L139 100" stroke="#13B7DA" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="127" cy="106" r="2" fill="#FCD34D"/>
+  <circle cx="139" cy="100" r="2.5" fill="#13B7DA"/>
   <!-- Destination pin -->
-  <circle cx="232" cy="80" r="20" fill="#162032"/>
-  <path d="M232 62C224 62 218 68 218 76C218 86 230 97 231 98C231.5 98.5 232.5 98.5 233 98C234 97 246 86 246 76C246 68 240 62 232 62Z" fill="#0A0F1E"/>
-  <circle cx="232" cy="76" r="5" fill="#13B7DA"/>
-
-  <!-- Ground line -->
-  <line x1="60" y1="140" x2="270" y2="140" stroke="#334155" stroke-width="1"/>
-
-  <!-- Confidence label -->
-  <rect x="60" y="152" width="200" height="22" rx="11" fill="#1E293B" stroke="#334155" stroke-width="1"/>
-  <text x="160" y="167" font-family="system-ui,sans-serif" font-size="9" fill="#64748B" text-anchor="middle" font-weight="500">Finds destination in under 60 seconds</text>
+  <path d="M218 66 C218 52 228 44 238 44 C248 44 258 52 258 66 C258 78 248 88 238 100 Z" fill="#13B7DA"/>
+  <circle cx="238" cy="65" r="7" fill="white"/>
+  <!-- Route path -->
+  <path d="M150 110 Q180 110 200 90 Q212 78 218 72" stroke="#13B7DA" stroke-width="2.5" stroke-dasharray="6,4" stroke-linecap="round" fill="none"/>
+  <!-- Speed badge -->
+  <rect x="210" y="132" width="72" height="30" rx="15" fill="#34D399"/>
+  <circle cx="226" cy="147" r="8" fill="white"/>
+  <path d="M222 147 L225 150 L230 143" stroke="#34D399" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="240" y="141" width="32" height="6" rx="3" fill="white" opacity="0.8"/>
+  <rect x="240" y="151" width="24" height="5" rx="2.5" fill="white" opacity="0.6"/>
 </svg>

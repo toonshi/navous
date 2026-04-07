@@ -221,11 +221,6 @@ export default function Hero() {
       />
 
       <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-start">
-        {/* Eyebrow */}
-        <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-4">
-          Turn Every Visitor into a Navigated Guest
-        </p>
-
         <h1 className="font-space-grotesque text-[3.2rem] md:text-[4.4rem] lg:text-[5.5rem] font-bold tracking-tighter text-black leading-[1.04] mb-6">
           Stop losing people
           <br />
