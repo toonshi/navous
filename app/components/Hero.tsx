@@ -212,7 +212,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-[calc(100vh-4rem)] overflow-hidden flex flex-col items-center pt-16 px-12 text-center"
+    <section className="relative h-[calc(100vh-4rem)] overflow-hidden flex flex-col items-center pt-6 px-12 text-center"
       style={{ background: "radial-gradient(circle at 0% 0%, #e0f7fc 0%, #f0feff 40%, #fff8f0 75%, #fef3e2 100%)" }}
     >
       {/* Vibrant background blobs with more saturation */}
@@ -231,10 +231,6 @@ export default function Hero() {
       />
 
       <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-center">
-        <span className="inline-block bg-primary/20 text-slate-900 border border-primary/30 text-xs font-black uppercase px-4 py-2 rounded-full mb-8 tracking-[0.2em] shadow-sm glass">
-          Enterprise Indoor Navigation
-        </span>
-
         <h1 className="font-space-grotesque text-[3.2rem] md:text-[4.4rem] lg:text-[5.5rem] font-bold tracking-tighter text-slate-900 leading-[0.98] mb-8">
           Your building,
           <br />
