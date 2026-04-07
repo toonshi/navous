@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #13B7DA;
+  --color-primary: #00E5FF;
   --color-secondary: #0F172A;
   --font-sans: 'Inter', sans-serif;
   --font-space-grotesque: 'Space Grotesk', sans-serif;
@@ -9,7 +9,7 @@
 
 :root {
   --background: #F7FDFF;
-  --foreground: #111111;
+  --foreground: #0F172A;
 }
 
 body {
@@ -17,6 +17,18 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-dark {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 @layer base {

@@ -213,47 +213,48 @@ export default function Hero() {
 
   return (
     <section className="relative h-[calc(100vh-4rem)] overflow-hidden flex flex-col items-start pt-16 px-12 text-left"
-      style={{ background: "linear-gradient(135deg, #e0f7fc 0%, #f0feff 40%, #fff8f0 75%, #fef3e2 100%)" }}
+      style={{ background: "radial-gradient(circle at 0% 0%, #e0f7fc 0%, #f0feff 40%, #fff8f0 75%, #fef3e2 100%)" }}
     >
-      {/* Vibrant background blobs */}
-      <div className="absolute top-[-80px] right-[-80px] w-[420px] h-[420px] rounded-full opacity-30 pointer-events-none"
-        style={{ background: "radial-gradient(circle, #13B7DA 0%, transparent 70%)" }} />
-      <div className="absolute bottom-[-60px] left-[-60px] w-[320px] h-[320px] rounded-full opacity-20 pointer-events-none"
+      {/* Vibrant background blobs with more saturation */}
+      <div className="absolute top-[-80px] right-[-80px] w-[500px] h-[500px] rounded-full opacity-40 blur-[100px] pointer-events-none animate-pulse"
+        style={{ background: "radial-gradient(circle, #00E5FF 0%, transparent 70%)" }} />
+      <div className="absolute bottom-[-60px] left-[-60px] w-[400px] h-[400px] rounded-full opacity-30 blur-[80px] pointer-events-none"
         style={{ background: "radial-gradient(circle, #FB7185 0%, transparent 70%)" }} />
-      <div className="absolute top-1/2 right-1/4 w-[200px] h-[200px] rounded-full opacity-15 pointer-events-none"
+      <div className="absolute top-1/2 right-1/4 w-[300px] h-[300px] rounded-full opacity-20 blur-[60px] pointer-events-none"
         style={{ background: "radial-gradient(circle, #FCD34D 0%, transparent 70%)" }} />
 
       {/* Background Canvas — walking people */}
       <canvas
         ref={canvasRef}
         id="canvas"
-        className="absolute inset-0 w-full h-full pointer-events-none"
+        className="absolute inset-0 w-full h-full pointer-events-none opacity-80"
       />
 
       <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-start">
-        <span className="inline-block bg-primary/10 text-primary text-sm font-bold px-4 py-1.5 rounded-full mb-6 tracking-wide">
+        <span className="inline-block bg-primary/20 text-slate-900 border border-primary/30 text-xs font-black uppercase px-4 py-2 rounded-full mb-8 tracking-[0.2em] shadow-sm glass">
           Enterprise Indoor Navigation
         </span>
 
-        <h1 className="font-space-grotesque text-[3.2rem] md:text-[4.4rem] lg:text-[5.5rem] font-bold tracking-tighter text-slate-900 leading-[1.04] mb-6">
+        <h1 className="font-space-grotesque text-[3.2rem] md:text-[4.4rem] lg:text-[5.5rem] font-bold tracking-tighter text-slate-900 leading-[0.98] mb-8">
           Your building,
           <br />
-          <span className="text-primary">searchable.</span>
+          <span className="text-primary drop-shadow-[0_2px_10px_rgba(0,229,255,0.3)]">searchable.</span>
         </h1>
 
-        <p className="text-slate-800 text-xl md:text-2xl font-medium leading-relaxed max-w-2xl mb-4">
-          Empower visitors with intuitive, real-time indoor navigation. No hardware, no app downloads — just seamless wayfinding that works.
+        <p className="text-slate-800 text-xl md:text-2xl font-semibold leading-relaxed max-w-2xl mb-6">
+          Empower visitors with intuitive, real-time indoor navigation. No hardware, no app downloads — just seamless wayfinding.
         </p>
 
-        <p className="text-slate-600 text-base md:text-lg font-medium leading-relaxed max-w-xl mb-10">
+        <p className="text-slate-600 text-base md:text-lg font-bold tracking-wide leading-relaxed max-w-xl mb-12 flex items-center gap-3">
+          <span className="w-1.5 h-1.5 rounded-full bg-primary animate-ping" />
           Turn-by-turn guidance · Spatial intelligence · Universal accessibility
         </p>
 
-        <div className="flex flex-wrap gap-4">
-          <a href="/how-it-works" className="bg-primary text-white px-10 py-4 rounded-md font-bold text-lg hover:bg-[#0fa3c4] transition cursor-pointer no-underline shadow-lg shadow-primary/20">
+        <div className="flex flex-wrap gap-5">
+          <a href="/how-it-works" className="bg-primary text-slate-900 px-12 py-5 rounded-xl font-black text-lg hover:brightness-110 transition-all hover:scale-[1.02] cursor-pointer no-underline shadow-[0_20px_40px_-15px_rgba(0,229,255,0.4)]">
             See How It Works
           </a>
-          <a href="/features" className="border-2 border-slate-200 text-slate-900 px-10 py-4 rounded-md font-bold text-lg hover:border-slate-900 hover:bg-slate-50 transition cursor-pointer no-underline">
+          <a href="/features" className="glass border-2 border-slate-900/10 text-slate-900 px-12 py-5 rounded-xl font-black text-lg hover:bg-slate-900 hover:text-white transition-all hover:scale-[1.02] cursor-pointer no-underline">
             Explore Features
           </a>
         </div>
