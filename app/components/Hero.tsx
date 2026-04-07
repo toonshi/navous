@@ -233,7 +233,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-center">
         <h1 className="font-bold tracking-tighter text-slate-900 leading-[0.98] mb-8"
           style={{ fontSize: "48.1788px", fontFamily: "'Dosis', sans-serif" }}>
-          Stop <span className="text-blue-600">losing</span> people in the hallways.
+          Stop <span className="text-black">losing</span> people in the hallways.
         </h1>
 
         <p className="text-slate-800 font-semibold leading-relaxed max-w-2xl mb-6"
