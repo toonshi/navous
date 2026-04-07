@@ -26,7 +26,7 @@ export default function UseCases() {
   const sector = sectors[active];
 
   return (
-    <section id="use-cases" className="bg-white py-32 px-8">
+    <section id="use-cases" className="bg-[#F7FDFF] py-32 px-8">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-secondary mb-4">

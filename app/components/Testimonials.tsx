@@ -50,7 +50,7 @@ export default function Testimonials() {
           {testimonials.map((t) => (
             <div
               key={t.name}
-              className="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm flex flex-col justify-between gap-6"
+              className="bg-[#F7FDFF] rounded-2xl p-8 border border-slate-100 shadow-sm flex flex-col justify-between gap-6"
             >
               <div>
                 <span className={`inline-flex text-xs font-bold px-3 py-1.5 rounded-full mb-5 ${t.verticalBg}`}>
