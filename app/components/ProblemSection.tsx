@@ -93,21 +93,16 @@ export default function ProblemSection() {
         </div>
 
         {/* Pull quote */}
-        <div className="bg-slate-50 border border-slate-100 rounded-2xl p-10 flex flex-col md:flex-row md:items-center gap-6">
+        <div className="bg-primary rounded-2xl p-10 flex flex-col md:flex-row md:items-center gap-6">
           <div className="flex-1">
-            <p className="font-space-grotesque text-2xl md:text-3xl font-bold text-secondary leading-snug mb-4">
+            <p className="font-space-grotesque text-2xl md:text-3xl font-bold text-white leading-snug mb-4">
               &ldquo;Navigation is not a nice-to-have. It is the difference between a
               visitor who completes their journey and one who doesn&apos;t.&rdquo;
             </p>
-            <p className="text-secondary/50 text-sm">
+            <p className="text-white/60 text-sm">
               The hidden cost that facility managers stop ignoring once they
               see the data.
             </p>
-          </div>
-          <div className="shrink-0">
-            <button className="bg-primary text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-[#0fa3c4] transition cursor-pointer whitespace-nowrap">
-              Book a Demo
-            </button>
           </div>
         </div>
       </div>

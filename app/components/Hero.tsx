@@ -212,8 +212,18 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen bg-white overflow-hidden flex flex-col items-start pt-20 px-12 text-left">
-      {/* Background Canvas */}
+    <section className="relative h-[calc(100vh-5rem)] overflow-hidden flex flex-col items-start pt-16 px-12 text-left"
+      style={{ background: "linear-gradient(135deg, #e0f7fc 0%, #f0feff 40%, #fff8f0 75%, #fef3e2 100%)" }}
+    >
+      {/* Vibrant background blobs */}
+      <div className="absolute top-[-80px] right-[-80px] w-[420px] h-[420px] rounded-full opacity-30 pointer-events-none"
+        style={{ background: "radial-gradient(circle, #13B7DA 0%, transparent 70%)" }} />
+      <div className="absolute bottom-[-60px] left-[-60px] w-[320px] h-[320px] rounded-full opacity-20 pointer-events-none"
+        style={{ background: "radial-gradient(circle, #FB7185 0%, transparent 70%)" }} />
+      <div className="absolute top-1/2 right-1/4 w-[200px] h-[200px] rounded-full opacity-15 pointer-events-none"
+        style={{ background: "radial-gradient(circle, #FCD34D 0%, transparent 70%)" }} />
+
+      {/* Background Canvas — walking people */}
       <canvas
         ref={canvasRef}
         id="canvas"
@@ -221,23 +231,32 @@ export default function Hero() {
       />
 
       <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-start">
-        <h1 className="font-space-grotesque text-[3.2rem] md:text-[4.4rem] lg:text-[5.5rem] font-bold tracking-tighter text-black leading-[1.04] mb-6">
+        <span className="inline-block bg-primary/10 text-primary text-sm font-semibold px-4 py-1.5 rounded-full mb-6 tracking-wide">
+          Indoor Navigation Platform
+        </span>
+
+        <h1 className="font-space-grotesque text-[3.2rem] md:text-[4.4rem] lg:text-[5.5rem] font-bold tracking-tighter text-secondary leading-[1.04] mb-6">
           Stop losing people
           <br />
-          in the hallways.
+          <span style={{ color: "#13B7DA" }}>in the hallways.</span>
         </h1>
 
-        <p className="text-gray-700 text-xl md:text-2xl leading-relaxed max-w-2xl mb-4">
+        <p className="text-secondary/70 text-xl md:text-2xl leading-relaxed max-w-2xl mb-4">
           Navous transforms your space into a searchable, intelligent environment — so visitors find exactly what they need, the moment they walk in.
         </p>
 
-        <p className="text-gray-500 text-base md:text-lg leading-relaxed max-w-xl mb-10">
-          One platform for real-time wayfinding, movement analytics, and lasting visitor satisfaction.
+        <p className="text-secondary/50 text-base md:text-lg leading-relaxed max-w-xl mb-10">
+          Real-time wayfinding · Movement analytics · Visitor satisfaction
         </p>
 
-        <button className="border-2 border-primary text-primary px-10 py-4 rounded-md font-bold text-lg hover:bg-primary hover:text-white transition cursor-pointer">
-          Book a Demo
-        </button>
+        <div className="flex flex-wrap gap-4">
+          <a href="/how-it-works" className="bg-primary text-white px-10 py-4 rounded-md font-bold text-lg hover:bg-[#0fa3c4] transition cursor-pointer no-underline">
+            See How It Works
+          </a>
+          <a href="/features" className="border-2 border-primary/40 text-primary px-10 py-4 rounded-md font-bold text-lg hover:border-primary hover:bg-primary/5 transition cursor-pointer no-underline">
+            Explore Features
+          </a>
+        </div>
       </div>
     </section>
   );
