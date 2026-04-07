@@ -81,7 +81,7 @@ export default function Hero() {
 
     const resetPeep = ({ stage, peep }: { stage: any; peep: Peep }) => {
       const direction = Math.random() > 0.5 ? 1 : -1;
-      const offsetY = 100 - 250 * gsap.parseEase("power2.in")(Math.random());
+      const offsetY = 30 - 180 * gsap.parseEase("power2.in")(Math.random());
       const startY = stage.height - peep.height + offsetY;
       let startX;
       let endX;
@@ -212,7 +212,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-[calc(100vh-4rem)] overflow-hidden flex flex-col items-start pt-16 px-12 text-left"
+    <section className="relative h-[calc(100vh-4rem)] overflow-hidden flex flex-col items-center pt-16 px-12 text-center"
       style={{ background: "radial-gradient(circle at 0% 0%, #e0f7fc 0%, #f0feff 40%, #fff8f0 75%, #fef3e2 100%)" }}
     >
       {/* Vibrant background blobs with more saturation */}
@@ -230,7 +230,7 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full pointer-events-none opacity-80"
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-start">
+      <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-center">
         <span className="inline-block bg-primary/20 text-slate-900 border border-primary/30 text-xs font-black uppercase px-4 py-2 rounded-full mb-8 tracking-[0.2em] shadow-sm glass">
           Enterprise Indoor Navigation
         </span>
