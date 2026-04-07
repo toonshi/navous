@@ -230,18 +230,20 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full pointer-events-none opacity-80"
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col">
-        <h1 className="font-space-grotesque text-5xl md:text-6xl font-bold tracking-tighter text-slate-900 leading-tight mb-8 text-left self-start">
+      <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col md:flex-row md:items-start md:gap-12">
+        <h1 className="font-space-grotesque text-5xl md:text-6xl font-bold tracking-tighter text-slate-900 leading-tight md:flex-1 text-left">
           Stop <span className="text-black">losing</span> people<br />in the hallways.
         </h1>
 
-        <p className="text-slate-800 text-xl md:text-2xl font-semibold leading-relaxed max-w-2xl mb-6 text-right self-end">
-          Navous transforms your space into a searchable, intelligent environment. Make sure your visitors find exactly what they need, the moment they enter your doors.
-        </p>
+        <div className="flex flex-col md:flex-1">
+          <p className="text-slate-800 text-xl md:text-2xl font-semibold leading-relaxed mb-6">
+            Navous transforms your space into a searchable, intelligent environment. Make sure your visitors find exactly what they need, the moment they enter your doors.
+          </p>
 
-        <div className="flex flex-wrap gap-5 self-end">
-          <a href="/how-it-works" className="btn-primary"><span>See How It Works</span></a>
-          <a href="/features" className="btn-secondary"><span>Explore Features</span></a>
+          <div className="flex flex-wrap gap-5">
+            <a href="/how-it-works" className="btn-primary"><span>See How It Works</span></a>
+            <a href="/features" className="btn-secondary"><span>Explore Features</span></a>
+          </div>
         </div>
       </div>
     </section>
