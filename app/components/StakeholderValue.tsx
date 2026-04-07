@@ -9,6 +9,8 @@ const columns = [
     tagline: "Confidence from step one.",
     illustration: "/illustrations/stakeholder-visitor.svg",
     illustrationAlt: "Person navigating to destination",
+    cardBg: "bg-sky-50 border-sky-100",
+    tagBg: "bg-primary/10 text-primary",
     features: [
       "Find any room, store, or office in under 60 seconds",
       "Turn-by-turn navigation — no app download required",
@@ -21,6 +23,8 @@ const columns = [
     tagline: "Clarity across every floor.",
     illustration: "/illustrations/stakeholder-operator.svg",
     illustrationAlt: "Facility heatmap dashboard",
+    cardBg: "bg-secondary border-secondary/20",
+    tagBg: "bg-primary/20 text-primary",
     features: [
       "Real-time foot-traffic heatmaps by zone",
       "Identify where visitors get stuck or lost",
@@ -33,6 +37,8 @@ const columns = [
     tagline: "Turn footfall into revenue.",
     illustration: "/illustrations/stakeholder-tenant.svg",
     illustrationAlt: "Store visible in indoor search results",
+    cardBg: "bg-amber-50 border-amber-100",
+    tagBg: "bg-amber-500/10 text-amber-600",
     features: [
       "Push location-triggered promotions to nearby visitors",
       "Understand exactly how traffic flows past your space",
@@ -44,7 +50,7 @@ const columns = [
 
 export default function StakeholderValue() {
   return (
-    <section className="py-24 px-8 bg-white">
+    <section className="py-24 px-8" style={{ background: "linear-gradient(180deg, #f8fafc 0%, #f0feff 100%)" }}>
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
           <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-secondary mb-4">
@@ -60,7 +66,7 @@ export default function StakeholderValue() {
           {columns.map((col) => (
             <div
               key={col.audience}
-              className="bg-slate-50 border border-slate-100 rounded-2xl flex flex-col overflow-hidden"
+              className={`border rounded-2xl flex flex-col overflow-hidden ${col.cardBg}`}
             >
               {/* Illustration */}
               <Image
@@ -73,10 +79,10 @@ export default function StakeholderValue() {
               {/* Content */}
               <div className="p-8 flex flex-col gap-5 flex-1">
                 <div>
-                  <span className="inline-block text-xs font-bold px-3 py-1 rounded-full mb-3 bg-primary/10 text-primary">
+                  <span className={`inline-block text-xs font-bold px-3 py-1 rounded-full mb-3 ${col.tagBg}`}>
                     {col.audience}
                   </span>
-                  <p className="font-space-grotesque text-xl font-bold leading-snug text-secondary">
+                  <p className={`font-space-grotesque text-xl font-bold leading-snug ${col.cardBg.includes('secondary') ? 'text-white' : 'text-secondary'}`}>
                     {col.tagline}
                   </p>
                 </div>
@@ -84,7 +90,7 @@ export default function StakeholderValue() {
                   {col.features.map((feat) => (
                     <li key={feat} className="flex items-start gap-2.5 text-sm">
                       <span className="mt-0.5 shrink-0 text-primary">✓</span>
-                      <span className="text-secondary/60">{feat}</span>
+                      <span className={col.cardBg.includes('secondary') ? 'text-white/60' : 'text-secondary/60'}>{feat}</span>
                     </li>
                   ))}
                 </ul>

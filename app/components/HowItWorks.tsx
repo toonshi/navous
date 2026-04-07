@@ -32,7 +32,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="bg-slate-50 py-24 px-8">
+    <section id="how-it-works" className="py-24 px-8" style={{ background: "linear-gradient(180deg, #f0feff 0%, #f8fafc 100%)" }}>
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-secondary mt-3 mb-4">
