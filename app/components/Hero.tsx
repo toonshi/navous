@@ -241,11 +241,6 @@ export default function Hero() {
           Navous transforms your space into a searchable, intelligent environment. Make sure your visitors find exactly what they need, the moment they enter your doors.
         </p>
 
-        <p className="text-slate-600 text-base md:text-lg font-bold tracking-wide leading-relaxed max-w-xl mb-12 flex items-center gap-3">
-          <span className="w-1.5 h-1.5 rounded-full bg-primary animate-ping" />
-          Turn-by-turn guidance · Spatial intelligence · Universal accessibility
-        </p>
-
         <div className="flex flex-wrap gap-5">
           <a href="/how-it-works" className="bg-primary text-slate-900 px-12 py-5 rounded-xl font-black text-lg hover:brightness-110 transition-all hover:scale-[1.02] cursor-pointer no-underline shadow-[0_20px_40px_-15px_rgba(0,229,255,0.4)]">
             See How It Works
