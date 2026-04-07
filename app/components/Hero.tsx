@@ -240,12 +240,8 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-wrap gap-5">
-          <a href="/how-it-works" className="bg-primary text-slate-900 px-12 py-5 rounded-xl font-black text-lg hover:brightness-110 transition-all hover:scale-[1.02] cursor-pointer no-underline shadow-[0_20px_40px_-15px_rgba(0,229,255,0.4)]">
-            See How It Works
-          </a>
-          <a href="/features" className="glass border-2 border-slate-900/10 text-slate-900 px-12 py-5 rounded-xl font-black text-lg hover:bg-slate-900 hover:text-white transition-all hover:scale-[1.02] cursor-pointer no-underline">
-            Explore Features
-          </a>
+          <a href="/how-it-works" className="btn-primary"><span>See How It Works</span></a>
+          <a href="/features" className="btn-secondary"><span>Explore Features</span></a>
         </div>
       </div>
     </section>
