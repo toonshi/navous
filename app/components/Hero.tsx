@@ -232,7 +232,7 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col">
         <h1 className="font-space-grotesque text-5xl md:text-6xl font-bold tracking-tighter text-slate-900 leading-tight mb-8 text-left self-start">
-          Stop <span className="text-black">losing</span> people in the hallways.
+          Stop <span className="text-black">losing</span> people<br />in the hallways.
         </h1>
 
         <p className="text-slate-800 text-xl md:text-2xl font-semibold leading-relaxed max-w-2xl mb-6 text-right self-end">
