@@ -18,10 +18,10 @@ export default function FinalCTA() {
           Join the leading organizations using Navous to transform their visitor experience and facility efficiency. No hardware, no app downloads, just results.
         </p>
         <div className="flex flex-wrap gap-4 justify-center mt-12">
-          <a href="/how-it-works" className="bg-primary text-white px-10 py-4 rounded-md font-bold text-lg hover:bg-[#0fa3c4] transition cursor-pointer no-underline shadow-lg shadow-primary/20">
+          <a href="/how-it-works" className="bg-primary text-slate-900 px-12 py-5 rounded-xl font-black text-lg hover:brightness-110 transition-all hover:scale-[1.02] cursor-pointer no-underline shadow-[0_20px_40px_-15px_rgba(0,229,255,0.4)]">
             See How It Works
           </a>
-          <a href="/features" className="border-2 border-slate-200 text-slate-900 px-10 py-4 rounded-md font-bold text-lg hover:border-slate-900 hover:bg-slate-50 transition cursor-pointer no-underline">
+          <a href="/features" className="glass border-2 border-slate-900/10 text-slate-900 px-12 py-5 rounded-xl font-black text-lg hover:bg-slate-900 hover:text-white transition-all hover:scale-[1.02] cursor-pointer no-underline">
             Explore Features
           </a>
         </div>
