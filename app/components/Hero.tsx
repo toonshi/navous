@@ -231,14 +231,14 @@ export default function Hero() {
       />
 
       <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-center">
-        <h1 className="font-space-grotesque text-[3.2rem] md:text-[4.4rem] lg:text-[5.5rem] font-bold tracking-tighter text-slate-900 leading-[0.98] mb-8">
-          Your building,
-          <br />
-          <span className="text-primary drop-shadow-[0_2px_10px_rgba(0,229,255,0.3)]">searchable.</span>
+        <h1 className="font-bold tracking-tighter text-slate-900 leading-[0.98] mb-8"
+          style={{ fontSize: "48.1788px", fontFamily: "Clarkson, Helvetica, Sans-serif" }}>
+          Stop losing people in the hallways.
         </h1>
 
-        <p className="text-slate-800 text-xl md:text-2xl font-semibold leading-relaxed max-w-2xl mb-6">
-          Empower visitors with intuitive, real-time indoor navigation. No hardware, no app downloads — just seamless wayfinding.
+        <p className="text-slate-800 font-semibold leading-relaxed max-w-2xl mb-6"
+          style={{ fontSize: "26px" }}>
+          Navous transforms your space into a searchable, intelligent environment. Make sure your visitors find exactly what they need, the moment they enter your doors.
         </p>
 
         <p className="text-slate-600 text-base md:text-lg font-bold tracking-wide leading-relaxed max-w-xl mb-12 flex items-center gap-3">
