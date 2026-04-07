@@ -55,3 +55,87 @@ body {
 .font-trykker {
   font-family: var(--font-trykker), serif;
 }
+
+/* ── Button primitives ─────────────────────────────────────────────────────── */
+
+/* Primary: outlined cyan, fills with cyan on hover */
+.btn-primary {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  padding: 1rem 3rem;
+  font-weight: 900;
+  font-size: 1.125rem;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.35s ease;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--color-primary);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.35s ease;
+  z-index: 0;
+}
+
+.btn-primary:hover::before {
+  transform: scaleX(1);
+}
+
+.btn-primary:hover {
+  color: #0F172A;
+}
+
+.btn-primary span {
+  position: relative;
+  z-index: 1;
+}
+
+/* Secondary: outlined dark, fills with dark on hover */
+.btn-secondary {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border: 2px solid #0F172A;
+  color: #0F172A;
+  padding: 1rem 3rem;
+  font-weight: 900;
+  font-size: 1.125rem;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.35s ease;
+}
+
+.btn-secondary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #0F172A;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.35s ease;
+  z-index: 0;
+}
+
+.btn-secondary:hover::before {
+  transform: scaleX(1);
+}
+
+.btn-secondary:hover {
+  color: #ffffff;
+}
+
+.btn-secondary span {
+  position: relative;
+  z-index: 1;
+}

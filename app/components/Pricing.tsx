@@ -90,7 +90,7 @@ export default function Pricing() {
               key={tier.name}
               className={`rounded-2xl p-8 flex flex-col gap-6 ${
                 tier.highlight
-                  ? "bg-dark text-white border-2 border-primary relative"
+                  ? "bg-slate-900 text-white border-2 border-primary relative"
                   : "bg-[#F7FDFF] border border-slate-100 shadow-sm"
               }`}
             >

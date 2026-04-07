@@ -11,6 +11,7 @@ const columns = [
     illustrationAlt: "Person navigating to destination",
     cardBg: "bg-sky-50 border-sky-100",
     tagBg: "bg-primary/10 text-primary",
+    isDark: false,
     features: [
       "Find any room, store, or office in under 60 seconds",
       "Turn-by-turn navigation — no app download required",
@@ -23,8 +24,9 @@ const columns = [
     tagline: "Clarity across every floor.",
     illustration: "/illustrations/stakeholder-operator.svg",
     illustrationAlt: "Facility heatmap dashboard",
-    cardBg: "bg-secondary border-secondary/20",
+    cardBg: "bg-slate-900 border-slate-800",
     tagBg: "bg-primary/20 text-primary",
+    isDark: true,
     features: [
       "Real-time foot-traffic heatmaps by zone",
       "Identify where visitors get stuck or lost",
@@ -39,6 +41,7 @@ const columns = [
     illustrationAlt: "Store visible in indoor search results",
     cardBg: "bg-amber-50 border-amber-100",
     tagBg: "bg-amber-500/10 text-amber-600",
+    isDark: false,
     features: [
       "Push location-triggered promotions to nearby visitors",
       "Understand exactly how traffic flows past your space",
@@ -65,7 +68,7 @@ export default function StakeholderValue() {
           {columns.map((col) => (
             <div
               key={col.audience}
-              className={`border rounded-2xl flex flex-col overflow-hidden shadow-sm hover:shadow-md transition-shadow ${col.cardBg === 'bg-secondary border-secondary/20' ? 'bg-slate-900 border-slate-800' : col.cardBg}`}
+              className={`border rounded-2xl flex flex-col overflow-hidden shadow-sm hover:shadow-md transition-shadow ${col.cardBg}`}
             >
               {/* Illustration */}
               <Image
@@ -81,7 +84,7 @@ export default function StakeholderValue() {
                   <span className={`inline-block text-xs font-bold px-3 py-1 rounded-full mb-3 ${col.tagBg}`}>
                     {col.audience}
                   </span>
-                  <p className={`font-space-grotesque text-xl font-bold leading-snug ${col.cardBg === 'bg-secondary border-secondary/20' ? 'text-white' : 'text-slate-900'}`}>
+                  <p className={`font-space-grotesque text-xl font-bold leading-snug ${col.isDark ? 'text-white' : 'text-slate-900'}`}>
                     {col.tagline}
                   </p>
                 </div>
@@ -89,7 +92,7 @@ export default function StakeholderValue() {
                   {col.features.map((feat) => (
                     <li key={feat} className="flex items-start gap-2.5 text-sm">
                       <span className="mt-0.5 shrink-0 text-primary">✓</span>
-                      <span className={col.cardBg === 'bg-secondary border-secondary/20' ? 'text-slate-300 font-medium' : 'text-slate-700 font-medium'}>{feat}</span>
+                      <span className={col.isDark ? 'text-slate-300 font-medium' : 'text-slate-700 font-medium'}>{feat}</span>
                     </li>
                   ))}
                 </ul>
