@@ -1,20 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" fill="none">
-  <circle cx="160" cy="100" r="90" fill="#D6F0F8"/>
-  <!-- Dashboard card -->
-  <rect x="40" y="56" width="240" height="154" rx="16" fill="white"/>
-  <rect x="56" y="72" width="88" height="10" rx="5" fill="#E2E8F0"/>
-  <rect x="56" y="90" width="56" height="8" rx="4" fill="#D6F0F8"/>
-  <line x1="56" y1="190" x2="264" y2="190" stroke="#F1F5F9" stroke-width="2"/>
-  <!-- Bars -->
-  <rect x="66" y="156" width="22" height="34" rx="5" fill="#D6F0F8"/>
-  <rect x="100" y="140" width="22" height="50" rx="5" fill="#13B7DA" opacity="0.6"/>
-  <rect x="134" y="118" width="22" height="72" rx="5" fill="#13B7DA"/>
-  <rect x="168" y="130" width="22" height="60" rx="5" fill="#13B7DA" opacity="0.8"/>
-  <rect x="202" y="108" width="22" height="82" rx="5" fill="#FCD34D"/>
-  <rect x="236" y="124" width="22" height="66" rx="5" fill="#13B7DA" opacity="0.5"/>
-  <!-- Trend line -->
-  <path d="M77 168 L111 154 L145 128 L179 140 L213 116 L247 130" stroke="#FB7185" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="77" cy="168" r="4" fill="#FB7185" stroke="white" stroke-width="2"/>
-  <circle cx="145" cy="128" r="4" fill="#FB7185" stroke="white" stroke-width="2"/>
-  <circle cx="213" cy="116" r="4" fill="#FB7185" stroke="white" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" fill="none">
+  <rect width="480" height="360" rx="24" fill="#0A0F1E"/>
+  <path d="M0 40H480M0 80H480M0 120H480M0 160H480M0 200H480M0 240H480M0 280H480M0 320H480" stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="1"/>
+  <path d="M40 0V360M80 0V360M120 0V360M160 0V360M200 0V360M240 0V360M280 0V360M320 0V360M360 0V360M400 0V360M440 0V360" stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="1"/>
+
+  {/* Technical Data Visualization */}
+  <path d="M80 280V120H160V280" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="2"/>
+  <path d="M160 280V180H240V280" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="2"/>
+  <path d="M240 280V80H320V280" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="2"/>
+  <path d="M320 280V150H400V280" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="2"/>
+
+  {/* Heat Zones (Spatial Data) */}
+  <circle cx="280" cy="140" r="40" fill="#FFD60A" fill-opacity="0.1"/>
+  <circle cx="280" cy="140" r="20" fill="#FFD60A" fill-opacity="0.2"/>
+  <circle cx="280" cy="140" r="5" fill="#FFD60A">
+    <animate attributeName="opacity" values="1;0.5;1" dur="3s" repeatCount="indefinite" />
+  </circle>
+
+  <circle cx="120" cy="200" r="30" fill="#FFD60A" fill-opacity="0.05"/>
+  <circle cx="120" cy="200" r="15" fill="#FFD60A" fill-opacity="0.15"/>
 </svg>

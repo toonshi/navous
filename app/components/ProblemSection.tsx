@@ -20,66 +20,62 @@ export default function ProblemSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Card 1: Operational Impact */}
-          <div className="bg-slate-900/50 border border-white/10 rounded-[3rem] p-12 relative overflow-hidden group">
+          <div className="bg-slate-900/40 border border-white/10 rounded-[3rem] p-12 relative overflow-hidden group">
             <div className="absolute inset-0 opacity-[0.03] pointer-events-none group-hover:opacity-[0.07] transition-opacity" 
                  style={{ backgroundImage: 'linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
             
             <div className="relative z-10 h-full flex flex-col justify-between">
               <div>
                 <h3 className="text-3xl font-medium tracking-tight mb-6">Operational Bottleneck</h3>
-                <p className="text-white/60 text-lg leading-relaxed mb-10">
+                <p className="text-white/50 text-lg leading-relaxed mb-10 font-light group-hover:text-white/70 transition-colors">
                   Staff spend 15% of their shifts giving directions. Inefficient wayfinding is not just a guest frustration—it&apos;s a direct drain on your bottom line.
                 </p>
               </div>
-              <div className="relative h-64 w-full bg-black/40 rounded-2xl border border-white/5 flex items-center justify-center p-8">
-                <Image
-                  src="/illustrations/navigation.svg"
-                  alt="Navigation"
-                  width={300}
-                  height={200}
-                  className="w-full h-full object-contain opacity-80"
+              <div className="relative h-64 w-full bg-black/40 rounded-2xl border border-white/5 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1541888086425-d81bb19240f5?q=80&w=1000&auto=format&fit=crop"
+                  alt="Busy Hallway"
+                  className="w-full h-full object-cover opacity-40 group-hover:opacity-80 transition-opacity duration-700 grayscale"
                 />
               </div>
             </div>
           </div>
 
           {/* Card 2: Analytics */}
-          <div className="bg-slate-900/50 border border-white/10 rounded-[3rem] p-12 relative overflow-hidden group">
+          <div className="bg-slate-900/40 border border-white/10 rounded-[3rem] p-12 relative overflow-hidden group">
             <div className="absolute inset-0 opacity-[0.03] pointer-events-none group-hover:opacity-[0.07] transition-opacity" 
                  style={{ backgroundImage: 'linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
             
             <div className="relative z-10 h-full flex flex-col justify-between">
               <div>
                 <h3 className="text-3xl font-medium tracking-tight mb-6">Invisible Patterns</h3>
-                <p className="text-white/60 text-lg leading-relaxed mb-10">
+                <p className="text-white/50 text-lg leading-relaxed mb-10 font-light group-hover:text-white/70 transition-colors">
                   Without digital spatial data, you are blind to how your venue is actually used. Navous captures every movement, missed turn, and dwell point.
                 </p>
               </div>
-              <div className="relative h-64 w-full bg-black/40 rounded-2xl border border-white/5 flex items-center justify-center p-8">
-                <Image
-                  src="/illustrations/data-intelligence.svg"
-                  alt="Data"
-                  width={300}
-                  height={200}
-                  className="w-full h-full object-contain opacity-80"
+              <div className="relative h-64 w-full bg-black/40 rounded-2xl border border-white/5 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop"
+                  alt="Abstract Data"
+                  className="w-full h-full object-cover opacity-40 group-hover:opacity-80 transition-opacity duration-700 grayscale"
                 />
               </div>
             </div>
           </div>
         </div>
 
-        {/* Technical Callout Card - Full Width */}
-        <div className="mt-10 bg-[#13B7DA] rounded-[3rem] p-16 relative overflow-hidden group">
-          <div className="absolute inset-0 opacity-[0.1] pointer-events-none" 
+        {/* Technical Callout Card - Now Dark with Yellow Highlight */}
+        <div className="mt-10 bg-slate-900/60 border border-white/10 rounded-[3rem] p-16 relative overflow-hidden group">
+          <div className="absolute inset-0 opacity-[0.05] pointer-events-none" 
                style={{ backgroundImage: 'linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px)', backgroundSize: '60px 60px' }}></div>
           
           <div className="relative z-10 flex flex-col md:flex-row items-center gap-12">
             <p className="font-sans text-3xl md:text-5xl font-medium text-white leading-tight flex-1">
-              &ldquo;Navigation is the critical infrastructure for the modern venue.&rdquo;
+              &ldquo;Navigation is no longer a luxury. It is the <span className="text-accent">critical infrastructure</span> for the modern venue.&rdquo;
             </p>
             <div className="shrink-0 flex flex-col gap-2">
-              <span className="text-white font-black uppercase tracking-widest text-xs">Standardized by</span>
-              <span className="bg-black text-white px-6 py-3 rounded-full text-sm font-bold tracking-widest uppercase">VisionTech</span>
+              <span className="text-white/40 font-black uppercase tracking-widest text-[10px]">Standardized by</span>
+              <span className="bg-white text-black px-8 py-4 rounded-full text-xs font-black tracking-widest uppercase shadow-2xl">VisionTech</span>
             </div>
           </div>
         </div>

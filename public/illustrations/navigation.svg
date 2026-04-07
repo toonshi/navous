@@ -1,27 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" fill="none">
-  <circle cx="200" cy="130" r="95" fill="#D6F0F8"/>
-  <!-- Floor plan card -->
-  <rect x="44" y="44" width="148" height="152" rx="16" fill="white"/>
-  <rect x="58" y="60" width="52" height="44" rx="6" fill="#F1F5F9"/>
-  <rect x="118" y="60" width="60" height="44" rx="6" fill="#E2F4F8"/>
-  <rect x="58" y="112" width="120" height="28" rx="6" fill="#F1F5F9"/>
-  <rect x="58" y="148" width="52" height="34" rx="6" fill="#E2F4F8"/>
-  <rect x="118" y="148" width="60" height="34" rx="6" fill="#F1F5F9"/>
-  <!-- Route path -->
-  <path d="M82 182 L82 126 L148 126 L148 82" stroke="#13B7DA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7,5"/>
-  <circle cx="82" cy="182" r="8" fill="#FCD34D" stroke="white" stroke-width="2"/>
-  <path d="M148 82 C148 68 158 60 168 60 C178 60 188 68 188 82 C188 94 178 104 168 116 Z" fill="#13B7DA"/>
-  <circle cx="168" cy="81" r="6" fill="white"/>
-  <!-- Person -->
-  <circle cx="258" cy="80" r="28" fill="#FCD34D"/>
-  <circle cx="258" cy="72" r="14" fill="#FB7185"/>
-  <path d="M243 110 Q243 97 258 97 Q273 97 273 110" fill="#FB7185"/>
-  <!-- Phone -->
-  <rect x="270" y="84" width="18" height="26" rx="4" fill="white"/>
-  <rect x="273" y="88" width="12" height="16" rx="2" fill="#E2F4F8"/>
-  <path d="M275 98 L279 94 L283 97" stroke="#13B7DA" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="279" cy="98" r="2" fill="#13B7DA"/>
-  <!-- Check badge -->
-  <circle cx="282" cy="66" r="10" fill="#34D399"/>
-  <path d="M277 66 L280 69 L287 61" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" fill="none">
+  {/* Sophisticated Blueprint Grid */}
+  <rect width="480" height="360" rx="24" fill="#0A0F1E"/>
+  <path d="M0 40H480M0 80H480M0 120H480M0 160H480M0 200H480M0 240H480M0 280H480M0 320H480" stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="1"/>
+  <path d="M40 0V360M80 0V360M120 0V360M160 0V360M200 0V360M240 0V360M280 0V360M320 0V360M360 0V360M400 0V360M440 0V360" stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="1"/>
+
+  {/* Architectural Walls (Minimalist Line Art) */}
+  <path d="M100 80H380V280H100V80Z" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="2"/>
+  <path d="M100 180H220V280" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="2"/>
+  <path d="M280 80V180H380" stroke="#FFFFFF" stroke-opacity="0.1" stroke-width="2"/>
+
+  {/* The Navigation Path (The Hero) */}
+  <path d="M140 240V210C140 210 140 190 170 190H310C310 190 340 190 340 160V120" stroke="#FFD60A" stroke-width="3" stroke-dasharray="8 6" stroke-linecap="round"/>
+  
+  {/* The "Blue Dot" Origin */}
+  <circle cx="140" cy="240" r="6" fill="#FFD60A"/>
+  <circle cx="140" cy="240" r="12" stroke="#FFD60A" stroke-opacity="0.3">
+    <animate attributeName="r" from="6" to="18" dur="2s" repeatCount="indefinite" />
+    <animate attributeName="stroke-opacity" from="0.3" to="0" dur="2s" repeatCount="indefinite" />
+  </circle>
+
+  {/* Destination Marker */}
+  <path d="M340 100L346 115H334L340 100Z" fill="#FFD60A"/>
 </svg>

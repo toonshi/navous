@@ -10,7 +10,7 @@ const steps = [
     description:
       "Send us your existing floor plans. We convert them into a digital twin while you place our discreet, stick-on Bluetooth sensors. No wiring, no complex IT, just minutes per room.",
     accent: "bg-accent text-slate-900",
-    illustration: "/illustrations/step-upload.svg",
+    illustration: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1000&auto=format&fit=crop",
   },
   {
     number: "02",
@@ -18,7 +18,7 @@ const steps = [
     description:
       "We configure your routing logic and calibrate the sensors for sub-meter accuracy. Your team tests the experience on their own phones to ensure the directions are flawless.",
     accent: "bg-accent text-slate-900",
-    illustration: "/illustrations/step-configure.svg",
+    illustration: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1000&auto=format&fit=crop",
   },
   {
     number: "03",
@@ -26,7 +26,7 @@ const steps = [
     description:
       "Place QR codes at entry points. Visitors scan once and get instant, turn-by-turn guidance through their mobile browser. No app downloads required. You see results from day one.",
     accent: "bg-[#13B7DA] text-white",
-    illustration: "/illustrations/step-live.svg",
+    illustration: "https://images.unsplash.com/photo-1554469384-e58fac16e23a?q=80&w=1000&auto=format&fit=crop",
   },
 ];
 
@@ -63,13 +63,11 @@ export default function HowItWorks() {
                 </p>
               </div>
               
-              <div className="relative h-48 w-full bg-black/20 rounded-3xl border border-white/5 flex items-center justify-center p-6 group-hover:border-white/10 transition-all">
-                <Image
+              <div className="relative h-48 w-full bg-black/20 rounded-3xl border border-white/5 overflow-hidden group-hover:border-white/10 transition-all">
+                <img
                   src={step.illustration}
                   alt={step.title}
-                  width={200}
-                  height={150}
-                  className="w-full h-full object-contain opacity-60 group-hover:opacity-100 transition-all duration-700"
+                  className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-all duration-700 grayscale"
                 />
               </div>
             </div>

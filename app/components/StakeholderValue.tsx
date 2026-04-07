@@ -7,7 +7,7 @@ const columns = [
   {
     audience: "For Visitors",
     tagline: "Confidence from step one.",
-    illustration: "/illustrations/stakeholder-visitor.svg",
+    illustration: "https://images.unsplash.com/photo-1497250681558-4444521fa40d?q=80&w=1000&auto=format&fit=crop",
     illustrationAlt: "Person navigating to destination",
     cardBg: "bg-slate-900/40 border-white/5",
     tagBg: "bg-accent text-slate-900",
@@ -21,7 +21,7 @@ const columns = [
   {
     audience: "For Facility Operators",
     tagline: "Unprecedented visibility.",
-    illustration: "/illustrations/stakeholder-operator.svg",
+    illustration: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop",
     illustrationAlt: "Facility heatmap dashboard",
     cardBg: "bg-slate-900/60 border-white/10",
     tagBg: "bg-[#13B7DA] text-white",
@@ -35,7 +35,7 @@ const columns = [
   {
     audience: "For Businesses & Tenants",
     tagline: "Turn footfall into ROI.",
-    illustration: "/illustrations/stakeholder-tenant.svg",
+    illustration: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1000&auto=format&fit=crop",
     illustrationAlt: "Store visible in indoor search results",
     cardBg: "bg-slate-900/40 border-white/5",
     tagBg: "bg-accent text-slate-900",
@@ -70,13 +70,11 @@ export default function StakeholderValue() {
               className={`border rounded-[3rem] flex flex-col overflow-hidden group hover:bg-slate-900 transition-all duration-500 ${col.cardBg}`}
             >
               {/* Illustration */}
-              <div className="relative h-64 w-full bg-black/20 flex items-center justify-center p-12 border-b border-white/5">
-                <Image
+              <div className="relative h-64 w-full bg-black/20 overflow-hidden border-b border-white/5">
+                <img
                   src={col.illustration}
                   alt={col.illustrationAlt}
-                  width={320}
-                  height={200}
-                  className="w-full h-full object-contain opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                  className="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 grayscale"
                 />
               </div>
               {/* Content */}
