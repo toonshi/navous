@@ -10,26 +10,26 @@ const columns = [
     illustration: "/illustrations/stakeholder-visitor.svg",
     illustrationAlt: "Person navigating to destination",
     cardBg: "bg-sky-50 border-sky-100",
-    tagBg: "bg-primary/10 text-primary",
+    tagBg: "bg-[#13B7DA]/10 text-[#13B7DA]",
     features: [
-      "Find any room, store, or office in under 60 seconds",
-      "Turn-by-turn navigation — no app download required",
-      "Accessibility-first: wheelchair routes, audio guidance",
-      "Available in multiple languages",
+      "Reliable 'Blue Dot' tracking — even in signal dead zones",
+      "Instant directions from any browser (no apps or logins)",
+      "Accessible routes for wheelchairs and pushchairs",
+      "Audio guidance for low-vision guests",
     ],
   },
   {
     audience: "For Facility Operators",
-    tagline: "Clarity across every floor.",
+    tagline: "Unprecedented spatial visibility.",
     illustration: "/illustrations/stakeholder-operator.svg",
     illustrationAlt: "Facility heatmap dashboard",
     cardBg: "bg-secondary border-secondary/20",
-    tagBg: "bg-primary/20 text-primary",
+    tagBg: "bg-[#13B7DA]/20 text-[#13B7DA]",
     features: [
-      "Real-time foot-traffic heatmaps by zone",
-      "Identify where visitors get stuck or lost",
-      "Emergency evacuation routing — instant reroute",
-      "No hardware installation required",
+      "Real-time heatmaps: See exactly how traffic flows",
+      "Reduce staff time spent giving directions by 15%",
+      "Faster emergency response with dynamic rerouting",
+      "100% data sovereignty — your building data is private",
     ],
   },
   {
@@ -40,10 +40,10 @@ const columns = [
     cardBg: "bg-amber-50 border-amber-100",
     tagBg: "bg-amber-500/10 text-amber-600",
     features: [
-      "Push location-triggered promotions to nearby visitors",
-      "Understand exactly how traffic flows past your space",
-      "Track conversion from browse to transaction",
-      "Appear in indoor search results",
+      "Proximity marketing: Alert nearby guests to offers",
+      "Quantify store entry and browsing metrics",
+      "Increase storefront visibility in the indoor search bar",
+      "Understand and predict high-volume visitor peaks",
     ],
   },
 ];
@@ -88,7 +88,7 @@ export default function StakeholderValue() {
                 <ul className="flex flex-col gap-3">
                   {col.features.map((feat) => (
                     <li key={feat} className="flex items-start gap-2.5 text-sm">
-                      <span className="mt-0.5 shrink-0 text-primary">✓</span>
+                      <span className="mt-0.5 shrink-0 text-accent font-bold">✓</span>
                       <span className={col.cardBg === 'bg-secondary border-secondary/20' ? 'text-slate-300 font-medium' : 'text-slate-700 font-medium'}>{feat}</span>
                     </li>
                   ))}

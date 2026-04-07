@@ -6,26 +6,26 @@ import Image from "next/image";
 const steps = [
   {
     number: "Week 1",
-    title: "Upload your floor plans",
+    title: "Sensor Setup & Map Prep",
     description:
-      "Send us your existing floor plans — any format. Our team digitises every room, corridor, lift, stairwell, and access point with AI. No hardware. No site visit required.",
-    accent: "bg-primary/10 text-primary",
+      "Send us your existing floor plans. We convert them into a digital twin while you place our discreet, stick-on Bluetooth sensors. No wiring, no complex IT, just minutes per room.",
+    accent: "bg-accent text-slate-900",
     illustration: "/illustrations/step-upload.svg",
   },
   {
     number: "Week 2",
-    title: "Configure, test, and brand it",
+    title: "Precision Calibration",
     description:
-      "Set up points of interest, accessible routes, and routing rules through our no-code dashboard. Match your brand. Integrate with your booking or appointment system if needed. Test with your team.",
-    accent: "bg-slate-100 text-secondary/70",
+      "We configure your routing logic and calibrate the sensors for sub-meter accuracy. Your team tests the experience on their own phones to ensure the directions are flawless.",
+    accent: "bg-accent text-slate-900",
     illustration: "/illustrations/step-configure.svg",
   },
   {
     number: "Week 3",
-    title: "Go live — visitors navigate",
+    title: "Launch & Track",
     description:
-      "Place QR codes at entrances. Visitors scan, and they're guided turn-by-turn in real time. No app download. No sign-up. No friction. Just directions that work.",
-    accent: "bg-primary text-white",
+      "Place QR codes at entry points. Visitors scan once and get instant, turn-by-turn guidance through their mobile browser. No app downloads required. You see results from day one.",
+    accent: "bg-[#13B7DA] text-white",
     illustration: "/illustrations/step-live.svg",
   },
 ];

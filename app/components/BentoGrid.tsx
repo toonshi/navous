@@ -5,83 +5,85 @@ import Image from "next/image";
 
 const BentoGrid = () => {
   return (
-    <section id="features" className="py-32 px-8" style={{ background: "linear-gradient(180deg, #f0feff 0%, #f8fafc 100%)" }}>
+    <section id="features" className="py-32 px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
-          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 mb-4">
-            Intelligence behind every corridor.
+          <span className="text-[#13B7DA] text-xs font-black uppercase tracking-[0.2em] mb-4 block">
+            The Venue Platform
+          </span>
+          <h2 className="font-space-grotesque text-4xl md:text-6xl font-bold tracking-tighter text-slate-900 mb-6 leading-[0.95]">
+            Everything you need to
+            <br />
+            <span className="text-[#13B7DA]">master your space.</span>
           </h2>
           <p className="text-slate-700 text-lg max-w-xl mx-auto leading-relaxed font-medium">
-            Unified wayfinding for visitors, actionable insights for operations, and high-precision data for facility decision makers.
+            One unified platform to guide your visitors, protect your staff, and optimize your facility operations.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-          {/* Box A: Large — Searchable Infrastructure */}
-          <div className="md:col-span-2 bg-primary rounded-3xl p-10 flex flex-col justify-end min-h-90 relative overflow-hidden shadow-sm">
-            <Image
-              src="/Building.svg"
-              alt=""
-              fill
-              sizes="(min-width: 768px) 60vw, 100vw"
-              aria-hidden
-              className="absolute top-0 right-0 h-full w-auto opacity-10 object-cover translate-x-8"
-            />
-            <span className="relative text-white/90 text-xs font-bold uppercase tracking-widest mb-3">
-              Infrastructure
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {/* Main Feature: Navigation */}
+          <div className="md:col-span-2 bg-[#13B7DA] rounded-[2.5rem] p-12 flex flex-col justify-end min-h-[450px] relative overflow-hidden shadow-2xl group">
+            <div className="absolute inset-0 opacity-[0.1] pointer-events-none group-hover:scale-110 transition-transform duration-700" 
+                 style={{ backgroundImage: 'linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
+            
+            <span className="relative text-white/90 text-xs font-black uppercase tracking-widest mb-4">
+              Wayfinding
             </span>
-            <h3 className="relative font-space-grotesque text-3xl font-bold tracking-tighter text-white mb-3 leading-tight">
-              A searchable indoor layer.
+            <h3 className="relative font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-white mb-6 leading-[0.95]">
+              Real-time,
+              <br />
+              turn-by-turn.
             </h3>
-            <p className="relative text-white/90 text-base max-w-md leading-relaxed font-medium">
-              Transform your facility into a live digital directory. Visitors find what they need in seconds, reducing staff interruptions and improving floor-wide operational efficiency.
+            <p className="relative text-white/90 text-lg max-w-md leading-relaxed font-medium">
+              A seamless, app-free navigation experience. Powered by discreet Bluetooth sensors for sub-meter precision in every corridor.
             </p>
           </div>
 
-          {/* Box B: Accessibility */}
-          <div className="bg-white border border-slate-100 rounded-3xl p-8 flex flex-col justify-between min-h-90 shadow-sm">
-            <div className="flex justify-center items-center h-full mb-6">
-              <Image
-                src="/illustrations/accessibility.svg"
-                alt="Accessibility"
-                width={240}
-                height={180}
-                className="w-full max-w-[240px]"
-              />
+          {/* Spec Card: Accuracy */}
+          <div className="bg-accent rounded-[2.5rem] p-10 flex flex-col justify-between shadow-sm border border-slate-100">
+            <div className="w-16 h-16 rounded-2xl bg-white/30 flex items-center justify-center">
+              <span className="text-3xl font-black text-slate-900">0.5m</span>
             </div>
             <div>
-              <span className="text-primary text-xs font-bold uppercase tracking-widest mb-3 block">
-                Accessibility
-              </span>
-              <h3 className="font-space-grotesque text-2xl font-bold tracking-tighter text-slate-900 mb-3 leading-snug">
-                Step-free wayfinding.
-              </h3>
-              <p className="text-slate-700 text-sm leading-relaxed font-medium">
-                Prioritize accessible routes, lift-only paths, and audio-assisted guidance to ensure universal navigation for all guests.
-              </p>
+              <h3 className="font-space-grotesque text-2xl font-bold tracking-tighter text-slate-900 mb-2">Sub-meter Precision</h3>
+              <p className="text-slate-700 text-sm leading-relaxed font-medium">High-fidelity positioning that tracks every step with architectural accuracy.</p>
             </div>
           </div>
 
-          {/* Box C: Real-time Analytics */}
-          <div className="md:col-span-3 bg-slate-900 rounded-3xl p-10 flex flex-col md:flex-row md:items-center gap-8 shadow-sm">
+          {/* Spec Card: Latency */}
+          <div className="bg-slate-900 rounded-[2.5rem] p-10 flex flex-col justify-between min-h-[280px] shadow-2xl border border-white/5">
+            <div className="w-16 h-16 rounded-2xl bg-[#13B7DA]/20 flex items-center justify-center">
+              <span className="text-3xl font-black text-[#13B7DA]">&lt;5ms</span>
+            </div>
+            <div>
+              <h3 className="font-space-grotesque text-2xl font-bold tracking-tighter text-white mb-2 text-[#13B7DA]">Instant Response</h3>
+              <p className="text-slate-400 text-sm leading-relaxed font-medium">Zero-lag updates powered by our WASM-accelerated positioning engine.</p>
+            </div>
+          </div>
+
+          {/* Spec Card: Infrastructure */}
+          <div className="md:col-span-2 bg-slate-50 border border-slate-100 rounded-[2.5rem] p-10 flex flex-col md:flex-row md:items-center gap-10 shadow-sm">
             <div className="flex-1">
-              <span className="text-primary text-xs font-bold uppercase tracking-widest mb-3 block">
-                Spatial Analytics
+              <span className="text-slate-900 bg-accent text-[10px] font-black uppercase tracking-[0.2em] px-2 py-1 rounded mb-4 inline-block">
+                Enterprise Core
               </span>
-              <h3 className="font-space-grotesque text-3xl font-bold tracking-tighter text-white mb-3 leading-tight">
-                Understand movement patterns.
+              <h3 className="font-space-grotesque text-3xl font-bold tracking-tighter text-slate-900 mb-4 leading-tight">
+                PostGIS-Native Infrastructure.
               </h3>
-              <p className="text-slate-300 text-base leading-relaxed max-w-lg font-medium">
-                Identify congestion points, track journey abandonment, and optimize staff deployment with high-precision heatmaps and flow analysis.
+              <p className="text-slate-600 text-base leading-relaxed font-medium">
+                Your building data is stored and processed on high-performance spatial databases, ensuring total data sovereignty and architectural integrity.
               </p>
             </div>
-            <Image
-              src="/illustrations/analytics.svg"
-              alt="Analytics overview"
-              width={320}
-              height={240}
-              className="w-full max-w-xs opacity-90 brightness-110"
-            />
+            <div className="relative p-8 bg-white rounded-3xl border border-slate-100 shadow-sm shrink-0">
+               <Image
+                src="/illustrations/data-intelligence.svg"
+                alt="Infrastructure"
+                width={200}
+                height={150}
+                className="w-full max-w-[180px]"
+              />
+            </div>
           </div>
         </div>
       </div>
