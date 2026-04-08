@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function ProblemSection() {
   return (
-    <section className="py-24 px-8 bg-[#F7FDFF]">
+    <section className="py-24 px-8 bg-white border-t border-slate-100">
       <div className="max-w-7xl mx-auto flex flex-col gap-28">
 
         {/* Row 1 — left text, right illustration */}
@@ -77,13 +77,13 @@ export default function ProblemSection() {
         </div>
 
         {/* Pull quote */}
-        <div className="bg-primary rounded-2xl p-10 flex flex-col md:flex-row md:items-center gap-6">
+        <div className="rounded-2xl p-10 flex flex-col md:flex-row md:items-center gap-6 bg-white border-l-4 border-slate-900">
           <div className="flex-1">
-            <p className="font-space-grotesque text-2xl md:text-3xl font-bold text-white leading-snug mb-4">
+            <p className="font-space-grotesque text-2xl md:text-3xl font-bold text-slate-900 leading-snug mb-4">
               &ldquo;Navigation is not a nice-to-have. It is the difference between a
               visitor who completes their journey and one who doesn&apos;t.&rdquo;
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-slate-500 text-sm">
               The hidden cost that facility managers stop ignoring once they
               see the data.
             </p>

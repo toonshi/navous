@@ -1,18 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" fill="none">
-  <circle cx="120" cy="90" r="76" fill="#D6F0F8"/>
-  <circle cx="100" cy="90" r="56" fill="white"/>
+  <!-- Background bubble -->
+  <circle cx="120" cy="90" r="82" fill="#CAFFBF"/>
+  <!-- Inner card -->
+  <rect x="46" y="38" width="148" height="104" rx="16" fill="white"/>
   <!-- Person head -->
-  <circle cx="100" cy="48" r="11" fill="#FCD34D"/>
-  <!-- Wheelchair frame -->
-  <path d="M93 60 L93 86 L113 86" stroke="#13B7DA" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <path d="M93 60 L106 60 L106 75" stroke="#13B7DA" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <circle cx="102" cy="56" r="13" fill="#FFD6A5"/>
+  <!-- Wheelchair body -->
+  <path d="M95 70 L95 98 L116 98" stroke="#13B7DA" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M95 70 L108 70 L108 86" stroke="#13B7DA" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
   <!-- Wheels -->
-  <circle cx="93" cy="101" r="10" stroke="#13B7DA" stroke-width="3.5" fill="none"/>
-  <circle cx="113" cy="101" r="13" stroke="#13B7DA" stroke-width="3.5" fill="none"/>
-  <circle cx="113" cy="101" r="3.5" fill="#13B7DA"/>
+  <circle cx="95" cy="112" r="11" stroke="#13B7DA" stroke-width="4" fill="none"/>
+  <circle cx="116" cy="112" r="14" stroke="#13B7DA" stroke-width="4" fill="none"/>
+  <circle cx="116" cy="112" r="4" fill="#13B7DA"/>
   <!-- Arrow to destination -->
-  <path d="M162 90 L176 90" stroke="#13B7DA" stroke-width="2.5" stroke-linecap="round"/>
-  <path d="M170 84 L176 90 L170 96" stroke="#13B7DA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <circle cx="196" cy="90" r="10" fill="#34D399" stroke="white" stroke-width="2"/>
-  <path d="M191 90 L194 93 L201 85" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M163 90 L180 90" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M173 83 L180 90 L173 97" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Destination pin -->
+  <circle cx="196" cy="90" r="12" fill="#13B7DA"/>
+  <path d="M191 90 L194 93.5 L202 84" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Route dots -->
+  <circle cx="130" cy="90" r="3" fill="#13B7DA" opacity="0.5"/>
+  <circle cx="141" cy="90" r="3" fill="#13B7DA" opacity="0.65"/>
+  <circle cx="152" cy="90" r="3" fill="#13B7DA" opacity="0.8"/>
 </svg>
