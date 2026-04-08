@@ -212,7 +212,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-[calc(100vh-4rem)] overflow-hidden flex flex-col items-center pt-6 px-12"
+    <section className="relative h-screen overflow-hidden flex flex-col items-center pt-24 px-12"
       style={{ background: "radial-gradient(circle at 0% 0%, #e0f7fc 0%, #f0feff 40%, #fff8f0 75%, #fef3e2 100%)" }}
     >
       {/* Vibrant background blobs with more saturation */}
