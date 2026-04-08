@@ -27,9 +27,9 @@ export default function ProblemSection() {
             <Image
               src="/illustrations/navigation.svg"
               alt="Indoor navigation illustration"
-              width={480}
-              height={360}
-              className="w-full max-w-md drop-shadow-2xl"
+              width={400}
+              height={300}
+              className="w-full max-w-sm"
             />
           </div>
         </div>
@@ -48,9 +48,9 @@ export default function ProblemSection() {
             <Image
               src="/illustrations/data-intelligence.svg"
               alt="Movement intelligence dashboard"
-              width={480}
-              height={360}
-              className="w-full max-w-md drop-shadow-2xl"
+              width={400}
+              height={300}
+              className="w-full max-w-sm"
             />
           </div>
         </div>
@@ -69,9 +69,9 @@ export default function ProblemSection() {
             <Image
               src="/illustrations/accessibility-nav.svg"
               alt="Accessibility and multilingual navigation"
-              width={480}
-              height={360}
-              className="w-full max-w-md drop-shadow-2xl"
+              width={400}
+              height={300}
+              className="w-full max-w-sm"
             />
           </div>
         </div>

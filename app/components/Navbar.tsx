@@ -4,17 +4,24 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="pl-8 pr-0 flex justify-between items-center h-20 bg-transparent absolute top-0 left-0 right-0 z-20">
-      <div className="flex items-center h-full">
-        <img src="/Left logo.svg" alt="Navous Logo" className="h-full w-auto" />
+    <nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center h-16 px-8 bg-[#13B7DA]/40 backdrop-blur-2xl backdrop-saturate-150 border-b border-white/30 shadow-[0_8px_32px_0_rgba(19,183,218,0.1)]">
+      <div className="flex items-center">
+        <img src="/Left logo.svg" alt="Navous Logo" className="h-16 w-auto" />
       </div>
-      <div className="hidden md:flex gap-10 font-space-grotesque font-medium">
-        <a href="#" className="text-[18px] tracking-wider text-slate-800 hover:text-primary transition">Home</a>
-        <a href="#features" className="text-[18px] tracking-wider text-slate-800 hover:text-primary transition">Features</a>
-        <a href="#how-it-works" className="text-[18px] tracking-wider text-slate-800 hover:text-primary transition">How It Works</a>
+      
+      <div className="hidden md:flex items-center gap-8 font-space-grotesque font-semibold text-sm uppercase tracking-widest">
+        <a href="/" className="text-slate-900 hover:text-slate-500 transition">Overview</a>
+        <a href="/features" className="text-slate-900 hover:text-slate-500 transition">Platform</a>
+        <a href="/how-it-works" className="text-slate-900 hover:text-slate-500 transition">Solutions</a>
       </div>
-      <div className="flex items-center h-full">
-        <img src="/Building.svg" alt="" className="h-full w-auto opacity-10" aria-hidden="true" />
+
+      <div className="flex items-center gap-4">
+        <a href="mailto:hello@navous.com" className="hidden sm:block text-sm font-bold uppercase tracking-widest text-slate-900 hover:text-slate-500 transition">
+          Contact
+        </a>
+        <button className="px-5 py-2.5 bg-slate-900 text-white text-xs font-bold uppercase tracking-widest rounded-full hover:bg-slate-800 transition">
+          Get Started
+        </button>
       </div>
     </nav>
   );

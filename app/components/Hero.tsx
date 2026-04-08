@@ -212,17 +212,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-screen overflow-hidden flex flex-col items-center pt-24 px-12"
-      style={{ background: "radial-gradient(circle at 0% 0%, #e0f7fc 0%, #f0feff 40%, #fff8f0 75%, #fef3e2 100%)" }}
-    >
-      {/* Vibrant background blobs with more saturation */}
-      <div className="absolute top-[-80px] right-[-80px] w-[500px] h-[500px] rounded-full opacity-40 blur-[100px] pointer-events-none animate-pulse"
-        style={{ background: "radial-gradient(circle, #00E5FF 0%, transparent 70%)" }} />
-      <div className="absolute bottom-[-60px] left-[-60px] w-[400px] h-[400px] rounded-full opacity-30 blur-[80px] pointer-events-none"
-        style={{ background: "radial-gradient(circle, #FB7185 0%, transparent 70%)" }} />
-      <div className="absolute top-1/2 right-1/4 w-[300px] h-[300px] rounded-full opacity-20 blur-[60px] pointer-events-none"
-        style={{ background: "radial-gradient(circle, #FCD34D 0%, transparent 70%)" }} />
-
+    <section className="relative h-screen overflow-hidden flex flex-col items-center justify-start pt-32 px-6 md:px-12 bg-white">
       {/* Background Canvas — walking people */}
       <canvas
         ref={canvasRef}
@@ -230,22 +220,22 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full pointer-events-none opacity-80"
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col">
-        <span className="inline-block self-start text-sm font-semibold px-4 py-1.5 rounded-full mb-6 tracking-wide border" style={{ color: "#13B7DA", borderColor: "#13B7DA40", background: "#13B7DA0D" }}>
-          Indoor Navigation Platform
-        </span>
-
-        <h1 className="font-space-grotesque text-5xl md:text-6xl font-bold tracking-tighter text-slate-900 leading-tight mb-8 text-left self-start">
-          Stop <span className="text-black">losing</span> people<br />in the hallways.
+      <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-center text-center">
+        <h1 className="font-space-grotesque text-6xl md:text-8xl font-bold tracking-tight text-slate-900 leading-[1.1] mb-8">
+          Seamless Indoor<br />Navigation.
         </h1>
 
-        <p className="text-slate-800 text-xl md:text-2xl font-semibold leading-relaxed max-w-2xl mb-6 text-right self-end">
-          Navous is indoor navigation software. Visitors scan a QR code at any entrance and get real-time, turn-by-turn directions to any room, store, or office — no app download, no sign-up, no friction.
+        <p className="text-slate-600 text-xl md:text-2xl font-medium leading-relaxed max-w-2xl mb-16">
+          Instant, app-free directions via QR codes. Turn complex buildings into effortless experiences—helping visitors find their way without the friction.
         </p>
 
-        <div className="flex flex-wrap gap-5 self-end">
-          <a href="/how-it-works" className="btn-primary"><span>See How It Works</span></a>
-          <a href="/features" className="btn-secondary"><span>Explore Features</span></a>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+          <a href="/how-it-works" className="px-8 py-4 bg-slate-900 text-white rounded-full font-semibold hover:bg-slate-800 transition-all text-center min-w-[200px]">
+            See How It Works
+          </a>
+          <a href="/features" className="px-8 py-4 bg-white text-slate-900 border border-slate-200 rounded-full font-semibold hover:bg-slate-50 transition-all text-center min-w-[200px]">
+            Explore Features
+          </a>
         </div>
       </div>
     </section>

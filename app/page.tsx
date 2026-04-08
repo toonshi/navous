@@ -16,13 +16,21 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <div className="border-t border-slate-100" />
         <TrustStats />
+        <div className="border-t border-slate-100" />
         <BentoGrid />
+        <div className="border-t border-slate-100" />
         <UseCases />
+        <div className="border-t border-slate-100" />
         <StakeholderValue />
+        <div className="border-t border-slate-100" />
         <HowItWorks />
+        <div className="border-t border-slate-100" />
         <Testimonials />
+        <div className="border-t border-slate-100" />
         <Pricing />
+        <div className="border-t border-slate-100" />
         <FinalCTA />
       </main>
       <Footer />
