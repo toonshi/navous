@@ -9,9 +9,7 @@ const steps = [
     title: "Upload your floor plans",
     description:
       "Send us your existing floor plans — any format. Our team digitises every room, corridor, lift, stairwell, and access point with AI. No hardware. No site visit required.",
-    cardBg: "#FFD6A5",
-    tagColor: "text-orange-700",
-    tagBg: "bg-orange-100",
+    accentColor: "#13B7DA",
     illustration: "/illustrations/step-upload.svg",
   },
   {
@@ -19,9 +17,7 @@ const steps = [
     title: "Configure, test, and brand it",
     description:
       "Set up points of interest, accessible routes, and routing rules through our no-code dashboard. Match your brand. Integrate with your booking or appointment system if needed. Test with your team.",
-    cardBg: "#FDFFB6",
-    tagColor: "text-yellow-700",
-    tagBg: "bg-yellow-100",
+    accentColor: "#13B7DA",
     illustration: "/illustrations/step-configure.svg",
   },
   {
@@ -29,9 +25,7 @@ const steps = [
     title: "Go live — visitors navigate",
     description:
       "Place QR codes at entrances. Visitors scan, and they're guided turn-by-turn in real time. No app download. No sign-up. No friction. Just directions that work.",
-    cardBg: "#CAFFBF",
-    tagColor: "text-emerald-700",
-    tagBg: "bg-emerald-100",
+    accentColor: "#13B7DA",
     illustration: "/illustrations/step-live.svg",
   },
 ];
@@ -53,9 +47,9 @@ export default function HowItWorks() {
           {steps.map((step) => (
             <div
               key={step.number}
-              className="rounded-2xl flex flex-col overflow-hidden shadow-sm hover:shadow-md transition-shadow"
-              style={{ background: step.cardBg }}
+              className="rounded-2xl flex flex-col overflow-hidden bg-white border border-slate-200 shadow-sm hover:shadow-md transition-shadow"
             >
+              <div className="h-1 w-full" style={{ background: step.accentColor }} />
               <Image
                 src={step.illustration}
                 alt={step.title}
@@ -64,14 +58,14 @@ export default function HowItWorks() {
                 className="w-full"
               />
               <div className="p-8 flex flex-col gap-4">
-                <span className={`self-start px-3 py-1.5 rounded-lg text-sm font-bold ${step.tagBg} ${step.tagColor}`}>
+                <span className="self-start px-3 py-1.5 rounded-lg text-sm font-bold border" style={{ color: step.accentColor, borderColor: step.accentColor + "40", background: step.accentColor + "0D" }}>
                   {step.number}
                 </span>
                 <div>
                   <h3 className="font-space-grotesque text-xl font-bold tracking-tighter text-slate-900 mb-3">
                     {step.title}
                   </h3>
-                  <p className="text-slate-700 text-sm leading-relaxed font-medium">
+                  <p className="text-slate-600 text-sm leading-relaxed font-medium">
                     {step.description}
                   </p>
                 </div>
@@ -80,11 +74,10 @@ export default function HowItWorks() {
           ))}
         </div>
 
-        <div className="mt-10 rounded-2xl p-6 md:p-8 grid grid-cols-1 md:grid-cols-3 gap-4"
-          style={{ background: "#FFADAD" }}>
-          <p className="text-sm text-slate-700 font-medium"><span className="font-bold text-slate-900">Data Sovereignty:</span> Your spatial and operational data remains under your full control.</p>
-          <p className="text-sm text-slate-700 font-medium"><span className="font-bold text-slate-900">Accessibility First:</span> Logic includes step-free, lift-priority, and audio-assisted routing.</p>
-          <p className="text-sm text-slate-700 font-medium"><span className="font-bold text-slate-900">Frictionless Access:</span> No mandatory app installs or accounts required for visitor wayfinding.</p>
+        <div className="mt-10 rounded-2xl p-6 md:p-8 grid grid-cols-1 md:grid-cols-3 gap-4 bg-white border border-slate-200">
+          <p className="text-sm text-slate-600 font-medium"><span className="font-bold text-slate-900">Data Sovereignty:</span> Your spatial and operational data remains under your full control.</p>
+          <p className="text-sm text-slate-600 font-medium"><span className="font-bold text-slate-900">Accessibility First:</span> Logic includes step-free, lift-priority, and audio-assisted routing.</p>
+          <p className="text-sm text-slate-600 font-medium"><span className="font-bold text-slate-900">Frictionless Access:</span> No mandatory app installs or accounts required for visitor wayfinding.</p>
         </div>
       </div>
     </section>

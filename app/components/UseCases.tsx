@@ -26,7 +26,7 @@ export default function UseCases() {
   const sector = sectors[active];
 
   return (
-    <section id="use-cases" className="py-32 px-8" style={{ background: "#CAFFBF" }}>
+    <section id="use-cases" className="py-32 px-8 bg-white border-t border-slate-100">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-secondary mb-4">
@@ -54,8 +54,7 @@ export default function UseCases() {
           ))}
         </div>
 
-        <div className="rounded-3xl p-8 md:p-12 flex flex-col md:flex-row md:items-center gap-10"
-          style={{ background: "#FFADAD" }}>
+        <div className="rounded-3xl p-8 md:p-12 flex flex-col md:flex-row md:items-center gap-10 bg-white border border-slate-200 shadow-sm">
           <div className="flex justify-center items-center h-full shrink-0 mx-auto md:mx-0">
             <Image
               src="/illustrations/navigation.svg"
