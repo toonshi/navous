@@ -18,7 +18,7 @@ export default function FeaturesPage() {
       <main className="flex-1">
         {/* Page hero */}
         <div className="py-20 px-8 text-center"
-          style={{ background: "linear-gradient(135deg, #13B7DA 0%, #0e9ab9 100%)" }}>
+          style={{ background: "#13B7DA" }}>
           <span className="inline-block bg-white/10 text-white text-sm font-semibold px-4 py-1.5 rounded-full mb-6 tracking-wide">
             Platform Features
           </span>

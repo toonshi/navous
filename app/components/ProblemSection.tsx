@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function ProblemSection() {
   return (
-    <section className="py-24 px-8" style={{ background: "linear-gradient(180deg, #FDFFB6 0%, #CAFFBF 100%)" }}>
+    <section className="py-24 px-8" style={{ background: "#FDFFB6" }}>
       <div className="max-w-7xl mx-auto flex flex-col gap-28">
 
         {/* Row 1 — left text, right illustration */}
@@ -78,7 +78,7 @@ export default function ProblemSection() {
 
         {/* Pull quote */}
         <div className="rounded-2xl p-10 flex flex-col md:flex-row md:items-center gap-6"
-          style={{ background: "linear-gradient(135deg, #13B7DA 0%, #0e9ab9 100%)" }}>
+          style={{ background: "#13B7DA" }}>
           <div className="flex-1">
             <p className="font-space-grotesque text-2xl md:text-3xl font-bold text-white leading-snug mb-4">
               &ldquo;Navigation is not a nice-to-have. It is the difference between a

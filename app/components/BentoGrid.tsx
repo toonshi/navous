@@ -19,7 +19,7 @@ const BentoGrid = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {/* Box A: Large — Searchable Infrastructure */}
           <div className="md:col-span-2 rounded-3xl p-10 flex flex-col justify-end min-h-90 relative overflow-hidden shadow-sm"
-            style={{ background: "linear-gradient(135deg, #13B7DA 0%, #0e9ab9 100%)" }}>
+            style={{ background: "#13B7DA" }}>
             <Image
               src="/Building.svg"
               alt=""

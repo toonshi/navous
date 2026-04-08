@@ -4,7 +4,7 @@ import React from "react";
 
 export default function FinalCTA() {
   return (
-    <section className="py-28 px-8" style={{ background: "linear-gradient(135deg, #CAFFBF 0%, #FDFFB6 40%, #FFD6A5 70%, #FFADAD 100%)" }}>
+    <section className="py-28 px-8" style={{ background: "#CAFFBF" }}>
       <div className="max-w-3xl mx-auto text-center">
         <span className="inline-block bg-white/60 text-slate-800 text-sm font-semibold px-4 py-1.5 rounded-full mb-8 tracking-wide">
           Get Started

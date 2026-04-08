@@ -16,7 +16,7 @@ export default function HowItWorksPage() {
       <main className="flex-1">
         {/* Page hero */}
         <div className="py-20 px-8 text-center"
-          style={{ background: "linear-gradient(135deg, #CAFFBF 0%, #FDFFB6 50%, #FFD6A5 100%)" }}
+          style={{ background: "#CAFFBF" }}
         >
           <span className="inline-block bg-primary/10 text-primary text-sm font-semibold px-4 py-1.5 rounded-full mb-6 tracking-wide">
             Deployment

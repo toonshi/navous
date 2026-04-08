@@ -10,7 +10,7 @@ const stats = [
 
 export default function TrustStats() {
   return (
-    <section className="py-20 px-8" style={{ background: "linear-gradient(135deg, #13B7DA 0%, #0e9ab9 100%)" }}>
+    <section className="py-20 px-8" style={{ background: "#13B7DA" }}>
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <p className="text-white text-sm font-semibold tracking-wide uppercase">Measured Impact from Early Deployments</p>
