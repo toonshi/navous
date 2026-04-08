@@ -212,7 +212,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-[calc(100vh-4rem)] overflow-hidden flex flex-col items-center pt-6 px-12"
+    <section className="relative h-screen overflow-hidden flex flex-col items-center pt-24 px-12"
       style={{ background: "radial-gradient(circle at 0% 0%, #e0f7fc 0%, #f0feff 40%, #fff8f0 75%, #fef3e2 100%)" }}
     >
       {/* Vibrant background blobs with more saturation */}
@@ -231,12 +231,16 @@ export default function Hero() {
       />
 
       <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col">
+        <span className="inline-block self-start text-sm font-semibold px-4 py-1.5 rounded-full mb-6 tracking-wide border" style={{ color: "#13B7DA", borderColor: "#13B7DA40", background: "#13B7DA0D" }}>
+          Indoor Navigation Platform
+        </span>
+
         <h1 className="font-space-grotesque text-5xl md:text-6xl font-bold tracking-tighter text-slate-900 leading-tight mb-8 text-left self-start">
           Stop <span className="text-black">losing</span> people<br />in the hallways.
         </h1>
 
         <p className="text-slate-800 text-xl md:text-2xl font-semibold leading-relaxed max-w-2xl mb-6 text-right self-end">
-          Navous transforms your space into a searchable, intelligent environment. Make sure your visitors find exactly what they need, the moment they enter your doors.
+          Navous is indoor navigation software. Visitors scan a QR code at any entrance and get real-time, turn-by-turn directions to any room, store, or office — no app download, no sign-up, no friction.
         </p>
 
         <div className="flex flex-wrap gap-5 self-end">
