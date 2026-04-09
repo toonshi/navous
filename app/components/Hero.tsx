@@ -235,10 +235,10 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-row items-center justify-center gap-3 w-full sm:w-auto">
-          <a href="/how-it-works" className="flex-1 sm:flex-none px-4 sm:px-8 py-4 bg-slate-900 text-white rounded-lg font-semibold hover:bg-slate-800 transition-all text-center text-sm sm:text-base min-w-0 sm:min-w-[200px]">
+          <a href="/how-it-works" className="flex-1 sm:flex-none px-4 sm:px-8 py-4 bg-slate-900 text-white rounded-md font-semibold hover:bg-slate-800 transition-all text-center text-base min-w-0 sm:min-w-[200px]">
             How It Works
           </a>
-          <a href="/features" className="flex-1 sm:flex-none px-4 sm:px-8 py-4 bg-white text-slate-900 border border-slate-200 rounded-lg font-semibold hover:bg-slate-50 transition-all text-center text-sm sm:text-base min-w-0 sm:min-w-[200px]">
+          <a href="/features" className="flex-1 sm:flex-none px-4 sm:px-8 py-4 bg-white text-slate-900 border border-slate-200 rounded-md font-semibold hover:bg-slate-50 transition-all text-center text-base min-w-0 sm:min-w-[200px]">
             Features
           </a>
         </div>
