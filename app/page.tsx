@@ -1,11 +1,10 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import TrustStats from "./components/TrustStats";
-import BentoGrid from "./components/BentoGrid";
+import TechnicalCapabilities from "./components/TechnicalCapabilities";
 import DashboardSection from "./components/DashboardSection";
 import OwnerValue from "./components/OwnerValue";
 import UseCases from "./components/UseCases";
-import StakeholderValue from "./components/StakeholderValue";
 import HowItWorks from "./components/HowItWorks";
 import Testimonials from "./components/Testimonials";
 import Pricing from "./components/Pricing";
@@ -21,7 +20,7 @@ export default function Home() {
         <div className="border-t border-slate-100" />
         <TrustStats />
         <div className="border-t border-slate-100" />
-        <BentoGrid />
+        <TechnicalCapabilities />
         <div className="border-t border-slate-100" />
         <DashboardSection />
         <div className="border-t border-slate-100" />
@@ -30,8 +29,6 @@ export default function Home() {
         <UseCases />
         <div className="border-t border-slate-100" />
         <HowItWorks />
-        <div className="border-t border-slate-100" />
-        <StakeholderValue />
         <div className="border-t border-slate-100" />
         <Testimonials />
         <div className="border-t border-slate-100" />
