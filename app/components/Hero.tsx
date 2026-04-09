@@ -231,7 +231,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-slate-600 text-xl md:text-2xl font-medium leading-relaxed max-w-2xl mb-16">
-          Instant, app-free directions via QR codes. Turn complex buildings into effortless experiences—helping visitors find their way without the friction.
+          Instant, app-free directions via QR codes. Turn complex buildings into effortless experiences, helping visitors find their way without the friction.
         </p>
 
         <div className="flex flex-row items-center justify-center gap-3 w-full sm:w-auto">
