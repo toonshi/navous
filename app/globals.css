@@ -77,24 +77,6 @@ body {
   transform: scale(1.03);
 }
 
-/* Animated nav link underline */
-.nav-link {
-  position: relative;
-}
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 1.5px;
-  background: currentColor;
-  transition: width 0.25s ease;
-}
-.nav-link:hover::after {
-  width: 100%;
-}
-
 /* Scroll-reveal: fade up */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(18px); }
@@ -121,20 +103,6 @@ body {
 .doodle-float-offset {
   animation: doodleFloat 5s ease-in-out infinite;
   animation-delay: 1.5s;
-}
-
-/* Wiggle underline wrapper — place under a heading */
-.wiggle-wrap {
-  position: relative;
-  display: inline-block;
-}
-.wiggle-wrap .wiggle-svg {
-  position: absolute;
-  bottom: -6px;
-  left: 0;
-  width: 100%;
-  height: 8px;
-  pointer-events: none;
 }
 
 /* ── Button primitives ─────────────────────────────────────────────────────── */

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Sparkle, WiggleLine, ScatterDots } from "./Doodles";
+import { Sparkle, ScatterDots } from "./Doodles";
 
 export default function FinalCTA() {
   return (
@@ -21,10 +21,7 @@ export default function FinalCTA() {
         <h2 className="font-space-grotesque text-5xl md:text-6xl font-bold tracking-tighter text-slate-900 mb-6 leading-tight">
           Your facility,
           <br />
-          <span className="wiggle-wrap" style={{ color: "#13B7DA" }}>
-            searchable in 21 days.
-            <WiggleLine color="#13B7DA" className="wiggle-svg opacity-50" />
-          </span>
+          searchable in 21 days.
         </h2>
         <p className="text-slate-700 text-lg mb-4 leading-relaxed max-w-xl mx-auto font-medium">
           Join the leading organizations using Navous to transform their visitor experience and facility efficiency. No hardware, no app downloads, just results.
