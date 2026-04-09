@@ -9,10 +9,10 @@ export default function DashboardSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold mb-8 leading-tight">
-              A dashboard that shows<br />you what&apos;s happening
+              Unified Situational Awareness<br />for facility operations
             </h2>
             <p className="text-slate-400 text-lg mb-10 leading-relaxed">
-              Your building is already busy—now you can see where. Navous turns those silent corridors into real metrics, so you can stop guessing and start managing.
+              Our Command Center provides a centralized interface for monitoring real-time movement metrics. We synchronize spatial data with existing facility protocols to deliver actionable operational intelligence.
             </p>
             
             <div className="space-y-6">
@@ -23,8 +23,8 @@ export default function DashboardSection() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-bold text-xl mb-2">Real visibility</h3>
-                  <p className="text-slate-400">Identify exactly where visitors get stuck. Fix bottlenecks in real-time and optimize your space based on truth, not guesses.</p>
+                  <h3 className="font-bold text-xl mb-2">High-fidelity visibility</h3>
+                  <p className="text-slate-400">Identify high-density zones and monitor transition bottlenecks in real-time. Optimize facility layouts based on empirical movement data.</p>
                 </div>
               </div>
 
@@ -36,8 +36,8 @@ export default function DashboardSection() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-bold text-xl mb-2">Better security integration</h3>
-                  <p className="text-slate-400">Turn your existing camera feeds into path data. Know not just that there is a crowd, but exactly where they are headed.</p>
+                  <h3 className="font-bold text-xl mb-2">CCTV-Spatial Synchronization</h3>
+                  <p className="text-slate-400">Integrate existing optical sensors to verify occupancy and track journey success rates across multi-story architectural layers.</p>
                 </div>
               </div>
             </div>

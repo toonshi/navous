@@ -217,7 +217,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-screen overflow-hidden flex flex-col items-center justify-start pt-16 md:pt-24 px-6 md:px-12 bg-white">
+    <section className="relative h-screen overflow-hidden flex flex-col items-center justify-start pt-16 md:pt-24 px-6 md:px-12 bg-white text-slate-900">
       {/* Background Canvas — walking people */}
       <canvas
         ref={canvasRef}
@@ -226,26 +226,27 @@ export default function Hero() {
       />
 
       <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-center text-center">
-        <h1 className="font-space-grotesque text-6xl md:text-[7.5rem] font-bold tracking-tight text-slate-900 leading-[0.95] mb-6">
-          The street ends.<br />Your map shouldn&apos;t.
+        <h1 className="font-space-grotesque text-6xl md:text-[6.5rem] font-bold tracking-tight text-slate-900 leading-[0.95] mb-8">
+          Digital infrastructure for<br />physical space
         </h1>
 
-        <p className="text-slate-600 text-xl md:text-2xl font-medium leading-relaxed max-w-2xl mb-10">
-          Stop your visitors from getting lost the moment they walk through your doors. Give them instant, app-free directions that just work.
+        <p className="text-slate-600 text-xl md:text-2xl font-medium leading-relaxed max-w-3xl mb-12">
+          High-fidelity indoor positioning and spatial analytics for complex, high-traffic environments. We provide seamless, browser-based navigation and journey intelligence without the requirement for hardware installation or application downloads.
         </p>
 
-        <div className="flex flex-row items-center justify-center gap-3 w-full sm:w-auto">
-          <a href="/how-it-works" className="flex-1 sm:flex-none px-6 sm:px-8 py-3.5 bg-slate-900 text-white rounded-md font-semibold hover:bg-slate-800 transition-all text-center text-base min-w-0 sm:min-w-[180px]">
-            See how it works
+        <div className="flex flex-row items-center justify-center gap-4 w-full sm:w-auto">
+          <a href="/how-it-works" className="flex-1 sm:flex-none px-6 sm:px-10 py-4 bg-slate-900 text-white rounded-md font-semibold hover:bg-slate-800 transition-all text-center text-base min-w-0 sm:min-w-[200px]">
+            Solutions Overview
           </a>
-          <a href="/features" className="flex-1 sm:flex-none px-6 sm:px-8 py-3.5 bg-transparent text-slate-900 border border-slate-200 rounded-md font-semibold hover:bg-slate-50 transition-all text-center text-base min-w-0 sm:min-w-[180px]">
-            The Platform
+          <a href="/features" className="flex-1 sm:flex-none px-6 sm:px-10 py-4 bg-transparent text-slate-900 border border-slate-200 rounded-md font-semibold hover:bg-slate-50 transition-all text-center text-base min-w-0 sm:min-w-[200px]">
+            Technical Platform
           </a>
         </div>
 
-        <p className="mt-10 text-slate-400 text-sm font-medium">
-          No hardware to install. No apps to download.
-        </p>
+        <div className="mt-20 flex flex-col items-center gap-4">
+           <div className="h-px w-24 bg-slate-200" />
+           <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400">Enterprise Standard for Spatial Intelligence</span>
+        </div>
       </div>
     </section>
   );

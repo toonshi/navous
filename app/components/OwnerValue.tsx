@@ -8,36 +8,36 @@ export default function OwnerValue() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold text-slate-900 mb-8 leading-tight">
-              A smarter way to manage<br />your square footage
+            <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold text-slate-900 mb-8 leading-tight text-balance">
+              Strategic square footage management
             </h2>
             <p className="text-slate-600 text-lg mb-10 leading-relaxed font-medium">
-              Navigation is just the beginning. Navous gives you a high-fidelity look at how your building actually functions, helping you make decisions based on movement, not guesses.
+              Indoor positioning is the baseline for modern facility oversight. Our platform provides high-fidelity visibility into asset utilization, enabling data-driven decisions for complex architectural environments.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               <div>
-                <h3 className="font-bold text-slate-900 text-xl mb-3">Tenant Leverage</h3>
+                <h3 className="font-bold text-slate-900 text-xl mb-3 text-balance">Empirical Asset Valuation</h3>
                 <p className="text-slate-500 text-sm leading-relaxed">
-                  Prove the value of your retail spaces with actual foot-traffic data. Show tenants the exact path visitors take to reach their storefronts.
+                  Verify the commercial value of retail zones through precise pedestrian-flow auditing. Deliver path-to-purchase metrics directly to your tenant stakeholders.
                 </p>
               </div>
               <div>
-                <h3 className="font-bold text-slate-900 text-xl mb-3">Staff Efficiency</h3>
+                <h3 className="font-bold text-slate-900 text-xl mb-3 text-balance">Workforce Synchronization</h3>
                 <p className="text-slate-500 text-sm leading-relaxed">
-                  Stop over-scheduling in quiet zones. Use real-time density metrics to deploy security and maintenance crews exactly where they are needed.
+                  Optimize human capital deployment by aligning maintenance and security patrols with real-time occupancy and density reports.
                 </p>
               </div>
               <div>
-                <h3 className="font-bold text-slate-900 text-xl mb-3">Zero Infrastructure</h3>
+                <h3 className="font-bold text-slate-900 text-xl mb-3 text-balance">Infrastructure Integrity</h3>
                 <p className="text-slate-500 text-sm leading-relaxed">
-                  No expensive beacons, no wiring, and no maintenance. We use your existing floor plans to build a digital layer that scales with your facility.
+                  Maintain a zero-hardware footprint. Our software-defined mapping layer utilizes existing floor plans to deliver high-precision results without ongoing maintenance overhead.
                 </p>
               </div>
               <div>
-                <h3 className="font-bold text-slate-900 text-xl mb-3">Emergency Ready</h3>
+                <h3 className="font-bold text-slate-900 text-xl mb-3 text-balance">Operational Resilience</h3>
                 <p className="text-slate-500 text-sm leading-relaxed">
-                  Instantly push evacuation routes to every phone in the building during emergencies, ensuring a calm and directed exit for everyone.
+                  Enhance safety protocols with automated egress routing. Direct visitors through optimal corridors during emergency procedures with centralized control.
                 </p>
               </div>
             </div>
