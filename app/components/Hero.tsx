@@ -217,7 +217,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-screen overflow-hidden flex flex-col items-center justify-start pt-32 px-6 md:px-12 bg-white">
+    <section className="relative h-screen overflow-hidden flex flex-col items-center justify-start pt-20 md:pt-32 px-6 md:px-12 bg-white">
       {/* Background Canvas — walking people */}
       <canvas
         ref={canvasRef}
@@ -234,12 +234,12 @@ export default function Hero() {
           Instant, app-free directions via QR codes. Turn complex buildings into effortless experiences—helping visitors find their way without the friction.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
-          <a href="/how-it-works" className="px-8 py-4 bg-slate-900 text-white rounded-full font-semibold hover:bg-slate-800 transition-all text-center min-w-[200px]">
-            See How It Works
+        <div className="flex flex-row items-center justify-center gap-3 w-full sm:w-auto">
+          <a href="/how-it-works" className="flex-1 sm:flex-none px-4 sm:px-8 py-4 bg-slate-900 text-white rounded-lg font-semibold hover:bg-slate-800 transition-all text-center text-sm sm:text-base min-w-0 sm:min-w-[200px]">
+            How It Works
           </a>
-          <a href="/features" className="px-8 py-4 bg-white text-slate-900 border border-slate-200 rounded-full font-semibold hover:bg-slate-50 transition-all text-center min-w-[200px]">
-            Explore Features
+          <a href="/features" className="flex-1 sm:flex-none px-4 sm:px-8 py-4 bg-white text-slate-900 border border-slate-200 rounded-lg font-semibold hover:bg-slate-50 transition-all text-center text-sm sm:text-base min-w-0 sm:min-w-[200px]">
+            Features
           </a>
         </div>
       </div>
