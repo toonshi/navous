@@ -58,6 +58,85 @@ body {
   font-family: var(--font-trykker), serif;
 }
 
+/* ── Micro-interactions ────────────────────────────────────────────────────── */
+
+/* Card lift on hover */
+.card-hover {
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.12);
+}
+
+/* Subtle scale pulse on hover (for stat numbers) */
+.stat-hover {
+  transition: transform 0.2s ease;
+}
+.stat-hover:hover {
+  transform: scale(1.03);
+}
+
+/* Animated nav link underline */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: currentColor;
+  transition: width 0.25s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Scroll-reveal: fade up */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.reveal {
+  animation: fadeUp 0.55s ease both;
+}
+.reveal-delay-1 { animation-delay: 0.1s; }
+.reveal-delay-2 { animation-delay: 0.2s; }
+.reveal-delay-3 { animation-delay: 0.3s; }
+
+/* Doodle float animation (very gentle) */
+@keyframes doodleFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50%       { transform: translateY(-5px) rotate(4deg); }
+}
+.doodle-float {
+  animation: doodleFloat 4s ease-in-out infinite;
+}
+.doodle-float-slow {
+  animation: doodleFloat 6s ease-in-out infinite;
+}
+.doodle-float-offset {
+  animation: doodleFloat 5s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
+
+/* Wiggle underline wrapper — place under a heading */
+.wiggle-wrap {
+  position: relative;
+  display: inline-block;
+}
+.wiggle-wrap .wiggle-svg {
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  pointer-events: none;
+}
+
 /* ── Button primitives ─────────────────────────────────────────────────────── */
 
 /* Primary: outlined cyan, fills with cyan on hover */
