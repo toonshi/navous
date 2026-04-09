@@ -27,6 +27,9 @@ export default function Hero() {
     const removeRandomFromArray = (array: any[]) => removeFromArray(array, randomIndex(array));
     const getRandomFromArray = (array: any[]) => array[randomIndex(array) | 0];
 
+    const stage = { width: 0, height: 0 };
+    let peepScale = 1;
+
     // CLASSES
     class Peep {
       image: HTMLImageElement;
@@ -64,7 +67,7 @@ export default function Hero() {
       render(ctx: CanvasRenderingContext2D) {
         ctx.save();
         ctx.translate(this.x, this.y);
-        ctx.scale(this.scaleX, 1);
+        ctx.scale(this.scaleX * peepScale, peepScale);
         ctx.drawImage(
           this.image,
           this.rect[0], this.rect[1], this.rect[2], this.rect[3],
@@ -74,7 +77,6 @@ export default function Hero() {
       }
     }
 
-    const stage = { width: 0, height: 0 };
     const allPeeps: Peep[] = [];
     const availablePeeps: Peep[] = [];
     const crowd: Peep[] = [];
@@ -82,16 +84,16 @@ export default function Hero() {
     const resetPeep = ({ stage, peep }: { stage: any; peep: Peep }) => {
       const direction = Math.random() > 0.5 ? 1 : -1;
       const offsetY = 30 - 180 * gsap.parseEase("power2.in")(Math.random());
-      const startY = stage.height - peep.height + offsetY;
+      const startY = stage.height - (peep.height * peepScale) + offsetY;
       let startX;
       let endX;
 
       if (direction === 1) {
-        startX = -peep.width;
+        startX = -(peep.width * peepScale);
         endX = stage.width;
         peep.scaleX = 1;
       } else {
-        startX = stage.width + peep.width;
+        startX = stage.width + (peep.width * peepScale);
         endX = 0;
         peep.scaleX = -1;
       }
@@ -119,7 +121,7 @@ export default function Hero() {
         duration: yDuration,
         repeat: xDuration / yDuration,
         yoyo: true,
-        y: startY - 10,
+        y: startY - (10 * peepScale),
       }, 0);
 
       return tl;
@@ -167,6 +169,9 @@ export default function Hero() {
       stage.height = canvas.clientHeight;
       canvas.width = stage.width * window.devicePixelRatio;
       canvas.height = stage.height * window.devicePixelRatio;
+
+      // Update peepScale based on width - smaller on mobile
+      peepScale = stage.width < 768 ? 0.45 : 1;
 
       crowd.forEach((peep) => {
         if (peep.walk) peep.walk.kill();
@@ -217,7 +222,7 @@ export default function Hero() {
       <canvas
         ref={canvasRef}
         id="canvas"
-        className="absolute inset-0 w-full h-full pointer-events-none opacity-80"
+        className="absolute inset-0 w-full h-full pointer-events-none opacity-40 md:opacity-80"
       />
 
       <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-center text-center">
