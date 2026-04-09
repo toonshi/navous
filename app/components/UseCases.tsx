@@ -46,11 +46,11 @@ export default function UseCases() {
                </p>
                <div className="grid grid-cols-2 gap-4">
                   <div className="bg-white/5 p-4 rounded-xl border border-white/10">
-                    <div className="text-[#13B7DA] font-bold text-xl">22 MIN</div>
+                    <div className="text-indigo-400 font-bold text-xl">22 MIN</div>
                     <div className="text-xs text-slate-500 uppercase font-bold tracking-widest">Saved per nurse</div>
                   </div>
                   <div className="bg-white/5 p-4 rounded-xl border border-white/10">
-                    <div className="text-[#13B7DA] font-bold text-xl">31%</div>
+                    <div className="text-indigo-400 font-bold text-xl">31%</div>
                     <div className="text-xs text-slate-500 uppercase font-bold tracking-widest">Fewer interruptions</div>
                   </div>
                </div>
@@ -77,7 +77,7 @@ export default function UseCases() {
               <div className="text-center">
                 <p className="text-slate-400 text-xs font-bold uppercase tracking-widest mb-2">Live Interface</p>
                 <p className="text-slate-900 font-bold text-xl">Level 4: Radiology</p>
-                <div className="mt-4 px-4 py-2 bg-[#13B7DA] text-white text-sm font-bold rounded-lg shadow-lg">
+                <div className="mt-4 px-4 py-2 bg-indigo-600 text-white text-sm font-bold rounded-lg shadow-lg">
                   Turn Left at Ward B
                 </div>
               </div>

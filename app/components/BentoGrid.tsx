@@ -30,7 +30,7 @@ const BentoGrid = () => {
           {/* Box B: No Apps */}
           <div className="rounded-3xl p-8 flex flex-col justify-between min-h-90 border border-slate-200 bg-slate-900 text-white shadow-2xl">
             <div className="flex justify-center items-center h-full mb-8">
-               <div className="text-8xl font-bold text-[#13B7DA]">0</div>
+               <div className="text-8xl font-bold text-indigo-500">0</div>
             </div>
             <div>
               <h3 className="font-space-grotesque text-2xl font-bold tracking-tight text-white mb-3 leading-snug">

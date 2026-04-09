@@ -65,7 +65,7 @@ export default function OwnerValue() {
               </div>
               <div className="p-4 bg-slate-50 rounded-xl border border-slate-100 flex justify-between items-center">
                 <span className="text-slate-600 font-medium">Wayfinding Success Rate</span>
-                <span className="text-slate-900 font-bold text-[#13B7DA]">98.4%</span>
+                <span className="text-slate-900 font-bold text-indigo-600">98.4%</span>
               </div>
             </div>
 
