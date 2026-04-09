@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { Sparkle, WiggleLine, ScatterDots, MapPin } from "./Doodles";
 
 export default function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -225,9 +226,21 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full pointer-events-none opacity-80"
       />
 
+      {/* Doodle accents — floating in background */}
+      <Sparkle size={18} color="#FFADAD" className="absolute top-28 left-[10%] doodle-float pointer-events-none opacity-80" />
+      <Sparkle size={13} color="#FFD6A5" className="absolute top-44 right-[12%] doodle-float-offset pointer-events-none opacity-70" />
+      <Sparkle size={10} color="#CAFFBF" className="absolute top-64 left-[18%] doodle-float-slow pointer-events-none opacity-60" />
+      <MapPin size={16} color="#13B7DA" className="absolute top-36 right-[22%] doodle-float-slow pointer-events-none opacity-50" />
+      <ScatterDots color="#13B7DA" className="absolute bottom-32 left-[6%] pointer-events-none opacity-25" />
+      <ScatterDots color="#FFADAD" className="absolute bottom-28 right-[8%] pointer-events-none opacity-20" />
+
       <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-center text-center">
         <h1 className="font-space-grotesque text-5xl md:text-[5.5rem] font-bold tracking-tight text-slate-900 leading-[0.95] mb-6">
-          Digital infrastructure for<br />physical space
+          Digital infrastructure for<br />
+          <span className="wiggle-wrap">
+            physical space
+            <WiggleLine color="#13B7DA" className="wiggle-svg" />
+          </span>
         </h1>
 
         <p className="text-slate-600 text-lg md:text-xl font-medium leading-relaxed max-w-2xl mb-8">

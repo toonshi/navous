@@ -10,9 +10,9 @@ const Navbar = () => {
       </div>
       
       <div className="hidden md:flex items-center gap-8 font-space-grotesque font-semibold text-sm uppercase tracking-widest">
-        <a href="/" className="text-slate-900 hover:text-indigo-600 transition">Overview</a>
-        <a href="/features" className="text-slate-900 hover:text-indigo-600 transition">Platform</a>
-        <a href="/how-it-works" className="text-slate-900 hover:text-indigo-600 transition">Solutions</a>
+        <a href="/" className="nav-link text-slate-900 transition">Overview</a>
+        <a href="/features" className="nav-link text-slate-900 transition">Platform</a>
+        <a href="/how-it-works" className="nav-link text-slate-900 transition">Solutions</a>
       </div>
 
     </nav>
