@@ -9,24 +9,21 @@ const BentoGrid = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 mb-4">
-            Intelligence where signs fail.
+            Everything you need,<br />none of the friction.
           </h2>
           <p className="text-slate-700 text-lg max-w-2xl mx-auto leading-relaxed font-medium">
-            Stop losing hours to manual wayfinding. Turn your floor plans into a digital intelligence layer that manages itself.
+            Building navigation shouldn&apos;t be hard. We take your floor plans and turn them into a digital map your visitors can actually use.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Box A: Large — Searchable Infrastructure */}
-          <div className="md:col-span-2 rounded-3xl p-10 flex flex-col justify-end min-h-90 relative overflow-hidden border border-slate-200 bg-white">
-            <span className="text-xs font-bold uppercase tracking-widest mb-3 text-slate-400">
-              Rapid Onboarding
-            </span>
+          <div className="md:col-span-2 rounded-3xl p-10 flex flex-col justify-end min-h-90 relative overflow-hidden border border-slate-200 bg-white shadow-sm">
             <h3 className="font-space-grotesque text-4xl font-bold tracking-tight text-slate-900 mb-4 leading-tight">
-              Live in 21 days.
+              From zero to live in weeks.
             </h3>
             <p className="text-slate-600 text-lg max-w-xl leading-relaxed font-medium">
-              Infrastructure doesn&apos;t have to be a multi-year project. We take your existing PDFs or CAD files and deploy a fully searchable navigation layer in under three weeks.
+              You don&apos;t have time for a year-long project. We take your current PDFs or CAD files and give you a fully searchable building map in under 21 days.
             </p>
           </div>
 
@@ -36,29 +33,23 @@ const BentoGrid = () => {
                <div className="text-8xl font-bold text-[#13B7DA]">0</div>
             </div>
             <div>
-              <span className="text-xs font-bold uppercase tracking-widest mb-3 block text-slate-400">
-                Zero Friction
-              </span>
               <h3 className="font-space-grotesque text-2xl font-bold tracking-tight text-white mb-3 leading-snug">
-                No Apps. No USSD.<br />Just Scan.
+                No Apps.<br />Just Scan.
               </h3>
               <p className="text-slate-400 text-sm leading-relaxed font-medium">
-                Speed is the only metric that matters. Navous runs instantly in any mobile browser. Zero hurdles, 100% adoption.
+                People won&apos;t download an app just to find a room. Navous runs right in the mobile browser as soon as they scan a QR code.
               </p>
             </div>
           </div>
 
           {/* Box C: Real-time Analytics */}
-          <div className="md:col-span-3 rounded-3xl p-10 flex flex-col md:flex-row md:items-center gap-12 border border-slate-200 bg-white">
+          <div className="md:col-span-3 rounded-3xl p-10 flex flex-col md:flex-row md:items-center gap-12 border border-slate-200 bg-white shadow-sm">
             <div className="flex-1">
-              <span className="text-xs font-bold uppercase tracking-widest mb-3 block text-slate-400">
-                Data Sovereignty
-              </span>
               <h3 className="font-space-grotesque text-4xl font-bold tracking-tight text-slate-900 mb-4 leading-tight">
-                Read your building&apos;s story.
+                See where people get lost.
               </h3>
               <p className="text-slate-600 text-lg leading-relaxed max-w-2xl font-medium">
-                Identify bottleneck corridors and journey abandonment rates. Optimize your staffing based on how people actually move, not how you think they do.
+                Stop guessing where the bottlenecks are. Our heatmaps show you exactly where visitors struggle, so you can fix your signage or move staff to the right spots.
               </p>
             </div>
             <div className="flex-shrink-0">

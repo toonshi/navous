@@ -227,25 +227,25 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-center text-center">
         <h1 className="font-space-grotesque text-6xl md:text-8xl font-bold tracking-tight text-slate-900 leading-[1.1] mb-8">
-          Your building,<br />searchable
+          The street ends.<br />Your map shouldn&apos;t.
         </h1>
 
-        <p className="text-slate-600 text-xl md:text-2xl font-medium leading-relaxed max-w-2xl mb-8 md:mb-12">
-          The street ends. Your map shouldn&apos;t. Give visitors <span className="text-slate-900 font-bold">No-App</span>, <span className="text-slate-900 font-bold">No-Hardware</span> navigation that just works.
-        </p>
-
-        <p className="text-slate-500 text-sm font-semibold uppercase tracking-widest mb-12">
-          Ready to deploy in 21 days.
+        <p className="text-slate-600 text-xl md:text-2xl font-medium leading-relaxed max-w-2xl mb-12">
+          Stop your visitors from getting lost the moment they walk through your doors. Give them instant, app-free directions that just work.
         </p>
 
         <div className="flex flex-row items-center justify-center gap-3 w-full sm:w-auto">
-          <a href="/how-it-works" className="flex-1 sm:flex-none px-4 sm:px-8 py-4 bg-slate-900 text-white rounded-md font-semibold hover:bg-slate-800 transition-all text-center text-base min-w-0 sm:min-w-[200px]">
-            How It Works
+          <a href="/how-it-works" className="flex-1 sm:flex-none px-6 sm:px-10 py-4 bg-slate-900 text-white rounded-md font-semibold hover:bg-slate-800 transition-all text-center text-base min-w-0 sm:min-w-[200px]">
+            See how it works
           </a>
-          <a href="/features" className="flex-1 sm:flex-none px-4 sm:px-8 py-4 bg-transparent text-slate-900 border border-slate-200 rounded-md font-semibold hover:bg-slate-50/50 transition-all text-center text-base min-w-0 sm:min-w-[200px]">
-            Explore Platform
+          <a href="/features" className="flex-1 sm:flex-none px-6 sm:px-10 py-4 bg-transparent text-slate-900 border border-slate-200 rounded-md font-semibold hover:bg-slate-50/50 transition-all text-center text-base min-w-0 sm:min-w-[200px]">
+            The Platform
           </a>
         </div>
+
+        <p className="mt-12 text-slate-400 text-sm font-medium">
+          No hardware to install. No apps for visitors to download.
+        </p>
       </div>
     </section>
   );

@@ -30,36 +30,36 @@ export default function UseCases() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <h2 className="font-space-grotesque text-5xl md:text-6xl font-bold tracking-tight text-slate-900 mb-6">
-            Your Hospital, Optimized
+            Better for your staff,<br />better for your visitors.
           </h2>
           <p className="text-slate-600 text-xl max-w-2xl mx-auto leading-relaxed font-medium">
-            Your nurses are clinicians, not tour guides. Return focus to patient care by removing the 22 minutes of wayfinding interruptions every staff member faces per shift.
+            Navous solves the simple problem of &quot;How do I get there?&quot; so your team can focus on their actual jobs.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
           <div className="flex-1 space-y-6">
             <div className="bg-slate-900 p-8 rounded-3xl text-white shadow-xl">
-               <h3 className="font-space-grotesque text-3xl font-bold mb-4">Clinical Flow</h3>
+               <h3 className="font-space-grotesque text-3xl font-bold mb-4">Focus on care</h3>
                <p className="text-slate-400 text-lg mb-6 leading-relaxed font-medium">
-                 Direct your patients to Emergency, Diagnostics, and Wards without manual intervention. Integrated lift-priority routes ensure gurneys and accessible needs are prioritized.
+                 Your nurses should be clinicians, not tour guides. Navous handles the directions to Emergency, Diagnostics, and Wards so your staff can stay focused on patient care.
                </p>
                <div className="grid grid-cols-2 gap-4">
                   <div className="bg-white/5 p-4 rounded-xl border border-white/10">
                     <div className="text-[#13B7DA] font-bold text-xl">22 MIN</div>
-                    <div className="text-xs text-slate-500 uppercase font-bold tracking-widest">Saved Per Shift</div>
+                    <div className="text-xs text-slate-500 uppercase font-bold tracking-widest">Saved per nurse</div>
                   </div>
                   <div className="bg-white/5 p-4 rounded-xl border border-white/10">
                     <div className="text-[#13B7DA] font-bold text-xl">31%</div>
-                    <div className="text-xs text-slate-500 uppercase font-bold tracking-widest">Flow Increase</div>
+                    <div className="text-xs text-slate-500 uppercase font-bold tracking-widest">Fewer interruptions</div>
                   </div>
                </div>
             </div>
 
             <div className="bg-slate-50 p-8 rounded-3xl border border-slate-100">
-               <h3 className="font-space-grotesque text-2xl font-bold text-slate-900 mb-4">Staff Optimization</h3>
+               <h3 className="font-space-grotesque text-2xl font-bold text-slate-900 mb-4">No more &quot;human GPS&quot;</h3>
                <p className="text-slate-600 text-lg leading-relaxed font-medium">
-                 Stop hiring more security and front-desk staff just to manage navigation. Navous automates the &quot;How do I get to...&quot; question, allowing your team to focus on their actual roles.
+                 Stop using your security and front-desk teams to manage directions. When visitors can find their own way, your team can finally do the work they were hired for.
                </p>
             </div>
           </div>
