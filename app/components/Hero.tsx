@@ -230,7 +230,7 @@ export default function Hero() {
           Seamless Indoor<br />Navigation.
         </h1>
 
-        <p className="text-slate-600 text-xl md:text-2xl font-medium leading-relaxed max-w-2xl mb-16">
+        <p className="text-slate-600 text-xl md:text-2xl font-medium leading-relaxed max-w-2xl mb-8 md:mb-16">
           Instant, app-free directions via QR codes. Turn complex buildings into effortless experiences, helping visitors find their way without the friction.
         </p>
 
