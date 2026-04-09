@@ -227,7 +227,7 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-center text-center">
         <h1 className="font-space-grotesque text-6xl md:text-8xl font-bold tracking-tight text-slate-900 leading-[1.1] mb-8">
-          Seamless Indoor<br />Navigation.
+          Seamless Indoor<br />Navigation
         </h1>
 
         <p className="text-slate-600 text-xl md:text-2xl font-medium leading-relaxed max-w-2xl mb-8 md:mb-16">
