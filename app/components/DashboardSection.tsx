@@ -8,7 +8,7 @@ export default function DashboardSection() {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold mb-8 leading-tight">
+            <h2 className="font-laila text-4xl md:text-5xl font-bold mb-8 leading-tight">
               Unified Situational Awareness<br />for facility operations
             </h2>
             <p className="text-slate-400 text-lg mb-10 leading-relaxed">
@@ -23,7 +23,7 @@ export default function DashboardSection() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-bold text-xl mb-2">High-fidelity visibility</h3>
+                  <h3 className="font-laila font-bold text-xl mb-2">High-fidelity visibility</h3>
                   <p className="text-slate-400">Identify high-density zones and monitor transition bottlenecks in real-time. Optimize facility layouts based on empirical movement data.</p>
                 </div>
               </div>
@@ -36,7 +36,7 @@ export default function DashboardSection() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-bold text-xl mb-2">CCTV-Spatial Synchronization</h3>
+                  <h3 className="font-laila font-bold text-xl mb-2">CCTV-Spatial Synchronization</h3>
                   <p className="text-slate-400">Integrate existing optical sensors to verify occupancy and track journey success rates across multi-story architectural layers.</p>
                 </div>
               </div>

@@ -29,7 +29,7 @@ export default function UseCases() {
     <section id="use-cases" className="py-32 px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
-          <h2 className="font-space-grotesque text-5xl md:text-6xl font-bold tracking-tight text-slate-900 mb-6 text-balance">
+          <h2 className="font-laila text-5xl md:text-6xl font-bold tracking-tight text-slate-900 mb-6 text-balance">
             Engineered for high-throughput environments.
           </h2>
           <p className="text-slate-600 text-xl max-w-2xl mx-auto leading-relaxed font-medium">
@@ -40,7 +40,7 @@ export default function UseCases() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
           <div className="flex-1 space-y-6">
             <div className="bg-slate-900 p-8 rounded-3xl text-white shadow-xl">
-               <h3 className="font-space-grotesque text-3xl font-bold mb-4">Clinical Efficiency</h3>
+               <h3 className="font-laila text-3xl font-bold mb-4">Clinical Efficiency</h3>
                <p className="text-slate-400 text-lg mb-6 leading-relaxed font-medium">
                  Optimize patient flow by providing automated routing to Emergency, Diagnostics, and Wards. Integrated vertical intelligence ensures gurney-accessible routes are prioritized.
                </p>
@@ -57,7 +57,7 @@ export default function UseCases() {
             </div>
 
             <div className="bg-slate-50 p-8 rounded-3xl border border-slate-100">
-               <h3 className="font-space-grotesque text-2xl font-bold text-slate-900 mb-4 text-balance">Operational Workforce Synchronization</h3>
+               <h3 className="font-laila text-2xl font-bold text-slate-900 mb-4 text-balance">Operational Workforce Synchronization</h3>
                <p className="text-slate-600 text-lg leading-relaxed font-medium">
                  Reduce workforce interruptions by automating wayfinding protocols. Transition visitor management from manual guiding to a digital-first, self-service infrastructure.
                </p>

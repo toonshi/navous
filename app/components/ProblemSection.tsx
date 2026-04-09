@@ -14,7 +14,7 @@ export default function ProblemSection() {
             <span className="text-primary text-sm font-bold uppercase tracking-widest mb-4 block">
               The Challenge
             </span>
-            <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 leading-tight mb-6">
+            <h2 className="font-laila text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 leading-tight mb-6">
               The high cost of
               <br />
               <span className="text-primary">navigation friction.</span>
@@ -37,7 +37,7 @@ export default function ProblemSection() {
         {/* Row 2 — right text, left illustration (zigzag) */}
         <div className="flex flex-col md:flex-row-reverse md:items-center gap-12 lg:gap-20">
           <div className="flex-1 max-w-xl">
-            <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 leading-tight mb-6">
+            <h2 className="font-laila text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 leading-tight mb-6">
               Data-driven spatial intelligence.
             </h2>
             <p className="text-slate-700 text-lg leading-relaxed font-medium">
@@ -58,7 +58,7 @@ export default function ProblemSection() {
         {/* Row 3 — left text, right illustration */}
         <div className="flex flex-col md:flex-row md:items-center gap-12 lg:gap-20">
           <div className="flex-1 max-w-xl">
-            <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 leading-tight mb-6">
+            <h2 className="font-laila text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 leading-tight mb-6">
               Accessibility for every guest.
             </h2>
             <p className="text-slate-700 text-lg leading-relaxed font-medium">
@@ -79,7 +79,7 @@ export default function ProblemSection() {
         {/* Pull quote */}
         <div className="rounded-2xl p-10 flex flex-col md:flex-row md:items-center gap-6 bg-white border-l-4 border-slate-900">
           <div className="flex-1">
-            <p className="font-space-grotesque text-2xl md:text-3xl font-bold text-slate-900 leading-snug mb-4">
+            <p className="font-laila text-2xl md:text-3xl font-bold text-slate-900 leading-snug mb-4">
               &ldquo;Navigation is not a nice-to-have. It is the difference between a
               visitor who completes their journey and one who doesn&apos;t.&rdquo;
             </p>

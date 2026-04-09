@@ -38,7 +38,7 @@ export default function TechnicalCapabilities() {
     <section className="py-32 px-8 bg-slate-50">
       <div className="max-w-7xl mx-auto">
         <div className="mb-20">
-          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+          <h2 className="font-laila text-4xl md:text-5xl font-bold text-slate-900 mb-6">
             Institutional-grade technology
           </h2>
           <p className="text-slate-600 text-xl max-w-3xl font-medium leading-relaxed">
@@ -49,7 +49,7 @@ export default function TechnicalCapabilities() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {capabilities.map((cap) => (
             <div key={cap.title} className="card-hover group cursor-default">
-              <h3 className="font-space-grotesque text-2xl font-bold text-slate-900 mb-4 pt-8 border-t-2 border-slate-200 group-hover:border-[#13B7DA] transition-colors duration-300">
+              <h3 className="font-laila text-2xl font-bold text-slate-900 mb-4 pt-8 border-t-2 border-slate-200 group-hover:border-[#13B7DA] transition-colors duration-300">
                 {cap.title}
               </h3>
               <p className="text-slate-500 text-lg leading-relaxed font-medium">

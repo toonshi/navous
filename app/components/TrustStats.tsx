@@ -30,7 +30,7 @@ export default function TrustStats() {
                 color={stat.sparkleColor}
                 className="absolute top-6 right-10 doodle-float-offset opacity-60"
               />
-              <p className="font-space-grotesque text-[3rem] font-bold leading-none mb-3 text-[#13B7DA]">
+              <p className="font-laila text-[3rem] font-bold leading-none mb-3 text-[#13B7DA]">
                 {stat.value}
               </p>
               <p className="text-slate-500 text-[12px] uppercase tracking-widest font-bold">

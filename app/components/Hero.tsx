@@ -234,7 +234,7 @@ export default function Hero() {
       <ScatterDots color="#FFADAD" className="absolute bottom-28 right-[8%] pointer-events-none opacity-20" />
 
       <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-center text-center">
-        <h1 className="font-space-grotesque text-5xl md:text-[5.5rem] font-bold tracking-tight text-slate-900 leading-[0.95] mb-6">
+        <h1 className="font-laila text-5xl md:text-[5.5rem] font-bold tracking-tight text-slate-900 leading-[0.95] mb-6">
           Digital infrastructure for<br />
           physical space
         </h1>

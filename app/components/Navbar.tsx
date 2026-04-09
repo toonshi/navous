@@ -9,7 +9,7 @@ const Navbar = () => {
         <img src="/Left logo.svg" alt="Navous Logo" className="h-16 w-auto" />
       </div>
       
-      <div className="hidden md:flex items-center gap-8 font-space-grotesque font-semibold text-sm uppercase tracking-widest">
+      <div className="hidden md:flex items-center gap-8 font-laila font-semibold text-sm uppercase tracking-widest">
         <a href="/" className="text-slate-900 transition hover:text-indigo-600">Overview</a>
         <a href="/features" className="text-slate-900 transition hover:text-indigo-600">Platform</a>
         <a href="/how-it-works" className="text-slate-900 transition hover:text-indigo-600">Solutions</a>

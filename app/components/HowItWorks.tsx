@@ -30,7 +30,7 @@ export default function HowItWorks() {
     <section id="how-it-works" className="py-32 px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
-          <h2 className="font-space-grotesque text-5xl md:text-6xl font-bold tracking-tight text-slate-900 mb-6">
+          <h2 className="font-laila text-5xl md:text-6xl font-bold tracking-tight text-slate-900 mb-6">
             The engineering pipeline
           </h2>
           <p className="text-slate-600 text-xl max-w-2xl mx-auto leading-relaxed font-medium">
@@ -68,7 +68,7 @@ export default function HowItWorks() {
                   STEP_{String(index + 1).padStart(2, '0')}
                 </span>
               </div>
-              <h3 className="font-space-grotesque text-2xl font-bold text-slate-900 mb-3">
+              <h3 className="font-laila text-2xl font-bold text-slate-900 mb-3">
                 {step.title}
               </h3>
               <p className="text-slate-500 text-lg leading-relaxed font-medium">

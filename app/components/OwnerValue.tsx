@@ -8,7 +8,7 @@ export default function OwnerValue() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold text-slate-900 mb-8 leading-tight text-balance">
+            <h2 className="font-laila text-4xl md:text-5xl font-bold text-slate-900 mb-8 leading-tight text-balance">
               Strategic square footage management
             </h2>
             <p className="text-slate-600 text-lg mb-10 leading-relaxed font-medium">
@@ -17,25 +17,25 @@ export default function OwnerValue() {
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               <div>
-                <h3 className="font-bold text-slate-900 text-xl mb-3 text-balance">Empirical Asset Valuation</h3>
+                <h3 className="font-laila font-bold text-slate-900 text-xl mb-3 text-balance">Empirical Asset Valuation</h3>
                 <p className="text-slate-500 text-sm leading-relaxed">
                   Verify the commercial value of retail zones through precise pedestrian-flow auditing. Deliver path-to-purchase metrics directly to your tenant stakeholders.
                 </p>
               </div>
               <div>
-                <h3 className="font-bold text-slate-900 text-xl mb-3 text-balance">Workforce Synchronization</h3>
+                <h3 className="font-laila font-bold text-slate-900 text-xl mb-3 text-balance">Workforce Synchronization</h3>
                 <p className="text-slate-500 text-sm leading-relaxed">
                   Optimize human capital deployment by aligning maintenance and security patrols with real-time occupancy and density reports.
                 </p>
               </div>
               <div>
-                <h3 className="font-bold text-slate-900 text-xl mb-3 text-balance">Infrastructure Integrity</h3>
+                <h3 className="font-laila font-bold text-slate-900 text-xl mb-3 text-balance">Infrastructure Integrity</h3>
                 <p className="text-slate-500 text-sm leading-relaxed">
                   Maintain a zero-hardware footprint. Our software-defined mapping layer utilizes existing floor plans to deliver high-precision results without ongoing maintenance overhead.
                 </p>
               </div>
               <div>
-                <h3 className="font-bold text-slate-900 text-xl mb-3 text-balance">Operational Resilience</h3>
+                <h3 className="font-laila font-bold text-slate-900 text-xl mb-3 text-balance">Operational Resilience</h3>
                 <p className="text-slate-500 text-sm leading-relaxed">
                   Enhance safety protocols with automated egress routing. Direct visitors through optimal corridors during emergency procedures with centralized control.
                 </p>

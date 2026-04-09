@@ -21,7 +21,7 @@ export default function FeaturesPage() {
           <span className="inline-block text-sm font-semibold px-4 py-1.5 rounded-full mb-6 tracking-wide border" style={{ color: "#13B7DA", borderColor: "#13B7DA40", background: "#13B7DA0D" }}>
             Platform Features
           </span>
-          <h1 className="font-space-grotesque text-5xl md:text-6xl font-bold tracking-tighter text-slate-900 leading-tight mb-4">
+          <h1 className="font-laila text-5xl md:text-6xl font-bold tracking-tighter text-slate-900 leading-tight mb-4">
             The intelligence behind<br />every corridor.
           </h1>
           <p className="text-slate-500 text-lg max-w-xl mx-auto leading-relaxed">

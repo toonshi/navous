@@ -17,7 +17,7 @@ export default function PilotProgram() {
         <span className="text-[#13B7DA] font-mono text-sm font-bold tracking-[0.2em] uppercase mb-6 block">
           Strategic Partnership
         </span>
-        <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold mb-8 text-balance">
+        <h2 className="font-laila text-4xl md:text-5xl font-bold mb-8 text-balance">
           Join the 2026 Pilot Program
         </h2>
         <p className="text-slate-400 text-xl max-w-3xl mx-auto leading-relaxed font-medium mb-12">
@@ -26,15 +26,15 @@ export default function PilotProgram() {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mb-16">
           <div className="card-hover p-6 rounded-2xl bg-white/5 border border-white/10">
-            <h3 className="font-bold text-lg mb-3">Custom Deployment</h3>
+            <h3 className="font-laila font-bold text-lg mb-3">Custom Deployment</h3>
             <p className="text-slate-400 text-sm">Full engineering support for your specific floor plans and multi-story requirements.</p>
           </div>
           <div className="card-hover p-6 rounded-2xl bg-white/5 border border-white/10">
-            <h3 className="font-bold text-lg mb-3">Direct Feedback</h3>
+            <h3 className="font-laila font-bold text-lg mb-3">Direct Feedback</h3>
             <p className="text-slate-400 text-sm">Influence the development of the Command Center features based on your operational needs.</p>
           </div>
           <div className="card-hover p-6 rounded-2xl bg-white/5 border border-white/10">
-            <h3 className="font-bold text-lg mb-3">Preferred Rate</h3>
+            <h3 className="font-laila font-bold text-lg mb-3">Preferred Rate</h3>
             <p className="text-slate-400 text-sm">Locked-in early adopter pricing before the full commercial infrastructure launch.</p>
           </div>
         </div>

@@ -44,7 +44,7 @@ export default function RoadmapPage() {
         <div className="max-w-7xl mx-auto">
           <div className="mb-20 text-center">
             <p className="text-indigo-600 text-sm font-bold tracking-widest uppercase mb-4">Development Roadmap</p>
-            <h1 className="font-space-grotesque text-5xl md:text-7xl font-bold text-slate-900 mb-8 tracking-tight">
+            <h1 className="font-laila text-5xl md:text-7xl font-bold text-slate-900 mb-8 tracking-tight">
               System Architecture<br />Evolution
             </h1>
             <p className="text-slate-700 text-lg md:text-2xl max-w-3xl mx-auto font-medium leading-relaxed">
@@ -108,7 +108,7 @@ export default function RoadmapPage() {
                           </span>
                         </div>
 
-                        <h3 className="font-space-grotesque text-3xl font-bold mb-4 tracking-tight text-slate-900">
+                        <h3 className="font-laila text-3xl font-bold mb-4 tracking-tight text-slate-900">
                           {ms.title}
                         </h3>
 

@@ -9,6 +9,7 @@
   --color-mint: #CAFFBF;
   --font-sans: 'Inter', sans-serif;
   --font-space-grotesque: 'Space Grotesk', sans-serif;
+  --font-laila: 'Laila', serif;
   --font-dosis: 'Dosis', sans-serif;
   --font-roboto-slab: 'Roboto Slab', serif;
   --font-trykker: 'Trykker', serif;
@@ -26,6 +27,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-laila), serif;
+}
+
 .glass {
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -40,6 +45,10 @@ body {
   * {
     @apply border-gray-200;
   }
+}
+
+.font-laila {
+  font-family: var(--font-laila), serif;
 }
 
 .font-space-grotesque {

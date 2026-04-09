@@ -74,7 +74,7 @@ export default function Pricing() {
           <span className="text-primary text-sm font-semibold uppercase tracking-widest">
             Pricing
           </span>
-          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-secondary mt-3 mb-4">
+          <h2 className="font-laila text-4xl md:text-5xl font-bold tracking-tighter text-secondary mt-3 mb-4">
             Pricing that pays for itself.
           </h2>
           <p className="text-slate-500 text-lg max-w-xl mx-auto leading-relaxed">
@@ -106,7 +106,7 @@ export default function Pricing() {
                   {tier.name}
                 </p>
                 <div className="flex items-end gap-1 mb-1">
-                  <span className={`font-space-grotesque text-5xl font-bold ${tier.highlight ? "text-white" : "text-secondary"}`}>
+                  <span className={`font-laila text-5xl font-bold ${tier.highlight ? "text-white" : "text-secondary"}`}>
                     {tier.price}
                   </span>
                   <span className={`text-lg mb-1 ${tier.highlight ? "text-slate-400" : "text-slate-400"}`}>

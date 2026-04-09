@@ -39,7 +39,7 @@ export default function Roadmap() {
       <div className="max-w-7xl mx-auto">
         <div className="mb-20 text-center">
           <p className="text-slate-500 text-sm font-semibold tracking-wide uppercase mb-4">Development Roadmap</p>
-          <h2 className="font-space-grotesque text-4xl md:text-6xl font-bold text-slate-900 mb-6 tracking-tight">
+          <h2 className="font-laila text-4xl md:text-6xl font-bold text-slate-900 mb-6 tracking-tight">
             System Architecture<br />Evolution
           </h2>
           <p className="text-slate-500 text-lg md:text-xl max-w-3xl mx-auto font-medium leading-relaxed">
@@ -101,7 +101,7 @@ export default function Roadmap() {
                         </span>
                       </div>
 
-                      <h3 className={`font-space-grotesque text-2xl font-bold mb-3 tracking-tight
+                      <h3 className={`font-laila text-2xl font-bold mb-3 tracking-tight
                         ${isActive || isCompleted ? "text-slate-900" : "text-slate-400"}
                       `}>
                         {ms.title}

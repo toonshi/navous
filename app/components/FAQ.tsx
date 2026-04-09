@@ -30,7 +30,7 @@ export default function FAQ() {
     <section id="faq" className="bg-secondary py-24 px-8">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-white mb-4">
+          <h2 className="font-laila text-4xl md:text-5xl font-bold tracking-tighter text-white mb-4">
             Questions hospital operators ask before rollout.
           </h2>
           <p className="text-white/50 text-lg leading-relaxed">

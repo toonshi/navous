@@ -18,7 +18,7 @@ export default function FinalCTA() {
           <Sparkle size={10} color="#13B7DA" />
           Get Started
         </span>
-        <h2 className="font-space-grotesque text-5xl md:text-6xl font-bold tracking-tighter text-slate-900 mb-6 leading-tight">
+        <h2 className="font-laila text-5xl md:text-6xl font-bold tracking-tighter text-slate-900 mb-6 leading-tight">
           Your facility,
           <br />
           searchable in 21 days.

@@ -50,7 +50,7 @@ export default function StakeholderValue() {
     <section className="py-24 px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
-          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 mb-4">
+          <h2 className="font-laila text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 mb-4">
             Everyone in your building wins.
           </h2>
           <p className="text-slate-700 text-lg max-w-xl mx-auto leading-relaxed font-medium">
@@ -80,7 +80,7 @@ export default function StakeholderValue() {
                   <span className="inline-block text-[10px] font-bold px-2.5 py-1 rounded-full mb-6 border border-slate-200 text-slate-500 uppercase tracking-widest">
                     {col.audience}
                   </span>
-                  <p className="font-space-grotesque text-3xl font-bold tracking-tight leading-[1.1] text-slate-900">
+                  <p className="font-laila text-3xl font-bold tracking-tight leading-[1.1] text-slate-900">
                     {col.tagline}
                   </p>
                 </div>

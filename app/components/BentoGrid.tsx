@@ -8,7 +8,7 @@ const BentoGrid = () => {
     <section id="features" className="py-32 px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
-          <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 mb-4">
+          <h2 className="font-laila text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 mb-4">
             High-precision indoor spatial engineering
           </h2>
           <p className="text-slate-700 text-lg max-w-2xl mx-auto leading-relaxed font-medium">
@@ -19,7 +19,7 @@ const BentoGrid = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Box A: Large — Searchable Infrastructure */}
           <div className="md:col-span-2 rounded-3xl p-10 flex flex-col justify-end min-h-90 relative overflow-hidden border border-slate-200 bg-white shadow-sm">
-            <h3 className="font-space-grotesque text-4xl font-bold tracking-tight text-slate-900 mb-4 leading-tight">
+            <h3 className="font-laila text-4xl font-bold tracking-tight text-slate-900 mb-4 leading-tight">
               Automated asset vectorization
             </h3>
             <p className="text-slate-600 text-lg max-w-xl leading-relaxed font-medium">
@@ -33,7 +33,7 @@ const BentoGrid = () => {
                <div className="text-8xl font-bold text-indigo-500">0</div>
             </div>
             <div>
-              <h3 className="font-space-grotesque text-2xl font-bold tracking-tight text-white mb-3 leading-snug">
+              <h3 className="font-laila text-2xl font-bold tracking-tight text-white mb-3 leading-snug">
                 Zero-deployment footprint
               </h3>
               <p className="text-slate-400 text-sm leading-relaxed font-medium">
@@ -45,7 +45,7 @@ const BentoGrid = () => {
           {/* Box C: Real-time Analytics */}
           <div className="md:col-span-3 rounded-3xl p-10 flex flex-col md:flex-row md:items-center gap-12 border border-slate-200 bg-white shadow-sm">
             <div className="flex-1">
-              <h3 className="font-space-grotesque text-4xl font-bold tracking-tight text-slate-900 mb-4 leading-tight">
+              <h3 className="font-laila text-4xl font-bold tracking-tight text-slate-900 mb-4 leading-tight">
                 Movement Intelligence
               </h3>
               <p className="text-slate-600 text-lg leading-relaxed max-w-2xl font-medium">
