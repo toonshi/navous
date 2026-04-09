@@ -238,7 +238,7 @@ export default function Hero() {
           <a href="/how-it-works" className="flex-1 sm:flex-none px-4 sm:px-8 py-4 bg-slate-900 text-white rounded-md font-semibold hover:bg-slate-800 transition-all text-center text-base min-w-0 sm:min-w-[200px]">
             How It Works
           </a>
-          <a href="/features" className="flex-1 sm:flex-none px-4 sm:px-8 py-4 bg-white text-slate-900 border border-slate-200 rounded-md font-semibold hover:bg-slate-50 transition-all text-center text-base min-w-0 sm:min-w-[200px]">
+          <a href="/features" className="flex-1 sm:flex-none px-4 sm:px-8 py-4 bg-transparent text-slate-900 border border-slate-200 rounded-md font-semibold hover:bg-slate-50/50 transition-all text-center text-base min-w-0 sm:min-w-[200px]">
             Features
           </a>
         </div>
