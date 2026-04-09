@@ -222,7 +222,7 @@ export default function Hero() {
       <canvas
         ref={canvasRef}
         id="canvas"
-        className="absolute inset-0 w-full h-full pointer-events-none opacity-40 md:opacity-80"
+        className="absolute inset-0 w-full h-full pointer-events-none opacity-80"
       />
 
       <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-center text-center">
