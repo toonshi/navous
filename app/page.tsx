@@ -7,6 +7,7 @@ import OwnerValue from "./components/OwnerValue";
 import UseCases from "./components/UseCases";
 import HowItWorks from "./components/HowItWorks";
 import PilotProgram from "./components/PilotProgram";
+import Roadmap from "./components/Roadmap";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
 
@@ -30,6 +31,8 @@ export default function Home() {
         <HowItWorks />
         <div className="border-t border-slate-100" />
         <PilotProgram />
+        <div className="border-t border-slate-100" />
+        <Roadmap />
         <div className="border-t border-slate-100" />
         <FinalCTA />
       </main>
