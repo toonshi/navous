@@ -19,9 +19,6 @@ const Navbar = () => {
         <a href="mailto:hello@navous.com" className="hidden sm:block text-sm font-bold uppercase tracking-widest text-slate-900 hover:text-slate-500 transition">
           Contact
         </a>
-        <button className="px-5 py-2.5 bg-slate-900 text-white text-xs font-bold uppercase tracking-widest rounded-full hover:bg-slate-800 transition">
-          Get Started
-        </button>
       </div>
     </nav>
   );
