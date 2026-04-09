@@ -16,8 +16,8 @@ const Navbar = () => {
       </div>
 
       <div className="flex items-center gap-4">
-        <a href="mailto:hello@navous.com" className="hidden sm:block text-sm font-bold uppercase tracking-widest text-slate-900 hover:text-slate-500 transition">
-          Contact
+        <a href="mailto:hello@navous.com" className="px-5 py-2.5 bg-slate-900 text-white text-xs font-bold uppercase tracking-widest rounded-md hover:bg-slate-800 transition-all">
+          Book a Demo
         </a>
       </div>
     </nav>

@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import TrustStats from "./components/TrustStats";
 import BentoGrid from "./components/BentoGrid";
+import DashboardSection from "./components/DashboardSection";
 import UseCases from "./components/UseCases";
 import StakeholderValue from "./components/StakeholderValue";
 import HowItWorks from "./components/HowItWorks";
@@ -21,11 +22,13 @@ export default function Home() {
         <div className="border-t border-slate-100" />
         <BentoGrid />
         <div className="border-t border-slate-100" />
+        <DashboardSection />
+        <div className="border-t border-slate-100" />
         <UseCases />
         <div className="border-t border-slate-100" />
-        <StakeholderValue />
-        <div className="border-t border-slate-100" />
         <HowItWorks />
+        <div className="border-t border-slate-100" />
+        <StakeholderValue />
         <div className="border-t border-slate-100" />
         <Testimonials />
         <div className="border-t border-slate-100" />
