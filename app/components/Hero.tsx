@@ -243,10 +243,6 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="mt-12 flex flex-col items-center gap-4">
-           <div className="h-px w-16 bg-slate-200" />
-           <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">Enterprise Standard for Spatial Intelligence</span>
-        </div>
       </div>
     </section>
   );
