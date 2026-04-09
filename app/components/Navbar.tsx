@@ -15,6 +15,11 @@ const Navbar = () => {
         <a href="/how-it-works" className="text-slate-900 hover:text-slate-500 transition">Solutions</a>
       </div>
 
+      <div className="flex items-center gap-4">
+        <a href="mailto:hello@navous.com" className="text-sm font-bold uppercase tracking-widest text-slate-900 hover:text-slate-500 transition">
+          Contact
+        </a>
+      </div>
     </nav>
   );
 };
