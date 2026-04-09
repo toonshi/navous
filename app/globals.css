@@ -7,12 +7,10 @@
   --color-peach: #FFD6A5;
   --color-lemon: #FDFFB6;
   --color-mint: #CAFFBF;
+  --font-lustria: 'Lustria', serif;
+  --font-sura: 'Sura', serif;
+  --font-varela: 'Varela Round', sans-serif;
   --font-sans: 'Inter', sans-serif;
-  --font-space-grotesque: 'Space Grotesk', sans-serif;
-  --font-laila: 'Laila', serif;
-  --font-dosis: 'Dosis', sans-serif;
-  --font-roboto-slab: 'Roboto Slab', serif;
-  --font-trykker: 'Trykker', serif;
 }
 
 :root {
@@ -23,12 +21,16 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-lustria), serif;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-laila), serif;
+  font-family: var(--font-sura), serif;
+}
+
+.subheading {
+  font-family: var(--font-varela), sans-serif;
 }
 
 .glass {
@@ -47,24 +49,16 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.font-laila {
-  font-family: var(--font-laila), serif;
+.font-lustria {
+  font-family: var(--font-lustria), serif;
 }
 
-.font-space-grotesque {
-  font-family: var(--font-space-grotesque), sans-serif;
+.font-sura {
+  font-family: var(--font-sura), serif;
 }
 
-.font-dosis {
-  font-family: var(--font-dosis), sans-serif;
-}
-
-.font-roboto-slab {
-  font-family: var(--font-roboto-slab), serif;
-}
-
-.font-trykker {
-  font-family: var(--font-trykker), serif;
+.font-varela {
+  font-family: var(--font-varela), sans-serif;
 }
 
 /* ── Micro-interactions ────────────────────────────────────────────────────── */

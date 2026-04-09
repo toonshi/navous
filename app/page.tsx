@@ -1,7 +1,6 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import TrustStats from "./components/TrustStats";
-import TechnicalCapabilities from "./components/TechnicalCapabilities";
 import DashboardSection from "./components/DashboardSection";
 import OwnerValue from "./components/OwnerValue";
 import UseCases from "./components/UseCases";
@@ -14,12 +13,10 @@ export default function Home() {
   return (
     <div className="relative">
       <Navbar />
-      <main>
+      <main className="pt-20">
         <Hero />
         <div className="border-t border-slate-100" />
         <TrustStats />
-        <div className="border-t border-slate-100" />
-        <TechnicalCapabilities />
         <div className="border-t border-slate-100" />
         <DashboardSection />
         <div className="border-t border-slate-100" />

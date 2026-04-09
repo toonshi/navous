@@ -6,20 +6,20 @@ import { CurvedArrowRight, Sparkle } from "./Doodles";
 
 const steps = [
   {
-    title: "Spatial Ingestion",
-    description: "Automated extraction of architectural features from existing CAD (DXF), PDF, or high-resolution image assets.",
+    title: "Upload Floor Plans",
+    description: "Simply upload your existing CAD, PDF, or high-resolution images. Our system automatically extracts architectural features.",
     illustration: "/illustrations/step-upload.svg",
     sparkleColor: "#FFD6A5",
   },
   {
-    title: "Distributed Processing",
-    description: "Our spatial engine performs morphological refinement and generates high-performance navigation graphs via PostGIS.",
+    title: "Digital Processing",
+    description: "Our spatial engine converts your static plans into a semantically rich, navigable digital twin in minutes.",
     illustration: "/illustrations/step-configure.svg",
     sparkleColor: "#CAFFBF",
   },
   {
-    title: "Instant Deployment",
-    description: "A zero-footprint navigation layer is published to the browser, enabling sub-meter positioning via BLE and sensor fusion.",
+    title: "Instant Go-Live",
+    description: "Publish your navigation layer instantly. Your visitors can access it in any browser with sub-meter accuracy.",
     illustration: "/illustrations/step-live.svg",
     sparkleColor: "#FFADAD",
   },
@@ -30,11 +30,11 @@ export default function HowItWorks() {
     <section id="how-it-works" className="py-32 px-8 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
-          <h2 className="font-laila text-5xl md:text-6xl font-bold tracking-tight text-slate-900 mb-6">
-            The engineering pipeline
+          <h2 className="text-5xl md:text-6xl font-bold tracking-tight text-slate-900 mb-6">
+            From floor plan to navigation
           </h2>
-          <p className="text-slate-600 text-xl max-w-2xl mx-auto leading-relaxed font-medium">
-            A distributed architecture designed to convert static floor plans into semantically rich, navigable digital twins.
+          <p className="text-slate-600 text-xl max-w-2xl mx-auto leading-relaxed font-medium subheading">
+            A simple three-step process to bring your building into the digital age. No complex hardware installation required.
           </p>
         </div>
 
@@ -64,11 +64,11 @@ export default function HowItWorks() {
                 />
               </div>
               <div className="flex items-center gap-4 mb-4">
-                <span className="text-[#13B7DA] font-mono text-sm font-bold tracking-tighter">
+                <span className="text-[#13B7DA] font-mono text-sm font-bold tracking-tighter subheading">
                   STEP_{String(index + 1).padStart(2, '0')}
                 </span>
               </div>
-              <h3 className="font-laila text-2xl font-bold text-slate-900 mb-3">
+              <h3 className="text-2xl font-bold text-slate-900 mb-3 subheading">
                 {step.title}
               </h3>
               <p className="text-slate-500 text-lg leading-relaxed font-medium">

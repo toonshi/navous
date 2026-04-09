@@ -8,11 +8,11 @@ export default function DashboardSection() {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="font-laila text-4xl md:text-5xl font-bold mb-8 leading-tight">
-              Unified Situational Awareness<br />for facility operations
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
+              One dashboard for your entire footprint
             </h2>
-            <p className="text-slate-400 text-lg mb-10 leading-relaxed">
-              Our Command Center provides a centralized interface for monitoring real-time movement metrics. We synchronize spatial data with existing facility protocols to deliver actionable operational intelligence.
+            <p className="text-slate-400 text-lg mb-10 leading-relaxed subheading">
+              Monitor your facility in real-time. Our central command interface gives you the visibility needed to manage large-scale movement across multiple floors and locations.
             </p>
             
             <div className="space-y-6">
@@ -23,8 +23,8 @@ export default function DashboardSection() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-laila font-bold text-xl mb-2">High-fidelity visibility</h3>
-                  <p className="text-slate-400">Identify high-density zones and monitor transition bottlenecks in real-time. Optimize facility layouts based on empirical movement data.</p>
+                  <h3 className="font-bold text-xl mb-2 subheading">Real-Time Movement</h3>
+                  <p className="text-slate-400">See where your visitors are and where they're getting stuck. Make data-driven decisions on facility layouts and security deployment.</p>
                 </div>
               </div>
 
@@ -36,8 +36,8 @@ export default function DashboardSection() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-laila font-bold text-xl mb-2">CCTV-Spatial Synchronization</h3>
-                  <p className="text-slate-400">Integrate existing optical sensors to verify occupancy and track journey success rates across multi-story architectural layers.</p>
+                  <h3 className="font-bold text-xl mb-2 subheading">Infrastructure Free</h3>
+                  <p className="text-slate-400">Manage everything without installing a single beacon. We use software to define your space, making updates as simple as uploading a new floor plan.</p>
                 </div>
               </div>
             </div>

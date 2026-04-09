@@ -234,24 +234,22 @@ export default function Hero() {
       <ScatterDots color="#FFADAD" className="absolute bottom-28 right-[8%] pointer-events-none opacity-20" />
 
       <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-center text-center">
-        <h1 className="font-laila text-5xl md:text-[5.5rem] font-bold tracking-tight text-slate-900 leading-[0.95] mb-6">
-          Digital infrastructure for<br />
-          physical space
+        <h1 className="text-5xl md:text-[5.5rem] font-bold tracking-tight text-slate-900 leading-[0.95] mb-6">
+          Stop losing people<br />inside your building
         </h1>
 
-        <p className="text-slate-600 text-lg md:text-xl font-medium leading-relaxed max-w-2xl mb-8">
-          High-fidelity indoor positioning and spatial analytics for complex, high-traffic environments. We provide seamless, browser-based navigation and journey intelligence without the requirement for hardware installation or application downloads.
+        <p className="text-slate-600 text-lg md:text-xl font-medium leading-relaxed max-w-2xl mb-8 subheading">
+          The world's most accessible indoor navigation for malls, hospitals, and campuses. Improve visitor experience and optimize your square footage without apps or hardware.
         </p>
 
         <div className="flex flex-row items-center justify-center gap-4 w-full sm:w-auto">
-          <a href="/how-it-works" className="flex-1 sm:flex-none px-6 sm:px-8 py-3.5 bg-slate-900 text-white rounded-md font-semibold hover:bg-slate-800 transition-all text-center text-base min-w-0 sm:min-w-[180px]">
-            Solutions Overview
+          <a href="/features" className="flex-1 sm:flex-none px-6 sm:px-8 py-3.5 bg-slate-900 text-white rounded-md font-bold hover:bg-slate-800 transition-all text-center text-base min-w-0 sm:min-w-[180px] subheading">
+            For Facility Owners
           </a>
-          <a href="/features" className="flex-1 sm:flex-none px-6 sm:px-8 py-3.5 bg-transparent text-slate-900 border border-slate-200 rounded-md font-semibold hover:bg-slate-50 transition-all text-center text-base min-w-0 sm:min-w-[180px]">
-            Technical Platform
+          <a href="/technology" className="flex-1 sm:flex-none px-6 sm:px-8 py-3.5 bg-transparent text-slate-900 border border-slate-200 rounded-md font-bold hover:bg-slate-50 transition-all text-center text-base min-w-0 sm:min-w-[180px] subheading">
+            How it Works
           </a>
         </div>
-
       </div>
     </section>
   );

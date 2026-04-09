@@ -15,7 +15,7 @@ export default function FeaturesPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main className="flex-1">
+      <main className="flex-1 pt-20">
         {/* Page hero */}
         <div className="py-20 px-8 text-center bg-white border-b border-slate-100">
           <span className="inline-block text-sm font-semibold px-4 py-1.5 rounded-full mb-6 tracking-wide border" style={{ color: "#13B7DA", borderColor: "#13B7DA40", background: "#13B7DA0D" }}>

@@ -9,11 +9,11 @@ const Navbar = () => {
         <img src="/Left logo.svg" alt="Navous Logo" className="h-16 w-auto" />
       </div>
       
-      <div className="hidden md:flex items-center gap-8 font-laila font-semibold text-sm uppercase tracking-widest">
-        <a href="/" className="text-slate-900 transition hover:text-indigo-600">Overview</a>
-        <a href="/features" className="text-slate-900 transition hover:text-indigo-600">Platform</a>
-        <a href="/how-it-works" className="text-slate-900 transition hover:text-indigo-600">Solutions</a>
-        <a href="/roadmap" className="text-slate-900 transition hover:text-indigo-600">Roadmap</a>
+      <div className="hidden md:flex items-center gap-8 font-bold text-sm uppercase tracking-widest subheading">
+        <a href="/" className="text-slate-900 transition hover:text-[#13B7DA]">Overview</a>
+        <a href="/features" className="text-slate-900 transition hover:text-[#13B7DA]">For Owners</a>
+        <a href="/technology" className="text-slate-900 transition hover:text-[#13B7DA]">Technology</a>
+        <a href="/how-it-works" className="text-slate-900 transition hover:text-[#13B7DA]">Solutions</a>
       </div>
 
     </nav>
