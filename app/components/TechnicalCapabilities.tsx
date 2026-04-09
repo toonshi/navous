@@ -49,10 +49,7 @@ export default function TechnicalCapabilities() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {capabilities.map((cap) => (
             <div key={cap.title} className="group">
-              <div className="w-12 h-12 rounded-xl bg-indigo-600 text-white flex items-center justify-center mb-8 shadow-lg shadow-indigo-200 transition-transform group-hover:-translate-y-1">
-                {cap.icon}
-              </div>
-              <h3 className="font-space-grotesque text-2xl font-bold text-slate-900 mb-4">
+              <h3 className="font-space-grotesque text-2xl font-bold text-slate-900 mb-4 pt-8 border-t border-slate-200">
                 {cap.title}
               </h3>
               <p className="text-slate-500 text-lg leading-relaxed font-medium">
