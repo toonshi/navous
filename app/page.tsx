@@ -6,8 +6,7 @@ import DashboardSection from "./components/DashboardSection";
 import OwnerValue from "./components/OwnerValue";
 import UseCases from "./components/UseCases";
 import HowItWorks from "./components/HowItWorks";
-import Testimonials from "./components/Testimonials";
-import Pricing from "./components/Pricing";
+import PilotProgram from "./components/PilotProgram";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
 
@@ -30,9 +29,7 @@ export default function Home() {
         <div className="border-t border-slate-100" />
         <HowItWorks />
         <div className="border-t border-slate-100" />
-        <Testimonials />
-        <div className="border-t border-slate-100" />
-        <Pricing />
+        <PilotProgram />
         <div className="border-t border-slate-100" />
         <FinalCTA />
       </main>
