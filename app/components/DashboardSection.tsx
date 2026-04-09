@@ -9,10 +9,10 @@ export default function DashboardSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="font-space-grotesque text-4xl md:text-5xl font-bold mb-8 leading-tight">
-              The Command Center for<br />Facility Intelligence
+              A Command Center for<br />high-traffic facilities
             </h2>
             <p className="text-slate-400 text-lg mb-10 leading-relaxed">
-              Your building is generating data you aren&apos;t seeing. Layer Navous spatial intelligence over your existing CCTV and security protocols to turn visual feeds into actionable flow metrics.
+              Your building is already generating data—you just aren&apos;t seeing it. Navous layers spatial intelligence over your existing infrastructure, turning static hallways into actionable movement metrics.
             </p>
             
             <div className="space-y-6">
@@ -23,8 +23,8 @@ export default function DashboardSection() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-bold text-xl mb-2">Real-Time Flow Analytics</h3>
-                  <p className="text-slate-400">Identify bottleneck corridors and journey abandonment rates to optimize staffing and facility design.</p>
+                  <h3 className="font-bold text-xl mb-2">High-fidelity visibility</h3>
+                  <p className="text-slate-400">See exactly where your visitors get stuck. Identify bottlenecks in real-time and optimize your floor plan based on truth, not guesses.</p>
                 </div>
               </div>
 
@@ -36,8 +36,8 @@ export default function DashboardSection() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-bold text-xl mb-2">Unified Situational Awareness</h3>
-                  <p className="text-slate-400">Integrate existing CCTV feeds to verify congestion and deploy security or cleaning crews precisely where needed.</p>
+                  <h3 className="font-bold text-xl mb-2">Infrastructure Integration</h3>
+                  <p className="text-slate-400">Sync with existing CCTV and security protocols to turn visual feeds into journey analytics. Deploy staff exactly where the foot traffic is.</p>
                 </div>
               </div>
             </div>

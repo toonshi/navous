@@ -227,15 +227,15 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-center text-center">
         <h1 className="font-space-grotesque text-6xl md:text-8xl font-bold tracking-tight text-slate-900 leading-[1.1] mb-8">
-          Make your building<br />searchable
+          Your building,<br />searchable
         </h1>
 
         <p className="text-slate-600 text-xl md:text-2xl font-medium leading-relaxed max-w-2xl mb-8 md:mb-12">
-          Stop managing your facility in the dark. Give your visitors instant, <span className="text-slate-900 font-bold">No App Download</span> directions via QR codes. <span className="text-slate-900 font-bold">No Hardware</span>. No friction.
+          The street ends. Your map shouldn&apos;t. Give visitors <span className="text-slate-900 font-bold">No-App</span>, <span className="text-slate-900 font-bold">No-Hardware</span> navigation that just works.
         </p>
 
         <p className="text-slate-500 text-sm font-semibold uppercase tracking-widest mb-12">
-          Your facility, searchable in 21 days.
+          Ready to deploy in 21 days.
         </p>
 
         <div className="flex flex-row items-center justify-center gap-3 w-full sm:w-auto">
@@ -243,7 +243,7 @@ export default function Hero() {
             How It Works
           </a>
           <a href="/features" className="flex-1 sm:flex-none px-4 sm:px-8 py-4 bg-transparent text-slate-900 border border-slate-200 rounded-md font-semibold hover:bg-slate-50/50 transition-all text-center text-base min-w-0 sm:min-w-[200px]">
-            Features
+            Explore Platform
           </a>
         </div>
       </div>
