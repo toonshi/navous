@@ -4,9 +4,9 @@ import React from "react";
 import { Sparkle } from "./Doodles";
 
 const stats = [
-  { value: "5 MIN", label: "TO PUBLISH A NEW FLOOR ROUTE", sparkleColor: "#FFADAD" },
-  { value: "0", label: "NEW BEACONS OR SENSORS REQUIRED", sparkleColor: "#FFD6A5" },
-  { value: "1", label: "SHARED VIEW FOR OPS, STAFF, AND VISITORS", sparkleColor: "#CAFFBF" },
+  { value: "5 MIN", label: "to go live after uploading your floor plan", sparkleColor: "#FFADAD" },
+  { value: "0", label: "sensors, beacons, or IT tickets needed", sparkleColor: "#FFD6A5" },
+  { value: "1", label: "dashboard your whole team actually uses", sparkleColor: "#CAFFBF" },
 ];
 
 export default function TrustStats() {
@@ -15,7 +15,7 @@ export default function TrustStats() {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <p className="text-slate-500 text-sm font-semibold tracking-wide uppercase">Why teams choose Navous</p>
-          <p className="text-slate-400 text-sm mt-2">A lightweight rollout with clear day-one value.</p>
+          <p className="text-slate-400 text-sm mt-2">No hype, just a map on a phone.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {stats.map((stat) => (
@@ -33,7 +33,7 @@ export default function TrustStats() {
               <p className="font-laila text-[3rem] font-bold leading-none mb-3 text-[#13B7DA]">
                 {stat.value}
               </p>
-              <p className="text-slate-500 text-[12px] uppercase tracking-widest font-bold">
+          <p className="text-slate-500 text-[12px] tracking-wide font-semibold leading-snug mt-1">
                 {stat.label}
               </p>
             </div>

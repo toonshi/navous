@@ -235,17 +235,17 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-center text-center">
         <h1 className="text-5xl md:text-[5.5rem] font-bold tracking-tight text-slate-900 leading-[0.95] mb-6">
-          Help visitors <br />find the right room
+          No one should get <br />lost in your building
         </h1>
 
         <p className="text-slate-600 text-lg md:text-xl font-medium leading-relaxed max-w-3xl mb-8 subheading">
-          Navous gives your building a simple indoor navigation experience so guests spend less time lost and your team spends less time giving directions.
+          People walk in, look around, and start asking for help. Navous puts a live map on their phone — just upload your floor plan and you&apos;re done. No cables, no new hardware, no IT project.
         </p>
 
         <div className="flex flex-wrap justify-center gap-2 mb-8">
-          <span className="px-3 py-1.5 rounded-full border border-slate-200 bg-white/85 text-slate-700 text-xs md:text-sm font-semibold subheading">No hardware install</span>
-          <span className="px-3 py-1.5 rounded-full border border-slate-200 bg-white/85 text-slate-700 text-xs md:text-sm font-semibold subheading">Works on existing floor plans</span>
-          <span className="px-3 py-1.5 rounded-full border border-slate-200 bg-white/85 text-slate-700 text-xs md:text-sm font-semibold subheading">Fast setup for multi-floor buildings</span>
+          <span className="px-3 py-1.5 rounded-full border border-slate-200 bg-white/85 text-slate-700 text-xs md:text-sm font-semibold subheading">Zero new hardware</span>
+          <span className="px-3 py-1.5 rounded-full border border-slate-200 bg-white/85 text-slate-700 text-xs md:text-sm font-semibold subheading">Just upload your floor plan</span>
+          <span className="px-3 py-1.5 rounded-full border border-slate-200 bg-white/85 text-slate-700 text-xs md:text-sm font-semibold subheading">Works across every floor</span>
         </div>
 
         <div className="flex flex-row items-center justify-center gap-4 w-full sm:w-auto">

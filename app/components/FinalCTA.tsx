@@ -19,18 +19,18 @@ export default function FinalCTA() {
           Get Started
         </span>
         <h2 className="font-laila text-5xl md:text-6xl font-bold tracking-tighter text-slate-900 mb-6 leading-tight">
-          Make every visit <br />
-          easier to navigate.
+          Your visitors are already <br />
+          on their phones.
         </h2>
         <p className="text-slate-700 text-lg mb-4 leading-relaxed max-w-xl mx-auto font-medium">
-          Launch indoor wayfinding your visitors can actually use, without adding new hardware to your building.
+          Give them something that actually helps. Getting Navous running in your building takes a floor plan and an afternoon.
         </p>
         <div className="flex flex-wrap gap-4 justify-center mt-12">
           <a href="mailto:hello@navous.com" className="btn-primary"><span>Book a Demo</span></a>
           <a href="/how-it-works" className="btn-secondary"><span>See How It Works</span></a>
         </div>
         <p className="text-slate-500 text-sm font-bold mt-8 tracking-wide">
-          NO HARDWARE ROLLOUT · CLEAR TEAM OWNERSHIP · FAST GO-LIVE
+          NO CABLES · NO SENSORS · NO EXCUSES
         </p>
       </div>
     </section>
