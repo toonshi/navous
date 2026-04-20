@@ -16,21 +16,21 @@ export default function FinalCTA() {
       <div className="max-w-3xl mx-auto text-center relative z-10">
         <span className="inline-flex items-center gap-2 bg-white/60 text-slate-800 text-sm font-semibold px-4 py-1.5 rounded-full mb-8 tracking-wide border border-slate-100">
           <Sparkle size={10} color="#13B7DA" />
-          Get Started
+          Ready to see it live?
         </span>
         <h2 className="font-laila text-5xl md:text-6xl font-bold tracking-tighter text-slate-900 mb-6 leading-tight">
-          Your visitors are already <br />
-          on their phones.
+          If people enter your building, <br />
+          Navous pays for itself.
         </h2>
         <p className="text-slate-700 text-lg mb-4 leading-relaxed max-w-xl mx-auto font-medium">
-          Give them something that actually helps. Getting Navous running in your building takes a floor plan and an afternoon.
+          Every missed turn costs staff time and customer trust. We help people arrive faster from the very first scan.
         </p>
         <div className="flex flex-wrap gap-4 justify-center mt-12">
-          <a href="mailto:hello@navous.com" className="btn-primary"><span>Book a Demo</span></a>
+          <a href="mailto:hello@navous.com" className="btn-primary"><span>Book a Live Demo</span></a>
           <a href="/how-it-works" className="btn-secondary"><span>See How It Works</span></a>
         </div>
         <p className="text-slate-500 text-sm font-bold mt-8 tracking-wide">
-          NO CABLES · NO SENSORS · NO EXCUSES
+          START SMALL · GO LIVE FAST · SCALE FLOOR BY FLOOR
         </p>
       </div>
     </section>

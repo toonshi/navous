@@ -6,20 +6,20 @@ import { CurvedArrowRight, Sparkle } from "./Doodles";
 
 const steps = [
   {
-    title: "Upload Floor Plans",
-    description: "Simply upload your existing CAD, PDF, or high-resolution images. Our system automatically extracts architectural features.",
+    title: "Share your floor plans",
+    description: "Send your existing CAD files, PDFs, or image plans. No site wiring, no hardware install, no construction work.",
     illustration: "/illustrations/step-upload.svg",
     sparkleColor: "#FFD6A5",
   },
   {
-    title: "Digital Processing",
-    description: "Our spatial engine converts your static plans into a semantically rich, navigable digital twin in minutes.",
+    title: "We map your visitor journeys",
+    description: "We turn those plans into clear, phone-friendly routes so people can find entrances, departments, stores, and exits quickly.",
     illustration: "/illustrations/step-configure.svg",
     sparkleColor: "#CAFFBF",
   },
   {
-    title: "Instant Go-Live",
-    description: "Publish your navigation layer instantly. Your visitors can access it in any browser with sub-meter accuracy.",
+    title: "Go live and keep improving",
+    description: "Launch with a QR code and start guiding visitors right away, then update routes and points of interest anytime.",
     illustration: "/illustrations/step-live.svg",
     sparkleColor: "#FFADAD",
   },
@@ -31,10 +31,10 @@ export default function HowItWorks() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <h2 className="text-5xl md:text-6xl font-bold tracking-tight text-slate-900 mb-6">
-            From floor plan to navigation
+            From floor plan to live wayfinding
           </h2>
           <p className="text-slate-600 text-xl max-w-2xl mx-auto leading-relaxed font-medium subheading">
-            A simple three-step process to bring your building into the digital age. No complex hardware installation required.
+            A simple three-step rollout your operations team can approve quickly.
           </p>
         </div>
 
