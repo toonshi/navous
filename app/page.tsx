@@ -3,9 +3,12 @@ import Hero from "./components/Hero";
 import TrustStats from "./components/TrustStats";
 import DashboardSection from "./components/DashboardSection";
 import OwnerValue from "./components/OwnerValue";
-import UseCases from "./components/UseCases";
-import HowItWorks from "./components/HowItWorks";
-import PilotProgram from "./components/PilotProgram";
+import CoreValues from "./components/CoreValues";
+import ProductStack from "./components/ProductStack";
+import StrategicPartners from "./components/StrategicPartners";
+import MarketGap from "./components/MarketGap";
+import Integration from "./components/Integration";
+import Roadmap from "./components/Roadmap";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
 
@@ -17,17 +20,14 @@ export default function Home() {
         <Hero />
         <div className="border-t border-slate-100" />
         <TrustStats />
-        <div className="border-t border-slate-100" />
         <DashboardSection />
-        <div className="border-t border-slate-100" />
         <OwnerValue />
-        <div className="border-t border-slate-100" />
-        <UseCases />
-        <div className="border-t border-slate-100" />
-        <HowItWorks />
-        <div className="border-t border-slate-100" />
-        <PilotProgram />
-        <div className="border-t border-slate-100" />
+        <CoreValues />
+        <ProductStack />
+        <StrategicPartners />
+        <MarketGap />
+        <Integration />
+        <Roadmap />
         <FinalCTA />
       </main>
       <Footer />

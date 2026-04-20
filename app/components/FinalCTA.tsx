@@ -19,12 +19,11 @@ export default function FinalCTA() {
           Get Started
         </span>
         <h2 className="font-laila text-5xl md:text-6xl font-bold tracking-tighter text-slate-900 mb-6 leading-tight">
-          Your facility,
-          <br />
-          searchable in 21 days.
+          The GPS of <br />
+          Indoor Space.
         </h2>
         <p className="text-slate-700 text-lg mb-4 leading-relaxed max-w-xl mx-auto font-medium">
-          Join the leading organizations using Navous to transform their visitor experience and facility efficiency. No hardware, no app downloads, just results.
+          Navous provides the spatial infrastructure required to power the next decade of autonomous logistics, AR, and smart venue management.
         </p>
         <div className="flex flex-wrap gap-4 justify-center mt-12">
           <a href="/how-it-works" className="btn-primary"><span>See How It Works</span></a>

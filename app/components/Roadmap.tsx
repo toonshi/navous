@@ -1,130 +1,95 @@
 "use client";
 
 import React from "react";
+import { Sparkle, ScatterDots } from "./Doodles";
 
-const milestones = [
+const phases = [
   {
     phase: "PHASE_01",
-    title: "Core Spatial Architecture",
-    status: "Completed",
-    description: "Distributed processing pipeline for CAD/PDF ingestion. Vector-native PostGIS storage and automated navigation graph generation.",
-    points: ["DWG/DXF Ingestion", "Morphological Refinement", "MVT Vector Tile Server"],
+    title: "The QR-Seeded Start",
+    status: "Current",
+    mechanism: "Physical QR stickers at entry points and key landmarks.",
+    benefit: "Provides an instantaneous 'High-Confidence Pose' to seed the Kalman Filter without initial sensor calibration.",
+    ux: "Scan → Navigate in under 3 seconds.",
+    color: "#13B7DA",
   },
   {
     phase: "PHASE_02",
-    title: "Strategic Pilot Rollout",
-    status: "Active",
-    description: "Deployment of high-fidelity positioning in selected Nairobi facilities. Validation of sub-meter accuracy via BLE and sensor fusion.",
-    points: ["Pilot Partner Selection", "Browser-Native Navigation", "BLE Beacon Optimization"],
+    title: "The GPS-Geofence Handover",
+    status: "Intermediate",
+    mechanism: "The PWA detects the user's proximity to a venue via GPS.",
+    benefit: "Auto-prompts the user to 'Open Indoor Map' as they step inside, eliminating the need for physical QRs.",
+    ux: "Automatic venue discovery.",
+    color: "#FFADAD",
   },
   {
     phase: "PHASE_03",
-    title: "Augmented Perception",
-    status: "Q3 2026",
-    description: "Integration of AR-immersive overlays and biomechanical sensor fusion. Deployment of the Rust+WASM positioning core.",
-    points: ["AR View Mode", "Advanced Sensor Fusion", "Audio-Stealth Routing"],
-  },
-  {
-    phase: "PHASE_04",
-    title: "Unified Intelligence",
-    status: "Q4 2026",
-    description: "Launch of the Command Center analytics suite. Synchronization of spatial data with existing facility CCTV infrastructure.",
-    points: ["CCTV Integration", "Journey Analytics Dashboard", "Enterprise SDK Suite"],
+    title: "The 'Zero-Sticker' Visual Anchor",
+    status: "Future",
+    mechanism: "Integration with WebXR or Google Live View API.",
+    benefit: "Users simply point their camera at their surroundings to find their initial pose.",
+    ux: "Permanent spatial persistence without any physical hardware dependence.",
+    color: "#CAFFBF",
   }
 ];
 
 export default function Roadmap() {
   return (
-    <section className="py-32 px-8 bg-white">
-      <div className="max-w-7xl mx-auto">
-        <div className="mb-20 text-center">
-          <p className="text-slate-500 text-sm font-semibold tracking-wide uppercase mb-4">Development Roadmap</p>
-          <h2 className="font-laila text-4xl md:text-6xl font-bold text-slate-900 mb-6 tracking-tight">
-            System Architecture<br />Evolution
+    <section id="roadmap" className="py-24 px-8 bg-slate-50 relative overflow-hidden border-y border-slate-100">
+      <ScatterDots color="#13B7DA" className="absolute top-20 right-10 opacity-10" />
+      
+      <div className="max-w-7xl mx-auto relative z-10">
+        <div className="text-center mb-20">
+          <span className="text-[#13B7DA] font-mono text-sm font-bold tracking-[0.2em] uppercase mb-4 block">
+            User Onboarding
+          </span>
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-6">
+            The Zero-Friction Roadmap
           </h2>
-          <p className="text-slate-500 text-lg md:text-xl max-w-3xl mx-auto font-medium leading-relaxed">
-            Engineering milestones focused on achieving operational reliability and high-fidelity indoor positioning across complex architectural environments.
+          <p className="text-slate-600 text-xl max-w-3xl mx-auto leading-relaxed font-medium subheading">
+            Our multi-phase strategy to eliminate hardware dependence and provide the world's most accessible indoor navigation experience.
           </p>
         </div>
 
-        <div className="relative w-full max-w-5xl mx-auto">
-
-          {/* Timeline line */}
-          <div className="absolute top-0 bottom-0 left-6 md:left-1/2 w-px bg-slate-200 md:-translate-x-px" />
-
-          <div className="space-y-12 md:space-y-0">
-            {milestones.map((ms, index) => {
-              const isEven = index % 2 === 0;
-              const isActive = ms.status === "Active";
-              const isCompleted = ms.status === "Completed";
-              const isFuture = !isActive && !isCompleted;
-
-              return (
-                <div key={ms.phase} className={`relative flex flex-col md:flex-row items-start ${
-                  isEven ? "md:justify-start" : "md:justify-end"
-                } md:pb-16`}>
-
-                  {/* Indicator dot */}
-                  <div className="absolute left-6 md:left-1/2 md:-translate-x-1/2 mt-1">
-                    <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center
-                      ${isActive ? "border-indigo-600 bg-white" :
-                        isCompleted ? "border-indigo-600 bg-indigo-600" :
-                        "border-slate-300 bg-white"}
-                    `}>
-                      {isActive && <div className="w-2 h-2 rounded-full bg-indigo-600" />}
-                      {isCompleted && <div className="w-1.5 h-1.5 rounded-full bg-white" />}
-                    </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          {phases.map((item, index) => (
+            <div key={item.phase} className="relative group">
+              {/* Connecting line for desktop */}
+              {index < phases.length - 1 && (
+                <div className="hidden md:block absolute top-12 left-full w-full h-px bg-slate-200 z-0 -translate-x-12" />
+              )}
+              
+              <div className="relative z-10">
+                <div className="flex items-center gap-4 mb-8">
+                  <div 
+                    className="w-12 h-12 rounded-2xl flex items-center justify-center text-white font-bold font-mono text-sm"
+                    style={{ backgroundColor: item.color }}
+                  >
+                    {String(index + 1).padStart(2, '0')}
                   </div>
-
-                  {/* Card */}
-                  <div className={`w-full pl-16 md:pl-0 md:w-[45%] ${
-                    isEven ? "md:pr-12" : "md:pl-12"
-                  }`}>
-                    <div className={`p-6 md:p-8 rounded-2xl border transition-colors
-                      ${isActive ? "bg-indigo-50 border-indigo-200" :
-                        isCompleted ? "bg-white border-slate-200 shadow-sm" :
-                        "bg-white border-slate-100 opacity-60 hover:opacity-100"}
-                    `}>
-
-                      <div className="flex items-center justify-between mb-4">
-                        <span className={`font-mono text-xs font-bold tracking-widest uppercase
-                          ${isActive ? "text-indigo-600" : "text-slate-400"}
-                        `}>
-                          {ms.phase}
-                        </span>
-                        <span className={`text-xs font-semibold px-2.5 py-1 rounded-full
-                          ${isActive ? "bg-indigo-600 text-white" :
-                            isCompleted ? "bg-slate-100 text-slate-500" :
-                            "bg-slate-50 text-slate-400"}
-                        `}>
-                          {ms.status}
-                        </span>
-                      </div>
-
-                      <h3 className={`font-laila text-2xl font-bold mb-3 tracking-tight
-                        ${isActive || isCompleted ? "text-slate-900" : "text-slate-400"}
-                      `}>
-                        {ms.title}
-                      </h3>
-
-                      <p className="text-slate-500 text-sm leading-relaxed mb-6 font-medium">
-                        {ms.description}
-                      </p>
-
-                      <ul className="space-y-2">
-                        {ms.points.map(point => (
-                          <li key={point} className="flex items-center gap-2.5 text-sm text-slate-500">
-                            <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 shrink-0" />
-                            {point}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                  <div>
+                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-1">{item.status}</span>
+                    <h3 className="text-xl font-bold text-slate-900 subheading">{item.title}</h3>
                   </div>
                 </div>
-              );
-            })}
-          </div>
+                
+                <div className="space-y-6">
+                  <div>
+                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-1">MECHANISM</span>
+                    <p className="text-slate-600 font-medium text-sm leading-relaxed">{item.mechanism}</p>
+                  </div>
+                  <div>
+                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-1">BENEFIT</span>
+                    <p className="text-slate-600 font-medium text-sm leading-relaxed">{item.benefit}</p>
+                  </div>
+                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 group-hover:bg-white group-hover:shadow-md transition-all">
+                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-1">UX</span>
+                    <p className="text-slate-900 font-bold text-sm">"{item.ux}"</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
