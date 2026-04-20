@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { Sparkle } from "./Doodles";
 
 const Navbar = () => {
@@ -14,7 +15,7 @@ const Navbar = () => {
       </div>
       
       <div className="hidden md:flex items-center gap-8 font-bold text-xs uppercase tracking-[0.2em] subheading">
-        <a href="/" className="text-slate-900 transition hover:text-[#13B7DA]">Overview</a>
+        <Link href="/" className="text-slate-900 transition hover:text-[#13B7DA]">Overview</Link>
         <a href="/features" className="text-slate-900 transition hover:text-[#13B7DA]">Value</a>
         <a href="/technology" className="text-slate-900 transition hover:text-[#13B7DA]">Platform</a>
         <a href="/how-it-works" className="text-slate-900 transition hover:text-[#13B7DA]">Deployment</a>

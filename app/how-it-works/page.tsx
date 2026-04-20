@@ -24,7 +24,7 @@ export default function HowItWorksPage() {
             The Zero-Friction<br />Deployment Roadmap.
           </h1>
           <p className="text-slate-500 text-lg max-w-xl mx-auto leading-relaxed">
-            From QR-seeded starts to visual anchoring—eliminating hardware dependence for the world's most accessible indoor navigation.
+            From QR-seeded starts to visual anchoring—eliminating hardware dependence for the world&apos;s most accessible indoor navigation.
           </p>
         </div>
 

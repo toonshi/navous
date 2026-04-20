@@ -22,11 +22,11 @@ export default function Hero() {
 
     // UTILS
     const randomRange = (min: number, max: number) => min + Math.random() * (max - min);
-    const randomIndex = (array: any[]) => randomRange(0, array.length) | 0;
-    const removeFromArray = (array: any[], i: number) => array.splice(i, 1)[0];
-    const removeItemFromArray = (array: any[], item: any) => removeFromArray(array, array.indexOf(item));
-    const removeRandomFromArray = (array: any[]) => removeFromArray(array, randomIndex(array));
-    const getRandomFromArray = (array: any[]) => array[randomIndex(array) | 0];
+    const randomIndex = <T,>(array: T[]) => (randomRange(0, array.length)) | 0;
+    const removeFromArray = <T,>(array: T[], i: number): T => array.splice(i, 1)[0];
+    const removeItemFromArray = <T,>(array: T[], item: T) => removeFromArray(array, array.indexOf(item));
+    const removeRandomFromArray = <T,>(array: T[]) => removeFromArray(array, randomIndex(array));
+    const getRandomFromArray = <T,>(array: T[]): T => array[randomIndex(array) | 0];
 
     const stage = { width: 0, height: 0 };
     let peepScale = 1;
@@ -37,12 +37,12 @@ export default function Hero() {
       rect: number[];
       width: number;
       height: number;
-      drawArgs: any[];
+      drawArgs: (CanvasImageSource | number)[];
       x: number;
       y: number;
       anchorY: number;
       scaleX: number;
-      walk: any;
+      walk: gsap.core.Timeline | null;
 
       constructor({ image, rect }: { image: HTMLImageElement; rect: number[] }) {
         this.image = image;
@@ -82,7 +82,7 @@ export default function Hero() {
     const availablePeeps: Peep[] = [];
     const crowd: Peep[] = [];
 
-    const resetPeep = ({ stage, peep }: { stage: any; peep: Peep }) => {
+    const resetPeep = ({ stage, peep }: { stage: { width: number; height: number }; peep: Peep }) => {
       const direction = Math.random() > 0.5 ? 1 : -1;
       const offsetY = 30 - 180 * gsap.parseEase("power2.in")(Math.random());
       const startY = stage.height - (peep.height * peepScale) + offsetY;
@@ -106,8 +106,8 @@ export default function Hero() {
       return { startX, startY, endX };
     };
 
-    const normalWalk = ({ peep, props }: { peep: Peep; props: any }) => {
-      const { startX, startY, endX } = props;
+    const normalWalk = ({ peep, props }: { peep: Peep; props: { startX: number; startY: number; endX: number } }) => {
+      const { startY, endX } = props;
       const xDuration = 10;
       const yDuration = 0.25;
 
@@ -153,7 +153,7 @@ export default function Hero() {
 
     const initCrowd = () => {
       while (availablePeeps.length) {
-        addPeepToCrowd().walk.progress(Math.random());
+        addPeepToCrowd().walk!.progress(Math.random());
       }
     };
 
@@ -218,7 +218,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-screen overflow-hidden flex flex-col items-center justify-start pt-12 md:pt-16 px-6 md:px-12 bg-white text-slate-900">
+    <section className="relative min-h-screen overflow-hidden flex flex-col items-center justify-start pt-12 md:pt-16 px-6 md:px-12 bg-white text-slate-900">
       {/* Background Canvas — walking people */}
       <canvas
         ref={canvasRef}
@@ -235,19 +235,25 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-center text-center">
         <h1 className="text-5xl md:text-[5.5rem] font-bold tracking-tight text-slate-900 leading-[0.95] mb-6">
-          The GPS of <br />Indoor Space
+          No one should get <br />lost in your building
         </h1>
 
         <p className="text-slate-600 text-lg md:text-xl font-medium leading-relaxed max-w-3xl mb-8 subheading">
-          Building the spatial infrastructure for the next decade of autonomous logistics, AR, and smart venue management. High-fidelity geodetic mapping meets enterprise-grade positioning.
+          People walk in, look around, and start asking for help. Navous puts a live map on their phone — just upload your floor plan and you&apos;re done. No cables, no new hardware, no IT project.
         </p>
 
+        <div className="flex flex-wrap justify-center gap-2 mb-8">
+          <span className="px-3 py-1.5 rounded-full border border-slate-200 bg-white/85 text-slate-700 text-xs md:text-sm font-semibold subheading">Zero new hardware</span>
+          <span className="px-3 py-1.5 rounded-full border border-slate-200 bg-white/85 text-slate-700 text-xs md:text-sm font-semibold subheading">Just upload your floor plan</span>
+          <span className="px-3 py-1.5 rounded-full border border-slate-200 bg-white/85 text-slate-700 text-xs md:text-sm font-semibold subheading">Works across every floor</span>
+        </div>
+
         <div className="flex flex-row items-center justify-center gap-4 w-full sm:w-auto">
-          <a href="/features" className="flex-1 sm:flex-none px-6 sm:px-8 py-3.5 bg-slate-900 text-white rounded-md font-bold hover:bg-slate-800 transition-all text-center text-base min-w-0 sm:min-w-[180px] subheading">
-            Explore Value
+          <a href="mailto:hello@navous.com" className="flex-1 sm:flex-none px-6 sm:px-8 py-3.5 bg-slate-900 text-white rounded-md font-bold hover:bg-slate-800 transition-all text-center text-base min-w-0 sm:min-w-[180px] subheading">
+            Book a Demo
           </a>
-          <a href="/technology" className="flex-1 sm:flex-none px-6 sm:px-8 py-3.5 bg-transparent text-slate-900 border border-slate-200 rounded-md font-bold hover:bg-slate-50 transition-all text-center text-base min-w-0 sm:min-w-[180px] subheading">
-            The Platform
+          <a href="/how-it-works" className="flex-1 sm:flex-none px-6 sm:px-8 py-3.5 bg-transparent text-slate-900 border border-slate-200 rounded-md font-bold hover:bg-slate-50 transition-all text-center text-base min-w-0 sm:min-w-[180px] subheading">
+            See How It Works
           </a>
         </div>
       </div>

@@ -43,10 +43,10 @@ export default function StrategicPartners() {
             The Ecosystem Play
           </span>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-6">
-            The "Invisible Glue" for Big Tech
+            The &ldquo;Invisible Glue&rdquo; for Big Tech
           </h2>
           <p className="text-slate-600 text-xl max-w-3xl mx-auto leading-relaxed font-medium subheading">
-            Navous is designed to power the world's largest mapping ecosystems, filling the gap between directory maps and high-fidelity indoor infrastructure.
+            Navous is designed to power the world&apos;s largest mapping ecosystems, filling the gap between directory maps and high-fidelity indoor infrastructure.
           </p>
         </div>
 

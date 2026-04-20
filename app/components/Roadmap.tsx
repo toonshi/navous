@@ -47,7 +47,7 @@ export default function Roadmap() {
             The Zero-Friction Roadmap
           </h2>
           <p className="text-slate-600 text-xl max-w-3xl mx-auto leading-relaxed font-medium subheading">
-            Our multi-phase strategy to eliminate hardware dependence and provide the world's most accessible indoor navigation experience.
+            Our multi-phase strategy to eliminate hardware dependence and provide the world&apos;s most accessible indoor navigation experience.
           </p>
         </div>
 
@@ -84,7 +84,7 @@ export default function Roadmap() {
                   </div>
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 group-hover:bg-white group-hover:shadow-md transition-all">
                     <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-1">UX</span>
-                    <p className="text-slate-900 font-bold text-sm">"{item.ux}"</p>
+                    <p className="text-slate-900 font-bold text-sm">&ldquo;{item.ux}&rdquo;</p>
                   </div>
                 </div>
               </div>

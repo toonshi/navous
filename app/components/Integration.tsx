@@ -84,7 +84,7 @@ export default function Integration() {
           <ScatterDots color="#13B7DA" className="absolute -bottom-4 -right-4 opacity-20" />
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <div className="flex-1">
-              <h4 className="text-xl font-bold text-slate-900 mb-4 subheading">The "Zero-Manual" Integration Architecture</h4>
+              <h4 className="text-xl font-bold text-slate-900 mb-4 subheading">The &ldquo;Zero-Manual&rdquo; Integration Architecture</h4>
               <p className="text-slate-600 text-sm font-medium leading-relaxed">
                 Our codebase includes a generic <strong>Action Bus</strong> that processes external events and converts them into core operations like <code>UPDATE_POI_METADATA</code> or <code>UPDATE_ZONE_STATUS</code>. The architecture is ready for enterprise-scale deployment.
               </p>

@@ -15,10 +15,10 @@ export default function MarketGap() {
                 Competitive CapEx Analysis
               </span>
               <h2 className="text-4xl font-bold tracking-tight text-slate-900 mb-6 subheading">
-                The "Sticker vs. Beacon" Play
+                The &ldquo;Sticker vs. Beacon&rdquo; Play
               </h2>
               <p className="text-slate-600 font-medium leading-relaxed">
-                A common misconception is that Big Tech is "hardware-free." In reality, they require massive, invisible infrastructure costs.
+                A common misconception is that Big Tech is &ldquo;hardware-free.&rdquo; In reality, they require massive, invisible infrastructure costs.
               </p>
             </div>
 
@@ -61,7 +61,7 @@ export default function MarketGap() {
               </table>
             </div>
             <p className="mt-8 text-slate-500 text-sm italic font-medium">
-              *By using QR codes in Phase 1, we offer properties a "Zero-CapEx" entry point. As we mature into Phase 3 (Visual Anchoring), we maintain a 100x cost advantage over legacy systems.
+              *By using QR codes in Phase 1, we offer properties a &ldquo;Zero-CapEx&rdquo; entry point. As we mature into Phase 3 (Visual Anchoring), we maintain a 100x cost advantage over legacy systems.
             </p>
           </div>
 
@@ -95,7 +95,7 @@ export default function MarketGap() {
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900 mb-2 subheading">The Fidelity Gap</h4>
-                  <p className="text-slate-500 text-sm font-medium leading-relaxed">Big Tech uses grid-based paths that can feel "clunky." Our Vector-Native Voronoi Medial Axis provides a "premium" blue-dot feel and prevents wall-clipping errors.</p>
+                  <p className="text-slate-500 text-sm font-medium leading-relaxed">Big Tech uses grid-based paths that can feel &ldquo;clunky.&rdquo; Our Vector-Native Voronoi Medial Axis provides a &ldquo;premium&rdquo; blue-dot feel and prevents wall-clipping errors.</p>
                 </div>
               </div>
               <div className="flex gap-4">

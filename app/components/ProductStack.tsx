@@ -18,7 +18,7 @@ export default function ProductStack() {
             Two Engines. One Source of Truth.
           </h2>
           <p className="text-slate-600 text-xl max-w-3xl mx-auto leading-relaxed font-medium subheading">
-            Navous offers a Vertically Integrated Stack for maximum precision. The "1000% Robustness" of our positioning engine is directly derived from the high-fidelity vector constraints of our mapping engine.
+            Navous offers a Vertically Integrated Stack for maximum precision. The &ldquo;1000% Robustness&rdquo; of our positioning engine is directly derived from the high-fidelity vector constraints of our mapping engine.
           </p>
         </div>
 
@@ -99,7 +99,7 @@ export default function ProductStack() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div>
                 <p className="text-[#13B7DA] font-bold text-sm mb-3 uppercase tracking-widest font-mono">01_COUPLING</p>
-                <p className="text-slate-400 text-sm leading-relaxed">The positioning engine "knows" exactly how the mapping engine structures its skeletons.</p>
+                <p className="text-slate-400 text-sm leading-relaxed">The positioning engine &ldquo;knows&rdquo; exactly how the mapping engine structures its skeletons.</p>
               </div>
               <div>
                 <p className="text-[#13B7DA] font-bold text-sm mb-3 uppercase tracking-widest font-mono">02_STABILITY</p>

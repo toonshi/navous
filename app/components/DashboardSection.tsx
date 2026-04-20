@@ -24,7 +24,7 @@ export default function DashboardSection() {
                 </div>
                 <div>
                   <h3 className="font-bold text-xl mb-2 subheading">Real-Time Movement</h3>
-                  <p className="text-slate-400">See where your visitors are and where they're getting stuck. Make data-driven decisions on facility layouts and security deployment.</p>
+                  <p className="text-slate-400">See where your visitors are and where they&apos;re getting stuck. Make data-driven decisions on facility layouts and security deployment.</p>
                 </div>
               </div>
 

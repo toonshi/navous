@@ -26,7 +26,7 @@ export default function FeaturesPage() {
             The GPS of <br />Indoor Space.
           </h1>
           <p className="text-slate-500 text-lg max-w-xl mx-auto leading-relaxed">
-            Converting Navous's complex engineering foundation into high-impact value for autonomous logistics, AR, and smart venue management.
+            Converting Navous&apos;s complex engineering foundation into high-impact value for autonomous logistics, AR, and smart venue management.
           </p>
         </div>
 
