@@ -153,7 +153,7 @@ export default function Hero() {
 
     const initCrowd = () => {
       while (availablePeeps.length) {
-        addPeepToCrowd().walk.progress(Math.random());
+        addPeepToCrowd().walk!.progress(Math.random());
       }
     };
 
