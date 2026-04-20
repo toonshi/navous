@@ -250,7 +250,7 @@ export default function Hero() {
 
         <div className="flex flex-row items-center justify-center gap-4 w-full sm:w-auto">
           <a href="mailto:hello@navous.com" className="flex-1 sm:flex-none px-6 sm:px-8 py-3.5 bg-slate-900 text-white rounded-md font-bold hover:bg-slate-800 transition-all text-center text-base min-w-0 sm:min-w-[180px] subheading">
-            Book a Live Demo
+            Book a Demo
           </a>
           <a href="/how-it-works" className="flex-1 sm:flex-none px-6 sm:px-8 py-3.5 bg-transparent text-slate-900 border border-slate-200 rounded-md font-bold hover:bg-slate-50 transition-all text-center text-base min-w-0 sm:min-w-[180px] subheading">
             See a Walkthrough

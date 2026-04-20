@@ -26,7 +26,7 @@ export default function FinalCTA() {
           Every missed turn costs staff time and customer trust. We help people arrive faster from the very first scan.
         </p>
         <div className="flex flex-wrap gap-4 justify-center mt-12">
-          <a href="mailto:hello@navous.com" className="btn-primary"><span>Book a Live Demo</span></a>
+          <a href="mailto:hello@navous.com" className="btn-primary"><span>Book a Demo</span></a>
           <a href="/how-it-works" className="btn-secondary"><span>See How It Works</span></a>
         </div>
         <p className="text-slate-500 text-sm font-bold mt-8 tracking-wide">
