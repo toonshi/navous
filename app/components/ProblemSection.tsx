@@ -17,10 +17,10 @@ export default function ProblemSection() {
             <h2 className="font-laila text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 leading-tight mb-6">
               The high cost of
               <br />
-              <span className="text-primary">navigation friction.</span>
+              <span className="text-primary">people getting lost.</span>
             </h2>
             <p className="text-slate-700 text-lg leading-relaxed font-medium">
-              Inefficient indoor wayfinding isn&apos;t just a frustration for visitors—it&apos;s an operational bottleneck. When guests can&apos;t find their destination, staff spend their shifts giving directions instead of performing core duties.
+              When visitors can&apos;t find where they need to go, your front desk gets overloaded, teams get interrupted, and the experience feels chaotic.
             </p>
           </div>
           <div className="flex-1 flex justify-center md:justify-end">
@@ -38,10 +38,10 @@ export default function ProblemSection() {
         <div className="flex flex-col md:flex-row-reverse md:items-center gap-12 lg:gap-20">
           <div className="flex-1 max-w-xl">
             <h2 className="font-laila text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 leading-tight mb-6">
-              Data-driven spatial intelligence.
+              Fewer questions. Faster arrivals.
             </h2>
             <p className="text-slate-700 text-lg leading-relaxed font-medium">
-              Navous captures movement patterns that are normally invisible. Identify bottlenecks, optimize layouts, and improve facility performance with real-time analytics. Every missed turn is a data point for improvement.
+              Navous shows where confusion happens most, so you can fix routes, improve signage, and move people through the building with less friction.
             </p>
           </div>
           <div className="flex-1 flex justify-center md:justify-start">
@@ -59,10 +59,10 @@ export default function ProblemSection() {
         <div className="flex flex-col md:flex-row md:items-center gap-12 lg:gap-20">
           <div className="flex-1 max-w-xl">
             <h2 className="font-laila text-4xl md:text-5xl font-bold tracking-tighter text-slate-900 leading-tight mb-6">
-              Accessibility for every guest.
+              Better access for every visitor.
             </h2>
             <p className="text-slate-700 text-lg leading-relaxed font-medium">
-              We believe in navigation without barriers. Our platform includes wheelchair-optimized routing, multilingual support, and audio guidance to ensure that everyone moves through your space with confidence.
+              Offer routes that support mobility needs, multiple languages, and clear turn-by-turn guidance so more people can move confidently.
             </p>
           </div>
           <div className="flex-1 flex justify-center md:justify-end">
@@ -80,12 +80,10 @@ export default function ProblemSection() {
         <div className="rounded-2xl p-10 flex flex-col md:flex-row md:items-center gap-6 bg-white border-l-4 border-slate-900">
           <div className="flex-1">
             <p className="font-laila text-2xl md:text-3xl font-bold text-slate-900 leading-snug mb-4">
-              &ldquo;Navigation is not a nice-to-have. It is the difference between a
-              visitor who completes their journey and one who doesn&apos;t.&rdquo;
+              &ldquo;Wayfinding is customer experience. When arrival feels easy, everything after that gets better.&rdquo;
             </p>
             <p className="text-slate-500 text-sm">
-              The hidden cost that facility managers stop ignoring once they
-              see the data.
+              That means happier visitors, calmer staff, and smoother daily operations.
             </p>
           </div>
         </div>

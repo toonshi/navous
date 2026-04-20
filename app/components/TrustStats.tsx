@@ -4,9 +4,9 @@ import React from "react";
 import { Sparkle } from "./Doodles";
 
 const stats = [
-  { value: "5 MIN", label: "to go live after uploading your floor plan", sparkleColor: "#FFADAD" },
-  { value: "0", label: "sensors, beacons, or IT tickets needed", sparkleColor: "#FFD6A5" },
-  { value: "1", label: "dashboard your whole team actually uses", sparkleColor: "#CAFFBF" },
+  { value: "Same day", label: "first interactive map preview after you share your floor plans", sparkleColor: "#FFADAD" },
+  { value: "0", label: "apps visitors need to download before they can navigate", sparkleColor: "#FFD6A5" },
+  { value: "More time", label: "for your staff, because fewer people need to ask for directions", sparkleColor: "#CAFFBF" },
 ];
 
 export default function TrustStats() {
@@ -15,7 +15,7 @@ export default function TrustStats() {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <p className="text-slate-500 text-sm font-semibold tracking-wide uppercase">Why teams choose Navous</p>
-          <p className="text-slate-400 text-sm mt-2">No hype, just a map on a phone.</p>
+          <p className="text-slate-400 text-sm mt-2">Simple rollout. Clear value. Better visitor experience.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {stats.map((stat) => (
