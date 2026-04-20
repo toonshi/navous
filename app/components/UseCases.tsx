@@ -59,7 +59,7 @@ export default function UseCases() {
             <div className="bg-slate-50 p-8 rounded-3xl border border-slate-100">
                <h3 className="text-2xl font-bold text-slate-900 mb-4 text-balance subheading">Retail & Mall Experience</h3>
                <p className="text-slate-600 text-lg leading-relaxed font-medium">
-                 Increase store visits by helping shoppers find exactly what they're looking for. Integrated search turns a frustrating day at the mall into a purposeful shopping journey.
+                 Increase store visits by helping shoppers find exactly what they&apos;re looking for. Integrated search turns a frustrating day at the mall into a purposeful shopping journey.
                </p>
             </div>
           </div>

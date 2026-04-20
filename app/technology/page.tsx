@@ -41,13 +41,13 @@ export default function TechnologyPage() {
                     <div className="p-6 bg-slate-50 rounded-xl border border-slate-100">
                         <h3 className="font-bold text-xl mb-3">Deterministic Stability</h3>
                         <p className="text-slate-500 text-sm">
-                            Wall-clipping is mathematically impossible because the EKF directly consumes the mapping engine's vector tangents, ensuring a premium "blue-dot" feel.
+                            Wall-clipping is mathematically impossible because the EKF directly consumes the mapping engine&apos;s vector tangents, ensuring a premium &ldquo;blue-dot&rdquo; feel.
                         </p>
                     </div>
                     <div className="p-6 bg-slate-50 rounded-xl border border-slate-100">
                         <h3 className="font-bold text-xl mb-3">Seamless Handover</h3>
                         <p className="text-slate-500 text-sm">
-                            Our topological "stitching" allows for continuous routing from building interiors to the global OpenStreetMap highway network.
+                            Our topological &ldquo;stitching&rdquo; allows for continuous routing from building interiors to the global OpenStreetMap highway network.
                         </p>
                     </div>
                 </div>

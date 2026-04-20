@@ -22,11 +22,11 @@ export default function Hero() {
 
     // UTILS
     const randomRange = (min: number, max: number) => min + Math.random() * (max - min);
-    const randomIndex = (array: any[]) => randomRange(0, array.length) | 0;
-    const removeFromArray = (array: any[], i: number) => array.splice(i, 1)[0];
-    const removeItemFromArray = (array: any[], item: any) => removeFromArray(array, array.indexOf(item));
-    const removeRandomFromArray = (array: any[]) => removeFromArray(array, randomIndex(array));
-    const getRandomFromArray = (array: any[]) => array[randomIndex(array) | 0];
+    const randomIndex = <T,>(array: T[]) => (randomRange(0, array.length)) | 0;
+    const removeFromArray = <T,>(array: T[], i: number): T => array.splice(i, 1)[0];
+    const removeItemFromArray = <T,>(array: T[], item: T) => removeFromArray(array, array.indexOf(item));
+    const removeRandomFromArray = <T,>(array: T[]) => removeFromArray(array, randomIndex(array));
+    const getRandomFromArray = <T,>(array: T[]): T => array[randomIndex(array) | 0];
 
     const stage = { width: 0, height: 0 };
     let peepScale = 1;
@@ -37,12 +37,12 @@ export default function Hero() {
       rect: number[];
       width: number;
       height: number;
-      drawArgs: any[];
+      drawArgs: (CanvasImageSource | number)[];
       x: number;
       y: number;
       anchorY: number;
       scaleX: number;
-      walk: any;
+      walk: gsap.core.Timeline | null;
 
       constructor({ image, rect }: { image: HTMLImageElement; rect: number[] }) {
         this.image = image;
@@ -82,7 +82,7 @@ export default function Hero() {
     const availablePeeps: Peep[] = [];
     const crowd: Peep[] = [];
 
-    const resetPeep = ({ stage, peep }: { stage: any; peep: Peep }) => {
+    const resetPeep = ({ stage, peep }: { stage: { width: number; height: number }; peep: Peep }) => {
       const direction = Math.random() > 0.5 ? 1 : -1;
       const offsetY = 30 - 180 * gsap.parseEase("power2.in")(Math.random());
       const startY = stage.height - (peep.height * peepScale) + offsetY;
@@ -106,8 +106,8 @@ export default function Hero() {
       return { startX, startY, endX };
     };
 
-    const normalWalk = ({ peep, props }: { peep: Peep; props: any }) => {
-      const { startX, startY, endX } = props;
+    const normalWalk = ({ peep, props }: { peep: Peep; props: { startX: number; startY: number; endX: number } }) => {
+      const { startY, endX } = props;
       const xDuration = 10;
       const yDuration = 0.25;
 
