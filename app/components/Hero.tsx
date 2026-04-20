@@ -218,7 +218,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-[88vh] overflow-hidden flex flex-col items-center justify-start pt-12 md:pt-16 px-6 md:px-12 bg-white text-slate-900">
+    <section className="relative min-h-screen overflow-hidden flex flex-col items-center justify-start pt-12 md:pt-16 px-6 md:px-12 bg-white text-slate-900">
       {/* Background Canvas — walking people */}
       <canvas
         ref={canvasRef}
