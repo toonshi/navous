@@ -218,7 +218,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-screen overflow-hidden flex flex-col items-center justify-start pt-12 md:pt-16 px-6 md:px-12 bg-white text-slate-900">
+    <section className="relative min-h-[88vh] overflow-hidden flex flex-col items-center justify-start pt-12 md:pt-16 px-6 md:px-12 bg-white text-slate-900">
       {/* Background Canvas — walking people */}
       <canvas
         ref={canvasRef}
@@ -235,19 +235,25 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-center text-center">
         <h1 className="text-5xl md:text-[5.5rem] font-bold tracking-tight text-slate-900 leading-[0.95] mb-6">
-          The GPS of <br />Indoor Space
+          Help visitors <br />find the right room
         </h1>
 
         <p className="text-slate-600 text-lg md:text-xl font-medium leading-relaxed max-w-3xl mb-8 subheading">
-          Building the spatial infrastructure for the next decade of autonomous logistics, AR, and smart venue management. High-fidelity geodetic mapping meets enterprise-grade positioning.
+          Navous gives your building a simple indoor navigation experience so guests spend less time lost and your team spends less time giving directions.
         </p>
 
+        <div className="flex flex-wrap justify-center gap-2 mb-8">
+          <span className="px-3 py-1.5 rounded-full border border-slate-200 bg-white/85 text-slate-700 text-xs md:text-sm font-semibold subheading">No hardware install</span>
+          <span className="px-3 py-1.5 rounded-full border border-slate-200 bg-white/85 text-slate-700 text-xs md:text-sm font-semibold subheading">Works on existing floor plans</span>
+          <span className="px-3 py-1.5 rounded-full border border-slate-200 bg-white/85 text-slate-700 text-xs md:text-sm font-semibold subheading">Fast setup for multi-floor buildings</span>
+        </div>
+
         <div className="flex flex-row items-center justify-center gap-4 w-full sm:w-auto">
-          <a href="/features" className="flex-1 sm:flex-none px-6 sm:px-8 py-3.5 bg-slate-900 text-white rounded-md font-bold hover:bg-slate-800 transition-all text-center text-base min-w-0 sm:min-w-[180px] subheading">
-            Explore Value
+          <a href="mailto:hello@navous.com" className="flex-1 sm:flex-none px-6 sm:px-8 py-3.5 bg-slate-900 text-white rounded-md font-bold hover:bg-slate-800 transition-all text-center text-base min-w-0 sm:min-w-[180px] subheading">
+            Book a Demo
           </a>
-          <a href="/technology" className="flex-1 sm:flex-none px-6 sm:px-8 py-3.5 bg-transparent text-slate-900 border border-slate-200 rounded-md font-bold hover:bg-slate-50 transition-all text-center text-base min-w-0 sm:min-w-[180px] subheading">
-            The Platform
+          <a href="/how-it-works" className="flex-1 sm:flex-none px-6 sm:px-8 py-3.5 bg-transparent text-slate-900 border border-slate-200 rounded-md font-bold hover:bg-slate-50 transition-all text-center text-base min-w-0 sm:min-w-[180px] subheading">
+            See How It Works
           </a>
         </div>
       </div>

@@ -19,18 +19,18 @@ export default function FinalCTA() {
           Get Started
         </span>
         <h2 className="font-laila text-5xl md:text-6xl font-bold tracking-tighter text-slate-900 mb-6 leading-tight">
-          The GPS of <br />
-          Indoor Space.
+          Make every visit <br />
+          easier to navigate.
         </h2>
         <p className="text-slate-700 text-lg mb-4 leading-relaxed max-w-xl mx-auto font-medium">
-          Navous provides the spatial infrastructure required to power the next decade of autonomous logistics, AR, and smart venue management.
+          Launch indoor wayfinding your visitors can actually use, without adding new hardware to your building.
         </p>
         <div className="flex flex-wrap gap-4 justify-center mt-12">
-          <a href="/how-it-works" className="btn-primary"><span>See How It Works</span></a>
-          <a href="/features" className="btn-secondary"><span>Explore Features</span></a>
+          <a href="mailto:hello@navous.com" className="btn-primary"><span>Book a Demo</span></a>
+          <a href="/how-it-works" className="btn-secondary"><span>See How It Works</span></a>
         </div>
         <p className="text-slate-500 text-sm font-bold mt-8 tracking-wide">
-          FREE SETUP · NO HARDWARE · LIVE IN 3 WEEKS
+          NO HARDWARE ROLLOUT · CLEAR TEAM OWNERSHIP · FAST GO-LIVE
         </p>
       </div>
     </section>
