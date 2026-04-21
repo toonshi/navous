@@ -9,9 +9,9 @@ export default function Footer() {
         <Image
           src="/logo.svg"
           alt="Navous Logo"
-          width={120}
-          height={36}
-          className="h-9 w-auto brightness-0 invert"
+          width={200}
+          height={60}
+          className="h-14 w-auto brightness-0 invert"
         />
         <nav className="flex flex-row gap-8 text-sm text-white/60">
           <Link href="/" className="hover:text-white transition">Home</Link>

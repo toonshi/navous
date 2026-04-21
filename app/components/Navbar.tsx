@@ -11,9 +11,9 @@ const Navbar = () => {
         <Image
           src="/logo.svg"
           alt="Navous Logo"
-          width={100}
-          height={30}
-          className="h-7 w-auto brightness-0"
+          width={160}
+          height={48}
+          className="h-10 w-auto brightness-0"
         />
       </Link>
       
