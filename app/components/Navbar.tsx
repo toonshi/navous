@@ -1,18 +1,21 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
-import { Sparkle } from "./Doodles";
 
 const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center h-16 px-8 bg-white/40 backdrop-blur-xl border-b border-slate-100 shadow-sm">
-      <div className="flex items-center gap-2">
-        <div className="w-8 h-8 bg-[#13B7DA] rounded-lg flex items-center justify-center">
-          <Sparkle size={16} color="white" />
-        </div>
-        <span className="font-bold text-xl tracking-tighter text-slate-900 font-laila">Navous</span>
-      </div>
+      <Link href="/" className="flex items-center gap-2">
+        <Image
+          src="/Left logo.svg"
+          alt="Navous Logo"
+          width={100}
+          height={30}
+          className="h-7 w-auto brightness-0"
+        />
+      </Link>
       
       <div className="hidden md:flex items-center gap-8 font-bold text-xs uppercase tracking-[0.2em] subheading">
         <Link href="/" className="text-slate-900 transition hover:text-[#13B7DA]">Overview</Link>
