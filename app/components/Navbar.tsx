@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center h-16 px-8 bg-white/40 backdrop-blur-xl border-b border-slate-100 shadow-sm">
       <Link href="/" className="flex items-center gap-2">
         <Image
-          src="/Left logo.svg"
+          src="/logo.svg"
           alt="Navous Logo"
           width={100}
           height={30}

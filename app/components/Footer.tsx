@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="bg-secondary py-16 px-8">
       <div className="max-w-7xl mx-auto flex flex-col items-center gap-8">
         <Image
-          src="/Left logo.svg"
+          src="/logo.svg"
           alt="Navous Logo"
           width={120}
           height={36}
