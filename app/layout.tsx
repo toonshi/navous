@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Navous — Indoor Navigation for Modern Spaces",
   description:
     "Real-time indoor navigation for hospitals, malls, and campuses. Stop losing people inside your building.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
