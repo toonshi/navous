@@ -12,6 +12,12 @@
 :root {
   --background: #0A1018;
   --foreground: #E6EDF6;
+  --usecase-grid-fog: linear-gradient(
+    to top,
+    rgb(11 14 20 / 0.8),
+    rgb(11 14 20 / 0.1),
+    transparent
+  );
   color-scheme: dark light;
 }
 
@@ -35,10 +41,15 @@ body {
   opacity: 0.7;
 }
 
+.usecase-grid-fog {
+  background: var(--usecase-grid-fog);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --background: #f8fafc;
     --foreground: #0f172a;
+    --usecase-grid-fog: transparent;
   }
 
   .nav-logo {
@@ -51,11 +62,6 @@ body {
 
   .usecase-grid-card:hover .usecase-grid-image {
     opacity: 1;
-  }
-
-  .usecase-grid-fog {
-    background: transparent !important;
-    background-image: none !important;
   }
 
   .bg-primary {
