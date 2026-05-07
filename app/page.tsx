@@ -3,8 +3,9 @@ import Hero from "./components/Hero";
 import LogoBar from "./components/LogoBar";
 import TrustStats from "./components/TrustStats";
 import ProblemSection from "./components/ProblemSection";
-import StakeholderValue from "./components/StakeholderValue";
+import UseCaseGrid from "./components/UseCaseGrid";
 import HowItWorks from "./components/HowItWorks";
+import StakeholderValue from "./components/StakeholderValue";
 import Pricing from "./components/Pricing";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <LogoBar />
         <ProblemSection />
+        <UseCaseGrid />
         <HowItWorks />
         <StakeholderValue />
         <Pricing />
