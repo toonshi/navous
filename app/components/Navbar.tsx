@@ -41,7 +41,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-7 font-semibold text-xs uppercase tracking-[0.14em] text-white/65">
           <Link href="/features" className="transition hover:text-white">Features</Link>
           <Link href="/how-it-works" className="transition hover:text-white">How it Works</Link>
-          <Link href="/technology" className="transition hover:text-white">Implementation</Link>
+          <Link href="/technology" className="transition hover:text-white">IT & Security</Link>
           <Link href="/how-it-works#faq" className="transition hover:text-white">FAQ</Link>
         </div>
 
@@ -71,7 +71,7 @@ const Navbar = () => {
           <div className="mx-auto flex max-w-7xl flex-col gap-2">
             <Link href="/features" className="rounded-2xl px-4 py-3 text-sm font-semibold uppercase tracking-[0.14em] text-white/80 transition hover:bg-white/5 hover:text-white" onClick={closeMenu}>Features</Link>
             <Link href="/how-it-works" className="rounded-2xl px-4 py-3 text-sm font-semibold uppercase tracking-[0.14em] text-white/80 transition hover:bg-white/5 hover:text-white" onClick={closeMenu}>How it Works</Link>
-            <Link href="/technology" className="rounded-2xl px-4 py-3 text-sm font-semibold uppercase tracking-[0.14em] text-white/80 transition hover:bg-white/5 hover:text-white" onClick={closeMenu}>Implementation</Link>
+            <Link href="/technology" className="rounded-2xl px-4 py-3 text-sm font-semibold uppercase tracking-[0.14em] text-white/80 transition hover:bg-white/5 hover:text-white" onClick={closeMenu}>IT & Security</Link>
             <Link href="/how-it-works#faq" className="rounded-2xl px-4 py-3 text-sm font-semibold uppercase tracking-[0.14em] text-white/80 transition hover:bg-white/5 hover:text-white" onClick={closeMenu}>FAQ</Link>
             <Link href="/#contact" className="mt-2 rounded-2xl bg-accent px-4 py-3 text-center text-sm font-semibold uppercase tracking-[0.14em] text-white shadow-lg shadow-accent/20 transition hover:bg-accent/85" onClick={closeMenu}>
               Book Demo

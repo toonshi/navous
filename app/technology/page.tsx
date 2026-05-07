@@ -1,58 +1,38 @@
 import Navbar from "../components/Navbar";
-import TechnicalCapabilities from "../components/TechnicalCapabilities";
-import ProductStack from "../components/ProductStack";
-import StrategicPartners from "../components/StrategicPartners";
+import SecurityStack from "../components/SecurityStack";
+import DataPrivacy from "../components/DataPrivacy";
+import FinalCTA from "../components/FinalCTA";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "Technology — Navous",
-  description: "The mathematical and spatial engine powering Navous indoor intelligence.",
+  title: "Integration & Security — Navous",
+  description: "Enterprise-grade security, zero IT friction, and full compliance for hospital and campus deployments.",
 };
 
-export default function TechnologyPage() {
+export default function IntegrationPage() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-primary">
       <Navbar />
       <main className="flex-1 pt-20">
         {/* Page hero */}
-        <div className="py-20 px-8 text-center bg-white border-b border-slate-100">
-          <span className="inline-block text-sm font-bold px-4 py-1.5 rounded-full mb-6 tracking-wide border subheading" style={{ color: "#13B7DA", borderColor: "#13B7DA40", background: "#13B7DA0D" }}>
-            The Foundation
-          </span>
-          <h1 className="text-5xl md:text-6xl font-bold tracking-tighter text-slate-900 leading-tight mb-4">
-            The Geodetic Twin.<br />The Sensor Fusion Core.
-          </h1>
-          <p className="text-slate-500 text-lg max-w-xl mx-auto leading-relaxed">
-            High-fidelity spatial infrastructure required to power the next decade of autonomous logistics, AR, and smart venue management.
-          </p>
+        <div className="py-24 px-6 md:px-12 text-center border-b border-white/5 relative overflow-hidden">
+          <div className="max-w-7xl mx-auto relative z-10">
+             <span className="inline-block text-sm font-bold px-4 py-1.5 rounded-full mb-6 tracking-wide border border-accent/20 bg-accent/10 text-accent uppercase">
+               IT & Security
+             </span>
+             <h1 className="font-display text-5xl md:text-[5rem] font-bold tracking-tight text-white leading-[0.95] mb-8">
+               Zero friction for IT. <br />
+               <span className="text-white/60">Total control for you.</span>
+             </h1>
+             <p className="text-white/60 text-lg md:text-xl font-medium leading-relaxed max-w-3xl mx-auto mb-10">
+               Navous is built to pass hospital procurement checklists on day one. No hardware installations, no app deployments, and absolute data sovereignty.
+             </p>
+          </div>
         </div>
 
-        <ProductStack />
-        <StrategicPartners />
-        <TechnicalCapabilities />
-        
-        <section className="py-24 px-8 bg-white">
-            <div className="max-w-4xl mx-auto">
-                <h2 className="text-3xl font-bold mb-8">Hardware-Free Implementation</h2>
-                <p className="text-slate-600 text-lg mb-6">
-                    Navous bypasses the requirements for expensive Bluetooth beacons or Wi-Fi fingerprinting by leveraging industry-leading MA-EKF (Manifold-Aware Extended Kalman Filter) and Biomechanical PDR directly in a lightweight WASM core.
-                </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-                    <div className="p-6 bg-slate-50 rounded-xl border border-slate-100">
-                        <h3 className="font-bold text-xl mb-3">Deterministic Stability</h3>
-                        <p className="text-slate-500 text-sm">
-                            Wall-clipping is mathematically impossible because the EKF directly consumes the mapping engine&apos;s vector tangents, ensuring a premium &ldquo;blue-dot&rdquo; feel.
-                        </p>
-                    </div>
-                    <div className="p-6 bg-slate-50 rounded-xl border border-slate-100">
-                        <h3 className="font-bold text-xl mb-3">Seamless Handover</h3>
-                        <p className="text-slate-500 text-sm">
-                            Our topological &ldquo;stitching&rdquo; allows for continuous routing from building interiors to the global OpenStreetMap highway network.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <SecurityStack />
+        <DataPrivacy />
+        <FinalCTA />
       </main>
       <Footer />
     </div>

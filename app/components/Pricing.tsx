@@ -21,8 +21,6 @@ const tiers = [
     ],
     cta: "Start Free Trial",
     highlight: false,
-    roi: "ROI typically within 3 weeks",
-    roiColor: "text-slate-500",
   },
   {
     name: "Growth",
@@ -41,8 +39,6 @@ const tiers = [
     ],
     cta: "Book a Demo",
     highlight: true,
-    roi: "Most operators see ROI in month 1",
-    roiColor: "text-primary",
   },
   {
     name: "Enterprise",
@@ -61,8 +57,6 @@ const tiers = [
     ],
     cta: "Talk to Sales",
     highlight: false,
-    roi: "Custom ROI modelling included",
-    roiColor: "text-slate-500",
   },
 ];
 
@@ -135,11 +129,6 @@ export default function Pricing() {
                   </li>
                 ))}
               </ul>
-
-              {/* ROI note */}
-              <p className={`text-xs font-semibold ${tier.highlight ? "text-white" : "text-accent"}`}>
-                {tier.roi}
-              </p>
 
               {/* CTA */}
               <Link

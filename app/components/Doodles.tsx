@@ -142,3 +142,35 @@ export function LooseCircle({ size = 80, color = "currentColor", className = "" 
     </svg>
   );
 }
+
+export function HospitalIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg className={className} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M18 6L18 18" /><path d="M6 18L6 6" /><path d="M6 12L18 12" />
+    </svg>
+  );
+}
+
+export function PlaneIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg className={className} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3.5c-.5-.5-2.5 0-4 1.5L13.5 8.5 5.3 6.7c-1.1-.3-2.1.2-2.5 1.1l-.3.8 8.1 3.5-3.5 3.5-3.1-.7c-.8-.2-1.7.3-1.9 1.1l-.1.4 4.5 2 2 4.5.4-.1c.8-.2 1.3-1.1 1.1-1.9l-.7-3.1 3.5-3.5 3.5 8.1.8-.3c.9-.4 1.4-1.4 1.1-2.5z" />
+    </svg>
+  );
+}
+
+export function AccessibilityIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg className={className} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="16" cy="4" r="1" /><path d="m18 19 1-7-6 1" /><path d="m5 8 3-3 5.5 3-2.36 3.5" /><path d="M4.24 14.5a5 5 0 0 0 6.88 6" /><path d="M13.76 17.5a5 5 0 0 1-6.88-6" />
+    </svg>
+  );
+}
+
+export function GlobeIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg className={className} width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="10" /><path d="M12 2a14.5 14.5 0 0 0 0 20" /><path d="M12 2a14.5 14.5 0 0 1 0 20" /><path d="M2 12h20" />
+    </svg>
+  );
+}

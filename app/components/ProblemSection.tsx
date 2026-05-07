@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import { GlobeIcon, AccessibilityIcon } from "./Doodles";
 
 export default function ProblemSection() {
   return (
@@ -91,7 +92,7 @@ export default function ProblemSection() {
              <div className="bg-white/5 rounded-xl border border-white/10 shadow-xl p-8 flex flex-col gap-6 backdrop-blur-sm">
                 <div className="flex items-center gap-4 border-b border-white/5 pb-4">
                    <div className="w-10 h-10 rounded bg-white/5 flex items-center justify-center border border-white/10">
-                      <span className="text-xl">♿</span>
+                      <AccessibilityIcon className="text-accent w-6 h-6" />
                    </div>
                    <div className="flex-1">
                       <div className="h-3 w-1/2 bg-white/20 rounded mb-2" />
@@ -100,7 +101,7 @@ export default function ProblemSection() {
                 </div>
                 <div className="flex items-center gap-4">
                    <div className="w-10 h-10 rounded bg-white/5 flex items-center justify-center border border-white/10">
-                      <span className="text-xl">🌐</span>
+                      <GlobeIcon className="text-accent w-6 h-6" />
                    </div>
                    <div className="flex-1">
                       <div className="h-3 w-1/2 bg-white/20 rounded mb-2" />
