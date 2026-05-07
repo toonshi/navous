@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Navous — Indoor Navigation for Modern Spaces",
+  title: "Navous — Indoor Navigation for Hospitals, Malls & Airports",
   description:
     "Real-time indoor navigation for hospitals, malls, and campuses. Stop losing people inside your building.",
   icons: {

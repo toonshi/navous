@@ -4,6 +4,7 @@ import TrustStats from "./components/TrustStats";
 import ProblemSection from "./components/ProblemSection";
 import StakeholderValue from "./components/StakeholderValue";
 import HowItWorks from "./components/HowItWorks";
+import Pricing from "./components/Pricing";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
 
@@ -16,8 +17,9 @@ export default function Home() {
         <div className="border-t border-slate-100" />
         <TrustStats />
         <ProblemSection />
-        <StakeholderValue />
         <HowItWorks />
+        <StakeholderValue />
+        <Pricing />
         <FinalCTA />
       </main>
       <Footer />

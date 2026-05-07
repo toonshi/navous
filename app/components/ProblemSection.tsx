@@ -20,7 +20,7 @@ export default function ProblemSection() {
               <span className="text-primary">people getting lost.</span>
             </h2>
             <p className="text-slate-700 text-lg leading-relaxed font-medium">
-              When visitors can&apos;t find where they need to go, your front desk gets overloaded, teams get interrupted, and the experience feels chaotic.
+              When visitors can&apos;t find where they need to go, the cost is real: a confused patient misses their appointment, a frustrated shopper leaves the mall, and your front desk staff loses hours to basic wayfinding questions.
             </p>
           </div>
           <div className="flex-1 flex justify-center md:justify-end">
@@ -73,18 +73,6 @@ export default function ProblemSection() {
               height={300}
               className="w-full max-w-sm"
             />
-          </div>
-        </div>
-
-        {/* Pull quote */}
-        <div className="rounded-2xl p-10 flex flex-col md:flex-row md:items-center gap-6 bg-white border-l-4 border-slate-900">
-          <div className="flex-1">
-            <p className="font-laila text-2xl md:text-3xl font-bold text-slate-900 leading-snug mb-4">
-              &ldquo;Wayfinding is customer experience. When arrival feels easy, everything after that gets better.&rdquo;
-            </p>
-            <p className="text-slate-500 text-sm">
-              That means happier visitors, calmer staff, and smoother daily operations.
-            </p>
           </div>
         </div>
       </div>

@@ -5,19 +5,6 @@ import Image from "next/image";
 
 const columns = [
   {
-    audience: "For Visitors",
-    tagline: "Confidence from step one.",
-    illustration: "/illustrations/stakeholder-visitor.svg",
-    illustrationAlt: "Person navigating to destination",
-    accentColor: "#13B7DA",
-    features: [
-      "Find any room, store, or office in under 60 seconds",
-      "Turn-by-turn navigation — no app download required",
-      "Accessibility-first: wheelchair routes, audio guidance",
-      "Available in multiple languages",
-    ],
-  },
-  {
     audience: "For Facility Operators",
     tagline: "Clarity across every floor.",
     illustration: "/illustrations/stakeholder-operator.svg",
@@ -28,6 +15,19 @@ const columns = [
       "Identify where visitors get stuck or lost",
       "Emergency evacuation routing — instant reroute",
       "No hardware installation required",
+    ],
+  },
+  {
+    audience: "For Visitors",
+    tagline: "Confidence from step one.",
+    illustration: "/illustrations/stakeholder-visitor.svg",
+    illustrationAlt: "Person navigating to destination",
+    accentColor: "#13B7DA",
+    features: [
+      "Find any room, store, or office in under 60 seconds",
+      "Turn-by-turn navigation — no app download required",
+      "Accessibility-first: wheelchair routes, audio guidance",
+      "Available in multiple languages",
     ],
   },
   {

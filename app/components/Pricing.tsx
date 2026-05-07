@@ -157,6 +157,40 @@ export default function Pricing() {
         <p className="text-center text-slate-400 text-sm mt-8">
           All plans: Free setup · Unlimited users · Cancel anytime · 99.9% uptime guarantee
         </p>
+
+        {/* ROI Calculation Section */}
+        <div className="mt-24 max-w-4xl mx-auto bg-white rounded-3xl p-8 md:p-12 border border-slate-100 shadow-sm">
+          <div className="flex flex-col md:flex-row gap-10 items-center">
+            <div className="flex-1">
+              <span className="text-primary text-xs font-bold uppercase tracking-widest mb-4 block">
+                The Math
+              </span>
+              <h3 className="font-laila text-3xl font-bold text-secondary mb-6 leading-tight">
+                How Navous pays for itself in staff hours alone.
+              </h3>
+              <p className="text-slate-600 leading-relaxed mb-6">
+                A mid-size hospital front desk handles <span className="font-bold text-secondary">200+ wayfinding questions per day</span>. At just 2 minutes each, that&apos;s <span className="font-bold text-secondary">6+ staff hours daily</span>.
+              </p>
+              <p className="text-slate-600 leading-relaxed">
+                By automating these arrivals, Navous reclaiming that time for your team to focus on complex tasks, not basic directions.
+              </p>
+            </div>
+            <div className="flex-1 w-full bg-[#F7FDFF] rounded-2xl p-8 border border-slate-50 flex flex-col gap-6">
+              <div className="flex justify-between items-end border-b border-slate-100 pb-4">
+                <span className="text-sm text-slate-500">Daily Questions</span>
+                <span className="text-2xl font-bold text-secondary">200+</span>
+              </div>
+              <div className="flex justify-between items-end border-b border-slate-100 pb-4">
+                <span className="text-sm text-slate-500">Staff Time Lost</span>
+                <span className="text-2xl font-bold text-secondary">6.6 Hours</span>
+              </div>
+              <div className="flex justify-between items-end">
+                <span className="text-sm font-bold text-primary italic">Estimated Monthly Savings</span>
+                <span className="text-3xl font-bold text-primary">$4,000+</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

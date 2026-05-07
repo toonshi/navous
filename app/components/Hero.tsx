@@ -239,13 +239,13 @@ export default function Hero() {
         </h1>
 
         <p className="text-slate-600 text-lg md:text-xl font-medium leading-relaxed max-w-3xl mb-8 subheading">
-          Navous helps guests, patients, and shoppers find the right door fast. No app download. No new hardware. Just scan a code and follow clear directions.
+          Navous eliminates wayfinding confusion to reduce staff interruptions, prevent missed appointments, and increase tenant satisfaction. No app download. No hardware. Just results.
         </p>
 
         <div className="flex flex-wrap justify-center gap-2 mb-8">
+          <span className="px-3 py-1.5 rounded-full border border-slate-200 bg-white/85 text-slate-700 text-xs md:text-sm font-semibold subheading">Cut staff interruptions by 30%</span>
           <span className="px-3 py-1.5 rounded-full border border-slate-200 bg-white/85 text-slate-700 text-xs md:text-sm font-semibold subheading">Launch from your existing floor plans</span>
-          <span className="px-3 py-1.5 rounded-full border border-slate-200 bg-white/85 text-slate-700 text-xs md:text-sm font-semibold subheading">Works in any mobile browser</span>
-          <span className="px-3 py-1.5 rounded-full border border-slate-200 bg-white/85 text-slate-700 text-xs md:text-sm font-semibold subheading">Less pressure on your front desk team</span>
+          <span className="px-3 py-1.5 rounded-full border border-slate-200 bg-white/85 text-slate-700 text-xs md:text-sm font-semibold subheading">Prevent missed appointments & lost revenue</span>
         </div>
 
         <div className="flex flex-row items-center justify-center gap-4 w-full sm:w-auto">
