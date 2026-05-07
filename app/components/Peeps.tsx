@@ -3,6 +3,9 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 
+const MOBILE_BREAKPOINT = 768;
+const MOBILE_VERTICAL_OFFSET = 80;
+
 export default function Peeps({ className = "" }: { className?: string }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -29,8 +32,6 @@ export default function Peeps({ className = "" }: { className?: string }) {
 
     const stage = { width: 0, height: 0 };
     let peepScale = 1;
-    const MOBILE_BREAKPOINT = 768;
-    const MOBILE_VERTICAL_OFFSET = 80;
 
     // CLASSES
     class Peep {
