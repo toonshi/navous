@@ -13,7 +13,7 @@ const pillars = [
       { label: "Manifold Navigation", value: "Unified topological manifold for consistent pathfinding." },
       { label: "Native Reach", value: "Appear natively on Apple Maps and Google Maps via IMDF/OSM." }
     ],
-    color: "#13B7DA",
+    color: "#3B82F6",
   },
   {
     title: "Positioning Engine",
@@ -24,7 +24,7 @@ const pillars = [
       { label: "Privacy & Performance", value: "On-device processing with total user data security." },
       { label: "Continuous Coverage", value: "Intelligently predicts movement patterns in complex zones." }
     ],
-    color: "#FFADAD",
+    color: "#60A5FA",
   },
   {
     title: "Enterprise Integration",
@@ -35,7 +35,7 @@ const pillars = [
       { label: "The Last Meter", value: "Headless Rust core for UberEats/DoorDash floor & door precision." },
       { label: "Profitability Routing", value: "Aisle-aware routing for warehouse fleets to minimize distance." }
     ],
-    color: "#CAFFBF",
+    color: "#93C5FD",
   },
   {
     title: "Spatial Analytics",
@@ -46,7 +46,7 @@ const pillars = [
       { label: "Tenant Analytics", value: "Prove floor-space value with objective visitor dwell times." },
       { label: "Traffic Insight", value: "Attribute traffic to digital ads (GPS) or physical signs (QR)." }
     ],
-    color: "#FFD6A5",
+    color: "#3B82F6",
   },
   {
     title: "Economic Realization",
@@ -57,57 +57,57 @@ const pillars = [
       { label: "Performance Pricing", value: "Success bounties based on courier reach or asset optimization." },
       { label: "Zero-Accident Safety", value: "ROI through the prevention of collisions and automated protocols." }
     ],
-    color: "#94A3B8",
+    color: "#64748B",
   },
 ];
 
 export default function CoreValues() {
   return (
-    <section className="py-24 px-8 bg-white relative overflow-hidden">
-      <ScatterDots color="#13B7DA" className="absolute top-10 right-10 opacity-20" />
+    <section className="py-24 px-8 bg-primary relative overflow-hidden border-b border-white/5">
+      <ScatterDots color="#3B82F6" className="absolute top-10 right-10 opacity-10" />
       
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
-          <span className="text-[#13B7DA] font-mono text-sm font-bold tracking-[0.2em] uppercase mb-4 block">
+          <span className="text-accent text-sm font-bold tracking-[0.2em] uppercase mb-4 block">
             The Navous Foundation
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-6">
-            Marketing & Value Proposition Matrix
+          <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">
+            The Pillars of Spatial Intelligence
           </h2>
-          <p className="text-slate-600 text-xl max-w-3xl mx-auto leading-relaxed font-medium subheading">
+          <p className="text-white/60 text-lg max-w-3xl mx-auto leading-relaxed font-medium">
             Converting complex engineering into high-impact value. Our platform is built on five pillars of spatial infrastructure.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {pillars.map((pillar) => (
-            <div key={pillar.title} className="p-8 rounded-3xl bg-slate-50 border border-slate-100 flex flex-col h-full hover:border-[#13B7DA]/30 transition-all group">
-              <div className="flex items-center gap-3 mb-6">
+            <div key={pillar.title} className="p-10 rounded-[2rem] bg-white/5 border border-white/10 flex flex-col h-full hover:border-accent/40 transition-all group card-hover backdrop-blur-sm">
+              <div className="flex items-center gap-3 mb-8">
                 <div 
-                  className="w-3 h-3 rounded-full" 
+                  className="w-3 h-3 rounded-full shadow-[0_0_12px_rgba(59,130,246,0.5)]" 
                   style={{ backgroundColor: pillar.color }}
                 />
-                <span className="text-xs font-bold uppercase tracking-widest text-slate-400">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-white/40">
                   {pillar.subtitle}
                 </span>
               </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-4 subheading">
+              <h3 className="text-2xl font-bold text-white mb-4 font-display">
                 {pillar.title}
               </h3>
-              <p className="text-slate-500 text-sm leading-relaxed mb-8 font-medium italic">
+              <p className="text-white/50 text-sm leading-relaxed mb-10 font-medium italic">
                 {pillar.description}
               </p>
               
-              <div className="space-y-6 mt-auto">
+              <div className="space-y-8 mt-auto">
                 {pillar.features.map((feature) => (
                   <div key={feature.label}>
-                    <span className="text-slate-900 font-bold block text-sm mb-1">{feature.label}</span>
-                    <span className="text-slate-500 text-xs leading-relaxed font-medium">{feature.value}</span>
+                    <span className="text-white font-bold block text-sm mb-1">{feature.label}</span>
+                    <span className="text-white/40 text-xs leading-relaxed font-medium">{feature.value}</span>
                   </div>
                 ))}
               </div>
-              <div className="mt-8 pt-6 border-t border-slate-200/60 flex justify-end">
-                <Sparkle size={16} color={pillar.color} className="opacity-40 group-hover:opacity-100 transition-opacity" />
+              <div className="mt-10 pt-8 border-t border-white/5 flex justify-end">
+                <Sparkle size={16} color={pillar.color} className="opacity-20 group-hover:opacity-100 transition-opacity" />
               </div>
             </div>
           ))}

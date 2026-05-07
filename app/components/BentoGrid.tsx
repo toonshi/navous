@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { AccessibilityIcon } from "./Doodles";
 
 const BentoGrid = () => {
   return (
@@ -13,7 +14,7 @@ const BentoGrid = () => {
           <h2 className="font-display text-[3.5rem] md:text-[5rem] font-bold tracking-tight leading-[0.95] mb-8 max-w-3xl">
             Everything you need to
             <br />
-            master your space.
+            <span className="text-white/60">master your space.</span>
           </h2>
           <p className="text-white/40 text-lg max-w-xl leading-relaxed font-medium">
             One unified platform to guide your visitors, protect your staff, and optimize your facility operations.
@@ -51,7 +52,7 @@ const BentoGrid = () => {
           {/* Spec Card: Accessibility */}
           <div className="bg-white/5 border border-white/10 rounded-[2.5rem] p-10 flex flex-col justify-between min-h-[280px] shadow-2xl group backdrop-blur-sm card-hover">
             <div className="w-16 h-16 rounded-2xl bg-accent/10 flex items-center justify-center border border-accent/20">
-              <span className="text-3xl font-black text-accent">♿</span>
+              <AccessibilityIcon className="text-accent w-8 h-8" />
             </div>
             <div>
               <h3 className="font-display text-2xl font-bold tracking-tight text-white mb-2">WCAG 2.1 Native</h3>

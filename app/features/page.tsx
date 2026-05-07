@@ -14,18 +14,19 @@ export const metadata = {
 
 export default function FeaturesPage() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-primary">
       <Navbar />
       <main className="flex-1 pt-20">
         {/* Page hero */}
-        <div className="py-20 px-8 text-center bg-white border-b border-slate-100">
-          <span className="inline-block text-sm font-semibold px-4 py-1.5 rounded-full mb-6 tracking-wide border" style={{ color: "#13B7DA", borderColor: "#13B7DA40", background: "#13B7DA0D" }}>
+        <div className="py-24 px-8 text-center bg-primary border-b border-white/5">
+          <span className="inline-block text-sm font-bold px-4 py-1.5 rounded-full mb-6 tracking-wide border border-accent/20 bg-accent/10 text-accent uppercase">
             Value Matrix
           </span>
-          <h1 className="font-laila text-5xl md:text-6xl font-bold tracking-tighter text-slate-900 leading-tight mb-4">
-            The GPS of <br />Indoor Space.
+          <h1 className="font-display text-5xl md:text-[5rem] font-bold tracking-tight text-white leading-[0.95] mb-8">
+            The GPS of <br />
+            <span className="text-white/60">Indoor Space.</span>
           </h1>
-          <p className="text-slate-500 text-lg max-w-xl mx-auto leading-relaxed">
+          <p className="text-white/60 text-lg md:text-xl font-medium leading-relaxed max-w-2xl mx-auto mb-10">
             Converting Navous&apos;s complex engineering foundation into high-impact value for autonomous logistics, AR, and smart venue management.
           </p>
         </div>
