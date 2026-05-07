@@ -201,7 +201,7 @@ const UseCaseGrid = () => {
 
                 <div className="absolute inset-0 z-20 p-6 flex flex-col justify-end pointer-events-none">
                   <div className="transition-all duration-500">
-                    <span className="text-accent text-[9px] font-bold uppercase tracking-[0.25em] mb-2 block">
+                    <span className="text-white text-[9px] font-bold uppercase tracking-[0.25em] mb-2 block">
                       {useCase.category}
                     </span>
                     <h3 className={`font-display font-bold tracking-tight mb-2 text-white transition-all duration-500 ${hoveredId === useCase.id ? "text-4xl" : "text-lg"}`}>
@@ -209,14 +209,14 @@ const UseCaseGrid = () => {
                     </h3>
                     
                     <div className={`transition-all duration-500 ${hoveredId === useCase.id ? "opacity-100 mt-4" : "opacity-0 h-0 overflow-hidden"}`}>
-                      <p className="text-white/60 text-[14px] max-w-xl mb-6 leading-relaxed font-medium">
+                      <p className="text-white text-[14px] max-w-xl mb-6 leading-relaxed font-medium">
                         {useCase.longDescription}
                       </p>
 
                       <ul className="flex flex-col gap-2 mb-8">
                         {useCase.benefits.map((benefit) => (
-                          <li key={benefit} className="flex items-center gap-3 text-[12px] font-bold text-white/90">
-                            <span className="text-accent">✓</span>
+                          <li key={benefit} className="flex items-center gap-3 text-[12px] font-bold text-white">
+                            <span className="text-white">✓</span>
                             {benefit}
                           </li>
                         ))}
