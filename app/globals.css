@@ -29,10 +29,6 @@ body {
     --foreground: #0f172a;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    color: var(--foreground);
-  }
-
   .glass {
     background: rgba(255, 255, 255, 0.86);
     border: 1px solid rgba(15, 23, 42, 0.12);
