@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 export default function ProblemSection() {
   return (
@@ -26,16 +27,19 @@ export default function ProblemSection() {
             </p>
           </div>
           <div className="flex-1">
-            <div className="aspect-video bg-white/5 rounded-xl border border-white/10 shadow-inner p-8 flex flex-col gap-4 backdrop-blur-sm">
-               <div className="h-6 w-1/3 bg-white/10 rounded" />
-               <div className="flex-1 flex flex-col gap-2 justify-center">
-                  <div className="h-4 w-full bg-white/5 rounded" />
-                  <div className="h-4 w-5/6 bg-white/5 rounded" />
-                  <div className="h-4 w-4/6 bg-white/5 rounded" />
-               </div>
-               <div className="h-10 w-full bg-accent/20 border border-accent/30 rounded flex items-center px-4">
-                 <span className="text-xs font-bold text-accent tracking-wide">Staff Time Reclaimed: 34% Est.</span>
-               </div>
+            <div className="overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/5 shadow-2xl backdrop-blur-sm">
+              <Image
+                src="/visitor-nav.jpg"
+                alt="Navous visitor navigation interface on mobile"
+                width={1200}
+                height={900}
+                className="h-auto w-full object-cover"
+              />
+              <div className="border-t border-white/10 bg-black/20 px-6 py-4">
+                <span className="text-xs font-bold text-accent tracking-wide">
+                  Estimate based on your front-desk question volume, not pilot claims.
+                </span>
+              </div>
             </div>
           </div>
         </div>

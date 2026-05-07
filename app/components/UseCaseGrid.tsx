@@ -16,7 +16,6 @@ interface UseCase {
   longDescription: string;
   image: string;
   benefits: string[];
-  stats: { label: string; value: string }[];
 }
 
 const useCases: UseCase[] = [
@@ -29,11 +28,10 @@ const useCases: UseCase[] = [
     image: "/hospital.jpg",
     benefits: [
       "Wheelchair-accessible routing", 
-      "Staff time saved by 15%", 
+      "Direct-to-department routing",
       "Direct-to-ward navigation",
       "Real-time closure rerouting"
     ],
-    stats: [{ label: "Anxiety", value: "-40%" }, { label: "On-Time", value: "98%" }],
   },
   {
     id: 1,
@@ -48,7 +46,6 @@ const useCases: UseCase[] = [
       "Proximity sale alerts",
       "Multi-floor directory"
     ],
-    stats: [{ label: "Conversion", value: "+22%" }, { label: "Accuracy", value: "0.5m" }],
   },
   {
     id: 2,
@@ -63,7 +60,6 @@ const useCases: UseCase[] = [
       "Duty-free proximity",
       "Stress-free transfers"
     ],
-    stats: [{ label: "Missed Flights", value: "-12%" }, { label: "Dwell ROI", value: "18%" }],
   },
   {
     id: 3,
@@ -78,7 +74,6 @@ const useCases: UseCase[] = [
       "Hot-desk wayfinding",
       "Staff directory routing"
     ],
-    stats: [{ label: "Start Speed", value: "+5m" }, { label: "Utilization", value: "92%" }],
   },
   {
     id: 4,
@@ -93,7 +88,6 @@ const useCases: UseCase[] = [
       "Emergency broadcasting",
       "Guest access control"
     ],
-    stats: [{ label: "Delivery", value: "100%" }, { label: "Security", value: "<30s" }],
   },
   {
     id: 5,
@@ -108,7 +102,6 @@ const useCases: UseCase[] = [
       "Real-time event routing",
       "Campus-wide alerts"
     ],
-    stats: [{ label: "Orientation", value: "-35%" }, { label: "Event Flow", value: "95%" }],
   },
   {
     id: 6,
@@ -119,11 +112,10 @@ const useCases: UseCase[] = [
     image: "/parliament.jpg",
     benefits: [
       "PWD-optimized routing", 
-      "24+ Language support", 
+      "Multi-language support", 
       "Audio-guided journeys",
       "GDPR data sovereignty"
     ],
-    stats: [{ label: "Equality", value: "100%" }, { label: "Languages", value: "24" }],
   },
 ];
 
@@ -217,14 +209,6 @@ const UseCaseGrid = () => {
                         ))}
                       </ul>
 
-                      <div className="grid grid-cols-2 gap-8 border-t border-white/10 pt-6">
-                        {useCase.stats.map(stat => (
-                          <div key={stat.label}>
-                            <p className="text-2xl font-black text-white mb-0.5 tracking-tight">{stat.value}</p>
-                            <p className="text-[9px] font-bold uppercase tracking-widest text-accent">{stat.label}</p>
-                          </div>
-                        ))}
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -254,16 +238,16 @@ const UseCaseGrid = () => {
           
           <div className="mt-12 pt-12 border-t border-white/5 flex flex-wrap gap-10">
             <div>
-              <p className="text-3xl font-black text-white mb-1 tracking-tight">100%</p>
-              <p className="text-[10px] font-bold uppercase tracking-widest text-white/30 italic">Target Coverage</p>
+              <p className="text-3xl font-black text-white mb-1 tracking-tight">QR</p>
+              <p className="text-[10px] font-bold uppercase tracking-widest text-white/30 italic">Launch point</p>
             </div>
             <div>
-              <p className="text-3xl font-black text-white mb-1 tracking-tight">0.5m</p>
-              <p className="text-[10px] font-bold uppercase tracking-widest text-white/30 italic">Engine Precision</p>
+              <p className="text-3xl font-black text-white mb-1 tracking-tight">Live</p>
+              <p className="text-[10px] font-bold uppercase tracking-widest text-white/30 italic">Route updates</p>
             </div>
             <div>
               <p className="text-3xl font-black text-white mb-1 tracking-tight">&lt;24h</p>
-              <p className="text-[10px] font-bold uppercase tracking-widest text-white/30 italic">Onboarding</p>
+              <p className="text-[10px] font-bold uppercase tracking-widest text-white/30 italic">Demo turnaround</p>
             </div>
           </div>
         </div>

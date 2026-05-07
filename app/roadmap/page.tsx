@@ -15,8 +15,8 @@ const milestones = [
   {
     phase: "PHASE_02",
     title: "Strategic Pilot Rollout",
-    status: "Active",
-    description: "Deployment of high-fidelity positioning in selected Nairobi facilities. Validation of sub-meter accuracy via BLE and sensor fusion.",
+    status: "Now Enrolling",
+    description: "Recruiting the first pilot partners and preparing initial facility deployments. Floor-plan ingestion, browser-native navigation, and rollout feedback loops are being finalized before launch.",
     points: ["Pilot Partner Selection", "Browser-Native Navigation", "BLE Beacon Optimization"],
   },
   {
@@ -59,7 +59,7 @@ export default function RoadmapPage() {
             <div className="space-y-16 md:space-y-0">
               {milestones.map((ms, index) => {
                 const isEven = index % 2 === 0;
-                const isActive = ms.status === "Active";
+                const isActive = ms.status === "Now Enrolling";
                 const isCompleted = ms.status === "Completed";
 
                 return (

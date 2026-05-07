@@ -14,13 +14,13 @@ export default function FinalCTA() {
           No-Risk Implementation
         </span>
         <h2 className="font-display text-5xl md:text-7xl font-bold tracking-tight text-white mb-8 leading-[1.1]">
-          Ready to see it in your building?
+          Ready to map your building?
         </h2>
         <p className="text-white/60 text-xl mb-12 leading-relaxed max-w-2xl mx-auto font-medium">
-          Most venues go from floor plan to live demo in under 24 hours. No hardware to install, no app to build, and no long-term commitment required to start.
+          Send a floor plan and we&apos;ll turn it into a live walkthrough you can test with your team. No hardware to install, no app to build, and no pressure to pretend the pilot is further along than it is.
         </p>
         <div className="flex flex-wrap gap-5 justify-center">
-          <a href="mailto:hello@navous.com" className="btn-primary min-w-[220px]">Book a Live Demo</a>
+          <a href="/#contact" className="btn-primary min-w-[220px]">Book a Live Demo</a>
           <a href="/how-it-works" className="btn-secondary min-w-[220px]">See Implementation Path</a>
         </div>
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-wrap justify-center gap-x-12 gap-y-6">

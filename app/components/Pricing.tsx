@@ -141,15 +141,16 @@ export default function Pricing() {
               </p>
 
               {/* CTA */}
-              <button
-                className={`w-full py-4 rounded-lg font-bold text-sm transition cursor-pointer ${
+              <a
+                href="/#contact"
+                className={`block w-full py-4 rounded-lg font-bold text-sm text-center transition cursor-pointer ${
                   tier.highlight
                     ? "bg-white text-accent hover:bg-slate-50 shadow-lg"
                     : "bg-white/10 text-white hover:bg-white/20 border border-white/10"
                 }`}
               >
                 {tier.cta}
-              </button>
+              </a>
             </div>
           ))}
         </div>
@@ -172,7 +173,7 @@ export default function Pricing() {
                 A mid-size hospital front desk handles <span className="font-bold text-white">200+ wayfinding questions per day</span>. At just 2 minutes each, that&apos;s <span className="font-bold text-white">6+ staff hours daily</span>.
               </p>
               <p className="text-white/60 leading-relaxed">
-                By automating these arrivals, Navous reclaiming that time for your team to focus on complex tasks, not basic directions.
+                This is an estimate, not a pilot claim. The point is simple: wayfinding questions consume paid staff time that can be better spent elsewhere.
               </p>
             </div>
             <div className="flex-1 w-full bg-[#000000] rounded-2xl p-8 border border-white/5 flex flex-col gap-6 shadow-2xl">
