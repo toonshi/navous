@@ -240,8 +240,8 @@ export default function Hero() {
         </span>
         <h1 className="font-display mb-6 text-[2.8rem] font-bold leading-[0.95] tracking-tight text-white sm:text-5xl md:mb-8 md:text-[5.5rem]">
           Stop losing your visitors
-          <span className="hidden md:inline"> <br /></span>
-          <span className="md:inline"> inside your building.</span>
+          <br className="hidden md:block" />
+          <span> inside your building.</span>
         </h1>
 
         <p className="mb-8 max-w-3xl text-base font-medium leading-relaxed text-white/60 sm:text-lg md:mb-10 md:text-xl">

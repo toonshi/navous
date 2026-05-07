@@ -254,7 +254,7 @@ const UseCaseGrid = () => {
 
         {/* Mobile View */}
         <div className="flex w-full flex-col gap-5 md:hidden">
-          {useCases.map((useCase) => (
+          {useCases.slice(0, 4).map((useCase) => (
             <div key={useCase.id} className="relative aspect-[4/5] overflow-hidden rounded-[1.75rem] border border-white/5 bg-secondary p-6 flex flex-col justify-end sm:p-8">
               <Image src={useCase.image} alt={useCase.title} fill className="object-cover opacity-40" />
               <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent z-10" />
