@@ -89,7 +89,8 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
   color: #ffffff;
-  padding: 0.9rem 2.5rem;
+  height: 3.375rem; /* Explicit height to ensure consistency */
+  padding: 0 2.5rem;
   font-weight: 700;
   font-size: 0.875rem;
   text-transform: uppercase;
@@ -114,7 +115,8 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(255, 255, 255, 0.03);
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 0.9rem 2.5rem;
+  height: 3.375rem; /* Explicit height to ensure consistency */
+  padding: 0 2.5rem;
   font-weight: 700;
   font-size: 0.875rem;
   text-transform: uppercase;

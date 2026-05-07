@@ -8,7 +8,7 @@ const phases = [
     phase: "STEP_01",
     title: "Instant Upload",
     status: "Day 1",
-    mechanism: "Upload your existing floor plans (CAD, PDF, or high-res images) directly to our platform.",
+    mechanism: "Upload your existing floor plans directly to our platform.",
     benefit: "Our tools help you quickly convert your venue layout into a high-fidelity, interactive map yourself in just minutes.",
     ux: "Upload → Map ready.",
     color: "#3B82F6",

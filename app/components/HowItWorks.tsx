@@ -5,7 +5,7 @@ import React from "react";
 const steps = [
   {
     title: "Upload your floor plans",
-    description: "Simply upload your existing CAD files, PDFs, or image plans directly to our platform. No site wiring or hardware installation needed.",
+    description: "Simply upload your existing floor plans directly to our platform. No site wiring or hardware installation needed.",
   },
   {
     title: "Define your visitor routes",
