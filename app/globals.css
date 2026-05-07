@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #0F1F3D;
-  --color-secondary: #1E2B3C;
-  --color-accent: #2563EB;
-  --color-teal: #00A896;
+  --color-primary: #0B0E14;
+  --color-secondary: #161B22;
+  --color-accent: #0052FF;
+  --color-teal: #22D3EE;
   --font-display: 'DM Sans', sans-serif;
   --font-sans: 'Inter', sans-serif;
 }
 
 :root {
-  --background: #F9F8F6;
-  --foreground: #0F1F3D;
+  --background: #0B0E14;
+  --foreground: #F0F6FC;
 }
 
 body {
@@ -27,6 +27,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display), sans-serif;
   font-weight: 800;
   letter-spacing: -0.03em;
+  color: #ffffff;
 }
 
 .subheading {
@@ -36,17 +37,20 @@ h1, h2, h3, h4, h5, h6 {
 /* ── UI Elements ───────────────────────────────────────────────────────────── */
 
 .glass {
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid rgba(0, 31, 61, 0.1);
+  background: rgba(22, 27, 34, 0.8);
+  border: 1px solid rgba(240, 246, 252, 0.1);
+  backdrop-filter: blur(12px);
 }
 
 /* Card lift on hover */
 .card-hover {
-  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+  border: 1px solid rgba(240, 246, 252, 0.05);
 }
 .card-hover:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px -12px rgba(15, 31, 61, 0.08);
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.5);
+  border-color: var(--color-accent);
 }
 
 /* ── Animations ────────────────────────────────────────────────────────────── */
@@ -80,34 +84,37 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-primary {
   display: inline-block;
-  background: #0F1F3D;
+  background: #0052FF;
   color: #ffffff;
   padding: 0.875rem 2.5rem;
   font-weight: 700;
   font-size: 1rem;
-  border-radius: 4px;
-  transition: background 0.2s ease;
+  border-radius: 6px;
+  transition: all 0.2s ease;
   text-align: center;
+  box-shadow: 0 4px 14px 0 rgba(0, 82, 255, 0.39);
 }
 
 .btn-primary:hover {
-  background: #1E2B3C;
+  background: #0041CC;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(0, 82, 255, 0.23);
 }
 
 .btn-secondary {
   display: inline-block;
-  background: transparent;
-  color: #0F1F3D;
-  border: 1px solid #0F1F3D;
+  background: rgba(240, 246, 252, 0.05);
+  color: #ffffff;
+  border: 1px solid rgba(240, 246, 252, 0.1);
   padding: 0.875rem 2.5rem;
   font-weight: 700;
   font-size: 1rem;
-  border-radius: 4px;
+  border-radius: 6px;
   transition: all 0.2s ease;
   text-align: center;
 }
 
 .btn-secondary:hover {
-  background: rgba(15, 31, 61, 0.03);
-  border-color: #1E2B3C;
+  background: rgba(240, 246, 252, 0.1);
+  border-color: rgba(240, 246, 252, 0.2);
 }

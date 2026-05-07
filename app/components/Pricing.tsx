@@ -67,17 +67,17 @@ const tiers = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-24 px-8 bg-[#F7FDFF]">
+    <section id="pricing" className="py-24 px-8 bg-primary">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-14">
-          <span className="text-primary text-sm font-semibold uppercase tracking-widest">
+          <span className="text-accent text-sm font-semibold uppercase tracking-widest">
             Pricing
           </span>
-          <h2 className="font-laila text-4xl md:text-5xl font-bold tracking-tighter text-secondary mt-3 mb-4">
+          <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-white mt-3 mb-4">
             Pricing that pays for itself.
           </h2>
-          <p className="text-slate-500 text-lg max-w-xl mx-auto leading-relaxed">
+          <p className="text-white/50 text-lg max-w-xl mx-auto leading-relaxed">
             Every plan includes free setup, unlimited users, and a 30-day
             money-back guarantee. No lock-in.
           </p>
@@ -90,36 +90,36 @@ export default function Pricing() {
               key={tier.name}
               className={`rounded-2xl p-8 flex flex-col gap-6 ${
                 tier.highlight
-                  ? "bg-slate-900 text-white border-2 border-primary relative"
-                  : "bg-[#F7FDFF] border border-slate-100 shadow-sm"
+                  ? "bg-accent text-white border-2 border-accent relative shadow-2xl shadow-accent/20"
+                  : "bg-white/5 border border-white/10 shadow-sm backdrop-blur-sm"
               }`}
             >
               {tier.highlight && (
-                <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-bold px-4 py-1 rounded-full whitespace-nowrap">
+                <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-white text-accent text-[10px] font-black px-4 py-1 rounded-full whitespace-nowrap tracking-widest uppercase">
                   MOST POPULAR
                 </span>
               )}
 
               {/* Price */}
               <div>
-                <p className={`text-xs font-bold uppercase tracking-widest mb-3 ${tier.highlight ? "text-slate-400" : "text-slate-400"}`}>
+                <p className={`text-xs font-bold uppercase tracking-widest mb-3 ${tier.highlight ? "text-white/80" : "text-white/40"}`}>
                   {tier.name}
                 </p>
                 <div className="flex items-end gap-1 mb-1">
-                  <span className={`font-laila text-5xl font-bold ${tier.highlight ? "text-white" : "text-secondary"}`}>
+                  <span className={`font-display text-5xl font-bold ${tier.highlight ? "text-white" : "text-white"}`}>
                     {tier.price}
                   </span>
-                  <span className={`text-lg mb-1 ${tier.highlight ? "text-slate-400" : "text-slate-400"}`}>
+                  <span className={`text-lg mb-1 ${tier.highlight ? "text-white/70" : "text-white/40"}`}>
                     {tier.period}
                   </span>
                 </div>
-                <p className={`text-sm ${tier.highlight ? "text-slate-400" : "text-slate-500"}`}>
+                <p className={`text-sm ${tier.highlight ? "text-white/80" : "text-white/40"}`}>
                   {tier.forWhom}
                 </p>
               </div>
 
               {/* Description */}
-              <p className={`text-sm leading-relaxed ${tier.highlight ? "text-slate-300" : "text-slate-500"}`}>
+              <p className={`text-sm leading-relaxed ${tier.highlight ? "text-white/90" : "text-white/50"}`}>
                 {tier.description}
               </p>
 
@@ -127,8 +127,8 @@ export default function Pricing() {
               <ul className="flex flex-col gap-2.5 grow">
                 {tier.features.map((feat) => (
                   <li key={feat} className="flex items-start gap-2.5 text-sm">
-                    <span className="text-primary mt-0.5 shrink-0">✓</span>
-                    <span className={tier.highlight ? "text-slate-300" : "text-slate-600"}>
+                    <span className={`mt-0.5 shrink-0 ${tier.highlight ? "text-white" : "text-accent"}`}>✓</span>
+                    <span className={tier.highlight ? "text-white/90" : "text-white/70"}>
                       {feat}
                     </span>
                   </li>
@@ -136,16 +136,16 @@ export default function Pricing() {
               </ul>
 
               {/* ROI note */}
-              <p className={`text-xs font-semibold ${tier.highlight ? "text-primary" : tier.roiColor}`}>
+              <p className={`text-xs font-semibold ${tier.highlight ? "text-white" : "text-accent"}`}>
                 {tier.roi}
               </p>
 
               {/* CTA */}
               <button
-                className={`w-full py-3.5 rounded-full font-bold text-sm transition cursor-pointer ${
+                className={`w-full py-4 rounded-lg font-bold text-sm transition cursor-pointer ${
                   tier.highlight
-                    ? "bg-primary text-white hover:brightness-110"
-                    : "border border-slate-200 text-secondary hover:border-slate-400 bg-[#F7FDFF]"
+                    ? "bg-white text-accent hover:bg-slate-50 shadow-lg"
+                    : "bg-white/10 text-white hover:bg-white/20 border border-white/10"
                 }`}
               >
                 {tier.cta}
@@ -154,39 +154,39 @@ export default function Pricing() {
           ))}
         </div>
 
-        <p className="text-center text-slate-400 text-sm mt-8">
+        <p className="text-center text-white/30 text-xs mt-8 font-medium tracking-wide">
           All plans: Free setup · Unlimited users · Cancel anytime · 99.9% uptime guarantee
         </p>
 
         {/* ROI Calculation Section */}
-        <div className="mt-24 max-w-4xl mx-auto bg-white rounded-3xl p-8 md:p-12 border border-slate-100 shadow-sm">
+        <div className="mt-24 max-w-4xl mx-auto bg-white/5 rounded-3xl p-8 md:p-12 border border-white/10 shadow-sm backdrop-blur-md">
           <div className="flex flex-col md:flex-row gap-10 items-center">
             <div className="flex-1">
-              <span className="text-primary text-xs font-bold uppercase tracking-widest mb-4 block">
+              <span className="text-accent text-xs font-bold uppercase tracking-widest mb-4 block">
                 The Math
               </span>
-              <h3 className="font-laila text-3xl font-bold text-secondary mb-6 leading-tight">
+              <h3 className="font-display text-3xl font-bold text-white mb-6 leading-tight">
                 How Navous pays for itself in staff hours alone.
               </h3>
-              <p className="text-slate-600 leading-relaxed mb-6">
-                A mid-size hospital front desk handles <span className="font-bold text-secondary">200+ wayfinding questions per day</span>. At just 2 minutes each, that&apos;s <span className="font-bold text-secondary">6+ staff hours daily</span>.
+              <p className="text-white/60 leading-relaxed mb-6">
+                A mid-size hospital front desk handles <span className="font-bold text-white">200+ wayfinding questions per day</span>. At just 2 minutes each, that&apos;s <span className="font-bold text-white">6+ staff hours daily</span>.
               </p>
-              <p className="text-slate-600 leading-relaxed">
+              <p className="text-white/60 leading-relaxed">
                 By automating these arrivals, Navous reclaiming that time for your team to focus on complex tasks, not basic directions.
               </p>
             </div>
-            <div className="flex-1 w-full bg-[#F7FDFF] rounded-2xl p-8 border border-slate-50 flex flex-col gap-6">
-              <div className="flex justify-between items-end border-b border-slate-100 pb-4">
-                <span className="text-sm text-slate-500">Daily Questions</span>
-                <span className="text-2xl font-bold text-secondary">200+</span>
+            <div className="flex-1 w-full bg-[#000000] rounded-2xl p-8 border border-white/5 flex flex-col gap-6 shadow-2xl">
+              <div className="flex justify-between items-end border-b border-white/5 pb-4">
+                <span className="text-sm text-white/40">Daily Questions</span>
+                <span className="text-2xl font-bold text-white">200+</span>
               </div>
-              <div className="flex justify-between items-end border-b border-slate-100 pb-4">
-                <span className="text-sm text-slate-500">Staff Time Lost</span>
-                <span className="text-2xl font-bold text-secondary">6.6 Hours</span>
+              <div className="flex justify-between items-end border-b border-white/5 pb-4">
+                <span className="text-sm text-white/40">Staff Time Lost</span>
+                <span className="text-2xl font-bold text-white">6.6 Hours</span>
               </div>
               <div className="flex justify-between items-end">
-                <span className="text-sm font-bold text-primary italic">Estimated Monthly Savings</span>
-                <span className="text-3xl font-bold text-primary">$4,000+</span>
+                <span className="text-sm font-bold text-accent italic">Estimated Monthly Savings</span>
+                <span className="text-3xl font-bold text-accent">$4,000+</span>
               </div>
             </div>
           </div>

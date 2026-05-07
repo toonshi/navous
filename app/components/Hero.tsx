@@ -218,30 +218,30 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen overflow-hidden flex flex-col items-center justify-start pt-12 md:pt-16 px-6 md:px-12 bg-[#F9F8F6] text-primary">
+    <section className="relative min-h-screen overflow-hidden flex flex-col items-center justify-start pt-12 md:pt-16 px-6 md:px-12 bg-[#0B0E14] text-[#F0F6FC]">
       {/* Background Canvas — walking people */}
       <canvas
         ref={canvasRef}
         id="canvas"
-        className="absolute inset-0 w-full h-full pointer-events-none opacity-80"
+        className="absolute inset-0 w-full h-full pointer-events-none opacity-40"
       />
 
       {/* Doodle accents — floating in background */}
-      <Sparkle size={18} color="#2563EB" className="absolute top-28 left-[10%] doodle-float pointer-events-none opacity-30" />
-      <Sparkle size={13} color="#00A896" className="absolute top-44 right-[12%] doodle-float-offset pointer-events-none opacity-20" />
-      <Sparkle size={10} color="#2563EB" className="absolute top-64 left-[18%] doodle-float-slow pointer-events-none opacity-20" />
-      <ScatterDots color="#00A896" className="absolute bottom-32 left-[6%] pointer-events-none opacity-15" />
-      <ScatterDots color="#2563EB" className="absolute bottom-28 right-[8%] pointer-events-none opacity-10" />
+      <Sparkle size={18} color="#0052FF" className="absolute top-28 left-[10%] doodle-float pointer-events-none opacity-40" />
+      <Sparkle size={13} color="#22D3EE" className="absolute top-44 right-[12%] doodle-float-offset pointer-events-none opacity-30" />
+      <Sparkle size={10} color="#0052FF" className="absolute top-64 left-[18%] doodle-float-slow pointer-events-none opacity-30" />
+      <ScatterDots color="#22D3EE" className="absolute bottom-32 left-[6%] pointer-events-none opacity-25" />
+      <ScatterDots color="#0052FF" className="absolute bottom-28 right-[8%] pointer-events-none opacity-20" />
 
       <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-center text-center mt-12 md:mt-24">
         <span className="inline-block text-accent text-sm font-bold uppercase tracking-[0.2em] mb-6">
           Enterprise Indoor Wayfinding
         </span>
-        <h1 className="text-5xl md:text-[5.5rem] font-bold tracking-tight text-primary leading-[0.95] mb-8 font-fraunces">
+        <h1 className="text-5xl md:text-[5.5rem] font-bold tracking-tight text-white leading-[0.95] mb-8 font-display">
           Stop losing your visitors <br />inside your building.
         </h1>
 
-        <p className="text-slate-600 text-lg md:text-xl font-medium leading-relaxed max-w-3xl mb-10">
+        <p className="text-white/60 text-lg md:text-xl font-medium leading-relaxed max-w-3xl mb-10">
           Navous turns your existing floor plans into live, turn-by-turn wayfinding — no hardware, no app downloads, and no complex IT projects. Your front desk gets their time back from day one.
         </p>
 
@@ -256,16 +256,16 @@ export default function Hero() {
 
         <div className="mt-12 flex flex-wrap justify-center gap-8">
           <div className="flex items-center gap-3">
-            <span className="text-teal font-bold text-xl">✓</span>
-            <span className="text-sm font-bold text-slate-700 uppercase tracking-wider">Cut staff interruptions by 30%+</span>
+            <span className="text-accent font-bold text-xl">✓</span>
+            <span className="text-sm font-bold text-white/50 uppercase tracking-wider">Cut staff interruptions by 30%+</span>
           </div>
           <div className="flex items-center gap-3">
-            <span className="text-teal font-bold text-xl">✓</span>
-            <span className="text-sm font-bold text-slate-700 uppercase tracking-wider">Go live in under 24 hours</span>
+            <span className="text-accent font-bold text-xl">✓</span>
+            <span className="text-sm font-bold text-white/50 uppercase tracking-wider">Go live in under 24 hours</span>
           </div>
           <div className="flex items-center gap-3">
-            <span className="text-teal font-bold text-xl">✓</span>
-            <span className="text-sm font-bold text-slate-700 uppercase tracking-wider">SOC 2 & WCAG Compliant</span>
+            <span className="text-accent font-bold text-xl">✓</span>
+            <span className="text-sm font-bold text-white/50 uppercase tracking-wider">SOC 2 & WCAG Compliant</span>
           </div>
         </div>
       </div>
