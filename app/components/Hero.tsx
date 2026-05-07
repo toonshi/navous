@@ -225,7 +225,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative flex min-h-screen min-h-svh flex-col items-center justify-start overflow-hidden bg-[#0B0E14] px-5 pt-6 text-[#F0F6FC] sm:px-6 md:px-12 md:pt-6">
+    <section className="relative flex min-h-svh flex-col items-center justify-start overflow-hidden bg-[#0B0E14] px-5 pt-6 text-[#F0F6FC] sm:px-6 md:px-12 md:pt-6">
       {/* Background Canvas — walking people */}
       <canvas
         ref={canvasRef}
@@ -267,7 +267,7 @@ export default function Hero() {
           {featureHighlights.map((feature) => (
             <div
               key={feature.label}
-              className={[featureCardClass, feature.className].filter(Boolean).join(" ")}
+              className={feature.className ? `${featureCardClass} ${feature.className}` : featureCardClass}
             >
               <span className="text-accent font-bold text-xl">✓</span>
               <span className="text-xs font-bold uppercase tracking-wider text-white/50 sm:text-sm">{feature.label}</span>
