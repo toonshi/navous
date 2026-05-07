@@ -255,15 +255,15 @@ const UseCaseGrid = () => {
           <div className="mt-12 pt-12 border-t border-white/5 flex flex-wrap gap-10">
             <div>
               <p className="text-3xl font-black text-white mb-1 tracking-tight">100%</p>
-              <p className="text-[10px] font-bold uppercase tracking-widest text-white/30">Coverage</p>
+              <p className="text-[10px] font-bold uppercase tracking-widest text-white/30 italic">Target Coverage</p>
             </div>
             <div>
               <p className="text-3xl font-black text-white mb-1 tracking-tight">0.5m</p>
-              <p className="text-[10px] font-bold uppercase tracking-widest text-white/30">Precision</p>
+              <p className="text-[10px] font-bold uppercase tracking-widest text-white/30 italic">Engine Precision</p>
             </div>
             <div>
-              <p className="text-3xl font-black text-white mb-1 tracking-tight">&lt;21d</p>
-              <p className="text-[10px] font-bold uppercase tracking-widest text-white/30">Deployment</p>
+              <p className="text-3xl font-black text-white mb-1 tracking-tight">&lt;24h</p>
+              <p className="text-[10px] font-bold uppercase tracking-widest text-white/30 italic">Onboarding</p>
             </div>
           </div>
         </div>

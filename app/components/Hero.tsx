@@ -246,7 +246,7 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-row items-center justify-center gap-4 w-full sm:w-auto">
-          <a href="mailto:hello@navous.com" className="btn-primary min-w-[180px]">
+          <a href="#pilot" className="btn-primary min-w-[180px]">
             Book a Demo
           </a>
           <a href="/how-it-works" className="btn-secondary min-w-[180px]">
