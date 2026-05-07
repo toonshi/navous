@@ -21,27 +21,29 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* ── Typography Overrides ──────────────────────────────────────────────────── */
+
+h1 {
   font-family: var(--font-fraunces), serif;
   letter-spacing: -0.02em;
 }
+
+h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans), sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.subheading {
+  font-family: var(--font-sans), sans-serif;
+}
+
+/* ── UI Elements ───────────────────────────────────────────────────────────── */
 
 .glass {
   background: rgba(255, 255, 255, 0.95);
   border: 1px solid rgba(0, 31, 61, 0.1);
 }
-
-@layer base {
-  * {
-    @apply border-slate-200;
-  }
-}
-
-.font-fraunces {
-  font-family: var(--font-fraunces), serif;
-}
-
-/* ── Enterprise UI Elements ────────────────────────────────────────────────── */
 
 /* Card lift on hover */
 .card-hover {
@@ -52,6 +54,8 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 20px 40px -12px rgba(15, 31, 61, 0.08);
 }
 
+/* ── Animations ────────────────────────────────────────────────────────────── */
+
 /* Scroll-reveal: fade up */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(18px); }
@@ -59,6 +63,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 .reveal {
   animation: fadeUp 0.55s ease both;
+}
+
+/* Doodle float animation (restored for Peeps) */
+@keyframes doodleFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50%       { transform: translateY(-5px) rotate(4deg); }
+}
+.doodle-float {
+  animation: doodleFloat 4s ease-in-out infinite;
+}
+.doodle-float-slow {
+  animation: doodleFloat 6s ease-in-out infinite;
+}
+.doodle-float-offset {
+  animation: doodleFloat 5s ease-in-out infinite;
+  animation-delay: 1.5s;
 }
 
 /* ── Button primitives ─────────────────────────────────────────────────────── */
