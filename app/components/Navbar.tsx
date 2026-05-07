@@ -46,8 +46,8 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:block">
-          <Link href="/#contact" className="px-5 py-2.5 bg-accent text-white rounded-md font-semibold text-xs tracking-[0.14em] uppercase hover:bg-accent/85 transition-all shadow-lg shadow-accent/20">
-            BOOK DEMO
+          <Link href="/#contact" className="px-5 py-2.5 border-2 border-accent/60 text-accent rounded font-semibold text-xs tracking-[0.14em] hover:bg-accent/10 transition-all">
+            Contact Us
           </Link>
         </div>
 
@@ -69,12 +69,12 @@ const Navbar = () => {
       {isOpen && (
         <div className="border-t border-white/10 bg-primary/95 px-4 py-4 shadow-2xl md:hidden">
           <div className="mx-auto flex max-w-7xl flex-col gap-2">
-            <Link href="/features" className="rounded-2xl px-4 py-3 text-sm font-semibold uppercase tracking-[0.14em] text-white/80 transition hover:bg-white/5 hover:text-white" onClick={closeMenu}>Features</Link>
-            <Link href="/how-it-works" className="rounded-2xl px-4 py-3 text-sm font-semibold uppercase tracking-[0.14em] text-white/80 transition hover:bg-white/5 hover:text-white" onClick={closeMenu}>How it Works</Link>
-            <Link href="/technology" className="rounded-2xl px-4 py-3 text-sm font-semibold uppercase tracking-[0.14em] text-white/80 transition hover:bg-white/5 hover:text-white" onClick={closeMenu}>IT & Security</Link>
-            <Link href="/how-it-works#faq" className="rounded-2xl px-4 py-3 text-sm font-semibold uppercase tracking-[0.14em] text-white/80 transition hover:bg-white/5 hover:text-white" onClick={closeMenu}>FAQ</Link>
-            <Link href="/#contact" className="mt-2 rounded-2xl bg-accent px-4 py-3 text-center text-sm font-semibold uppercase tracking-[0.14em] text-white shadow-lg shadow-accent/20 transition hover:bg-accent/85" onClick={closeMenu}>
-              Book Demo
+            <Link href="/features" className="rounded-lg px-4 py-3 text-sm font-semibold uppercase tracking-[0.14em] text-white/80 transition hover:bg-white/5 hover:text-white" onClick={closeMenu}>Features</Link>
+            <Link href="/how-it-works" className="rounded-lg px-4 py-3 text-sm font-semibold uppercase tracking-[0.14em] text-white/80 transition hover:bg-white/5 hover:text-white" onClick={closeMenu}>How it Works</Link>
+            <Link href="/technology" className="rounded-lg px-4 py-3 text-sm font-semibold uppercase tracking-[0.14em] text-white/80 transition hover:bg-white/5 hover:text-white" onClick={closeMenu}>IT & Security</Link>
+            <Link href="/how-it-works#faq" className="rounded-lg px-4 py-3 text-sm font-semibold uppercase tracking-[0.14em] text-white/80 transition hover:bg-white/5 hover:text-white" onClick={closeMenu}>FAQ</Link>
+            <Link href="/#contact" className="mt-2 rounded-lg border-2 border-accent/60 px-4 py-3 text-center text-sm font-semibold tracking-[0.14em] text-accent transition hover:bg-accent/10" onClick={closeMenu}>
+              Contact Us
             </Link>
           </div>
         </div>

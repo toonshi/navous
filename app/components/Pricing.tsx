@@ -83,7 +83,7 @@ export default function Pricing() {
           {tiers.map((tier) => (
             <div
               key={tier.name}
-              className={`rounded-2xl p-8 flex flex-col gap-6 ${
+              className={`rounded-xl p-8 flex flex-col gap-6 ${
                 tier.highlight
                   ? "bg-accent text-white border-2 border-accent relative shadow-2xl shadow-accent/20"
                   : "bg-white/5 border border-white/10 shadow-sm backdrop-blur-sm"
@@ -133,7 +133,7 @@ export default function Pricing() {
               {/* CTA */}
               <Link
                 href="/#contact"
-                className={`block w-full py-4 rounded-lg font-bold text-sm text-center transition cursor-pointer ${
+                className={`block w-full py-4 rounded font-bold text-sm text-center transition cursor-pointer ${
                   tier.highlight
                     ? "bg-white text-accent hover:bg-slate-50 shadow-lg"
                     : "bg-white/10 text-white hover:bg-white/20 border border-white/10"
