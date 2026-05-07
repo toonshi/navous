@@ -1,13 +1,14 @@
 import Navbar from "../components/Navbar";
 import Roadmap from "../components/Roadmap";
 import Integration from "../components/Integration";
+import IndustrySolutions from "../components/IndustrySolutions";
 import FAQ from "../components/FAQ";
 import FinalCTA from "../components/FinalCTA";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "Deployment & Integration — Navous",
-  description: "Explore the Zero-Friction Roadmap and integration capabilities of the Navous indoor intelligence platform.",
+  title: "How It Works — Navous",
+  description: "Learn how Navous brings world-class indoor navigation to hospitals, universities, and airports with zero hardware and zero friction.",
 };
 
 export default function HowItWorksPage() {
@@ -18,18 +19,19 @@ export default function HowItWorksPage() {
         {/* Page hero */}
         <div className="py-24 px-8 text-center border-b border-white/5 bg-primary">
           <span className="inline-block text-sm font-bold px-4 py-1.5 rounded-full mb-6 tracking-wide border border-accent/20 bg-accent/10 text-accent uppercase">
-            Deployment Strategy
+            Seamless Wayfinding
           </span>
           <h1 className="font-display text-5xl md:text-[5rem] font-bold tracking-tight text-white leading-[0.95] mb-8">
-            The Zero-Friction<br />
-            <span className="text-white/60">Deployment Roadmap.</span>
+            World-Class Navigation,<br />
+            <span className="text-white/60">Deployed in Days.</span>
           </h1>
           <p className="text-white/60 text-lg md:text-xl font-medium leading-relaxed max-w-2xl mx-auto mb-10">
-            From QR-seeded starts to visual anchoring — eliminating hardware dependence for the world&apos;s most accessible indoor navigation.
+            No hardware. No complex wiring. Just a seamless, web-based experience that helps your visitors find their way instantly.
           </p>
         </div>
 
         <Roadmap />
+        <IndustrySolutions />
         <Integration />
         <FAQ />
         <FinalCTA />
@@ -38,3 +40,4 @@ export default function HowItWorksPage() {
     </div>
   );
 }
+

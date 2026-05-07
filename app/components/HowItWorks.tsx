@@ -4,16 +4,16 @@ import React from "react";
 
 const steps = [
   {
-    title: "Share your floor plans",
-    description: "Send your existing CAD files, PDFs, or image plans. No site wiring, no hardware install, no construction work.",
+    title: "Upload your floor plans",
+    description: "Simply upload your existing CAD files, PDFs, or image plans directly to our platform. No site wiring or hardware installation needed.",
   },
   {
-    title: "We map your visitor journeys",
-    description: "We turn those plans into clear, phone-friendly routes so people can find entrances, departments, stores, and exits quickly.",
+    title: "Define your visitor routes",
+    description: "Use our simple tools to turn those plans into clear, phone-friendly routes. Mark your entrances, departments, stores, and exits yourself.",
   },
   {
     title: "Go live and keep improving",
-    description: "Launch with a QR code and start guiding visitors right away, then update routes and points of interest anytime.",
+    description: "Launch with a QR code and start guiding visitors right away, then update routes and points of interest anytime as your venue changes.",
   },
 ];
 

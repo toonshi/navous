@@ -9,13 +9,13 @@ export default function SecurityStack() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <span className="text-accent text-sm font-bold tracking-[0.2em] uppercase mb-4 block">
-            The Infrastructure
+            The Setup
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">
-            Everything you need.<br />Nothing you have to manage.
+            Everything you need.<br />Built for your team.
           </h2>
           <p className="text-white/60 text-lg max-w-2xl mx-auto leading-relaxed font-medium">
-            We removed the two biggest barriers to indoor navigation: installing hardware and forcing visitors to download an app.
+            We made indoor navigation simple for everyone. No apps for your visitors to download, and a choice of how you want to set up your venue.
           </p>
         </div>
 
@@ -24,9 +24,9 @@ export default function SecurityStack() {
             <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center border border-accent/20 mb-6">
                <HospitalIcon className="text-accent w-6 h-6" />
             </div>
-            <h3 className="text-xl font-bold text-white mb-3">No Beacons or Wi-Fi</h3>
+            <h3 className="text-xl font-bold text-white mb-3">Flexible Setup</h3>
             <p className="text-white/60 text-sm leading-relaxed">
-              Navous runs entirely on the visitor&apos;s smartphone using local sensor data and existing architectural blueprints. Zero hardware to install, calibrate, or maintain.
+              Start with just your floor plans or add small sensors for extra precision. We help you choose the best fit for your specific venue.
             </p>
           </div>
 
@@ -34,9 +34,9 @@ export default function SecurityStack() {
             <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center border border-accent/20 mb-6">
                <GlobeIcon className="text-accent w-6 h-6" />
             </div>
-            <h3 className="text-xl font-bold text-white mb-3">App-Free Experience</h3>
+            <h3 className="text-xl font-bold text-white mb-3">No apps to download</h3>
             <p className="text-white/60 text-sm leading-relaxed">
-              Visitors scan a QR code or tap a link in their appointment email to instantly open turn-by-turn navigation in their mobile browser. No downloads required.
+              Visitors just scan a QR code to start. It works instantly right in their phone&apos;s browser, so nobody has to wait.
             </p>
           </div>
 
@@ -44,9 +44,9 @@ export default function SecurityStack() {
             <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center border border-accent/20 mb-6">
                <AccessibilityIcon className="text-accent w-6 h-6" />
             </div>
-            <h3 className="text-xl font-bold text-white mb-3">Instant Floor Plan Sync</h3>
+            <h3 className="text-xl font-bold text-white mb-3">Set up a map yourself</h3>
             <p className="text-white/60 text-sm leading-relaxed">
-              Send us your CAD or PDF floor plans. Our engine digitizes and maps your entire facility, typically deploying your live wayfinding environment in under 24 hours.
+              Simply upload your existing floor plans and use our easy tools to define your layout. You can have a live, working map ready for your visitors in just a few minutes.
             </p>
           </div>
         </div>
@@ -54,3 +54,4 @@ export default function SecurityStack() {
     </section>
   );
 }
+

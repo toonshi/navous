@@ -5,30 +5,30 @@ import { ScatterDots } from "./Doodles";
 
 const phases = [
   {
-    phase: "PHASE_01",
-    title: "The QR-Seeded Start",
-    status: "Current",
-    mechanism: "Physical QR stickers at entry points and key landmarks.",
-    benefit: "Provides an instantaneous 'High-Confidence Pose' to seed the Kalman Filter without initial sensor calibration.",
-    ux: "Scan → Navigate in under 3 seconds.",
+    phase: "STEP_01",
+    title: "Instant Upload",
+    status: "Day 1",
+    mechanism: "Upload your existing floor plans (CAD, PDF, or high-res images) directly to our platform.",
+    benefit: "Our tools help you quickly convert your venue layout into a high-fidelity, interactive map yourself in just minutes.",
+    ux: "Upload → Map ready.",
     color: "#3B82F6",
   },
   {
-    phase: "PHASE_02",
-    title: "The GPS-Geofence Handover",
-    status: "Intermediate",
-    mechanism: "The PWA detects the user's proximity to a venue via GPS.",
-    benefit: "Auto-prompts the user to 'Open Indoor Map' as they step inside, eliminating the need for physical QRs.",
-    ux: "Automatic venue discovery.",
+    phase: "STEP_02",
+    title: "Point-of-Interest Setup",
+    status: "Week 2",
+    mechanism: "Define key locations like clinics, lecture halls, or boarding gates.",
+    benefit: "Add rich metadata, accessibility notes, and real-time status updates for every important room in your building.",
+    ux: "Searchable venue directory.",
     color: "#60A5FA",
   },
   {
-    phase: "PHASE_03",
-    title: "The 'Zero-Sticker' Visual Anchor",
-    status: "Future",
-    mechanism: "Integration with WebXR or Google Live View API.",
-    benefit: "Users simply point their camera at their surroundings to find their initial pose.",
-    ux: "Permanent spatial persistence without any physical hardware dependence.",
+    phase: "STEP_03",
+    title: "Instant Go-Live",
+    status: "Launch",
+    mechanism: "Deploy via web-link or QR codes placed at key decision points.",
+    benefit: "Visitors get turn-by-turn directions instantly on their own devices. No app downloads or hardware maintenance required.",
+    ux: "Scan & Navigate in seconds.",
     color: "#93C5FD",
   }
 ];
@@ -41,13 +41,13 @@ export default function Roadmap() {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-20">
           <span className="text-accent text-sm font-bold tracking-[0.2em] uppercase mb-4 block">
-            User Onboarding
+            The Rollout Process
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">
-            The Zero-Friction Roadmap
+            From Blueprint to Live Navigation
           </h2>
           <p className="text-white/60 text-lg max-w-3xl mx-auto leading-relaxed font-medium">
-            Our multi-phase strategy to eliminate hardware dependence and provide the world&apos;s most accessible indoor navigation experience.
+            A streamlined implementation path designed to get your venue live without disrupting your daily operations or requiring expensive hardware.
           </p>
         </div>
 
@@ -75,15 +75,15 @@ export default function Roadmap() {
                 
                 <div className="space-y-6">
                   <div>
-                    <span className="text-[10px] font-bold text-accent uppercase tracking-widest block mb-1">MECHANISM</span>
+                    <span className="text-[10px] font-bold text-accent uppercase tracking-widest block mb-1">THE PROCESS</span>
                     <p className="text-white/60 font-medium text-sm leading-relaxed">{item.mechanism}</p>
                   </div>
                   <div>
-                    <span className="text-[10px] font-bold text-accent uppercase tracking-widest block mb-1">BENEFIT</span>
+                    <span className="text-[10px] font-bold text-accent uppercase tracking-widest block mb-1">WHY IT MATTERS</span>
                     <p className="text-white/60 font-medium text-sm leading-relaxed">{item.benefit}</p>
                   </div>
                   <div className="p-4 rounded-xl bg-white/5 border border-white/10 group-hover:bg-white/10 group-hover:border-accent/50 transition-all card-hover">
-                    <span className="text-[10px] font-bold text-white/40 uppercase tracking-widest block mb-1">UX</span>
+                    <span className="text-[10px] font-bold text-white/40 uppercase tracking-widest block mb-1">VISITOR EXPERIENCE</span>
                     <p className="text-white font-bold text-sm leading-relaxed">&ldquo;{item.ux}&rdquo;</p>
                   </div>
                 </div>
@@ -95,3 +95,4 @@ export default function Roadmap() {
     </section>
   );
 }
+

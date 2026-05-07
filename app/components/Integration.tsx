@@ -5,31 +5,31 @@ import { Sparkle, ScatterDots, CurvedArrowRight } from "./Doodles";
 
 const deliveryModes = [
   {
-    title: "Spatial Action Bus",
-    subtitle: "Autonomous Triggers",
-    description: "Automatically notify customers or security the millisecond a courier or asset crosses a precise threshold (e.g., Suite 405 door).",
-    benefit: "Event-driven integration that connects indoor maps to venue operations.",
+    title: "Safety & Security",
+    subtitle: "Real-time Awareness",
+    description: "Instantly identify crowd density and high-traffic bottlenecks. Guide security or medical teams via the most efficient routes during emergencies.",
+    benefit: "Faster response times and improved visitor safety metrics.",
     color: "#3B82F6",
   },
   {
-    title: "Headless WASM Core",
-    subtitle: "The Last Meter",
-    description: "High-performance Rust core designed for UberEats and DoorDash. Provides sub-meter 'Floor & Door' precision entirely on-device.",
-    benefit: "Instantly integrate our spatial engine into existing logistics apps.",
+    title: "Facility Maintenance",
+    subtitle: "Staff Optimization",
+    description: "Equip your maintenance and cleaning crews with precise indoor navigation to reported issues, reducing downtime and operational friction.",
+    benefit: "Lower operational costs through smarter staff deployment.",
     color: "#60A5FA",
   },
   {
-    title: "Pathing Optimization",
-    subtitle: "Profitability Routing",
-    description: "Aisle-aware routing for warehouse fleets and industrial pick-points to minimize travel distance and maximize throughput.",
-    benefit: "Quantifiable ROI through automated movement optimization.",
+    title: "Visitor Satisfaction",
+    subtitle: "Stress-Free Journey",
+    description: "Provide patients, students, or travelers with the confidence of knowing exactly where they are and how to reach their destination.",
+    benefit: "Higher NPS and reduced staff time spent giving directions.",
     color: "#93C5FD",
   },
   {
-    title: "GIS Aggregation",
-    subtitle: "Google Maps Sync",
-    description: "Venue owners maintain their 'Spatial Truth' in one place. We sync high-fidelity data to Google and Apple so you are never 'Off the Map.'",
-    benefit: "Unified management of global mapping standards (IMDF/OSM).",
+    title: "Commercial Growth",
+    subtitle: "Retail & Dining",
+    description: "Direct foot traffic toward retail hubs, dining areas, and amenities. Use spatial data to optimize tenant placement and lease value.",
+    benefit: "Quantifiable increase in secondary venue revenue.",
     color: "#3B82F6",
   },
 ];
@@ -43,10 +43,10 @@ export default function Integration() {
             The Operational Layer
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-white mb-6">
-            Enterprise Integration
+            Venue Intelligence
           </h2>
           <p className="text-white/60 text-lg max-w-3xl mx-auto leading-relaxed font-medium">
-            Navous provides the spatial infrastructure required to power the next decade of autonomous logistics and smart venue management.
+            Navous doesn&apos;t just show a map—it provides the spatial infrastructure to run a more efficient, safer, and more profitable venue.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ export default function Integration() {
                   <div className="p-1 bg-accent rounded-full">
                     <CurvedArrowRight size={14} color="#fff" />
                   </div>
-                  <span className="text-white font-bold text-sm">Benefit: {mode.benefit}</span>
+                  <span className="text-white font-bold text-sm">Value: {mode.benefit}</span>
                 </div>
               </div>
             </div>
@@ -84,14 +84,14 @@ export default function Integration() {
           <ScatterDots color="#3B82F6" className="absolute -bottom-4 -right-4 opacity-20" />
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <div className="flex-1">
-              <h4 className="text-xl font-bold text-white mb-4 font-display">The &ldquo;Zero-Manual&rdquo; Integration Architecture</h4>
+              <h4 className="text-xl font-bold text-white mb-4 font-display">Ready for Enterprise-Scale Deployment</h4>
               <p className="text-white/60 text-sm font-medium leading-relaxed">
-                Our codebase includes a generic <strong>Action Bus</strong> that processes external events and converts them into core operations like <code>UPDATE_POI_METADATA</code> or <code>UPDATE_ZONE_STATUS</code>. The architecture is ready for enterprise-scale deployment.
+                Whether you manage a single hospital wing or a global network of international airports, our platform is built to scale. No complex hardware audits or months of calibration required.
               </p>
             </div>
             <div className="flex-shrink-0">
               <div className="px-6 py-3 bg-accent text-white rounded-lg font-bold text-sm tracking-wide shadow-lg shadow-accent/20 cursor-pointer hover:bg-accent/80 transition-colors">
-                VIEW API DOCS
+                SCHEDULE A DEMO
               </div>
             </div>
           </div>
@@ -100,3 +100,4 @@ export default function Integration() {
     </section>
   );
 }
+
