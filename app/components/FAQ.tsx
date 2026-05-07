@@ -27,10 +27,10 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <section id="faq" className="bg-secondary py-24 px-8">
+    <section id="faq" className="bg-primary border-t border-white/5 py-24 px-8">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="font-laila text-4xl md:text-5xl font-bold tracking-tighter text-white mb-4">
+          <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-white mb-4">
             Questions hospital operators ask before rollout.
           </h2>
           <p className="text-white/50 text-lg leading-relaxed">
@@ -42,11 +42,11 @@ export default function FAQ() {
           {faqs.map((item) => (
             <details
               key={item.q}
-              className="group rounded-2xl border border-white/10 bg-white/5 p-5 open:border-primary/40"
+              className="group rounded-2xl border border-white/10 bg-white/5 p-5 open:border-accent/40 transition-colors"
             >
-              <summary className="cursor-pointer list-none font-semibold text-white flex items-start justify-between gap-4">
+              <summary className="cursor-pointer list-none font-medium text-white flex items-start justify-between gap-4">
                 {item.q}
-                <span className="text-primary text-xl leading-none transition-transform group-open:rotate-45">+</span>
+                <span className="text-accent text-xl leading-none transition-transform group-open:rotate-45">+</span>
               </summary>
               <p className="text-white/50 text-sm leading-relaxed mt-3 max-w-3xl">{item.a}</p>
             </details>
