@@ -17,15 +17,15 @@ const Navbar = () => {
         />
       </Link>
       
-      <div className="hidden md:flex items-center gap-8 font-bold text-xs uppercase tracking-[0.2em] subheading">
-        <Link href="/" className="text-slate-900 transition hover:text-[#13B7DA]">Overview</Link>
-        <a href="/features" className="text-slate-900 transition hover:text-[#13B7DA]">Results</a>
-        <a href="/how-it-works" className="text-slate-900 transition hover:text-[#13B7DA]">How it Works</a>
-        <a href="/roadmap" className="text-slate-900 transition hover:text-[#13B7DA]">Rollout</a>
+      <div className="hidden md:flex items-center gap-8 font-bold text-xs uppercase tracking-[0.2em] text-slate-500">
+        <Link href="/" className="text-slate-900 transition hover:text-teal">Features</Link>
+        <a href="/how-it-works" className="text-slate-900 transition hover:text-teal">How it Works</a>
+        <a href="/technology" className="text-slate-900 transition hover:text-teal">Implementation</a>
+        <a href="/#faq" className="text-slate-900 transition hover:text-teal">FAQ</a>
       </div>
 
       <div className="hidden md:block">
-        <a href="mailto:hello@navous.com" className="px-5 py-2 bg-slate-900 text-white rounded-md font-bold text-xs tracking-widest hover:bg-slate-800 transition-all">
+        <a href="mailto:hello@navous.com" className="px-5 py-2.5 bg-primary text-white rounded font-bold text-xs tracking-widest hover:bg-secondary transition-all">
           BOOK DEMO
         </a>
       </div>

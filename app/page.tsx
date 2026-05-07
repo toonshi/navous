@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import LogoBar from "./components/LogoBar";
 import TrustStats from "./components/TrustStats";
 import ProblemSection from "./components/ProblemSection";
 import StakeholderValue from "./components/StakeholderValue";
@@ -14,8 +15,7 @@ export default function Home() {
       <Navbar />
       <main className="pt-20">
         <Hero />
-        <div className="border-t border-slate-100" />
-        <TrustStats />
+        <LogoBar />
         <ProblemSection />
         <HowItWorks />
         <StakeholderValue />
