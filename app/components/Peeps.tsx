@@ -85,9 +85,12 @@ export default function Peeps({ className = "" }: { className?: string }) {
     const crowd: Peep[] = [];
 
     const resetPeep = ({ stage, peep }: { stage: { width: number; height: number }; peep: Peep }) => {
+      const isMobile = stage.width < MOBILE_BREAKPOINT;
       const direction = Math.random() > 0.5 ? 1 : -1;
-      const offsetY = 30 - 180 * gsap.parseEase("power2.in")(Math.random());
-      const verticalOffset = stage.width < MOBILE_BREAKPOINT ? MOBILE_VERTICAL_OFFSET : 0;
+      // On mobile, reduce the vertical variance to keep them from walking up too high into the buttons
+      const verticalVariance = isMobile ? 40 : 180;
+      const offsetY = 20 - verticalVariance * gsap.parseEase("power2.in")(Math.random());
+      const verticalOffset = isMobile ? 10 : 0;
       const startY = stage.height - (peep.height * peepScale) + offsetY + verticalOffset;
       let startX;
       let endX;
@@ -176,7 +179,7 @@ export default function Peeps({ className = "" }: { className?: string }) {
       canvas.height = stage.height * window.devicePixelRatio;
 
       // Update peepScale based on width - smaller on mobile
-      peepScale = stage.width < MOBILE_BREAKPOINT ? 0.45 : 1;
+      peepScale = stage.width < MOBILE_BREAKPOINT ? 0.55 : 1;
 
       crowd.forEach((peep) => {
         if (peep.walk) peep.walk.kill();
