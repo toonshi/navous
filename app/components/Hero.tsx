@@ -224,7 +224,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative flex min-h-screen min-h-[100svh] flex-col items-center justify-start overflow-hidden bg-[#0B0E14] px-5 pt-6 text-[#F0F6FC] sm:px-6 md:px-12 md:pt-6">
+    <section className="relative flex min-h-screen flex-col items-center justify-start overflow-hidden bg-[#0B0E14] px-5 pt-6 text-[#F0F6FC] sm:px-6 md:px-12 md:pt-6" style={{ minHeight: "100svh" }}>
       {/* Background Canvas — walking people */}
       <canvas
         ref={canvasRef}
@@ -262,7 +262,7 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="mt-10 grid w-full max-w-4xl gap-4 text-left sm:grid-cols-2 sm:gap-6 md:mt-12 md:flex md:flex-wrap md:justify-center md:gap-8">
+        <div className="mt-10 grid w-full max-w-4xl gap-4 text-left sm:grid-cols-2 sm:gap-6 md:mt-12 md:grid-cols-3 md:gap-8">
           {featureHighlights.map((feature, index) => (
             <div
               key={feature}

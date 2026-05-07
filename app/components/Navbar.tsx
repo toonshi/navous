@@ -11,21 +11,18 @@ const Navbar = () => {
 
   React.useEffect(() => {
     const mediaQuery = window.matchMedia("(min-width: 768px)");
-    const handleChange = (event: MediaQueryListEvent | MediaQueryList) => {
+    const handleChange = (event: MediaQueryListEvent) => {
       if (event.matches) {
         setIsOpen(false);
       }
     };
 
-    handleChange(mediaQuery);
-
-    if (typeof mediaQuery.addEventListener === "function") {
-      mediaQuery.addEventListener("change", handleChange);
-      return () => mediaQuery.removeEventListener("change", handleChange);
+    if (mediaQuery.matches) {
+      setIsOpen(false);
     }
 
-    mediaQuery.addListener(handleChange);
-    return () => mediaQuery.removeListener(handleChange);
+    mediaQuery.addEventListener("change", handleChange);
+    return () => mediaQuery.removeEventListener("change", handleChange);
   }, []);
 
   return (
