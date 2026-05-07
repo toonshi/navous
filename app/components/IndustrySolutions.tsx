@@ -47,15 +47,11 @@ export default function IndustrySolutions() {
           {industries.map((industry) => (
             <div key={industry.name} className="flex flex-col bg-white/5 rounded-3xl border border-white/10 overflow-hidden hover:border-accent/30 transition-all duration-300">
               <div className="relative h-48 bg-white/10">
-                {/* Placeholder for images */}
-                <div className="absolute inset-0 flex items-center justify-center bg-accent/10">
-                   <span className="text-white/20 font-bold uppercase tracking-widest">{industry.name} Image</span>
-                </div>
                 <Image 
                   src={industry.image} 
                   alt={industry.name} 
                   fill 
-                  className="object-cover opacity-50 mix-blend-overlay"
+                  className="object-cover opacity-90 transition-opacity group-hover:opacity-100"
                 />
               </div>
               <div className="p-8 flex flex-col flex-grow">

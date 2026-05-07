@@ -11,9 +11,6 @@ export default function FinalCTA() {
            style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '30px 30px' }} />
 
       <div className="relative z-10 mx-auto max-w-4xl text-center">
-        <span className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.25em] text-white/40 sm:px-5 md:mb-10">
-          No-Risk Implementation
-        </span>
         <h2 className="font-display mb-6 text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl md:mb-8 md:text-7xl">
           Ready to map your building?
         </h2>
