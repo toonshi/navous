@@ -61,7 +61,7 @@ export default function ProblemSection() {
           </div>
           <div className="flex-1">
             <div className="aspect-square max-w-sm mx-auto bg-[#000000] rounded-2xl shadow-2xl p-6 relative overflow-hidden border border-white/5">
-               <div className="absolute inset-0 opacity-40 bg-[url('/isometric.jpg')] bg-cover bg-center" />
+               <div className="absolute inset-0 opacity-70 bg-[url('/isometric.jpg')] bg-cover bg-center" />
                <div className="relative h-full flex flex-col gap-4">
                   <div className="h-4 w-1/2 bg-white/10 rounded" />
                   <div className="flex-1 rounded border border-white/5 flex items-center justify-center">
