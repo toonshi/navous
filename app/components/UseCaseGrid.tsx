@@ -123,6 +123,7 @@ const UseCaseGrid = () => {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
   const gridRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  const mobileScrollerRef = useRef<HTMLDivElement>(null);
 
   useGSAP(() => {
     if (!gridRef.current) return;
@@ -146,6 +147,18 @@ const UseCaseGrid = () => {
       overwrite: "auto"
     });
   }, { dependencies: [hoveredId], scope: containerRef });
+
+  const handleMobileScrollerKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
+    if (!mobileScrollerRef.current) return;
+
+    if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
+      event.preventDefault();
+      mobileScrollerRef.current.scrollBy({
+        left: event.key === "ArrowRight" ? 280 : -280,
+        behavior: "smooth",
+      });
+    }
+  };
 
   return (
     <section ref={containerRef} id="solutions" className="overflow-hidden border-t border-white/5 bg-primary px-5 py-24 text-white sm:px-8 md:py-32">
@@ -254,7 +267,13 @@ const UseCaseGrid = () => {
 
         {/* Mobile View */}
         <div className="md:hidden">
-          <div className="flex gap-4 overflow-x-auto pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <div
+            ref={mobileScrollerRef}
+            tabIndex={0}
+            aria-label="Browse industry use cases"
+            onKeyDown={handleMobileScrollerKeyDown}
+            className="flex gap-4 overflow-x-auto pb-2 outline-none [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden focus-visible:ring-2 focus-visible:ring-accent/70 focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
+          >
             {useCases.map((useCase) => (
               <div key={useCase.id} className="relative flex aspect-[4/5] min-w-[85%] flex-col justify-end overflow-hidden rounded-[1.75rem] border border-white/5 bg-secondary p-6 sm:min-w-[70%] sm:p-8">
                 <Image src={useCase.image} alt={useCase.title} fill className="object-cover opacity-40" />

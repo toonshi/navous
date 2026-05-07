@@ -8,10 +8,11 @@ import { Sparkle, ScatterDots } from "./Doodles";
 export default function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const featureHighlights = [
-    "Clickable demo from your floor plans",
-    "No app download or hardware install",
-    "Built for accessible multi-floor routing",
+    { label: "Clickable demo from your floor plans" },
+    { label: "No app download or hardware install" },
+    { label: "Built for accessible multi-floor routing", className: "sm:col-span-2" },
   ];
+  const featureCardClass = "flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-4 md:border-0 md:bg-transparent md:px-0 md:py-0";
 
   useEffect(() => {
     if (!canvasRef.current) return;
@@ -224,7 +225,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative flex min-h-screen flex-col items-center justify-start overflow-hidden bg-[#0B0E14] px-5 pt-6 text-[#F0F6FC] sm:px-6 md:px-12 md:pt-6" style={{ minHeight: "100svh" }}>
+    <section className="relative flex min-h-screen min-h-svh flex-col items-center justify-start overflow-hidden bg-[#0B0E14] px-5 pt-6 text-[#F0F6FC] sm:px-6 md:px-12 md:pt-6">
       {/* Background Canvas — walking people */}
       <canvas
         ref={canvasRef}
@@ -263,13 +264,13 @@ export default function Hero() {
         </div>
 
         <div className="mt-10 grid w-full max-w-4xl gap-4 text-left sm:grid-cols-2 sm:gap-6 md:mt-12 md:grid-cols-3 md:gap-8">
-          {featureHighlights.map((feature, index) => (
+          {featureHighlights.map((feature) => (
             <div
-              key={feature}
-              className={`flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-4 md:border-0 md:bg-transparent md:px-0 md:py-0 ${index === featureHighlights.length - 1 ? "sm:col-span-2" : ""}`}
+              key={feature.label}
+              className={[featureCardClass, feature.className].filter(Boolean).join(" ")}
             >
               <span className="text-accent font-bold text-xl">✓</span>
-              <span className="text-xs font-bold uppercase tracking-wider text-white/50 sm:text-sm">{feature}</span>
+              <span className="text-xs font-bold uppercase tracking-wider text-white/50 sm:text-sm">{feature.label}</span>
             </div>
           ))}
         </div>
