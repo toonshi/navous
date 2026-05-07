@@ -48,7 +48,7 @@ export default function ProblemSection() {
             </span>
             <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight mb-6">
               Identify friction
-              <br />before it's a complaint.
+              <br />before it&apos;s a complaint.
             </h2>
             <p className="text-white/60 text-lg leading-relaxed font-medium">
               Navous heatmaps reveal exactly where visitors get stuck or lost. Use real data to improve your physical signage, optimize floor plans, and move people through your building with 0% friction.
