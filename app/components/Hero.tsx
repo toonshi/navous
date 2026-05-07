@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
+import NextImage from "next/image";
 import gsap from "gsap";
 import { Sparkle, ScatterDots } from "./Doodles";
 
@@ -280,7 +281,7 @@ export default function Hero() {
             </a>
           </div>
           <div className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-black/30">
-            <Image
+            <NextImage
               src="/screenshots/home.png"
               alt="Navous product interface preview"
               width={1600}

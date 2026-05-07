@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 
 const tiers = [
   {
@@ -141,7 +142,7 @@ export default function Pricing() {
               </p>
 
               {/* CTA */}
-              <a
+              <Link
                 href="/#contact"
                 className={`block w-full py-4 rounded-lg font-bold text-sm text-center transition cursor-pointer ${
                   tier.highlight
@@ -150,7 +151,7 @@ export default function Pricing() {
                 }`}
               >
                 {tier.cta}
-              </a>
+              </Link>
             </div>
           ))}
         </div>

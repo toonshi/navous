@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 
 export default function FinalCTA() {
   return (
@@ -20,8 +21,8 @@ export default function FinalCTA() {
           Send a floor plan and we&apos;ll turn it into a live walkthrough you can test with your team. No hardware to install, no app to build, and no pressure to pretend the pilot is further along than it is.
         </p>
         <div className="flex flex-wrap gap-5 justify-center">
-          <a href="/#contact" className="btn-primary min-w-[220px]">Book a Live Demo</a>
-          <a href="/how-it-works" className="btn-secondary min-w-[220px]">See Implementation Path</a>
+          <Link href="/#contact" className="btn-primary min-w-[220px]">Book a Live Demo</Link>
+          <Link href="/how-it-works" className="btn-secondary min-w-[220px]">See Implementation Path</Link>
         </div>
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-wrap justify-center gap-x-12 gap-y-6">
            <div className="flex items-center gap-2 text-[10px] font-bold text-white/30 tracking-[0.2em] uppercase">
