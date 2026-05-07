@@ -186,14 +186,14 @@ const UseCaseGrid = () => {
                 key={useCase.id}
                 onMouseEnter={() => setHoveredId(useCase.id)}
                 onMouseLeave={() => setHoveredId(null)}
-                className={`relative rounded-3xl overflow-hidden group border border-white/5 bg-secondary transition-all duration-300 shadow-2xl ${initialPos[idx]}`}
+                className={`usecase-grid-card relative rounded-3xl overflow-hidden group border border-white/5 bg-secondary transition-all duration-300 shadow-2xl ${initialPos[idx]}`}
               >
                 <Image
                   src={useCase.image}
                   alt={useCase.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className={`object-cover transition-all duration-1000 ease-out ${hoveredId === useCase.id ? "opacity-70 scale-105" : "opacity-50"}`}
+                  className={`usecase-grid-image object-cover transition-all duration-1000 ease-out ${hoveredId === useCase.id ? "scale-105" : ""}`}
                 />
                 
                 <div className={`absolute inset-0 transition-opacity duration-700 ${hoveredId === useCase.id ? "bg-accent/5" : "bg-transparent"}`} />
