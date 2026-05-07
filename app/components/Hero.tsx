@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden flex flex-col items-center justify-start pt-4 md:pt-6 px-6 md:px-12 bg-[#0B0E14] text-[#F0F6FC]">
       {/* Background Peeps — walking people */}
-      <Peeps className="absolute inset-0 w-full h-full opacity-90 z-0" />
+      <Peeps className="absolute top-0 left-0 w-full h-[120%] translate-y-24 md:translate-y-0 md:h-full opacity-90 z-0" />
 
       {/* Doodle accents — floating in background */}
       <Sparkle size={18} color="#0052FF" className="absolute top-28 left-[10%] doodle-float pointer-events-none opacity-40" />
@@ -22,11 +22,11 @@ export default function Hero() {
           Enterprise Indoor Wayfinding
         </span>
         <h1 className="text-5xl md:text-[5.5rem] font-bold tracking-tight text-white leading-[0.95] mb-8 font-display">
-          Stop losing your visitors <br />inside your building.
+          Transform your space into a <br />searchable, intelligent environment.
         </h1>
 
         <p className="text-white/60 text-lg md:text-xl font-medium leading-relaxed max-w-3xl mb-10">
-          Turn your existing floor plans into live, hardware-free wayfinding in under 24 hours. No app downloads, no complex IT projects — just a guided journey from the front door.
+          Make sure your visitors find exactly what they need, the moment they enter your doors.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto mt-2">
