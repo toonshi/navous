@@ -279,15 +279,15 @@ const UseCaseGrid = () => {
                 <Image src={useCase.image} alt={useCase.title} fill className="object-cover opacity-40" />
                 <div className="absolute inset-0 z-10 bg-gradient-to-t from-primary via-primary/40 to-transparent" />
                 <div className="relative z-20">
-                  <span className="mb-3 block text-[9px] font-bold uppercase tracking-[0.2em] text-accent">{useCase.category}</span>
+                  <span className="mb-3 block text-[9px] font-bold uppercase tracking-[0.2em] text-white">{useCase.category}</span>
                   <h3 className="font-display mb-4 text-2xl font-bold text-white">{useCase.title}</h3>
-                  <p className="mb-4 text-sm leading-relaxed text-white/70">
+                  <p className="mb-4 text-sm leading-relaxed text-white">
                     {useCase.description}
                   </p>
                   <ul className="flex flex-col gap-2">
                     {useCase.benefits.map((benefit) => (
-                      <li key={benefit} className="flex items-center gap-2 text-xs font-bold text-white/90">
-                        <span className="text-accent">✓</span>
+                      <li key={benefit} className="flex items-center gap-2 text-xs font-bold text-white">
+                        <span className="text-white">✓</span>
                         {benefit}
                       </li>
                     ))}
