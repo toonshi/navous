@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden flex flex-col items-center justify-start pt-4 md:pt-6 px-6 md:px-12 bg-[#0B0E14] text-[#F0F6FC]">
       {/* Background Peeps — walking people */}
-      <Peeps className="absolute inset-0 w-full h-full opacity-40 z-0" />
+      <Peeps className="absolute inset-0 w-full h-full opacity-70 z-0" />
 
       {/* Doodle accents — floating in background */}
       <Sparkle size={18} color="#0052FF" className="absolute top-28 left-[10%] doodle-float pointer-events-none opacity-40" />

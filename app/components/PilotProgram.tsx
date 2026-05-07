@@ -15,7 +15,7 @@ export default function PilotProgram() {
             Early access pilot program
           </span>
           <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tight text-white mb-8 leading-tight">
-            Build Navous with your facility, not after it.
+            Because the best part of the journey is no longer being lost.
           </h2>
           <p className="text-white/60 text-xl leading-relaxed mb-10 max-w-xl font-medium">
             We are onboarding our first pilot partners now. Share your floor plans, edge cases, and visitor flow challenges in exchange for founding pricing, direct founder access, and a product shaped around your operation.
