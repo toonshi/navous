@@ -24,20 +24,6 @@ export default function FinalCTA() {
           <Link href="/#contact" className="btn-primary w-full sm:min-w-[180px] sm:w-auto">Get Started</Link>
           <Link href="/how-it-works" className="btn-secondary w-full sm:min-w-[180px] sm:w-auto">Learn More</Link>
         </div>
-        <div className="mt-14 flex flex-wrap justify-center gap-x-8 gap-y-4 border-t border-white/5 pt-8 md:mt-16 md:gap-x-12 md:gap-y-6">
-           <div className="flex items-center gap-2 text-[10px] font-bold text-white/30 tracking-[0.2em] uppercase">
-              <span className="w-2 h-2 rounded-full bg-accent opacity-50" />
-              SOC 2 COMPLIANT
-           </div>
-           <div className="flex items-center gap-2 text-[10px] font-bold text-white/30 tracking-[0.2em] uppercase">
-              <span className="w-2 h-2 rounded-full bg-accent opacity-50" />
-              GDPR READY
-           </div>
-           <div className="flex items-center gap-2 text-[10px] font-bold text-white/30 tracking-[0.2em] uppercase">
-              <span className="w-2 h-2 rounded-full bg-accent opacity-50" />
-              WCAG 2.1 ACCESSIBLE
-           </div>
-        </div>
       </div>
     </section>
   );
