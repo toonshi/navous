@@ -46,11 +46,16 @@ body {
   }
 
   .usecase-grid-image {
-    opacity: 0.72;
+    opacity: 1;
   }
 
   .usecase-grid-card:hover .usecase-grid-image {
-    opacity: 0.9;
+    opacity: 1;
+  }
+
+  .usecase-grid-fog {
+    background: transparent !important;
+    background-image: none !important;
   }
 
   .bg-primary {

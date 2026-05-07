@@ -197,7 +197,7 @@ const UseCaseGrid = () => {
                 />
                 
                 <div className={`absolute inset-0 transition-opacity duration-700 ${hoveredId === useCase.id ? "bg-accent/5" : "bg-transparent"}`} />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/10 to-transparent z-10" />
+                <div className="usecase-grid-fog absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/10 to-transparent z-10" />
 
                 <div className="absolute inset-0 z-20 p-6 flex flex-col justify-end pointer-events-none">
                   <div className="transition-all duration-500">
