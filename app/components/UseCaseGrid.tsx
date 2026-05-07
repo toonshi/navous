@@ -193,11 +193,11 @@ const UseCaseGrid = () => {
                   alt={useCase.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className={`object-cover transition-all duration-1000 ease-out ${hoveredId === useCase.id ? "opacity-40 scale-105" : "opacity-30"}`}
+                  className={`object-cover transition-all duration-1000 ease-out ${hoveredId === useCase.id ? "opacity-70 scale-105" : "opacity-50"}`}
                 />
                 
-                <div className={`absolute inset-0 transition-opacity duration-700 ${hoveredId === useCase.id ? "bg-accent/10" : "bg-transparent"}`} />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/20 to-transparent z-10" />
+                <div className={`absolute inset-0 transition-opacity duration-700 ${hoveredId === useCase.id ? "bg-accent/5" : "bg-transparent"}`} />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/10 to-transparent z-10" />
 
                 <div className="absolute inset-0 z-20 p-6 flex flex-col justify-end pointer-events-none">
                   <div className="transition-all duration-500">

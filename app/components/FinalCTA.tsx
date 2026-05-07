@@ -21,8 +21,8 @@ export default function FinalCTA() {
           Send a floor plan and we&apos;ll turn it into a live walkthrough you can test with your team. No hardware to install, no app to build, and no pressure to pretend the pilot is further along than it is.
         </p>
         <div className="flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap sm:gap-5">
-          <Link href="/#contact" className="btn-primary w-full sm:min-w-[220px] sm:w-auto">Book a Live Demo</Link>
-          <Link href="/how-it-works" className="btn-secondary w-full sm:min-w-[220px] sm:w-auto">See Implementation Path</Link>
+          <Link href="/#contact" className="btn-primary w-full sm:min-w-[180px] sm:w-auto">Get Started</Link>
+          <Link href="/how-it-works" className="btn-secondary w-full sm:min-w-[180px] sm:w-auto">Learn More</Link>
         </div>
         <div className="mt-14 flex flex-wrap justify-center gap-x-8 gap-y-4 border-t border-white/5 pt-8 md:mt-16 md:gap-x-12 md:gap-y-6">
            <div className="flex items-center gap-2 text-[10px] font-bold text-white/30 tracking-[0.2em] uppercase">

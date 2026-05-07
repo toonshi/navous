@@ -90,11 +90,10 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
   color: #ffffff;
   height: 3.375rem; /* Explicit height to ensure consistency */
-  padding: 0 2.5rem;
+  padding: 0 1.75rem;
   font-weight: 700;
   font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: -0.01em; /* Tighter for non-caps */
   border-radius: 12px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   text-align: center;
@@ -116,11 +115,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.08);
   height: 3.375rem; /* Explicit height to ensure consistency */
-  padding: 0 2.5rem;
+  padding: 0 1.75rem;
   font-weight: 700;
   font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: -0.01em; /* Tighter for non-caps */
   border-radius: 12px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   text-align: center;
