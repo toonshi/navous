@@ -275,9 +275,9 @@ const UseCaseGrid = () => {
             className="flex gap-4 overflow-x-auto pb-2 outline-none [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden focus-visible:ring-2 focus-visible:ring-accent/70 focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
           >
             {useCases.map((useCase) => (
-              <div key={useCase.id} className="relative flex aspect-[4/5] min-w-[85%] flex-col justify-end overflow-hidden rounded-[1.75rem] border border-white/5 bg-secondary p-6 sm:min-w-[70%] sm:p-8">
+              <div key={useCase.id} className="usecase-grid-card relative flex aspect-[4/5] min-w-[85%] flex-col justify-end overflow-hidden rounded-[1.75rem] border border-white/5 bg-secondary p-6 sm:min-w-[70%] sm:p-8">
                 <Image src={useCase.image} alt={useCase.title} fill className="object-cover opacity-40" />
-                <div className="absolute inset-0 z-10 bg-gradient-to-t from-primary via-primary/40 to-transparent" />
+                <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#0B0E14] via-[#0B0E14]/40 to-transparent" />
                 <div className="relative z-20">
                   <span className="mb-3 block text-[9px] font-bold uppercase tracking-[0.2em] text-white">{useCase.category}</span>
                   <h3 className="font-display mb-4 text-2xl font-bold text-white">{useCase.title}</h3>

@@ -49,7 +49,32 @@ body {
   :root {
     --background: #f8fafc;
     --foreground: #0f172a;
-    --usecase-grid-fog: transparent;
+    --usecase-grid-fog: linear-gradient(
+      to top,
+      rgb(11 14 20 / 0.85),
+      rgb(11 14 20 / 0.2),
+      transparent
+    );
+  }
+
+  .usecase-grid-card .text-white {
+    color: #ffffff !important;
+  }
+
+  .usecase-grid-card span.text-white {
+    color: #ffffff !important;
+  }
+
+  .usecase-grid-card h3.text-white {
+    color: #ffffff !important;
+  }
+
+  .usecase-grid-card p.text-white {
+    color: #ffffff !important;
+  }
+
+  .usecase-grid-card li.text-white {
+    color: #ffffff !important;
   }
 
   .nav-logo {
