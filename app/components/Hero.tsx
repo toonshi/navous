@@ -218,7 +218,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen overflow-hidden flex flex-col items-center justify-start pt-12 md:pt-16 px-6 md:px-12 bg-[#0B0E14] text-[#F0F6FC]">
+    <section className="relative min-h-screen overflow-hidden flex flex-col items-center justify-start pt-4 md:pt-6 px-6 md:px-12 bg-[#0B0E14] text-[#F0F6FC]">
       {/* Background Canvas — walking people */}
       <canvas
         ref={canvasRef}
@@ -233,7 +233,7 @@ export default function Hero() {
       <ScatterDots color="#22D3EE" className="absolute bottom-32 left-[6%] pointer-events-none opacity-25" />
       <ScatterDots color="#0052FF" className="absolute bottom-28 right-[8%] pointer-events-none opacity-20" />
 
-      <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-center text-center mt-12 md:mt-24">
+      <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-center text-center mt-4 md:mt-8">
         <span className="inline-block text-accent text-sm font-bold uppercase tracking-[0.2em] mb-6">
           Enterprise Indoor Wayfinding
         </span>
