@@ -87,8 +87,8 @@ export default function Peeps({ className = "" }: { className?: string }) {
     const resetPeep = ({ stage, peep }: { stage: { width: number; height: number }; peep: Peep }) => {
       const direction = Math.random() > 0.5 ? 1 : -1;
       const offsetY = 30 - 180 * gsap.parseEase("power2.in")(Math.random());
-      const mobileVerticalOffset = stage.width < MOBILE_BREAKPOINT ? MOBILE_VERTICAL_OFFSET : 0;
-      const startY = stage.height - (peep.height * peepScale) + offsetY + mobileVerticalOffset;
+      const verticalOffset = stage.width < MOBILE_BREAKPOINT ? MOBILE_VERTICAL_OFFSET : 0;
+      const startY = stage.height - (peep.height * peepScale) + offsetY + verticalOffset;
       let startX;
       let endX;
 
