@@ -7,6 +7,11 @@ import { Sparkle, ScatterDots } from "./Doodles";
 
 export default function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const featureHighlights = [
+    "Clickable demo from your floor plans",
+    "No app download or hardware install",
+    "Built for accessible multi-floor routing",
+  ];
 
   useEffect(() => {
     if (!canvasRef.current) return;
@@ -219,7 +224,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative flex min-h-[100svh] flex-col items-center justify-start overflow-hidden bg-[#0B0E14] px-5 pt-6 text-[#F0F6FC] sm:px-6 md:min-h-screen md:px-12 md:pt-6">
+    <section className="relative flex min-h-screen min-h-[100svh] flex-col items-center justify-start overflow-hidden bg-[#0B0E14] px-5 pt-6 text-[#F0F6FC] sm:px-6 md:px-12 md:pt-6">
       {/* Background Canvas — walking people */}
       <canvas
         ref={canvasRef}
@@ -258,18 +263,15 @@ export default function Hero() {
         </div>
 
         <div className="mt-10 grid w-full max-w-4xl gap-4 text-left sm:grid-cols-2 sm:gap-6 md:mt-12 md:flex md:flex-wrap md:justify-center md:gap-8">
-          <div className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-4 md:border-0 md:bg-transparent md:px-0 md:py-0">
-            <span className="text-accent font-bold text-xl">✓</span>
-            <span className="text-xs font-bold uppercase tracking-wider text-white/50 sm:text-sm">Clickable demo from your floor plans</span>
-          </div>
-          <div className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-4 md:border-0 md:bg-transparent md:px-0 md:py-0">
-            <span className="text-accent font-bold text-xl">✓</span>
-            <span className="text-xs font-bold uppercase tracking-wider text-white/50 sm:text-sm">No app download or hardware install</span>
-          </div>
-          <div className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-4 sm:col-span-2 md:border-0 md:bg-transparent md:px-0 md:py-0">
-            <span className="text-accent font-bold text-xl">✓</span>
-            <span className="text-xs font-bold uppercase tracking-wider text-white/50 sm:text-sm">Built for accessible multi-floor routing</span>
-          </div>
+          {featureHighlights.map((feature, index) => (
+            <div
+              key={feature}
+              className={`flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-4 md:border-0 md:bg-transparent md:px-0 md:py-0 ${index === featureHighlights.length - 1 ? "sm:col-span-2" : ""}`}
+            >
+              <span className="text-accent font-bold text-xl">✓</span>
+              <span className="text-xs font-bold uppercase tracking-wider text-white/50 sm:text-sm">{feature}</span>
+            </div>
+          ))}
         </div>
 
         <div className="mt-12 w-full max-w-5xl rounded-[1.5rem] border border-white/10 bg-white/5 p-3 shadow-2xl shadow-black/30 backdrop-blur-xl sm:mt-14 sm:p-4 md:rounded-[2rem] md:p-6">

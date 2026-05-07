@@ -253,28 +253,30 @@ const UseCaseGrid = () => {
         </div>
 
         {/* Mobile View */}
-        <div className="flex w-full flex-col gap-5 md:hidden">
-          {useCases.slice(0, 4).map((useCase) => (
-            <div key={useCase.id} className="relative aspect-[4/5] overflow-hidden rounded-[1.75rem] border border-white/5 bg-secondary p-6 flex flex-col justify-end sm:p-8">
-              <Image src={useCase.image} alt={useCase.title} fill className="object-cover opacity-40" />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent z-10" />
-              <div className="relative z-20">
-                <span className="text-accent text-[9px] font-bold uppercase tracking-[0.2em] mb-3 block">{useCase.category}</span>
-                <h3 className="text-2xl font-bold mb-4 text-white font-display">{useCase.title}</h3>
-                <p className="mb-4 text-sm leading-relaxed text-white/70">
-                  {useCase.description}
-                </p>
-                <ul className="flex flex-col gap-2">
-                  {useCase.benefits.map((benefit) => (
-                    <li key={benefit} className="flex items-center gap-2 text-xs font-bold text-white/90">
-                      <span className="text-accent">✓</span>
-                      {benefit}
-                    </li>
-                  ))}
-                </ul>
+        <div className="md:hidden">
+          <div className="flex gap-4 overflow-x-auto pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            {useCases.map((useCase) => (
+              <div key={useCase.id} className="relative flex aspect-[4/5] min-w-[85%] flex-col justify-end overflow-hidden rounded-[1.75rem] border border-white/5 bg-secondary p-6 sm:min-w-[70%] sm:p-8">
+                <Image src={useCase.image} alt={useCase.title} fill className="object-cover opacity-40" />
+                <div className="absolute inset-0 z-10 bg-gradient-to-t from-primary via-primary/40 to-transparent" />
+                <div className="relative z-20">
+                  <span className="mb-3 block text-[9px] font-bold uppercase tracking-[0.2em] text-accent">{useCase.category}</span>
+                  <h3 className="font-display mb-4 text-2xl font-bold text-white">{useCase.title}</h3>
+                  <p className="mb-4 text-sm leading-relaxed text-white/70">
+                    {useCase.description}
+                  </p>
+                  <ul className="flex flex-col gap-2">
+                    {useCase.benefits.map((benefit) => (
+                      <li key={benefit} className="flex items-center gap-2 text-xs font-bold text-white/90">
+                        <span className="text-accent">✓</span>
+                        {benefit}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

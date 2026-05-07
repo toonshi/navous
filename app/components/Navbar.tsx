@@ -9,6 +9,25 @@ const Navbar = () => {
 
   const closeMenu = () => setIsOpen(false);
 
+  React.useEffect(() => {
+    const mediaQuery = window.matchMedia("(min-width: 768px)");
+    const handleChange = (event: MediaQueryListEvent | MediaQueryList) => {
+      if (event.matches) {
+        setIsOpen(false);
+      }
+    };
+
+    handleChange(mediaQuery);
+
+    if (typeof mediaQuery.addEventListener === "function") {
+      mediaQuery.addEventListener("change", handleChange);
+      return () => mediaQuery.removeEventListener("change", handleChange);
+    }
+
+    mediaQuery.addListener(handleChange);
+    return () => mediaQuery.removeListener(handleChange);
+  }, []);
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-primary/70 shadow-xl backdrop-blur-xl">
       <div className="mx-auto flex h-[4.5rem] max-w-7xl items-center justify-between px-4 sm:px-6 md:px-8 lg:px-10">
