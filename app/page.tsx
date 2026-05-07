@@ -1,7 +1,6 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import LogoBar from "./components/LogoBar";
-import TrustStats from "./components/TrustStats";
 import ProblemSection from "./components/ProblemSection";
 import UseCaseGrid from "./components/UseCaseGrid";
 import HowItWorks from "./components/HowItWorks";

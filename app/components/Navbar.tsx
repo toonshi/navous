@@ -25,9 +25,9 @@ const Navbar = () => {
       </div>
 
       <div className="hidden md:block">
-        <a href="mailto:hello@navous.com" className="px-5 py-2.5 bg-accent text-white rounded-md font-semibold text-xs tracking-[0.14em] uppercase hover:bg-accent/85 transition-all shadow-lg shadow-accent/20">
+        <Link href="/#contact" className="px-5 py-2.5 bg-accent text-white rounded-md font-semibold text-xs tracking-[0.14em] uppercase hover:bg-accent/85 transition-all shadow-lg shadow-accent/20">
           BOOK DEMO
-        </a>
+        </Link>
       </div>
     </nav>
   );

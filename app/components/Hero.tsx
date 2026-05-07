@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
+import NextImage from "next/image";
 import gsap from "gsap";
 import { Sparkle, ScatterDots } from "./Doodles";
 
@@ -257,15 +258,37 @@ export default function Hero() {
         <div className="mt-12 flex flex-wrap justify-center gap-8">
           <div className="flex items-center gap-3">
             <span className="text-accent font-bold text-xl">✓</span>
-            <span className="text-sm font-bold text-white/50 uppercase tracking-wider">Cut staff interruptions by 30%+</span>
+            <span className="text-sm font-bold text-white/50 uppercase tracking-wider">Clickable demo from your floor plans</span>
           </div>
           <div className="flex items-center gap-3">
             <span className="text-accent font-bold text-xl">✓</span>
-            <span className="text-sm font-bold text-white/50 uppercase tracking-wider">Go live in under 24 hours</span>
+            <span className="text-sm font-bold text-white/50 uppercase tracking-wider">No app download or hardware install</span>
           </div>
           <div className="flex items-center gap-3">
             <span className="text-accent font-bold text-xl">✓</span>
-            <span className="text-sm font-bold text-white/50 uppercase tracking-wider">SOC 2 & WCAG Compliant</span>
+            <span className="text-sm font-bold text-white/50 uppercase tracking-wider">Built for accessible multi-floor routing</span>
+          </div>
+        </div>
+
+        <div className="mt-14 w-full max-w-5xl rounded-[2rem] border border-white/10 bg-white/5 p-4 md:p-6 shadow-2xl shadow-black/30 backdrop-blur-xl">
+          <div className="mb-4 flex items-center justify-between gap-4 border-b border-white/10 pb-4 text-left">
+            <div>
+              <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-accent">Product preview</p>
+              <p className="text-sm text-white/60">Show buyers the actual wayfinding interface before they talk to you.</p>
+            </div>
+            <a href="#contact" className="hidden rounded-full border border-white/10 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-white/70 md:inline-flex">
+              Request your preview
+            </a>
+          </div>
+          <div className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-black/30">
+            <NextImage
+              src="/screenshots/home.png"
+              alt="Navous product interface preview"
+              width={1600}
+              height={980}
+              className="h-auto w-full"
+              priority
+            />
           </div>
         </div>
       </div>
