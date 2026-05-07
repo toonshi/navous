@@ -34,7 +34,7 @@ const Navbar = () => {
             alt="Navous Logo"
             width={160}
             height={48}
-            className="h-9 w-auto brightness-0 invert sm:h-10"
+            className="nav-logo h-9 w-auto sm:h-10"
           />
         </Link>
 

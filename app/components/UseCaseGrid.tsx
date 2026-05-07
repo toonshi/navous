@@ -186,22 +186,22 @@ const UseCaseGrid = () => {
                 key={useCase.id}
                 onMouseEnter={() => setHoveredId(useCase.id)}
                 onMouseLeave={() => setHoveredId(null)}
-                className={`relative rounded-3xl overflow-hidden group border border-white/5 bg-secondary transition-all duration-300 shadow-2xl ${initialPos[idx]}`}
+                className={`usecase-grid-card relative rounded-3xl overflow-hidden group border border-white/5 bg-secondary transition-all duration-300 shadow-2xl ${initialPos[idx]}`}
               >
                 <Image
                   src={useCase.image}
                   alt={useCase.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className={`object-cover transition-all duration-1000 ease-out ${hoveredId === useCase.id ? "opacity-70 scale-105" : "opacity-50"}`}
+                  className={`usecase-grid-image object-cover transition-all duration-1000 ease-out ${hoveredId === useCase.id ? "scale-105" : ""}`}
                 />
                 
                 <div className={`absolute inset-0 transition-opacity duration-700 ${hoveredId === useCase.id ? "bg-accent/5" : "bg-transparent"}`} />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/10 to-transparent z-10" />
+                <div className="usecase-grid-fog absolute inset-0 z-10" />
 
                 <div className="absolute inset-0 z-20 p-6 flex flex-col justify-end pointer-events-none">
                   <div className="transition-all duration-500">
-                    <span className="text-accent text-[9px] font-bold uppercase tracking-[0.25em] mb-2 block">
+                    <span className="text-white text-[9px] font-bold uppercase tracking-[0.25em] mb-2 block">
                       {useCase.category}
                     </span>
                     <h3 className={`font-display font-bold tracking-tight mb-2 text-white transition-all duration-500 ${hoveredId === useCase.id ? "text-4xl" : "text-lg"}`}>
@@ -209,14 +209,14 @@ const UseCaseGrid = () => {
                     </h3>
                     
                     <div className={`transition-all duration-500 ${hoveredId === useCase.id ? "opacity-100 mt-4" : "opacity-0 h-0 overflow-hidden"}`}>
-                      <p className="text-white/60 text-[14px] max-w-xl mb-6 leading-relaxed font-medium">
+                      <p className="text-white text-[14px] max-w-xl mb-6 leading-relaxed font-medium">
                         {useCase.longDescription}
                       </p>
 
                       <ul className="flex flex-col gap-2 mb-8">
                         {useCase.benefits.map((benefit) => (
-                          <li key={benefit} className="flex items-center gap-3 text-[12px] font-bold text-white/90">
-                            <span className="text-accent">✓</span>
+                          <li key={benefit} className="flex items-center gap-3 text-[12px] font-bold text-white">
+                            <span className="text-white">✓</span>
                             {benefit}
                           </li>
                         ))}
@@ -279,15 +279,15 @@ const UseCaseGrid = () => {
                 <Image src={useCase.image} alt={useCase.title} fill className="object-cover opacity-40" />
                 <div className="absolute inset-0 z-10 bg-gradient-to-t from-primary via-primary/40 to-transparent" />
                 <div className="relative z-20">
-                  <span className="mb-3 block text-[9px] font-bold uppercase tracking-[0.2em] text-accent">{useCase.category}</span>
+                  <span className="mb-3 block text-[9px] font-bold uppercase tracking-[0.2em] text-white">{useCase.category}</span>
                   <h3 className="font-display mb-4 text-2xl font-bold text-white">{useCase.title}</h3>
-                  <p className="mb-4 text-sm leading-relaxed text-white/70">
+                  <p className="mb-4 text-sm leading-relaxed text-white">
                     {useCase.description}
                   </p>
                   <ul className="flex flex-col gap-2">
                     {useCase.benefits.map((benefit) => (
-                      <li key={benefit} className="flex items-center gap-2 text-xs font-bold text-white/90">
-                        <span className="text-accent">✓</span>
+                      <li key={benefit} className="flex items-center gap-2 text-xs font-bold text-white">
+                        <span className="text-white">✓</span>
                         {benefit}
                       </li>
                     ))}
