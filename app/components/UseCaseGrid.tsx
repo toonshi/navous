@@ -123,6 +123,7 @@ const UseCaseGrid = () => {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
   const gridRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  const mobileScrollerRef = useRef<HTMLDivElement>(null);
 
   useGSAP(() => {
     if (!gridRef.current) return;
@@ -147,9 +148,21 @@ const UseCaseGrid = () => {
     });
   }, { dependencies: [hoveredId], scope: containerRef });
 
+  const handleMobileScrollerKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
+    if (!mobileScrollerRef.current) return;
+
+    if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
+      event.preventDefault();
+      mobileScrollerRef.current.scrollBy({
+        left: event.key === "ArrowRight" ? 280 : -280,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
-    <section ref={containerRef} id="solutions" className="py-32 px-8 bg-primary text-white overflow-hidden border-t border-white/5">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
+    <section ref={containerRef} id="solutions" className="overflow-hidden border-t border-white/5 bg-primary px-5 py-24 text-white sm:px-8 md:py-32">
+      <div className="mx-auto flex max-w-7xl flex-col gap-12 lg:flex-row lg:items-center lg:gap-16">
         
         {/* Left Side: Dynamic Bento Grid */}
         <div 
@@ -219,15 +232,15 @@ const UseCaseGrid = () => {
 
         {/* Right Side: High-Impact Copy */}
         <div className="flex-1 text-left lg:pl-12">
-          <span className="text-accent text-sm font-bold uppercase tracking-[0.3em] mb-8 block">
+          <span className="mb-6 block text-sm font-bold uppercase tracking-[0.3em] text-accent md:mb-8">
             Industry Reach
           </span>
-          <h2 className="font-display text-[2.8rem] md:text-[4rem] font-bold tracking-tight leading-[1.05] mb-10 max-w-2xl text-white">
+          <h2 className="font-display mb-8 max-w-2xl text-[2.4rem] font-bold leading-[1.05] tracking-tight text-white sm:text-[2.8rem] md:mb-10 md:text-[4rem]">
             Turn Every Visitor
             <br />
             into a Navigated Guest.
           </h2>
-          <div className="space-y-8 text-white/50 text-lg md:text-xl font-medium leading-relaxed max-w-xl">
+          <div className="max-w-xl space-y-6 text-base font-medium leading-relaxed text-white/50 sm:text-lg md:space-y-8 md:text-xl">
             <p>
               One spatial intelligence platform for all your institutional facility needs.
             </p>
@@ -236,7 +249,7 @@ const UseCaseGrid = () => {
             </p>
           </div>
           
-          <div className="mt-12 pt-12 border-t border-white/5 flex flex-wrap gap-10">
+          <div className="mt-10 flex flex-wrap gap-8 border-t border-white/5 pt-10 md:mt-12 md:gap-10 md:pt-12">
             <div>
               <p className="text-3xl font-black text-white mb-1 tracking-tight">QR</p>
               <p className="text-[10px] font-bold uppercase tracking-widest text-white/30 italic">Launch point</p>
@@ -253,25 +266,36 @@ const UseCaseGrid = () => {
         </div>
 
         {/* Mobile View */}
-        <div className="md:hidden flex flex-col gap-6 w-full">
-          {useCases.slice(0, 3).map((useCase) => (
-            <div key={useCase.id} className="relative aspect-[4/5] rounded-[2rem] overflow-hidden p-8 flex flex-col justify-end border border-white/5 bg-secondary">
-              <Image src={useCase.image} alt={useCase.title} fill className="object-cover opacity-40" />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent z-10" />
-              <div className="relative z-20">
-                <span className="text-accent text-[9px] font-bold uppercase tracking-[0.2em] mb-3 block">{useCase.category}</span>
-                <h3 className="text-2xl font-bold mb-4 text-white font-display">{useCase.title}</h3>
-                <ul className="flex flex-col gap-2">
-                  {useCase.benefits.map((benefit) => (
-                    <li key={benefit} className="flex items-center gap-2 text-xs font-bold text-white/90">
-                      <span className="text-accent">✓</span>
-                      {benefit}
-                    </li>
-                  ))}
-                </ul>
+        <div className="md:hidden">
+          <div
+            ref={mobileScrollerRef}
+            tabIndex={0}
+            aria-label="Browse industry use cases"
+            onKeyDown={handleMobileScrollerKeyDown}
+            className="flex gap-4 overflow-x-auto pb-2 outline-none [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden focus-visible:ring-2 focus-visible:ring-accent/70 focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
+          >
+            {useCases.map((useCase) => (
+              <div key={useCase.id} className="relative flex aspect-[4/5] min-w-[85%] flex-col justify-end overflow-hidden rounded-[1.75rem] border border-white/5 bg-secondary p-6 sm:min-w-[70%] sm:p-8">
+                <Image src={useCase.image} alt={useCase.title} fill className="object-cover opacity-40" />
+                <div className="absolute inset-0 z-10 bg-gradient-to-t from-primary via-primary/40 to-transparent" />
+                <div className="relative z-20">
+                  <span className="mb-3 block text-[9px] font-bold uppercase tracking-[0.2em] text-accent">{useCase.category}</span>
+                  <h3 className="font-display mb-4 text-2xl font-bold text-white">{useCase.title}</h3>
+                  <p className="mb-4 text-sm leading-relaxed text-white/70">
+                    {useCase.description}
+                  </p>
+                  <ul className="flex flex-col gap-2">
+                    {useCase.benefits.map((benefit) => (
+                      <li key={benefit} className="flex items-center gap-2 text-xs font-bold text-white/90">
+                        <span className="text-accent">✓</span>
+                        {benefit}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

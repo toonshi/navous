@@ -7,6 +7,12 @@ import { Sparkle, ScatterDots } from "./Doodles";
 
 export default function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const featureHighlights = [
+    { label: "Clickable demo from your floor plans" },
+    { label: "No app download or hardware install" },
+    { label: "Built for accessible multi-floor routing", className: "sm:col-span-2" },
+  ];
+  const featureCardClass = "flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-4 md:border-0 md:bg-transparent md:px-0 md:py-0";
 
   useEffect(() => {
     if (!canvasRef.current) return;
@@ -219,7 +225,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen overflow-hidden flex flex-col items-center justify-start pt-4 md:pt-6 px-6 md:px-12 bg-[#0B0E14] text-[#F0F6FC]">
+    <section className="relative flex min-h-svh flex-col items-center justify-start overflow-hidden bg-[#0B0E14] px-5 pt-6 text-[#F0F6FC] sm:px-6 md:px-12 md:pt-6">
       {/* Background Canvas — walking people */}
       <canvas
         ref={canvasRef}
@@ -228,59 +234,58 @@ export default function Hero() {
       />
 
       {/* Doodle accents — floating in background */}
-      <Sparkle size={18} color="#0052FF" className="absolute top-28 left-[10%] doodle-float pointer-events-none opacity-40" />
-      <Sparkle size={13} color="#22D3EE" className="absolute top-44 right-[12%] doodle-float-offset pointer-events-none opacity-30" />
-      <Sparkle size={10} color="#0052FF" className="absolute top-64 left-[18%] doodle-float-slow pointer-events-none opacity-30" />
-      <ScatterDots color="#22D3EE" className="absolute bottom-32 left-[6%] pointer-events-none opacity-25" />
-      <ScatterDots color="#0052FF" className="absolute bottom-28 right-[8%] pointer-events-none opacity-20" />
+      <Sparkle size={18} color="#0052FF" className="pointer-events-none absolute left-[10%] top-24 opacity-25 doodle-float md:top-28 md:opacity-40" />
+      <Sparkle size={13} color="#22D3EE" className="pointer-events-none absolute right-[12%] top-36 opacity-20 doodle-float-offset md:top-44 md:opacity-30" />
+      <Sparkle size={10} color="#0052FF" className="pointer-events-none absolute left-[18%] top-56 hidden opacity-30 doodle-float-slow md:block md:top-64" />
+      <ScatterDots color="#22D3EE" className="pointer-events-none absolute bottom-24 left-[6%] hidden opacity-25 md:block md:bottom-32" />
+      <ScatterDots color="#0052FF" className="pointer-events-none absolute bottom-20 right-[8%] hidden opacity-20 md:block md:bottom-28" />
 
-      <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-center text-center mt-4 md:mt-8">
-        <span className="inline-block text-accent text-sm font-bold uppercase tracking-[0.2em] mb-6">
+      <div className="relative z-10 mx-auto mt-4 flex w-full max-w-7xl flex-col items-center text-center md:mt-8">
+        <span className="mb-5 inline-block text-xs font-bold uppercase tracking-[0.2em] text-accent sm:text-sm md:mb-6">
           Enterprise Indoor Wayfinding
         </span>
-        <h1 className="text-5xl md:text-[5.5rem] font-bold tracking-tight text-white leading-[0.95] mb-8 font-display">
-          Stop losing your visitors <br />inside your building.
+        <h1 className="font-display mb-6 text-[2.8rem] font-bold leading-[0.95] tracking-tight text-white sm:text-5xl md:mb-8 md:text-[5.5rem]">
+          Stop losing your visitors
+          <br className="hidden md:block" />
+          <span> inside your building.</span>
         </h1>
 
-        <p className="text-white/60 text-lg md:text-xl font-medium leading-relaxed max-w-3xl mb-10">
+        <p className="mb-8 max-w-3xl text-base font-medium leading-relaxed text-white/60 sm:text-lg md:mb-10 md:text-xl">
           Navous turns your existing floor plans into live, turn-by-turn wayfinding — no hardware, no app downloads, and no complex IT projects. Your front desk gets their time back from day one.
         </p>
 
-        <div className="flex flex-row items-center justify-center gap-4 w-full sm:w-auto">
-          <a href="#pilot" className="btn-primary min-w-[180px]">
+        <div className="flex w-full flex-col items-stretch justify-center gap-3 sm:w-auto sm:flex-row sm:items-center sm:gap-4">
+          <a href="#pilot" className="btn-primary w-full sm:min-w-[180px] sm:w-auto">
             Book a Demo
           </a>
-          <a href="/how-it-works" className="btn-secondary min-w-[180px]">
+          <a href="/how-it-works" className="btn-secondary w-full sm:min-w-[180px] sm:w-auto">
             See the Platform
           </a>
         </div>
 
-        <div className="mt-12 flex flex-wrap justify-center gap-8">
-          <div className="flex items-center gap-3">
-            <span className="text-accent font-bold text-xl">✓</span>
-            <span className="text-sm font-bold text-white/50 uppercase tracking-wider">Clickable demo from your floor plans</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <span className="text-accent font-bold text-xl">✓</span>
-            <span className="text-sm font-bold text-white/50 uppercase tracking-wider">No app download or hardware install</span>
-          </div>
-          <div className="flex items-center gap-3">
-            <span className="text-accent font-bold text-xl">✓</span>
-            <span className="text-sm font-bold text-white/50 uppercase tracking-wider">Built for accessible multi-floor routing</span>
-          </div>
+        <div className="mt-10 grid w-full max-w-4xl gap-4 text-left sm:grid-cols-2 sm:gap-6 md:mt-12 md:grid-cols-3 md:gap-8">
+          {featureHighlights.map((feature) => (
+            <div
+              key={feature.label}
+              className={feature.className ? `${featureCardClass} ${feature.className}` : featureCardClass}
+            >
+              <span className="text-accent font-bold text-xl">✓</span>
+              <span className="text-xs font-bold uppercase tracking-wider text-white/50 sm:text-sm">{feature.label}</span>
+            </div>
+          ))}
         </div>
 
-        <div className="mt-14 w-full max-w-5xl rounded-[2rem] border border-white/10 bg-white/5 p-4 md:p-6 shadow-2xl shadow-black/30 backdrop-blur-xl">
-          <div className="mb-4 flex items-center justify-between gap-4 border-b border-white/10 pb-4 text-left">
+        <div className="mt-12 w-full max-w-5xl rounded-[1.5rem] border border-white/10 bg-white/5 p-3 shadow-2xl shadow-black/30 backdrop-blur-xl sm:mt-14 sm:p-4 md:rounded-[2rem] md:p-6">
+          <div className="mb-4 flex flex-col gap-3 border-b border-white/10 pb-4 text-left sm:flex-row sm:items-center sm:justify-between sm:gap-4">
             <div>
               <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-accent">Product preview</p>
-              <p className="text-sm text-white/60">Show buyers the actual wayfinding interface before they talk to you.</p>
+              <p className="text-sm leading-relaxed text-white/60">Show buyers the actual wayfinding interface before they talk to you.</p>
             </div>
-            <a href="#contact" className="hidden rounded-full border border-white/10 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-white/70 md:inline-flex">
+            <a href="#contact" className="inline-flex w-full items-center justify-center rounded-full border border-white/10 px-4 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-white/70 sm:w-auto">
               Request your preview
             </a>
           </div>
-          <div className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-black/30">
+          <div className="overflow-hidden rounded-[1.25rem] border border-white/10 bg-black/30 md:rounded-[1.5rem]">
             <NextImage
               src="/screenshots/home.png"
               alt="Navous product interface preview"

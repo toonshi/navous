@@ -19,28 +19,28 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-32 px-8 bg-primary border-t border-white/5">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-24">
+    <section id="how-it-works" className="border-t border-white/5 bg-primary px-5 py-24 sm:px-8 md:py-32">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-16 text-center md:mb-24">
           <span className="text-accent text-sm font-bold uppercase tracking-[0.25em] mb-6 block">
             Implementation Path
           </span>
-          <h2 className="text-5xl md:text-6xl font-bold tracking-tight text-white mb-6 font-display">
+          <h2 className="font-display mb-6 text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
             From floor plan to live wayfinding
           </h2>
-          <p className="text-white/50 text-xl max-w-2xl mx-auto leading-relaxed font-medium">
+          <p className="mx-auto max-w-2xl text-base font-medium leading-relaxed text-white/50 sm:text-lg md:text-xl">
             A simple three-step rollout your operations team can approve quickly.
           </p>
         </div>
 
-        <div className="relative grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="relative grid grid-cols-1 gap-10 md:gap-12 lg:grid-cols-3">
           {steps.map((step, index) => (
             <div key={step.title} className="flex flex-col items-start text-left group">
-              <div className="w-full aspect-video bg-white/5 rounded-2xl mb-10 flex items-center justify-center overflow-hidden border border-white/10 relative backdrop-blur-sm group-hover:border-accent/50 transition-all duration-300 shadow-2xl">
+              <div className="relative mb-8 flex aspect-video w-full items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-2xl backdrop-blur-sm transition-all duration-300 group-hover:border-accent/50 md:mb-10">
                  <div className="absolute inset-0 opacity-[0.03] bg-[url('https://www.transparenttextures.com/patterns/graphy.png')]" />
-                 <span className="text-7xl font-display font-black text-white/10 group-hover:text-accent/10 transition-colors duration-300">0{index + 1}</span>
+                 <span className="font-display text-6xl font-black text-white/10 transition-colors duration-300 group-hover:text-accent/10 sm:text-7xl">0{index + 1}</span>
               </div>
-              <div className="flex items-center gap-4 mb-6">
+              <div className="mb-5 flex items-center gap-4 md:mb-6">
                 <span className="text-accent font-bold text-xs tracking-widest uppercase px-3 py-1 bg-accent/10 border border-accent/20 rounded">
                   STEP_{String(index + 1).padStart(2, '0')}
                 </span>
@@ -48,7 +48,7 @@ export default function HowItWorks() {
               <h3 className="text-2xl font-bold text-white mb-4 font-display">
                 {step.title}
               </h3>
-              <p className="text-white/50 text-lg leading-relaxed font-medium">
+              <p className="text-base font-medium leading-relaxed text-white/50 sm:text-lg">
                 {step.description}
               </p>
             </div>
