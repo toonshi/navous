@@ -12,6 +12,7 @@
 :root {
   --background: #0A1018;
   --foreground: #E6EDF6;
+  color-scheme: dark light;
 }
 
 body {
@@ -20,6 +21,19 @@ body {
   font-family: var(--font-sans), sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    filter: invert(1) hue-rotate(180deg);
+  }
+
+  img,
+  video,
+  picture,
+  canvas {
+    filter: invert(1) hue-rotate(180deg);
+  }
 }
 
 /* ── Typography Overrides ──────────────────────────────────────────────────── */
