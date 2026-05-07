@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-primary py-16 px-8">
-      <div className="max-w-7xl mx-auto flex flex-col items-center gap-8">
+    <footer className="bg-primary px-5 py-16 sm:px-8">
+      <div className="mx-auto flex max-w-7xl flex-col items-center gap-8">
         <Image
           src="/logo.svg"
           alt="Navous Logo"
@@ -13,7 +13,7 @@ export default function Footer() {
           height={60}
           className="h-14 w-auto brightness-0 invert"
         />
-        <nav className="flex flex-row gap-8 text-sm text-white/60">
+        <nav className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-white/60">
           <Link href="/" className="hover:text-white transition">Home</Link>
           <Link href="/how-it-works" className="hover:text-white transition">How It Works</Link>
           <Link href="/features" className="hover:text-white transition">Features</Link>
