@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 const MOBILE_BREAKPOINT = 768;
-const MOBILE_VERTICAL_OFFSET = 80;
+const MOBILE_VERTICAL_OFFSET = 120;
 
 export default function Peeps({ className = "" }: { className?: string }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
