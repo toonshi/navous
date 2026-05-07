@@ -5,7 +5,7 @@
   --color-secondary: #1E2B3C;
   --color-accent: #2563EB;
   --color-teal: #00A896;
-  --font-fraunces: 'Fraunces', serif;
+  --font-display: 'DM Sans', sans-serif;
   --font-sans: 'Inter', sans-serif;
 }
 
@@ -23,15 +23,10 @@ body {
 
 /* ── Typography Overrides ──────────────────────────────────────────────────── */
 
-h1 {
-  font-family: var(--font-fraunces), serif;
-  letter-spacing: -0.02em;
-}
-
-h2, h3, h4, h5, h6 {
-  font-family: var(--font-sans), sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display), sans-serif;
   font-weight: 800;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.03em;
 }
 
 .subheading {
