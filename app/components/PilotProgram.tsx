@@ -18,7 +18,7 @@ export default function PilotProgram() {
             Because the best part of the journey is no longer being lost.
           </h2>
           <p className="text-white/60 text-xl leading-relaxed mb-10 max-w-xl font-medium">
-            We are onboarding our first pilot partners now. Share your floor plans, edge cases, and visitor flow challenges in exchange for founding pricing, direct founder access, and a product shaped around your operation.
+            We&apos;re looking for facilities to help us push the platform further. In exchange, you&apos;ll receive exclusive pilot pricing, direct support from our team, and a product roadmap built around your institution&apos;s specific needs.
           </p>
           
           <ul className="flex flex-col gap-6 mb-12">
