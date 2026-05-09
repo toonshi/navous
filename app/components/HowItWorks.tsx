@@ -4,16 +4,16 @@ import React from "react";
 
 const steps = [
   {
-    title: "Upload your floor plans",
-    description: "Simply upload your existing floor plans directly to our platform. No site wiring or hardware installation needed.",
+    title: "Upload your blueprint",
+    description: "Drop in your PDF or CAD file. No hardware or wiring required.",
   },
   {
-    title: "Define your visitor routes",
-    description: "Use our simple tools to turn those plans into clear, phone-friendly routes. Mark your entrances, departments, stores, and exits yourself.",
+    title: "Get your map",
+    description: "Our engine generates an interactive 3D environment with precise routing.",
   },
   {
-    title: "Go live and keep improving",
-    description: "Launch with a QR code and start guiding visitors right away, then update routes and points of interest anytime as your venue changes.",
+    title: "Share the link",
+    description: "Visitors just tap and go. No app downloads needed, works directly in any browser.",
   },
 ];
 
@@ -23,13 +23,13 @@ export default function HowItWorks() {
       <div className="mx-auto max-w-7xl">
         <div className="mb-16 text-center md:mb-24">
           <span className="text-accent text-sm font-bold uppercase tracking-[0.25em] mb-6 block">
-            Implementation Path
+            Three steps to live mapping
           </span>
           <h2 className="font-display mb-6 text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-            From floor plan to live wayfinding
+            From floor plan to live map
           </h2>
           <p className="mx-auto max-w-2xl text-base font-medium leading-relaxed text-white/50 sm:text-lg md:text-xl">
-            A simple three-step rollout your operations team can approve quickly.
+            The fastest path to indoor intelligence.
           </p>
         </div>
 

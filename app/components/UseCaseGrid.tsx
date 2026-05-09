@@ -236,16 +236,14 @@ const UseCaseGrid = () => {
             Industry Reach
           </span>
           <h2 className="font-display mb-8 max-w-2xl text-[2.4rem] font-bold leading-[1.05] tracking-tight text-white sm:text-[2.8rem] md:mb-10 md:text-[4rem]">
-            Turn Every Visitor
-            <br />
-            into a Navigated Guest.
+            A map for <br />every space.
           </h2>
           <div className="max-w-xl space-y-6 text-base font-medium leading-relaxed text-white/50 sm:text-lg md:space-y-8 md:text-xl">
             <p>
-              One spatial intelligence platform for all your institutional facility needs.
+              From hospitals to airports, Navous provides the interactive maps your visitors need to navigate complex buildings with confidence.
             </p>
             <p>
-              From real-time clinical wayfinding to complex airport terminal journeys, drive operational efficiency and lasting visitor satisfaction.
+              Deploy a seamless, web-based experience that helps everyone find their way instantly, on any device.
             </p>
           </div>
           

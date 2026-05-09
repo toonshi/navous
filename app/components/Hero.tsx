@@ -19,14 +19,14 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto w-full flex flex-col items-center text-center mt-4 md:mt-8 pb-16 md:pb-0">
         <span className="inline-block text-accent text-sm font-bold uppercase tracking-[0.2em] mb-6">
-          Enterprise Indoor Wayfinding
+          Indoor Mapping Platform
         </span>
         <h1 className="text-5xl md:text-[5.5rem] font-bold tracking-tight text-white leading-[0.95] mb-8 font-display">
-          Transform your space into a <br />searchable, intelligent environment.
+          Map your building <br />in minutes.
         </h1>
 
         <p className="text-white/60 text-lg md:text-xl font-medium leading-relaxed max-w-3xl mb-10">
-          Make sure your visitors find exactly what they need, the moment they enter your doors.
+          The easiest way to turn floor plans into interactive indoor maps. Guide your visitors seamlessly from door to destination.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto mt-2">
