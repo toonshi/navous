@@ -38,7 +38,7 @@ const BentoGrid = () => {
             </p>
           </div>
 
-          {/* Feature 2: Sensor Fusion Positioning */}
+          {/* Feature 2: High-Precision Navigation */}
           <div className="bg-accent rounded-[2.5rem] p-10 flex flex-col justify-between shadow-2xl card-hover border border-accent/20">
             <div className="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center border border-white/20">
               <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -46,8 +46,8 @@ const BentoGrid = () => {
               </svg>
             </div>
             <div>
-              <h3 className="font-display text-2xl font-bold tracking-tight text-white mb-2">Real-Time Precision</h3>
-              <p className="text-white/80 text-sm leading-relaxed font-medium">Our engine combines phone sensors with your floor plan to provide a smooth, "blue-dot" navigation experience indoors.</p>
+              <h3 className="font-display text-2xl font-bold tracking-tight text-white mb-2">Indoor GPS</h3>
+              <p className="text-white/80 text-sm leading-relaxed font-medium">Our engine works with your phone to provide a smooth, "blue-dot" navigation experience, even in areas where GPS usually fails.</p>
             </div>
           </div>
 
