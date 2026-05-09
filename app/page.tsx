@@ -4,7 +4,6 @@ import LogoBar from "./components/LogoBar";
 import ProblemSection from "./components/ProblemSection";
 import UseCaseGrid from "./components/UseCaseGrid";
 import HowItWorks from "./components/HowItWorks";
-import Pricing from "./components/Pricing";
 import PilotProgram from "./components/PilotProgram";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
@@ -18,7 +17,6 @@ export default function Home() {
         <ProblemSection />
         <UseCaseGrid />
         <HowItWorks />
-        <Pricing />
         <PilotProgram />
         <FinalCTA />
       </main>

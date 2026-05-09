@@ -22,64 +22,68 @@ const BentoGrid = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Main Feature: Navigation */}
+          {/* Feature 1: The App-Free Experience */}
           <div className="md:col-span-2 bg-white/5 border border-white/10 rounded-[2.5rem] p-12 flex flex-col justify-end min-h-[450px] relative overflow-hidden group shadow-2xl backdrop-blur-sm card-hover">
             <div className="absolute inset-0 opacity-[0.03] pointer-events-none group-hover:scale-110 transition-transform duration-700" 
                  style={{ backgroundImage: 'linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
             
             <span className="relative text-accent text-[10px] font-bold uppercase tracking-[0.2em] mb-4">
-              Real-Time Wayfinding
+              Instant Access
             </span>
             <h3 className="relative font-display text-4xl md:text-5xl font-bold tracking-tight text-white mb-6 leading-tight">
-              Turn-by-turn precision.
+              No apps to download. <br />Just scan and go.
             </h3>
             <p className="relative text-white/50 text-lg max-w-md leading-relaxed font-medium">
-              A seamless, app-free navigation experience. Powered by existing floor plans to provide sub-meter accuracy in every corridor.
+              Visitors scan a QR code at your entrance to open a high-precision map instantly in their browser. It works on any modern phone, from door to destination.
             </p>
           </div>
 
-          {/* Spec Card: Speed */}
+          {/* Feature 2: Sensor Fusion Positioning */}
           <div className="bg-accent rounded-[2.5rem] p-10 flex flex-col justify-between shadow-2xl card-hover border border-accent/20">
             <div className="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center border border-white/20">
-              <span className="text-2xl font-black text-white">24h</span>
+              <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
             </div>
             <div>
-              <h3 className="font-display text-2xl font-bold tracking-tight text-white mb-2">Rapid Deployment</h3>
-              <p className="text-white/80 text-sm leading-relaxed font-medium">Go from static floor plan to live, interactive wayfinding in under 24 hours.</p>
+              <h3 className="font-display text-2xl font-bold tracking-tight text-white mb-2">Real-Time Precision</h3>
+              <p className="text-white/80 text-sm leading-relaxed font-medium">Our engine combines phone sensors with your floor plan to provide a smooth, "blue-dot" navigation experience indoors.</p>
             </div>
           </div>
 
-          {/* Spec Card: Accessibility */}
+          {/* Feature 3: Safety & Alerts */}
           <div className="bg-white/5 border border-white/10 rounded-[2.5rem] p-10 flex flex-col justify-between min-h-[280px] shadow-2xl group backdrop-blur-sm card-hover">
-            <div className="w-16 h-16 rounded-2xl bg-accent/10 flex items-center justify-center border border-accent/20">
-              <AccessibilityIcon className="text-accent w-8 h-8" />
+            <div className="w-16 h-16 rounded-2xl bg-red-500/10 flex items-center justify-center border border-red-500/20">
+              <svg className="w-8 h-8 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
             </div>
             <div>
-              <h3 className="font-display text-2xl font-bold tracking-tight text-white mb-2">WCAG 2.1 Native</h3>
-              <p className="text-white/40 text-sm leading-relaxed font-medium group-hover:text-white/60 transition-colors">Accessibility is not an add-on. Every route is optimized for mobility needs and high-contrast UI.</p>
+              <h3 className="font-display text-2xl font-bold tracking-tight text-white mb-2">Safety & Alerts</h3>
+              <p className="text-white/40 text-sm leading-relaxed font-medium group-hover:text-white/60 transition-colors">Broadcast emergency routes or important updates to every visitor on-site instantly through the map interface.</p>
             </div>
           </div>
 
-          {/* Spec Card: Infrastructure */}
+          {/* Feature 4: Spatial Analytics */}
           <div className="md:col-span-2 bg-white/5 border border-white/10 rounded-[2.5rem] p-12 flex flex-col md:flex-row md:items-center gap-12 shadow-2xl relative overflow-hidden group backdrop-blur-sm card-hover">
             <div className="absolute inset-0 opacity-[0.02] pointer-events-none group-hover:opacity-[0.05] transition-opacity" 
                  style={{ backgroundImage: 'linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px)', backgroundSize: '60px 60px' }}></div>
             
             <div className="flex-1 relative z-10">
               <span className="text-accent text-[10px] font-bold uppercase tracking-[0.2em] px-3 py-1 rounded-full mb-6 inline-block border border-accent/30 bg-accent/10">
-                Enterprise Core
+                Facility Intelligence
               </span>
               <h3 className="font-display text-3xl font-bold tracking-tight text-white mb-4 leading-tight">
-                Privacy-First Stack.
+                Understand your building's flow.
               </h3>
               <p className="text-white/40 text-base leading-relaxed font-medium max-w-lg">
-                Your building data stays yours. Our spatial engine processes everything locally in the visitor&apos;s browser, ensuring total data sovereignty and security.
+                See where visitors get stuck and which routes are most popular. Our analytics tools give you the insight to optimize your layout without complex data setups.
               </p>
             </div>
             <div className="relative z-10 w-full md:w-64 h-48 bg-black/40 rounded-3xl border border-white/5 overflow-hidden group-hover:border-white/10 transition-all">
                <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent opacity-40" />
                <div className="w-full h-full flex items-center justify-center border border-dashed border-white/10 m-4 rounded-2xl">
-                 <span className="text-[10px] font-bold text-white/20 uppercase tracking-[0.2em]">Spatial Engine</span>
+                 <span className="text-[10px] font-bold text-white/20 uppercase tracking-[0.2em]">Flow Analytics</span>
                </div>
             </div>
           </div>
