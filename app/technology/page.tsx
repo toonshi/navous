@@ -25,7 +25,7 @@ export default function IntegrationPage() {
                <span className="text-white/60">Total control for you.</span>
              </h1>
              <p className="text-white/60 text-lg md:text-xl font-medium leading-relaxed max-w-3xl mx-auto mb-10">
-               Navous is built to pass hospital procurement checklists on day one. No hardware installations, no app deployments, and absolute data sovereignty.
+               Navous is built to pass hospital procurement checklists on day one. Seamless deployment, no app downloads, and absolute data sovereignty.
              </p>
           </div>
         </div>

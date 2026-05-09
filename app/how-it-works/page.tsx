@@ -26,7 +26,7 @@ export default function HowItWorksPage() {
             <span className="text-white/60">Deployed in Days.</span>
           </h1>
           <p className="text-white/60 text-lg md:text-xl font-medium leading-relaxed max-w-2xl mx-auto mb-10">
-            No hardware. No complex wiring. Just a seamless, web-based experience that helps your visitors find their way instantly.
+            A seamless, web-based experience that helps your visitors find their way instantly.
           </p>
         </div>
 

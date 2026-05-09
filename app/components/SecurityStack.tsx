@@ -44,9 +44,9 @@ export default function SecurityStack() {
             <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center border border-accent/20 mb-6">
                <AccessibilityIcon className="text-accent w-6 h-6" />
             </div>
-            <h3 className="text-xl font-bold text-white mb-3">Set up a map yourself</h3>
+            <h3 className="text-xl font-bold text-white mb-3">Managed mapping</h3>
             <p className="text-white/60 text-sm leading-relaxed">
-              Simply upload your existing floor plans and use our easy tools to define your layout. You can have a live, working map ready for your visitors in just a few minutes.
+              We take your existing floor plans and handle the digital conversion for you. Our team ensures your live, working map is ready for visitors in just a few days.
             </p>
           </div>
         </div>

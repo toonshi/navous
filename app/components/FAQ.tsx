@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: "How quickly can a facility go live?",
-    a: "Most facilities can launch in under 24 hours. Once you provide your CAD or PDF floor plans, our engine digitizes and maps your environment for immediate deployment.",
+    a: "Most facilities can launch in just a few days. Once you provide your floor plans, our team handles the digitization and mapping to ensure a perfect result for your visitors.",
   },
   {
     q: "Can routing handle accessibility and mobility needs?",
@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     q: "Will this require beacons or new hardware procurement?",
-    a: "No. Core wayfinding runs entirely without new indoor hardware by leveraging existing architectural blueprints and smartphone sensor fusion.",
+    a: "We minimize infrastructure by leveraging existing blueprints and smartphone sensors. For high-precision needs, we can integrate discreet sensors to ensure perfect navigation accuracy.",
   },
   {
     q: "How is visitor privacy protected and who owns the data?",

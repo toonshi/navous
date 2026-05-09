@@ -15,7 +15,7 @@ export default function FinalCTA() {
           Ready to map your building?
         </h2>
         <p className="mx-auto mb-10 max-w-2xl text-base font-medium leading-relaxed text-white/60 sm:text-lg md:mb-12 md:text-xl">
-          Send a floor plan and we&apos;ll turn it into a live walkthrough you can test with your team. No hardware to install, no app to build, and no pressure to pretend the pilot is further along than it is.
+          Reach out and we&apos;ll turn your floor plans into a live walkthrough you can test with your team. No app to build, and no pressure to pretend the pilot is further along than it is.
         </p>
         <div className="flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap sm:gap-5">
           <Link href="/#contact" className="btn-primary w-full sm:min-w-[180px] sm:w-auto">Get Started</Link>

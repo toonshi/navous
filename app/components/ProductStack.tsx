@@ -43,7 +43,7 @@ export default function ProductStack() {
               <ul className="space-y-3 text-slate-600 font-medium">
                 <li className="flex items-center gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-[#13B7DA]" />
-                  <span>3D-mapped venues in minutes from blueprints</span>
+                  <span>3D-mapped venues built from your blueprints</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-[#13B7DA]" />

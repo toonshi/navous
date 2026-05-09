@@ -4,16 +4,16 @@ import React from "react";
 
 const steps = [
   {
-    title: "Upload your blueprint",
-    description: "Drop in your PDF or CAD file. No hardware or wiring required.",
+    title: "Connect with us",
+    description: "Reach out to our team to start your project. We handle the digital conversion of your floor plans from day one.",
   },
   {
-    title: "Get your map",
-    description: "Our engine generates an interactive 3D environment with precise routing.",
+    title: "Get your walkthrough",
+    description: "Our team builds a precise, interactive map of your building for you to test with your team.",
   },
   {
-    title: "Share the link",
-    description: "Visitors just tap and go. No app downloads needed, works directly in any browser.",
+    title: "Launch instantly",
+    description: "Share your map with a link or QR code. No app downloads needed, works directly in any browser.",
   },
 ];
 

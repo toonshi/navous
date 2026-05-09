@@ -12,8 +12,8 @@ const columns = [
       "Real-time foot-traffic heatmaps by zone",
       "Identify where visitors get stuck or lost",
       "Emergency evacuation routing — instant reroute",
-      "No hardware installation required",
-    ],
+      "Managed implementation",
+      ],
   },
   {
     audience: "For Visitors",
