@@ -9,22 +9,22 @@ export default function ProblemSection() {
     <section className="py-24 px-8 bg-primary border-t border-white/5">
       <div className="max-w-7xl mx-auto flex flex-col gap-28">
 
-        {/* Row 1 — Staff Burden */}
+        {/* Row 1 — Visitor Experience */}
         <div className="flex flex-col md:flex-row md:items-center gap-12 lg:gap-24">
           <div className="flex-1 max-w-xl">
             <span className="text-accent text-sm font-bold uppercase tracking-widest mb-4 block">
-              The Operational Cost
+              Seamless Experience
             </span>
             <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight mb-6">
-              Every missed turn
+              Guide visitors from
               <br />
-              <span className="text-accent">costs you money.</span>
+              <span className="text-accent">door to destination.</span>
             </h2>
             <p className="text-white/60 text-lg leading-relaxed font-medium mb-6">
-              A busy hospital front desk fields 200+ wayfinding questions a day. That&apos;s 6+ staff hours — every single day — answering &ldquo;where is radiology?&rdquo;
+              Ensure every visitor reaches their destination without the frustration of getting lost or asking for directions. 
             </p>
             <p className="text-white/60 text-lg leading-relaxed font-medium">
-              Multiply that by your building&apos;s foot traffic and it adds up fast in lost productivity and patient frustration.
+              Give your guests a clear, interactive path that works instantly on any phone, for any building.
             </p>
           </div>
           <div className="flex-1">
@@ -38,25 +38,25 @@ export default function ProblemSection() {
               />
               <div className="border-t border-white/10 bg-black/20 px-6 py-4">
                 <span className="text-xs font-bold text-accent tracking-wide">
-                  Estimate based on your front-desk question volume, not pilot claims.
+                  A clear, interactive path for every visitor.
                 </span>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Row 2 — Data Intelligence */}
+        {/* Row 2 — Building Insights */}
         <div className="flex flex-col md:flex-row-reverse md:items-center gap-12 lg:gap-24">
           <div className="flex-1 max-w-xl">
              <span className="text-accent text-sm font-bold uppercase tracking-widest mb-4 block">
-              Facility Intelligence
+              Building Insights
             </span>
             <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight mb-6">
-              Identify friction
-              <br />before it&apos;s a complaint.
+              See where your
+              <br />visitors need help.
             </h2>
             <p className="text-white/60 text-lg leading-relaxed font-medium">
-              Navous heatmaps reveal exactly where visitors get stuck or lost. Use real data to improve your physical signage, optimize floor plans, and move people through your building with 0% friction.
+              Understand the flow of your building with real-time insights. Identify exactly where people get stuck to improve your signage, optimize floor plans, and ensure a smooth journey for everyone.
             </p>
           </div>
           <div className="flex-1">
@@ -74,18 +74,18 @@ export default function ProblemSection() {
           </div>
         </div>
 
-        {/* Row 3 — Compliance & Access */}
+        {/* Row 3 — Accessibility */}
         <div className="flex flex-col md:flex-row md:items-center gap-12 lg:gap-24">
           <div className="flex-1 max-w-xl">
              <span className="text-accent text-sm font-bold uppercase tracking-widest mb-4 block">
-              Compliance & Accessibility
+              Accessibility
             </span>
             <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight mb-6">
-              Institutional-grade
-              <br />accessibility.
+              Navigation for
+              <br />everyone.
             </h2>
             <p className="text-white/60 text-lg leading-relaxed font-medium">
-              Automate WCAG 2.1 compliance with wheelchair-optimized routing, high-contrast UI, and multi-language support. Every visitor, regardless of ability or language, moves with confidence.
+              Built with accessibility in mind. Automated wheelchair-optimized routing and high-contrast UI ensure every visitor, regardless of ability, moves through your space with ease.
             </p>
           </div>
           <div className="flex-1">
