@@ -9,6 +9,7 @@ export default function LogoBar() {
     { name: "International Airports", icon: "✈️" },
     { name: "University Campuses", icon: "🎓" },
     { name: "Corporate Headquarters", icon: "🏢" },
+    { name: "Conference Centres", icon: "🎟️" },
   ];
 
   return (

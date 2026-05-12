@@ -64,15 +64,15 @@ const useCases: UseCase[] = [
   {
     id: 3,
     title: "Corporate",
-    category: "Offices",
-    description: "Find rooms and desks easily.",
-    longDescription: "Maximize your real estate efficiency with deep workplace integrations and real-time syncing.",
+    category: "Offices & Conferences",
+    description: "Find rooms and event spaces.",
+    longDescription: "Maximize your real estate efficiency with deep workplace integrations and conference center wayfinding.",
     image: "/corporate.jpg",
     benefits: [
       "Meeting room booking sync", 
+      "Conference hall navigation", 
       "Visitor check-in flow", 
-      "Hot-desk wayfinding",
-      "Staff directory routing"
+      "Hot-desk wayfinding"
     ],
   },
   {
