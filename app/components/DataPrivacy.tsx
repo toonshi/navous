@@ -54,9 +54,9 @@ export default function DataPrivacy() {
         <div className="flex-1 w-full">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {securityFeatures.map((feature) => (
-              <div key={feature.title} className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-accent/50 transition-colors">
-                <h3 className="text-white font-bold text-lg mb-3">{feature.title}</h3>
-                <p className="text-white/50 text-sm leading-relaxed">
+              <div key={feature.title} className="bg-[#B3E6E5] border border-[#B3E6E5]/20 rounded-2xl p-6 transition-all hover:scale-[1.02]">
+                <h3 className="text-black font-bold text-lg mb-3">{feature.title}</h3>
+                <p className="text-black/70 text-sm leading-relaxed font-medium">
                   {feature.description}
                 </p>
               </div>

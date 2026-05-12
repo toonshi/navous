@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-learn-more {
-  background: linear-gradient(to right, #F3C8B3 50%, rgba(255, 255, 255, 0.03) 50%) !important;
+  background: linear-gradient(to right, #B3E6E5 50%, rgba(255, 255, 255, 0.03) 50%) !important;
   background-size: 200% 100% !important;
   background-position: right bottom !important;
   transition: all 0.5s ease-out !important;
@@ -164,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-learn-more:hover {
   background-position: left bottom !important;
   color: #000000 !important;
-  border-color: #F3C8B3 !important;
+  border-color: #B3E6E5 !important;
 }
 
 .btn-fill-blue {

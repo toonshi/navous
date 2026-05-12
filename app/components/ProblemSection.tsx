@@ -85,7 +85,7 @@ export default function ProblemSection() {
               <br />everyone.
             </h2>
             <p className="text-white/60 text-lg leading-relaxed font-medium">
-              Built with accessibility in mind. Automated wheelchair-optimized routing and high-contrast UI ensure every visitor, regardless of ability, moves through your space with ease.
+              Built for every visitor. Our platform includes specialized voice and vibrate modes for people with visual disabilities, alongside wheelchair-optimized routing and full support for multiple languages.
             </p>
           </div>
           <div className="flex-1">
