@@ -59,32 +59,58 @@ const BentoGrid = () => {
               </svg>
             </div>
             <div>
-              <h3 className="font-display text-2xl font-bold tracking-tight text-white mb-2">Safety & Alerts</h3>
-              <p className="text-white/40 text-sm leading-relaxed font-medium group-hover:text-white/60 transition-colors">Broadcast emergency routes or important updates to every visitor on-site instantly through the map interface.</p>
+              <h3 className="font-display text-2xl font-bold tracking-tight text-white mb-2">Instant Alerts</h3>
+              <p className="text-white/40 text-sm leading-relaxed font-medium group-hover:text-white/60 transition-colors">Broadcast emergency routes or important facility updates to every visitor on-site instantly through the map interface.</p>
             </div>
           </div>
 
-          {/* Feature 4: Spatial Analytics */}
+          {/* Feature 4: Spatial Data Analytics */}
           <div className="md:col-span-2 bg-white/5 border border-white/10 rounded-[2.5rem] p-12 flex flex-col md:flex-row md:items-center gap-12 shadow-2xl relative overflow-hidden group backdrop-blur-sm card-hover">
             <div className="absolute inset-0 opacity-[0.02] pointer-events-none group-hover:opacity-[0.05] transition-opacity" 
                  style={{ backgroundImage: 'linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, white 1px, transparent 1px)', backgroundSize: '60px 60px' }}></div>
             
             <div className="flex-1 relative z-10">
               <span className="text-accent text-[10px] font-bold uppercase tracking-[0.2em] px-3 py-1 rounded-full mb-6 inline-block border border-accent/30 bg-accent/10">
-                Facility Intelligence
+                Data Intelligence
               </span>
               <h3 className="font-display text-3xl font-bold tracking-tight text-white mb-4 leading-tight">
-                Understand your building's flow.
+                Deep Spatial Analytics
               </h3>
               <p className="text-white/40 text-base leading-relaxed font-medium max-w-lg">
-                See where visitors get stuck and which routes are most popular. Our analytics tools give you the insight to optimize your layout without complex data setups.
+                See where visitors get stuck and which routes are most popular. Our deep analytics suite gives you the data to optimize your layout and staff placement.
               </p>
             </div>
             <div className="relative z-10 w-full md:w-64 h-48 bg-black/40 rounded-3xl border border-white/5 overflow-hidden group-hover:border-white/10 transition-all">
                <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent opacity-40" />
                <div className="w-full h-full flex items-center justify-center border border-dashed border-white/10 m-4 rounded-2xl">
-                 <span className="text-[10px] font-bold text-white/20 uppercase tracking-[0.2em]">Flow Analytics</span>
+                 <span className="text-[10px] font-bold text-white/20 uppercase tracking-[0.2em]">Data Analytics</span>
                </div>
+            </div>
+          </div>
+
+          {/* Feature 5: Dynamic Control */}
+          <div className="bg-white/5 border border-white/10 rounded-[2.5rem] p-10 flex flex-col justify-between min-h-[280px] shadow-2xl group backdrop-blur-sm card-hover">
+            <div className="w-16 h-16 rounded-2xl bg-orange-500/10 flex items-center justify-center border border-orange-500/20">
+              <svg className="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+              </svg>
+            </div>
+            <div>
+              <h3 className="font-display text-2xl font-bold tracking-tight text-white mb-2">Zone Management</h3>
+              <p className="text-white/40 text-sm leading-relaxed font-medium group-hover:text-white/60 transition-colors">Close off wings, redirect traffic for maintenance, or manage VIP zones in real-time without updating floor plans.</p>
+            </div>
+          </div>
+
+          {/* Feature 6: Promotions */}
+          <div className="bg-white/5 border border-white/10 rounded-[2.5rem] p-10 flex flex-col justify-between min-h-[280px] shadow-2xl group backdrop-blur-sm card-hover">
+            <div className="w-16 h-16 rounded-2xl bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20">
+              <svg className="w-8 h-8 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
+              </svg>
+            </div>
+            <div>
+              <h3 className="font-display text-2xl font-bold tracking-tight text-white mb-2">Live Promotions</h3>
+              <p className="text-white/40 text-sm leading-relaxed font-medium group-hover:text-white/60 transition-colors">Deliver location-based offers or helpful suggestions based on where your visitors are currently standing.</p>
             </div>
           </div>
         </div>

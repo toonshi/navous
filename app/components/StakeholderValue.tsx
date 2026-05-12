@@ -10,7 +10,7 @@ const columns = [
     accentColor: "#3B82F6",
     features: [
       "Real-time foot-traffic heatmaps by zone",
-      "Identify where visitors get stuck or lost",
+      "Dynamic zone management — close wings or redirect traffic",
       "Emergency evacuation routing — instant reroute",
       "Managed implementation",
       ],

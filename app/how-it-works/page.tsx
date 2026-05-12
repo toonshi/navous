@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Roadmap from "../components/Roadmap";
 import Integration from "../components/Integration";
+import CoreValues from "../components/CoreValues";
 import IndustrySolutions from "../components/IndustrySolutions";
 import FAQ from "../components/FAQ";
 import FinalCTA from "../components/FinalCTA";
@@ -33,6 +34,7 @@ export default function HowItWorksPage() {
         <Roadmap />
         <IndustrySolutions />
         <Integration />
+        <CoreValues />
         <FAQ />
         <FinalCTA />
       </main>

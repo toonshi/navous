@@ -31,9 +31,9 @@ const pillars = [
     subtitle: "The Operational Layer",
     description: "An event-driven integration layer that connects the indoor map to venue operations and autonomous logistics.",
     features: [
+      { label: "Dynamic Zone Control", value: "Reroute visitors in real-time to manage maintenance or closures." },
       { label: "Autonomous Triggers", value: "Notify security or customers the millisecond a threshold is crossed." },
-      { label: "The Last Meter", value: "Headless Rust core for UberEats/DoorDash floor & door precision." },
-      { label: "Profitability Routing", value: "Aisle-aware routing for warehouse fleets to minimize distance." }
+      { label: "The Last Meter", value: "Headless Rust core for UberEats/DoorDash floor & door precision." }
     ],
     color: "#93C5FD",
   },
@@ -42,9 +42,9 @@ const pillars = [
     subtitle: "Business Intelligence",
     description: "Providing actionable business intelligence through high-fidelity spatial data analytics.",
     features: [
+      { label: "Contextual Promotions", value: "Trigger rewards or helpful info based on precise visitor location." },
       { label: "Visual Footfall", value: "Occupancy heatmaps to optimize security and staff placement." },
-      { label: "Tenant Analytics", value: "Prove floor-space value with objective visitor dwell times." },
-      { label: "Traffic Insight", value: "Attribute traffic to digital ads (GPS) or physical signs (QR)." }
+      { label: "Tenant Analytics", value: "Prove floor-space value with objective visitor dwell times." }
     ],
     color: "#3B82F6",
   },

@@ -5,7 +5,7 @@ import React from "react";
 const steps = [
   {
     title: "Connect with us",
-    description: "Reach out to our team to start your project. We handle the digital conversion of your floor plans from day one.",
+    description: "Reach out to our team to start your project. Our automated system handles the digital conversion of your floor plans from day one.",
   },
   {
     title: "Get your walkthrough",
@@ -13,7 +13,7 @@ const steps = [
   },
   {
     title: "Launch instantly",
-    description: "Share your map with a link or QR code. Visitors experience your venue interactively onsite—no app downloads needed, works directly in any browser.",
+    description: "Share your map with a link or QR code. Visitors experience your venue interactively onsite. No app downloads needed, works directly in any browser and on all devices.",
   },
 ];
 
@@ -33,22 +33,18 @@ export default function HowItWorks() {
           </p>
         </div>
 
-        <div className="relative grid grid-cols-1 gap-10 md:gap-12 lg:grid-cols-3">
+        <div className="relative flex flex-col gap-12 md:gap-16 max-w-3xl mx-auto">
           {steps.map((step, index) => (
             <div key={step.title} className="flex flex-col items-start text-left group">
-              <div className="relative mb-8 flex aspect-video w-full items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-2xl backdrop-blur-sm transition-all duration-300 group-hover:border-accent/50 md:mb-10">
-                 <div className="absolute inset-0 opacity-[0.03] bg-[url('https://www.transparenttextures.com/patterns/graphy.png')]" />
-                 <span className="font-display text-6xl font-black text-white/10 transition-colors duration-300 group-hover:text-accent/10 sm:text-7xl">0{index + 1}</span>
-              </div>
               <div className="mb-5 flex items-center gap-4 md:mb-6">
                 <span className="text-accent font-bold text-xs tracking-widest uppercase px-3 py-1 bg-accent/10 border border-accent/20 rounded">
                   STEP_{String(index + 1).padStart(2, '0')}
                 </span>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4 font-display">
+              <h3 className="text-3xl font-bold text-white mb-6 font-display">
                 {step.title}
               </h3>
-              <p className="text-base font-medium leading-relaxed text-white/50 sm:text-lg">
+              <p className="text-lg font-medium leading-relaxed text-white/50 sm:text-xl">
                 {step.description}
               </p>
             </div>

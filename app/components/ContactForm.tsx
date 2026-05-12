@@ -14,7 +14,11 @@ export default function ContactForm() {
   if (state?.success) {
     return (
       <div className="bg-white/5 border border-teal/20 rounded-3xl p-12 text-center backdrop-blur-xl">
-        <div className="w-16 h-16 bg-teal/20 rounded-full flex items-center justify-center mx-auto mb-6 text-teal text-2xl">✓</div>
+        <div className="w-16 h-16 bg-teal/20 rounded-full flex items-center justify-center mx-auto mb-6 text-teal">
+          <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
         <h3 className="text-2xl font-bold text-white mb-4">Request Received</h3>
         <p className="text-white/60 mb-6">Our partnership lead will reach out within 24 hours to discuss your facility needs.</p>
         <div className="bg-white/5 rounded-xl p-4 text-left border border-white/5">

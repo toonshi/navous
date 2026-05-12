@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import { GlobeIcon, AccessibilityIcon } from "./Doodles";
 
 export default function ProblemSection() {
   return (
@@ -88,27 +87,16 @@ export default function ProblemSection() {
               Built for every visitor. Our platform includes specialized voice and vibrate modes for people with visual disabilities, alongside wheelchair-optimized routing and full support for multiple languages.
             </p>
           </div>
-          <div className="flex-1">
-             <div className="bg-white/5 rounded-xl border border-white/10 shadow-xl p-8 flex flex-col gap-6 backdrop-blur-sm">
-                <div className="flex items-center gap-4 border-b border-white/5 pb-4">
-                   <div className="w-10 h-10 rounded bg-white/5 flex items-center justify-center border border-white/10">
-                      <AccessibilityIcon className="text-accent w-6 h-6" />
-                   </div>
-                   <div className="flex-1">
-                      <div className="h-3 w-1/2 bg-white/20 rounded mb-2" />
-                      <div className="h-2 w-1/4 bg-white/10 rounded" />
-                   </div>
-                </div>
-                <div className="flex items-center gap-4">
-                   <div className="w-10 h-10 rounded bg-white/5 flex items-center justify-center border border-white/10">
-                      <GlobeIcon className="text-accent w-6 h-6" />
-                   </div>
-                   <div className="flex-1">
-                      <div className="h-3 w-1/2 bg-white/20 rounded mb-2" />
-                      <div className="h-2 w-1/4 bg-white/10 rounded" />
-                   </div>
-                </div>
-             </div>
+          <div className="flex-1 flex justify-center lg:justify-center">
+            <div className="max-w-[320px] w-full overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 shadow-2xl backdrop-blur-sm">
+              <Image
+                src="/pocket-mode.jpeg"
+                alt="Pocket mode for accessibility"
+                width={1200}
+                height={900}
+                className="h-auto w-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>

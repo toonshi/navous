@@ -108,13 +108,27 @@ const useCases: UseCase[] = [
     title: "Civic",
     category: "Government",
     description: "Inclusive wayfinding.",
-    longDescription: "Public service belongs to everyone. Empowering citizens with diverse accessibility needs.",
+    longDescription: "Public service belongs to everyone. Empowering citizens with diverse accessibility needs and enterprise security.",
     image: "/parliament.jpg",
     benefits: [
+      "SOC 2 TYPE II Compliant", 
+      "GDPR & HIPAA Ready", 
       "PWD-optimized routing", 
-      "Multi-language support", 
-      "Audio-guided journeys",
-      "GDPR data sovereignty"
+      "Audio-guided journeys"
+    ],
+  },
+  {
+    id: 7,
+    title: "Social",
+    category: "Public Facilities",
+    description: "Connect with your community.",
+    longDescription: "Transform community centers and social hubs into inclusive environments. Helping visitors find events, facilities, and each other with ease.",
+    image: "/stadium.jpg",
+    benefits: [
+      "Event-based routing", 
+      "Inclusive PWD access", 
+      "Facility status alerts",
+      "Community hub navigation"
     ],
   },
 ];
@@ -138,6 +152,7 @@ const UseCaseGrid = () => {
     else if (hoveredId === 4) { colTracks = "2.5fr 0.6fr 0.6fr 0.6fr"; rowTracks = "0.4fr 0.6fr 2.2fr"; }
     else if (hoveredId === 5) { colTracks = "0.4fr 2.5fr 1.2fr 0.4fr"; rowTracks = "0.4fr 0.6fr 2.2fr"; }
     else if (hoveredId === 6) { colTracks = "0.4fr 0.4fr 0.4fr 3fr"; rowTracks = "0.4fr 0.6fr 2.2fr"; }
+    else if (hoveredId === 7) { colTracks = "0.4fr 1.2fr 2.2fr 0.4fr"; rowTracks = "0.4fr 0.6fr 2.2fr"; }
 
     gsap.to(gridRef.current, {
       gridTemplateColumns: colTracks,
@@ -177,8 +192,9 @@ const UseCaseGrid = () => {
               "col-start-4 row-start-1 col-span-1 row-span-2",
               "col-start-3 row-start-2 col-span-1 row-span-1",
               "col-start-1 row-start-3 col-span-1 row-span-1",
-              "col-start-2 row-start-3 col-span-2 row-span-1",
-              "col-start-4 row-start-3 col-span-1 row-span-1"
+              "col-start-2 row-start-3 col-span-1 row-span-1",
+              "col-start-4 row-start-3 col-span-1 row-span-1",
+              "col-start-3 row-start-3 col-span-1 row-span-1"
             ];
             
             return (
@@ -216,7 +232,7 @@ const UseCaseGrid = () => {
                       <ul className="flex flex-col gap-2 mb-8">
                         {useCase.benefits.map((benefit) => (
                           <li key={benefit} className="flex items-center gap-3 text-[12px] font-bold text-white">
-                            <span className="text-white">✓</span>
+                            <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
                             {benefit}
                           </li>
                         ))}
@@ -272,7 +288,7 @@ const UseCaseGrid = () => {
                   <ul className="flex flex-col gap-2">
                     {useCase.benefits.map((benefit) => (
                       <li key={benefit} className="flex items-center gap-2 text-xs font-bold text-white">
-                        <span className="text-white">✓</span>
+                        <span className="w-1 h-1 rounded-full bg-accent shrink-0" />
                         {benefit}
                       </li>
                     ))}

@@ -1,35 +1,39 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { ScatterDots } from "./Doodles";
 
 const phases = [
   {
     phase: "STEP_01",
     title: "Instant Upload",
-    status: "Day 1",
+    status: "Step 1",
     mechanism: "Upload your existing floor plans directly to our platform.",
     benefit: "Our tools help you quickly convert your venue layout into a high-fidelity, interactive map yourself in just minutes.",
     ux: "Upload → Map ready.",
     color: "#3B82F6",
+    image: "/floorplan.jpg"
   },
   {
     phase: "STEP_02",
     title: "Point-of-Interest Setup",
-    status: "Week 2",
+    status: "Step 2",
     mechanism: "Define key locations like clinics, lecture halls, or boarding gates.",
     benefit: "Add rich metadata, accessibility notes, and real-time status updates for every important room in your building.",
     ux: "Searchable venue directory.",
     color: "#60A5FA",
+    image: "/edit.jpeg"
   },
   {
     phase: "STEP_03",
     title: "Launch instantly",
-    status: "Launch",
+    status: "Step 3",
     mechanism: "Deploy via web-link or QR codes for an onsite interactive experience.",
     benefit: "Visitors navigate your venue instantly in any browser. No app downloads required.",
     ux: "Scan & Navigate onsite.",
     color: "#93C5FD",
+    image: "/navigate.jpeg"
   }
 ];
 
@@ -76,14 +80,24 @@ export default function Roadmap() {
                 <div className="space-y-6">
                   <div>
                     <span className="text-[10px] font-bold text-accent uppercase tracking-widest block mb-1">THE PROCESS</span>
-                    <p className="text-white/60 font-medium text-sm leading-relaxed">{item.mechanism}</p>
+                    <p className="text-white/60 font-medium text-sm leading-relaxed mb-4">{item.mechanism}</p>
+                    {item.image && (
+                      <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-white/10 mb-6 bg-white/5">
+                        <Image 
+                          src={item.image} 
+                          alt={item.title} 
+                          fill 
+                          className="object-cover opacity-80"
+                        />
+                      </div>
+                    )}
                   </div>
                   <div>
                     <span className="text-[10px] font-bold text-accent uppercase tracking-widest block mb-1">WHY IT MATTERS</span>
                     <p className="text-white/60 font-medium text-sm leading-relaxed">{item.benefit}</p>
                   </div>
-                  <div className="p-4 rounded-xl bg-white/5 border border-white/10 group-hover:bg-white/10 group-hover:border-accent/50 transition-all card-hover">
-                    <span className="text-[10px] font-bold text-white/40 uppercase tracking-widest block mb-1">VISITOR EXPERIENCE</span>
+                  <div className="p-4 rounded-xl bg-white/5 border border-white/10 group-hover:bg-white/10 group-hover:border-accent/50 transition-all card-hover flex items-center justify-between gap-4">
+                    <span className="text-[10px] font-bold text-white/40 uppercase tracking-widest shrink-0">VISITOR EXPERIENCE</span>
                     <p className="text-white font-bold text-sm leading-relaxed">&ldquo;{item.ux}&rdquo;</p>
                   </div>
                 </div>
