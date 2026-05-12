@@ -13,7 +13,7 @@ const steps = [
   },
   {
     title: "Launch instantly",
-    description: "Share your map with a link or QR code. No app downloads needed, works directly in any browser.",
+    description: "Share your map with a link or QR code. Visitors experience your venue interactively onsite—no app downloads needed, works directly in any browser.",
   },
 ];
 

@@ -247,20 +247,7 @@ const UseCaseGrid = () => {
             </p>
           </div>
           
-          <div className="mt-10 flex flex-wrap gap-8 border-t border-white/5 pt-10 md:mt-12 md:gap-10 md:pt-12">
-            <div>
-              <p className="text-3xl font-black text-white mb-1 tracking-tight">QR</p>
-              <p className="text-[10px] font-bold uppercase tracking-widest text-white/30 italic">Launch point</p>
-            </div>
-            <div>
-              <p className="text-3xl font-black text-white mb-1 tracking-tight">Live</p>
-              <p className="text-[10px] font-bold uppercase tracking-widest text-white/30 italic">Route updates</p>
-            </div>
-            <div>
-              <p className="text-3xl font-black text-white mb-1 tracking-tight">&lt;24h</p>
-              <p className="text-[10px] font-bold uppercase tracking-widest text-white/30 italic">Demo turnaround</p>
-            </div>
-          </div>
+
         </div>
 
         {/* Mobile View */}

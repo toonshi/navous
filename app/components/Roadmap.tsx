@@ -24,11 +24,11 @@ const phases = [
   },
   {
     phase: "STEP_03",
-    title: "Instant Go-Live",
+    title: "Launch instantly",
     status: "Launch",
-    mechanism: "Deploy via web-link or QR codes placed at key decision points.",
-    benefit: "Visitors get turn-by-turn directions instantly on their own devices. No app downloads or hardware maintenance required.",
-    ux: "Scan & Navigate in seconds.",
+    mechanism: "Deploy via web-link or QR codes for an onsite interactive experience.",
+    benefit: "Visitors navigate your venue instantly in any browser. No app downloads required.",
+    ux: "Scan & Navigate onsite.",
     color: "#93C5FD",
   }
 ];
