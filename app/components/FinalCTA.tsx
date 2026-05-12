@@ -19,7 +19,7 @@ export default function FinalCTA() {
         </p>
         <div className="flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap sm:gap-5">
           <Link href="/#contact" className="btn-primary w-full sm:min-w-[180px] sm:w-auto">Get Started</Link>
-          <Link href="/how-it-works" className="btn-secondary w-full sm:min-w-[180px] sm:w-auto">Learn More</Link>
+          <Link href="/how-it-works" className="btn-secondary btn-learn-more w-full sm:min-w-[180px] sm:w-auto">Learn More</Link>
         </div>
       </div>
     </section>

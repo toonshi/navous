@@ -33,7 +33,7 @@ export default function Hero() {
           <a href="#pilot" className="btn-primary w-full sm:min-w-[180px]">
             Get Started
           </a>
-          <a href="/how-it-works" className="btn-secondary w-full sm:min-w-[180px]">
+          <a href="/how-it-works" className="btn-secondary btn-learn-more w-full sm:min-w-[180px]">
             Learn More
           </a>
         </div>

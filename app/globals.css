@@ -154,6 +154,34 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-2px);
 }
 
+.btn-learn-more {
+  background: linear-gradient(to right, #F3C8B3 50%, rgba(255, 255, 255, 0.03) 50%) !important;
+  background-size: 200% 100% !important;
+  background-position: right bottom !important;
+  transition: all 0.5s ease-out !important;
+}
+
+.btn-learn-more:hover {
+  background-position: left bottom !important;
+  color: #000000 !important;
+  border-color: #F3C8B3 !important;
+}
+
+.btn-fill-blue {
+  background: linear-gradient(to right, #3B82F6 50%, transparent 50%) !important;
+  background-size: 200% 100% !important;
+  background-position: right bottom !important;
+  transition: all 0.5s ease-out !important;
+  color: #3B82F6 !important;
+  border: 2px solid rgba(59, 130, 246, 0.6) !important;
+}
+
+.btn-fill-blue:hover {
+  background-position: left bottom !important;
+  color: #ffffff !important;
+  border-color: #3B82F6 !important;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --background: #f8fafc;
