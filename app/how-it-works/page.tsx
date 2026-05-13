@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Roadmap from "../components/Roadmap";
 import Integration from "../components/Integration";
@@ -52,6 +53,11 @@ export default function HowItWorksPage() {
           <p className="text-white/60 text-lg md:text-xl font-medium leading-relaxed max-w-2xl mx-auto mb-10">
             A seamless, web-based experience that helps your visitors find their way instantly.
           </p>
+          <div className="flex justify-center">
+            <Link href="/roadmap" className="btn-secondary">
+              View Product Roadmap
+            </Link>
+          </div>
         </div>
 
         <Roadmap />

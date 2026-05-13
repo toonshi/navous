@@ -39,13 +39,13 @@ export default function DataPrivacy() {
           </p>
           
           <div className="flex flex-wrap gap-4">
-             <div className="px-5 py-2.5 rounded-lg border border-white/10 bg-white/5 text-white text-sm font-bold tracking-widest uppercase">
+             <div className="px-5 py-2.5 rounded-lg bg-[#B3E6E5] text-black text-sm font-bold tracking-widest uppercase">
                 SOC 2 TYPE II
              </div>
-             <div className="px-5 py-2.5 rounded-lg border border-white/10 bg-white/5 text-white text-sm font-bold tracking-widest uppercase">
+             <div className="px-5 py-2.5 rounded-lg bg-[#B3E6E5] text-black text-sm font-bold tracking-widest uppercase">
                 GDPR
              </div>
-             <div className="px-5 py-2.5 rounded-lg border border-white/10 bg-white/5 text-white text-sm font-bold tracking-widest uppercase">
+             <div className="px-5 py-2.5 rounded-lg bg-[#B3E6E5] text-black text-sm font-bold tracking-widest uppercase">
                 HIPAA READY
              </div>
           </div>
@@ -54,9 +54,9 @@ export default function DataPrivacy() {
         <div className="flex-1 w-full">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {securityFeatures.map((feature) => (
-              <div key={feature.title} className="bg-[#B3E6E5] border border-[#B3E6E5]/20 rounded-2xl p-6 transition-all hover:scale-[1.02]">
-                <h3 className="text-black font-bold text-lg mb-3">{feature.title}</h3>
-                <p className="text-black/70 text-sm leading-relaxed font-medium">
+              <div key={feature.title} className="bg-white/5 border border-white/10 rounded-2xl p-8 transition-all hover:border-accent/50 card-hover">
+                <h3 className="text-white font-bold text-lg mb-3">{feature.title}</h3>
+                <p className="text-white/60 text-sm leading-relaxed font-medium">
                   {feature.description}
                 </p>
               </div>

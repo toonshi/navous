@@ -37,24 +37,24 @@ const milestones = [
 
 export default function RoadmapPage() {
   return (
-    <div className="relative min-h-screen bg-slate-50">
+    <div className="relative min-h-screen bg-primary">
       <Navbar />
       
-      <main className="pt-32 pb-32 px-8">
+      <main className="pt-40 pb-32 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-20 text-center">
-            <p className="text-indigo-600 text-sm font-bold tracking-widest uppercase mb-4">Development Roadmap</p>
-            <h1 className="font-laila text-5xl md:text-7xl font-bold text-slate-900 mb-8 tracking-tight">
+          <div className="mb-24 text-center">
+            <p className="text-accent text-xs font-black tracking-[0.3em] uppercase mb-4">Development Roadmap</p>
+            <h1 className="text-5xl md:text-8xl font-bold text-white mb-8 tracking-tight">
               System Architecture<br />Evolution
             </h1>
-            <p className="text-slate-700 text-lg md:text-2xl max-w-3xl mx-auto font-medium leading-relaxed">
+            <p className="text-white/60 text-lg md:text-2xl max-w-3xl mx-auto font-medium leading-relaxed">
               Engineering milestones focused on achieving operational reliability and high-fidelity indoor positioning across complex architectural environments.
             </p>
           </div>
 
           <div className="relative w-full max-w-5xl mx-auto">
             {/* Timeline line */}
-            <div className="absolute top-0 bottom-0 left-6 md:left-1/2 w-0.5 bg-slate-300 md:-translate-x-px" />
+            <div className="absolute top-0 bottom-0 left-6 md:left-1/2 w-px bg-white/10 md:-translate-x-px" />
 
             <div className="space-y-16 md:space-y-0">
               {milestones.map((ms, index) => {
@@ -65,16 +65,16 @@ export default function RoadmapPage() {
                 return (
                   <div key={ms.phase} className={`relative flex flex-col md:flex-row items-start ${
                     isEven ? "md:justify-start" : "md:justify-end"
-                  } md:pb-24 last:pb-0`}>
+                  } md:pb-32 last:pb-0`}>
 
                     {/* Indicator dot */}
                     <div className="absolute left-6 md:left-1/2 md:-translate-x-1/2 mt-1 z-10">
-                      <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center shadow-sm
-                        ${isActive ? "border-indigo-600 bg-white" :
-                          isCompleted ? "border-indigo-600 bg-indigo-600" :
-                          "border-slate-400 bg-white"}
+                      <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center shadow-lg
+                        ${isActive ? "border-accent bg-primary" :
+                          isCompleted ? "border-accent bg-accent" :
+                          "border-white/20 bg-primary"}
                       `}>
-                        {isActive && <div className="w-2.5 h-2.5 rounded-full bg-indigo-600 animate-pulse" />}
+                        {isActive && <div className="w-2.5 h-2.5 rounded-full bg-accent animate-pulse" />}
                         {isCompleted && (
                           <svg className="w-3.5 h-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
@@ -87,40 +87,40 @@ export default function RoadmapPage() {
                     <div className={`w-full pl-16 md:pl-0 md:w-[45%] ${
                       isEven ? "md:pr-16" : "md:pl-16"
                     }`}>
-                      <div className={`p-8 md:p-10 rounded-3xl border-2 transition-all duration-300 shadow-xl
-                        ${isActive ? "bg-white border-indigo-600 scale-[1.02]" :
-                          isCompleted ? "bg-white border-slate-200" :
-                          "bg-white border-slate-100 opacity-80 hover:opacity-100"}
+                      <div className={`p-8 md:p-10 rounded-3xl border transition-all duration-300 glass card-hover
+                        ${isActive ? "border-accent/50 scale-[1.02] shadow-[0_0_40px_-15px_rgba(59,130,246,0.3)]" :
+                          isCompleted ? "border-white/10" :
+                          "border-white/5 opacity-60 hover:opacity-100"}
                       `}>
 
                         <div className="flex items-center justify-between mb-6">
-                          <span className={`font-mono text-sm font-bold tracking-widest uppercase
-                            ${isActive ? "text-indigo-600" : isCompleted ? "text-slate-500" : "text-slate-400"}
+                          <span className={`font-sans text-xs font-black tracking-[0.2em] uppercase
+                            ${isActive ? "text-accent" : isCompleted ? "text-white/40" : "text-white/30"}
                           `}>
                             {ms.phase}
                           </span>
-                          <span className={`text-xs font-black px-3 py-1.5 rounded-full tracking-wider uppercase
-                            ${isActive ? "bg-indigo-600 text-white shadow-lg shadow-indigo-200" :
-                              isCompleted ? "bg-emerald-100 text-emerald-700" :
-                              "bg-slate-100 text-slate-500"}
+                          <span className={`text-[10px] font-black px-3 py-1.5 rounded-full tracking-wider uppercase
+                            ${isActive ? "bg-accent text-white" :
+                              isCompleted ? "bg-white/10 text-white/60" :
+                              "bg-white/5 text-white/40"}
                           `}>
                             {ms.status}
                           </span>
                         </div>
 
-                        <h3 className="font-laila text-3xl font-bold mb-4 tracking-tight text-slate-900">
+                        <h3 className="text-3xl font-bold mb-4 tracking-tight text-white">
                           {ms.title}
                         </h3>
 
-                        <p className="text-slate-600 text-base leading-relaxed mb-8 font-medium">
+                        <p className="text-white/60 text-base leading-relaxed mb-8 font-medium">
                           {ms.description}
                         </p>
 
-                        <div className="space-y-3 border-t border-slate-100 pt-6">
-                          <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] mb-4">Core Deliverables</p>
+                        <div className="space-y-4 border-t border-white/5 pt-8">
+                          <p className="text-[10px] font-black text-white/30 uppercase tracking-[0.2em]">Core Deliverables</p>
                           {ms.points.map(point => (
-                            <div key={point} className="flex items-center gap-3 text-sm font-bold text-slate-700">
-                              <div className={`w-2 h-2 rounded-full shrink-0 ${isActive ? "bg-indigo-500" : isCompleted ? "bg-emerald-500" : "bg-slate-300"}`} />
+                            <div key={point} className="flex items-center gap-3 text-sm font-bold text-white/80">
+                              <div className={`w-1.5 h-1.5 rounded-full shrink-0 ${isActive ? "bg-accent" : isCompleted ? "bg-accent" : "bg-white/10"}`} />
                               {point}
                             </div>
                           ))}

@@ -17,6 +17,7 @@ export default function Footer() {
         <nav className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-white/60">
           <Link href="/" className="hover:text-white transition">Home</Link>
           <Link href="/how-it-works" className="hover:text-white transition">How It Works</Link>
+          <Link href="/roadmap" className="hover:text-white transition">Roadmap</Link>
           <Link href="/features" className="hover:text-white transition">Features</Link>
           <Link href="/faq" className="hover:text-white transition">FAQ</Link>
         </nav>
