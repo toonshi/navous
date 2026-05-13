@@ -61,6 +61,13 @@ export default function HowItWorksPage() {
         </div>
 
         <Roadmap />
+        
+        <div className="flex justify-center -mt-8 mb-20">
+          <Link href="/roadmap" className="btn-secondary">
+            Our Roadmap
+          </Link>
+        </div>
+
         <IndustrySolutions />
         <Integration />
         <CoreValues />
