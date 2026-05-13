@@ -30,7 +30,7 @@ export default function ProblemSection() {
             <div className="overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/5 shadow-2xl backdrop-blur-sm">
               <Image
                 src="/visitor-nav.jpg"
-                alt="Navous visitor navigation interface on mobile"
+                alt="Navous interactive indoor map showing a visitor's blue dot position and turn-by-turn routing on a mobile phone"
                 width={1200}
                 height={900}
                 className="h-auto w-full object-cover"
@@ -91,7 +91,7 @@ export default function ProblemSection() {
             <div className="max-w-[320px] w-full overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 shadow-2xl backdrop-blur-sm">
               <Image
                 src="/pocket-mode.jpeg"
-                alt="Pocket mode for accessibility"
+                alt="Smartphone showing Navous accessibility mode with high-contrast UI and voice guidance buttons"
                 width={1200}
                 height={900}
                 className="h-auto w-full object-cover"

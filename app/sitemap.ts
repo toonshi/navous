@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://navous.com'
+  const baseUrl = 'https://navous.app'
   
   return [
     {
