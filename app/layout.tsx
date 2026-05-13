@@ -56,6 +56,22 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col font-sans">
         {children}
         <Analytics />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Navous",
+              "url": "https://www.navous.app",
+              "logo": "https://www.navous.app/logo.svg",
+              "description": "Enterprise-grade indoor navigation and spatial intelligence platform for hospitals, malls, and airports.",
+              "sameAs": [
+                "https://github.com/toonshi/navous"
+              ]
+            }),
+          }}
+        />
       </body>
     </html>
   );

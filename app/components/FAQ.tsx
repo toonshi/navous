@@ -28,6 +28,23 @@ const faqs = [
 export default function FAQ() {
   return (
     <section id="faq" className="bg-primary border-t border-white/5 py-24 px-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map(faq => ({
+              "@type": "Question",
+              "name": faq.q,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.a
+              }
+            }))
+          }),
+        }}
+      />
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <span className="text-accent text-sm font-bold tracking-[0.2em] uppercase mb-4 block">

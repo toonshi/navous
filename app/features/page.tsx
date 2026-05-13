@@ -11,6 +11,29 @@ export default function FeaturesPage() {
   return (
     <div className="flex flex-col min-h-screen bg-primary">
       <Navbar />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.navous.app"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Features",
+                "item": "https://www.navous.app/features"
+              }
+            ]
+          }),
+        }}
+      />
       <main className="flex-1 pt-20">
         {/* Page hero */}
         <div className="py-24 px-8 text-center bg-primary border-b border-white/5">
