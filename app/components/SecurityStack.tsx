@@ -46,7 +46,7 @@ export default function SecurityStack() {
             </div>
             <h3 className="text-xl font-bold text-white mb-3">Managed mapping</h3>
             <p className="text-white/60 text-sm leading-relaxed">
-              We take your existing floor plans and handle the digital conversion for you. Our team ensures your live, working map is ready for visitors in just a few days.
+              We take your existing floor plans and handle the digital conversion for you. Our system ensures your live, working map is ready for visitors instantly.
             </p>
           </div>
         </div>

@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: "How quickly can a facility go live?",
-    a: "Most facilities can launch in just a few days. Once you provide your floor plans, our team handles the digitization and mapping to ensure a perfect result for your visitors.",
+    a: "Most facilities can launch instantly. Once you upload your floor plans, our automated systems handle the digitization and mapping to ensure a perfect result for your visitors.",
   },
   {
     q: "Can routing handle accessibility and mobility needs?",
