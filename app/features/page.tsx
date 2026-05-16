@@ -102,7 +102,7 @@ export default function FeaturesPage() {
                   <div className="relative z-10 text-center md:text-left">
                     <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">Real-time Restrictions</h3>
                     <p className="text-white/50 text-lg leading-relaxed font-medium max-w-3xl">
-                      Close off zones or redirect traffic for maintenance in seconds without re-uploading floor plans. Maintain total control over your venue's accessibility and safety dynamically.
+                      Close off zones or redirect traffic for maintenance in seconds without re-uploading floor plans. Maintain total control over your venue&apos;s accessibility and safety dynamically.
                     </p>
                   </div>
 
