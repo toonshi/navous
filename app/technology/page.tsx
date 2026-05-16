@@ -13,29 +13,6 @@ export default function IntegrationPage() {
   return (
     <div className="flex flex-col min-h-screen bg-primary">
       <Navbar />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://www.navous.app"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "IT & Security",
-                "item": "https://www.navous.app/technology"
-              }
-            ]
-          }),
-        }}
-      />
       <main className="flex-1 pt-20">
         {/* Page hero */}
         <div className="py-24 px-6 md:px-12 text-center border-b border-white/5 relative overflow-hidden">
