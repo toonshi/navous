@@ -6,8 +6,12 @@ import ContactForm from "./ContactForm";
 export default function PilotProgram() {
   return (
     <section id="pilot" className="py-32 px-8 bg-primary relative overflow-hidden">
-      {/* Background glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/5 rounded-full blur-[120px] pointer-events-none" />
+      {/* Background glow — radial gradient instead of a blur-[120px] filter to avoid
+          GPU compositing jank when scrolling into this section (the contact form). */}
+      <div
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full pointer-events-none"
+        style={{ background: "radial-gradient(circle, rgba(59,130,246,0.10) 0%, rgba(59,130,246,0.04) 40%, transparent 70%)" }}
+      />
       
       <div className="max-w-7xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         <div>
