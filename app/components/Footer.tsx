@@ -19,7 +19,7 @@ export default function Footer() {
           <Link href="/how-it-works" className="hover:text-white transition">How It Works</Link>
           <Link href="/roadmap" className="hover:text-white transition">Roadmap</Link>
           <Link href="/features" className="hover:text-white transition">Features</Link>
-          <Link href="/faq" className="hover:text-white transition">FAQ</Link>
+          <Link href="/how-it-works#faq" className="hover:text-white transition">FAQ</Link>
         </nav>
         <div className="flex flex-row gap-6">
           <a href="https://twitter.com/navous" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white transition" aria-label="Twitter">
