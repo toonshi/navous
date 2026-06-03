@@ -13,7 +13,7 @@ export default function ContactForm() {
 
   if (state?.success) {
     return (
-      <div className="bg-white/5 border border-teal/20 rounded-3xl p-12 text-center backdrop-blur-xl">
+      <div className="bg-white/5 border border-teal/20 rounded-3xl p-12 text-center backdrop-blur-md">
         <div className="w-16 h-16 bg-teal/20 rounded-full flex items-center justify-center mx-auto mb-6 text-teal">
           <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
@@ -34,7 +34,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div id="contact" className="bg-white/5 border border-white/10 rounded-3xl p-8 md:p-12 backdrop-blur-xl shadow-2xl">
+    <div id="contact" className="bg-white/5 border border-white/10 rounded-3xl p-8 md:p-12 backdrop-blur-md shadow-2xl">
       <h3 className="text-2xl font-bold text-white mb-8">Schedule a Technical Walkthrough</h3>
       <form action={formAction} className="flex flex-col gap-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
