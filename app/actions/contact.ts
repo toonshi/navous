@@ -14,11 +14,11 @@ function escapeHtml(value: string): string {
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-// Sender must be an address on a domain you've verified in Resend
-// (e.g. navous.app). Falls back to Resend's shared testing sender, which can
-// only deliver to your own account email until the domain is verified.
-const FROM = process.env.CONTACT_FROM_EMAIL || "Navous Leads <onboarding@resend.dev>";
-const NOTIFY_TO = process.env.NOTIFICATION_EMAIL || "partnerships@navous.app";
+// Sender must be an address on the navous.app domain (verified in Resend).
+// Override via CONTACT_FROM_EMAIL if you want a different visible sender.
+const FROM = process.env.CONTACT_FROM_EMAIL || "Navous <noreply@navous.app>";
+// Where new lead notifications are delivered. Override via NOTIFICATION_EMAIL.
+const NOTIFY_TO = process.env.NOTIFICATION_EMAIL || "mike@navous.app";
 
 export async function submitContactForm(
   prevState: { success: boolean; message: string } | null,
