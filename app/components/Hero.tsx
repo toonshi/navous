@@ -30,8 +30,8 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto mt-2">
-          <a href="#pilot" className="btn-primary w-full sm:min-w-[180px]">
-            Get Started
+          <a href="/pilot" className="btn-primary w-full sm:min-w-[180px]">
+            Apply for Pilot
           </a>
           <a href="/how-it-works" className="btn-secondary btn-learn-more w-full sm:min-w-[180px]">
             Learn More
