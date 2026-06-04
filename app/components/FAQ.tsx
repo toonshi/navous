@@ -5,23 +5,27 @@ import React from "react";
 const faqs = [
   {
     q: "Will visitors need to download an app before arrival?",
-    a: "No. Visitors scan a QR code or tap an email link and start wayfinding instantly in their mobile browser with no sign-up or app install required.",
+    a: "No. Visitors scan a QR code or tap an NFC tag and start navigating instantly in their mobile browser — no app install, no sign-up, no friction.",
+  },
+  {
+    q: "What if we don't have a floor plan?",
+    a: "Most of our clients don't — and that's fine. Send us whatever you have: a photo of a paper blueprint, an old PDF, even a rough sketch. During your pilot, our team handles the digitization and delivers a live, navigable map of your building within a week. No CAD files required.",
   },
   {
     q: "How quickly can a facility go live?",
-    a: "Most facilities can launch instantly. Once you upload your floor plans, our automated systems handle the digitization and mapping to ensure a perfect result for your visitors.",
+    a: "If you have a digital floor plan ready, we can have your venue live within 1–3 days. If we're digitizing from paper or scratch, expect up to a week. Either way, we handle the setup — you just place a few QR codes at your entrances.",
+  },
+  {
+    q: "Does this require beacons or any hardware installation?",
+    a: "No beacons. No installation crew. No hardware procurement. Navous uses your visitors' phone sensors and your building's geometry to track position. The only physical requirement is QR code stickers at key entrances — the kind you can print and stick yourself.",
   },
   {
     q: "Can routing handle accessibility and mobility needs?",
-    a: "Yes. Navous supports step-free, wheelchair-optimized, and lift-priority routing, ensuring every visitor can navigate with confidence.",
-  },
-  {
-    q: "Will this require beacons or new hardware procurement?",
-    a: "We minimize infrastructure by leveraging existing blueprints and smartphone sensors. For high-precision needs, we can integrate discreet sensors to ensure perfect navigation accuracy.",
+    a: "Yes. Navous supports step-free, wheelchair-optimized, and lift-priority routing out of the box, ensuring every visitor can navigate with confidence regardless of mobility.",
   },
   {
     q: "How is visitor privacy protected and who owns the data?",
-    a: "Location calculations happen on the user's device. We do not stream continuous location data to our servers. Your organization retains full ownership of facility and movement data.",
+    a: "Position calculations run on our servers but no personally identifiable data is linked to movement. We do not sell or share visitor data. Your organization retains full ownership of all facility analytics.",
   },
 ];
 
