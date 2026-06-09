@@ -248,7 +248,9 @@ const UseCaseGrid = () => {
                       <ul className="flex flex-col gap-2 mb-8">
                         {useCase.benefits.map((benefit) => (
                           <li key={benefit} className="flex items-center gap-3 text-[12px] font-bold text-white">
-                            <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
+                            <svg className="w-3.5 h-3.5 text-accent shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                            </svg>
                             {benefit}
                           </li>
                         ))}
@@ -304,7 +306,9 @@ const UseCaseGrid = () => {
                   <ul className="flex flex-col gap-2">
                     {useCase.benefits.map((benefit) => (
                       <li key={benefit} className="flex items-center gap-2 text-xs font-bold text-white">
-                        <span className="w-1 h-1 rounded-full bg-accent shrink-0" />
+                        <svg className="w-3 h-3 text-accent shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                        </svg>
                         {benefit}
                       </li>
                     ))}
