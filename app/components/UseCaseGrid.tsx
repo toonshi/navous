@@ -131,6 +131,20 @@ const useCases: UseCase[] = [
       "Community hub navigation"
     ],
   },
+  {
+    id: 8,
+    title: "Events",
+    category: "Expos & Conferences",
+    description: "Map booths and manage crowds.",
+    longDescription: "Navous makes large-scale events manageable. Help visitors find booths, manage crowd flow, and let partners find each other with live shared maps.",
+    image: "/events.jpg",
+    benefits: [
+      "Interactive booth mapping", 
+      "Real-time crowd heatmaps", 
+      "Live partner tracking",
+      "VIP & staff routing"
+    ],
+  },
 ];
 
 const UseCaseGrid = () => {
@@ -147,12 +161,13 @@ const UseCaseGrid = () => {
 
     if (hoveredId === 0) { colTracks = "2.5fr 1fr 0.4fr 0.4fr"; rowTracks = "2.2fr 0.6fr 0.4fr"; }
     else if (hoveredId === 1) { colTracks = "0.4fr 0.4fr 2.2fr 1.2fr"; rowTracks = "2.2fr 0.6fr 0.4fr"; }
-    else if (hoveredId === 2) { colTracks = "0.4fr 0.4fr 0.4fr 3fr"; rowTracks = "1fr 1fr 1fr"; }
+    else if (hoveredId === 2) { colTracks = "0.4fr 0.4fr 0.4fr 3fr"; rowTracks = "2.2fr 0.6fr 0.4fr"; }
     else if (hoveredId === 3) { colTracks = "0.4fr 0.4fr 2.5fr 1fr"; rowTracks = "0.4fr 2.2fr 0.6fr"; }
     else if (hoveredId === 4) { colTracks = "2.5fr 0.6fr 0.6fr 0.6fr"; rowTracks = "0.4fr 0.6fr 2.2fr"; }
     else if (hoveredId === 5) { colTracks = "0.4fr 2.5fr 1.2fr 0.4fr"; rowTracks = "0.4fr 0.6fr 2.2fr"; }
     else if (hoveredId === 6) { colTracks = "0.4fr 0.4fr 0.4fr 3fr"; rowTracks = "0.4fr 0.6fr 2.2fr"; }
     else if (hoveredId === 7) { colTracks = "0.4fr 1.2fr 2.2fr 0.4fr"; rowTracks = "0.4fr 0.6fr 2.2fr"; }
+    else if (hoveredId === 8) { colTracks = "0.4fr 0.4fr 0.4fr 3fr"; rowTracks = "0.4fr 2.2fr 0.6fr"; }
 
     gsap.to(gridRef.current, {
       gridTemplateColumns: colTracks,
@@ -189,12 +204,13 @@ const UseCaseGrid = () => {
             const initialPos = [
               "col-start-1 row-start-1 col-span-2 row-span-2",
               "col-start-3 row-start-1 col-span-1 row-span-1",
-              "col-start-4 row-start-1 col-span-1 row-span-2",
+              "col-start-4 row-start-1 col-span-1 row-span-1",
               "col-start-3 row-start-2 col-span-1 row-span-1",
               "col-start-1 row-start-3 col-span-1 row-span-1",
               "col-start-2 row-start-3 col-span-1 row-span-1",
               "col-start-4 row-start-3 col-span-1 row-span-1",
-              "col-start-3 row-start-3 col-span-1 row-span-1"
+              "col-start-3 row-start-3 col-span-1 row-span-1",
+              "col-start-4 row-start-2 col-span-1 row-span-1"
             ];
             
             return (
