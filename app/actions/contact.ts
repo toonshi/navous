@@ -17,8 +17,10 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 // Sender must be an address on the navous.app domain (verified in Resend).
 // Override via CONTACT_FROM_EMAIL if you want a different visible sender.
 const FROM = process.env.CONTACT_FROM_EMAIL || "Navous <noreply@navous.app>";
-// Where new lead notifications are delivered. Override via NOTIFICATION_EMAIL.
-const NOTIFY_TO = process.env.NOTIFICATION_EMAIL || "mike@navous.app";
+// Where new lead notifications are delivered. Override via NOTIFICATION_EMAIL (comma-separated).
+const NOTIFY_TO = process.env.NOTIFICATION_EMAIL
+  ? process.env.NOTIFICATION_EMAIL.split(",").map((e) => e.trim())
+  : ["mike@navous.app", "sales@navous.app", "elvis@navous.app"];
 
 export async function submitContactForm(
   prevState: { success: boolean; message: string } | null,
