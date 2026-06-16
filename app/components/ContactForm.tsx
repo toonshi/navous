@@ -69,6 +69,7 @@ export default function ContactForm() {
             <option className="bg-[#0B0E14]" value="Shopping Mall / Retail">Shopping Mall / Retail</option>
             <option className="bg-[#0B0E14]" value="Airport / Transport Hub">Airport / Transport Hub</option>
             <option className="bg-[#0B0E14]" value="University / Campus">University / Campus</option>
+            <option className="bg-[#0B0E14]" value="Events / Conference Venue">Events / Conference Venue</option>
             <option className="bg-[#0B0E14]" value="Other">Other</option>
           </select>
         </div>
