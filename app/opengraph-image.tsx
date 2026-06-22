@@ -13,12 +13,9 @@ export default async function Image() {
   const logoData = readFileSync(join(process.cwd(), 'public/logo-email-white.png'))
   const logoSrc = `data:image/png;base64,${logoData.toString('base64')}`
 
-  const interData = readFileSync(join(process.cwd(), 'public/fonts/Inter.woff2'))
-
   return new ImageResponse(
     (
       <div style={{ width: 1200, height: 630, display: 'flex', position: 'relative', overflow: 'hidden' }}>
-        {/* Photo */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={bgSrc}
@@ -26,7 +23,6 @@ export default async function Image() {
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
         />
 
-        {/* Gradient overlay — dark at top for logo, heavier at bottom for text */}
         <div style={{
           position: 'absolute',
           inset: 0,
@@ -34,7 +30,6 @@ export default async function Image() {
           display: 'flex',
         }} />
 
-        {/* Logo — top centre */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={logoSrc}
@@ -42,7 +37,6 @@ export default async function Image() {
           style={{ position: 'absolute', top: 52, left: 0, right: 0, marginLeft: 'auto', marginRight: 'auto', width: 220, height: 'auto' }}
         />
 
-        {/* Bottom content */}
         <div style={{
           position: 'absolute',
           bottom: 60,
@@ -52,7 +46,6 @@ export default async function Image() {
           flexDirection: 'column',
         }}>
           <span style={{
-            fontFamily: 'Inter',
             fontWeight: 700,
             fontSize: 72,
             lineHeight: 1.0,
@@ -63,7 +56,6 @@ export default async function Image() {
             You are here.
           </span>
           <span style={{
-            fontFamily: 'Inter',
             fontWeight: 400,
             fontSize: 22,
             color: 'rgba(255,255,255,0.65)',
@@ -75,12 +67,6 @@ export default async function Image() {
         </div>
       </div>
     ),
-    {
-      ...size,
-      fonts: [
-        { name: 'Inter', data: interData, style: 'normal', weight: 400 },
-        { name: 'Inter', data: interData, style: 'normal', weight: 700 },
-      ],
-    }
+    { ...size }
   )
 }
