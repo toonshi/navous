@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   title: "Navous — Indoor Navigation for Hospitals, Malls & Airports",
   description:
     "Real-time indoor navigation for hospitals, malls, and campuses. Stop losing people inside your building.",
-  metadataBase: new URL("https://navous.com"),
+  metadataBase: new URL("https://www.navous.app"),
   icons: {
     icon: "/favicon.svg",
   },
   openGraph: {
     title: "Navous — Indoor Navigation for Hospitals, Malls & Airports",
     description: "Turn your floor plan into a live indoor map. Guide every visitor from the entrance to exactly where they need to be.",
-    url: "https://navous.com",
+    url: "https://www.navous.app",
     siteName: "Navous",
     type: "website",
   },
