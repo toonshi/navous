@@ -16,11 +16,13 @@ export const metadata: Metadata = {
     url: "https://www.navous.app",
     siteName: "Navous",
     type: "website",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Navous — Indoor Navigation for Hospitals, Malls & Airports",
     description: "Turn your floor plan into a live indoor map. Guide every visitor from the entrance to exactly where they need to be.",
+    images: ["/og-image.jpg"],
   },
 };
 
