@@ -29,10 +29,10 @@ export default function ProblemSection() {
           <div className="flex-1">
             <div className="overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/5 shadow-2xl backdrop-blur-sm">
               <Image
-                src="/visitor-nav.jpg"
-                alt="Navous interactive indoor map showing a visitor's blue dot position and turn-by-turn routing on a mobile phone"
-                width={1200}
-                height={900}
+                src="/visitor-nav.webp"
+                alt="Navous 3D floor plan of a shopping mall with a visitor marker in a hallway, surrounded by labelled venues including Carrefour, Equity Bank, KFC and IMAX, above Navigate, Pocket, Overlay and Squad mode controls"
+                width={1275}
+                height={820}
                 className="h-auto w-full object-cover"
               />
               <div className="border-t border-white/10 bg-black/20 px-6 py-4">
