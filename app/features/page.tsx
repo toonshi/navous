@@ -118,6 +118,29 @@ export default function FeaturesPage() {
                   </div>
                </div>
 
+               {/* Large Feature: Squad */}
+               <div className="p-8 md:p-12 rounded-[3rem] bg-white/5 border border-white/10 card-hover flex flex-col lg:flex-row-reverse items-center gap-12 overflow-hidden relative group">
+                  <div className="absolute inset-0 bg-gradient-to-l from-sky-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+
+                  <div className="flex-1 relative z-10">
+                    <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">Squad Navigation</h3>
+                    <p className="text-white/50 text-lg leading-relaxed font-medium max-w-xl">
+                      Let visitors move through your venue as a group. One four-digit code puts everyone on the same live floor plan, showing each member&apos;s position, level, and distance — so families, tour groups, and on-site teams stay together without a stream of calls to your help desk.
+                    </p>
+                  </div>
+
+                  <div className="flex-1 w-full relative z-10 flex justify-center">
+                    <div className="relative w-full max-w-[280px] aspect-[1442/2880] rounded-2xl overflow-hidden border border-white/10 bg-white/5 shadow-2xl">
+                      <Image
+                        src="/squad-mode.webp"
+                        alt="Navous squad session on a phone: a 3D floor plan with the visitor marker in a hallway, above a roster listing Mike as host, Sally offline, and a third member with the time they were last seen"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  </div>
+               </div>
+
                {/* Simple Text Feature: Promotions */}
                <div className="p-8 md:p-12 rounded-[3rem] bg-white/5 border border-white/10 card-hover relative group overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />

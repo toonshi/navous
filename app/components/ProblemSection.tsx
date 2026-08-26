@@ -99,6 +99,33 @@ export default function ProblemSection() {
             </div>
           </div>
         </div>
+
+        {/* Row 4 — Squad */}
+        <div className="flex flex-col md:flex-row-reverse md:items-center gap-12 lg:gap-24">
+          <div className="flex-1 max-w-xl">
+             <span className="text-accent text-sm font-bold uppercase tracking-widest mb-4 block">
+              Squad Mode
+            </span>
+            <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight mb-6">
+              Keep your group
+              <br />together.
+            </h2>
+            <p className="text-white/60 text-lg leading-relaxed font-medium">
+              Share a four-digit code and everyone joins the same live floor plan. Each person sees where the others are, which level they are on, and how far away — so families, delegations, and shift teams stop losing each other in large venues.
+            </p>
+          </div>
+          <div className="flex-1 flex justify-center lg:justify-center">
+            <div className="max-w-[320px] w-full overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 shadow-2xl backdrop-blur-sm">
+              <Image
+                src="/squad-mode.webp"
+                alt="Navous squad session on a phone: a 3D floor plan with the visitor marker in a hallway, above a roster listing Mike as host, Sally offline, and a third member with the time they were last seen"
+                width={1442}
+                height={2880}
+                className="h-auto w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
