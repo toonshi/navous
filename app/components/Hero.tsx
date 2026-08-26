@@ -33,8 +33,13 @@ export default function Hero() {
           <a href="/pilot" className="btn-primary w-full sm:min-w-[180px]">
             Apply for Pilot
           </a>
-          <a href="/how-it-works" className="btn-secondary btn-learn-more w-full sm:min-w-[180px]">
-            Learn More
+          <a
+            href="https://platform.navous.app/?data=%7B%22i%22%3A%22b7f1e3cf-a6cf-4791-b825-4831be5fb734%22%2C%22vid%22%3A%22cbc6fe03-1efc-44e4-b67e-ca4beb0f5b30%22%2C%22x%22%3A329.454%2C%22y%22%3A179.321%2C%22z%22%3A0%2C%22f%22%3A%227e1c6cb8-6c25-4db8-9108-433e62fbe202%22%2C%22b%22%3A%2248fea76b-67e6-4cf5-932c-2689edd0a231%22%2C%22t%22%3A%22r%22%2C%22s%22%3A%22m%22%2C%22nid%22%3A%225ce2f2f4-6e9c-4617-8258-772439829205%22%2C%22l%22%3A%22SEGRETERIA%22%2C%22an%22%3A%22ROOM%22%7D"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-secondary btn-learn-more w-full sm:min-w-[180px]"
+          >
+            Demo
           </a>
         </div>
       </div>
