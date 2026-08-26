@@ -39,7 +39,7 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="btn-secondary btn-learn-more w-full sm:min-w-[180px]"
           >
-            Demo
+            Try the demo
           </a>
         </div>
       </div>
