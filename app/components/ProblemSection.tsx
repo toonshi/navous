@@ -90,10 +90,10 @@ export default function ProblemSection() {
           <div className="flex-1 flex justify-center lg:justify-center">
             <div className="max-w-[320px] w-full overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 shadow-2xl backdrop-blur-sm">
               <Image
-                src="/pocket-mode.jpeg"
-                alt="Smartphone showing Navous accessibility mode with high-contrast UI and voice guidance buttons"
-                width={1200}
-                height={900}
+                src="/pocket-mode.png"
+                alt="Navous mobile home screen on a high-contrast dark background, asking &quot;Where are we going today?&quot; above large tappable destination categories"
+                width={1170}
+                height={2532}
                 className="h-auto w-full object-cover"
               />
             </div>
